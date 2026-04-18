@@ -2,3 +2,5 @@
 __pycache__/
 *.pyc
 .claude/
+tools/green_review.html
+tools/green_tags.json
