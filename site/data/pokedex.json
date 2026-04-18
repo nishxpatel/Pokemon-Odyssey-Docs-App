@@ -7,6 +7,7 @@
     "sprite_slug": "bulbasaur",
     "dex": "001",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -133,6 +134,7 @@
     "sprite_slug": "ivysaur",
     "dex": "002",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -263,6 +265,7 @@
     "sprite_slug": "venusaur",
     "dex": "003",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -392,6 +395,7 @@
     "sprite_slug": "charmander",
     "dex": "004",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire"
@@ -513,6 +517,7 @@
     "sprite_slug": "charmeleon",
     "dex": "005",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire"
@@ -638,6 +643,7 @@
     "sprite_slug": "charizard",
     "dex": "006",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire",
@@ -771,6 +777,7 @@
     "sprite_slug": "squirtle",
     "dex": "007",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -892,6 +899,7 @@
     "sprite_slug": "wartortle",
     "dex": "008",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -1025,6 +1033,7 @@
     "sprite_slug": "blastoise",
     "dex": "009",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -1157,6 +1166,7 @@
     "sprite_slug": "caterpie",
     "dex": "010",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug"
@@ -1254,6 +1264,7 @@
     "sprite_slug": "metapod",
     "dex": "011",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug"
@@ -1343,6 +1354,7 @@
     "sprite_slug": "butterfree",
     "dex": "012",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -1484,6 +1496,7 @@
     "sprite_slug": "weedle",
     "dex": "013",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -1582,6 +1595,7 @@
     "sprite_slug": "kakuna",
     "dex": "014",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -1672,6 +1686,7 @@
     "sprite_slug": "beedrill",
     "dex": "015",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -1809,6 +1824,7 @@
     "sprite_slug": "pidgey",
     "dex": "016",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -1939,6 +1955,7 @@
     "sprite_slug": "pidgeotto",
     "dex": "017",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -2065,6 +2082,7 @@
     "sprite_slug": "pidgeot",
     "dex": "018",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -2202,6 +2220,7 @@
     "sprite_slug": "rattata",
     "dex": "019",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -2340,6 +2359,7 @@
     "sprite_slug": "ratreecate",
     "dex": "020",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -2491,6 +2511,7 @@
     "sprite_slug": "spearow",
     "dex": "021",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -2620,6 +2641,7 @@
     "sprite_slug": "fearow",
     "dex": "022",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -2765,6 +2787,7 @@
     "sprite_slug": "ekans",
     "dex": "023",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -2911,6 +2934,7 @@
     "sprite_slug": "arbok",
     "dex": "024",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -3085,6 +3109,7 @@
     "sprite_slug": "pikachu",
     "dex": "025",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric"
@@ -3229,6 +3254,7 @@
     "sprite_slug": "raichu",
     "dex": "026",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric"
@@ -3354,6 +3380,7 @@
     "sprite_slug": "sandshrew",
     "dex": "027",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground",
@@ -3499,6 +3526,7 @@
     "sprite_slug": "sandslash",
     "dex": "028",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground",
@@ -3640,6 +3668,7 @@
     "sprite_slug": "nidoranf",
     "dex": "029",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison"
@@ -3781,6 +3810,7 @@
     "sprite_slug": "nidorina",
     "dex": "030",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison"
@@ -3933,6 +3963,7 @@
     "sprite_slug": "nidoqueen",
     "dex": "031",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -4070,6 +4101,7 @@
     "sprite_slug": "nidoranm",
     "dex": "032",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison"
@@ -4211,6 +4243,7 @@
     "sprite_slug": "nidorino",
     "dex": "033",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison"
@@ -4363,6 +4396,7 @@
     "sprite_slug": "nidoking",
     "dex": "034",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -4504,6 +4538,7 @@
     "sprite_slug": "clefairy",
     "dex": "035",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Aether"
@@ -4641,6 +4676,7 @@
     "sprite_slug": "clefable",
     "dex": "036",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Aether"
@@ -4773,6 +4809,7 @@
     "sprite_slug": "vulpix",
     "dex": "037",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire",
@@ -4914,6 +4951,7 @@
     "sprite_slug": "ninetales",
     "dex": "038",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire",
@@ -5057,6 +5095,7 @@
     "sprite_slug": "jigglypuff",
     "dex": "039",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -5199,6 +5238,7 @@
     "sprite_slug": "wigglytuff",
     "dex": "040",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -5336,6 +5376,7 @@
     "sprite_slug": "zubat",
     "dex": "041",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -5474,6 +5515,7 @@
     "sprite_slug": "golbat",
     "dex": "042",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -5640,6 +5682,7 @@
     "sprite_slug": "oddish",
     "dex": "043",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -5785,6 +5828,7 @@
     "sprite_slug": "gloom",
     "dex": "044",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -5929,6 +5973,7 @@
     "sprite_slug": "vileplume",
     "dex": "045",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -6070,6 +6115,7 @@
     "sprite_slug": "paras",
     "dex": "046",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -6207,6 +6253,7 @@
     "sprite_slug": "parasect",
     "dex": "047",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -6347,6 +6394,7 @@
     "sprite_slug": "venonat",
     "dex": "048",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -6477,6 +6525,7 @@
     "sprite_slug": "venomoth",
     "dex": "049",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -6613,6 +6662,7 @@
     "sprite_slug": "diglett",
     "dex": "050",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground"
@@ -6734,6 +6784,7 @@
     "sprite_slug": "dugtrio",
     "dex": "051",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground"
@@ -6854,6 +6905,7 @@
     "sprite_slug": "meowth",
     "dex": "052",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal"
@@ -6979,6 +7031,7 @@
     "sprite_slug": "persian",
     "dex": "053",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal"
@@ -7095,6 +7148,7 @@
     "sprite_slug": "psyduck",
     "dex": "054",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -7252,6 +7306,7 @@
     "sprite_slug": "golduck",
     "dex": "055",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -7402,6 +7457,7 @@
     "sprite_slug": "mankey",
     "dex": "056",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -7546,6 +7602,7 @@
     "sprite_slug": "primeape",
     "dex": "057",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -7687,6 +7744,7 @@
     "sprite_slug": "growlithe",
     "dex": "058",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire"
@@ -7823,6 +7881,7 @@
     "sprite_slug": "arcanine",
     "dex": "059",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire"
@@ -7959,6 +8018,7 @@
     "sprite_slug": "poliwag",
     "dex": "060",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -8180,6 +8240,7 @@
     "sprite_slug": "poliwhirl",
     "dex": "061",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -8351,6 +8412,7 @@
     "sprite_slug": "poliwrath",
     "dex": "062",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -8484,6 +8546,7 @@
     "sprite_slug": "abra",
     "dex": "063",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Psychic"
@@ -8577,6 +8640,7 @@
     "sprite_slug": "kadabra",
     "dex": "064",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Psychic"
@@ -8718,6 +8782,7 @@
     "sprite_slug": "alakazam",
     "dex": "065",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Psychic"
@@ -8860,6 +8925,7 @@
     "sprite_slug": "machop",
     "dex": "066",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -9012,6 +9078,7 @@
     "sprite_slug": "machoke",
     "dex": "067",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -9179,6 +9246,7 @@
     "sprite_slug": "machamp",
     "dex": "068",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -9323,6 +9391,7 @@
     "sprite_slug": "bellsprout",
     "dex": "069",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -9457,6 +9526,7 @@
     "sprite_slug": "weepinbell",
     "dex": "070",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -9599,6 +9669,7 @@
     "sprite_slug": "victreebel",
     "dex": "071",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -9732,6 +9803,7 @@
     "sprite_slug": "tentacool",
     "dex": "072",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -9890,6 +9962,7 @@
     "sprite_slug": "tentacruel",
     "dex": "073",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -10019,6 +10092,7 @@
     "sprite_slug": "geodude",
     "dex": "074",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Rock",
@@ -10181,6 +10255,7 @@
     "sprite_slug": "graveler",
     "dex": "075",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Rock",
@@ -10327,6 +10402,7 @@
     "sprite_slug": "golem",
     "dex": "076",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Rock",
@@ -10480,6 +10556,7 @@
     "sprite_slug": "ponyta",
     "dex": "077",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire",
@@ -10621,6 +10698,7 @@
     "sprite_slug": "rapidash",
     "dex": "078",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire",
@@ -10754,6 +10832,7 @@
     "sprite_slug": "slowpoke",
     "dex": "079",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -10909,6 +10988,7 @@
     "sprite_slug": "slowbro",
     "dex": "080",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -11041,6 +11121,7 @@
     "sprite_slug": "magnemite",
     "dex": "081",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -11179,6 +11260,7 @@
     "sprite_slug": "magneton",
     "dex": "082",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -11325,6 +11407,7 @@
     "sprite_slug": "doduo",
     "dex": "084",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -11459,6 +11542,7 @@
     "sprite_slug": "dodrio",
     "dex": "085",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground",
@@ -11592,6 +11676,7 @@
     "sprite_slug": "seel",
     "dex": "086",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -11721,6 +11806,7 @@
     "sprite_slug": "dewgong",
     "dex": "087",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -11842,6 +11928,7 @@
     "sprite_slug": "grimer-alola",
     "dex": "088",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -11968,6 +12055,7 @@
     "sprite_slug": "muk-alola",
     "dex": "089",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -12097,6 +12185,7 @@
     "sprite_slug": "shellder",
     "dex": "090",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -12230,6 +12319,7 @@
     "sprite_slug": "cloyster",
     "dex": "091",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -12363,6 +12453,7 @@
     "sprite_slug": "gastly",
     "dex": "092",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Ghost",
@@ -12500,6 +12591,7 @@
     "sprite_slug": "haunter",
     "dex": "093",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Ghost",
@@ -12655,6 +12747,7 @@
     "sprite_slug": "gengar",
     "dex": "094",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Ghost",
@@ -12798,6 +12891,7 @@
     "sprite_slug": "onix",
     "dex": "095",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Rock",
@@ -12947,6 +13041,7 @@
     "sprite_slug": "drowzee",
     "dex": "096",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Psychic"
@@ -13076,6 +13171,7 @@
     "sprite_slug": "hypno",
     "dex": "097",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Psychic"
@@ -13204,6 +13300,7 @@
     "sprite_slug": "krabby",
     "dex": "098",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -13345,6 +13442,7 @@
     "sprite_slug": "kingler",
     "dex": "099",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -13474,6 +13572,7 @@
     "sprite_slug": "voltorb-hisui",
     "dex": "100",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -13592,6 +13691,7 @@
     "sprite_slug": "electrode-hisui",
     "dex": "101",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -13713,6 +13813,7 @@
     "sprite_slug": "exeggcute",
     "dex": "102",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -13869,6 +13970,7 @@
     "sprite_slug": "exeggutor",
     "dex": "103",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -14006,6 +14108,7 @@
     "sprite_slug": "cubone",
     "dex": "104",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground",
@@ -14158,6 +14261,7 @@
     "sprite_slug": "marowak",
     "dex": "105",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground",
@@ -14310,6 +14414,7 @@
     "sprite_slug": "hitmonlee",
     "dex": "106",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [],
     "abilities": [],
@@ -14384,6 +14489,7 @@
     "sprite_slug": "hitmonchan",
     "dex": "107",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -14536,6 +14642,7 @@
     "sprite_slug": "lickitung",
     "dex": "108",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal"
@@ -14665,6 +14772,7 @@
     "sprite_slug": "koffing",
     "dex": "109",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison"
@@ -14801,6 +14909,7 @@
     "sprite_slug": "weezing",
     "dex": "110",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison"
@@ -14921,6 +15030,7 @@
     "sprite_slug": "rhyhorn",
     "dex": "111",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground",
@@ -15063,6 +15173,7 @@
     "sprite_slug": "rhydon",
     "dex": "112",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground",
@@ -15205,6 +15316,7 @@
     "sprite_slug": "chansey",
     "dex": "113",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -15343,6 +15455,7 @@
     "sprite_slug": "tangela",
     "dex": "114",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -15492,6 +15605,7 @@
     "sprite_slug": "kangaskhan",
     "dex": "115",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal"
@@ -15612,6 +15726,7 @@
     "sprite_slug": "horsea",
     "dex": "116",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -15833,6 +15948,7 @@
     "sprite_slug": "seadra",
     "dex": "117",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -16002,6 +16118,7 @@
     "sprite_slug": "goldeen",
     "dex": "118",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -16138,6 +16255,7 @@
     "sprite_slug": "seaking",
     "dex": "119",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -16258,6 +16376,7 @@
     "sprite_slug": "staryu",
     "dex": "120",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -16391,6 +16510,7 @@
     "sprite_slug": "starmie",
     "dex": "121",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -16516,6 +16636,7 @@
     "sprite_slug": "mrmime",
     "dex": "122",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Psychic"
@@ -16644,6 +16765,7 @@
     "sprite_slug": "scyther",
     "dex": "123",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -16787,6 +16909,7 @@
     "sprite_slug": "jynx",
     "dex": "124",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [],
     "abilities": [],
@@ -16892,6 +17015,7 @@
     "sprite_slug": "electabuzz",
     "dex": "125",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [],
     "abilities": [],
@@ -16954,6 +17078,7 @@
     "sprite_slug": "magmar",
     "dex": "126",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [],
     "abilities": [],
@@ -17031,6 +17156,7 @@
     "sprite_slug": "pinsir",
     "dex": "127",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug"
@@ -17170,6 +17296,7 @@
     "sprite_slug": "tauros",
     "dex": "128",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal"
@@ -17309,6 +17436,7 @@
     "sprite_slug": "magikarp",
     "dex": "129",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -17541,6 +17669,7 @@
     "sprite_slug": "gyarados",
     "dex": "130",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -17774,6 +17903,7 @@
     "sprite_slug": "lapras",
     "dex": "131",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -17903,6 +18033,7 @@
     "sprite_slug": "kleavor",
     "dex": "132",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -18032,6 +18163,7 @@
     "sprite_slug": "eevee",
     "dex": "133",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal"
@@ -18294,6 +18426,7 @@
     "sprite_slug": "vaporeon",
     "dex": "134",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -18474,6 +18607,7 @@
     "sprite_slug": "jolteon",
     "dex": "135",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric"
@@ -18654,6 +18788,7 @@
     "sprite_slug": "flareon",
     "dex": "136",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire"
@@ -18834,6 +18969,7 @@
     "sprite_slug": "porygon",
     "dex": "137",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal"
@@ -18975,6 +19111,7 @@
     "sprite_slug": "omanyte",
     "dex": "138",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Ghost",
@@ -19152,6 +19289,7 @@
     "sprite_slug": "omastar",
     "dex": "139",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Ghost",
@@ -19285,6 +19423,7 @@
     "sprite_slug": "kabuto",
     "dex": "140",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -19419,6 +19558,7 @@
     "sprite_slug": "kabutops",
     "dex": "141",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -19556,6 +19696,7 @@
     "sprite_slug": "aerodactyl",
     "dex": "142",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Rock",
@@ -19688,6 +19829,7 @@
     "sprite_slug": "snorlax",
     "dex": "143",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal"
@@ -19824,6 +19966,7 @@
     "sprite_slug": "farfetchd",
     "dex": "144",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting",
@@ -19953,6 +20096,7 @@
     "sprite_slug": "farfetchd",
     "dex": "144",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -20086,6 +20230,7 @@
     "sprite_slug": "sirfetchd",
     "dex": "145",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -20214,6 +20359,7 @@
     "sprite_slug": "stantler",
     "dex": "146",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -20354,6 +20500,7 @@
     "sprite_slug": "dratini",
     "dex": "147",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Dragon"
@@ -20506,6 +20653,7 @@
     "sprite_slug": "dragonair",
     "dex": "148",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Dragon"
@@ -20643,6 +20791,7 @@
     "sprite_slug": "dragonite",
     "dex": "149",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Dragon",
@@ -20792,6 +20941,262 @@
     "variant_sprite": null
   },
   {
+    "key": "KECLEONBATTLEBOND",
+    "display_name": "KECLEON (BATTLE BOND)",
+    "name": "B.B. Kecleon",
+    "slug": "kecleon-battle-bond",
+    "sprite_slug": "bbkecleon",
+    "dex": "150",
+    "is_variant": false,
+    "is_battle_bond": true,
+    "source_sheet": "#252-386",
+    "types": [
+      "Normal",
+      "Aether"
+    ],
+    "abilities": [
+      "Protean",
+      "Color Change"
+    ],
+    "evolves_at": null,
+    "evolves_at_level": null,
+    "evolves_note": null,
+    "evolution_items": [],
+    "evolution_targets": [],
+    "family": [
+      {
+        "key": "KECLEONBATTLEBOND",
+        "name": "KECLEON (BATTLE BOND)",
+        "slug": "kecleon-battle-bond",
+        "dex": "150",
+        "sprite_slug": "bbkecleon",
+        "is_variant": false
+      }
+    ],
+    "stats": {
+      "hp": 75,
+      "atk": 120,
+      "def": 75,
+      "spa": 60,
+      "spd": 130,
+      "spe": 40,
+      "total": 500
+    },
+    "stats_vanilla": null,
+    "moves": [
+      {
+        "level": 1,
+        "name": "Fake Out"
+      },
+      {
+        "level": 1,
+        "name": "PowerUpPunch"
+      },
+      {
+        "level": 1,
+        "name": "Sucker Punch"
+      },
+      {
+        "level": 1,
+        "name": "Scratch"
+      },
+      {
+        "level": 1,
+        "name": "Lick"
+      },
+      {
+        "level": 1,
+        "name": "Astonish"
+      },
+      {
+        "level": 1,
+        "name": "Tail Whip"
+      },
+      {
+        "level": 5,
+        "name": "Bind"
+      },
+      {
+        "level": 10,
+        "name": "Shadow Sneak"
+      },
+      {
+        "level": 15,
+        "name": "Feint Attack"
+      },
+      {
+        "level": 20,
+        "name": "Psybeam"
+      },
+      {
+        "level": 25,
+        "name": "Slash"
+      },
+      {
+        "level": 30,
+        "name": "Shadow Claw"
+      },
+      {
+        "level": 35,
+        "name": "Foul Play"
+      },
+      {
+        "level": 40,
+        "name": "Substitute"
+      },
+      {
+        "level": 45,
+        "name": "Recover"
+      },
+      {
+        "level": 50,
+        "name": "Double-Edge"
+      },
+      {
+        "level": 55,
+        "name": "Yggdraslash"
+      },
+      {
+        "level": 60,
+        "name": "Swords Dance"
+      }
+    ],
+    "locations": [],
+    "is_event": false,
+    "has_wild": false,
+    "variant_sprite": {
+      "normal": "assets/variants/kecleon-battle-bond.png",
+      "shiny": "assets/variants/kecleon-battle-bond-shiny.png",
+      "variant_name": "KECLEON (BATTLE BOND)"
+    }
+  },
+  {
+    "key": "MAWILEBATTLEBOND",
+    "display_name": "MAWILE (BATTLE BOND)",
+    "name": "B.B. Mawile",
+    "slug": "mawile-battle-bond",
+    "sprite_slug": "bbmawile",
+    "dex": "151",
+    "is_variant": false,
+    "is_battle_bond": true,
+    "source_sheet": "#252-386",
+    "types": [
+      "Steel",
+      "Aether"
+    ],
+    "abilities": [
+      "Intimidate",
+      "Hyper Cutter"
+    ],
+    "evolves_at": null,
+    "evolves_at_level": null,
+    "evolves_note": null,
+    "evolution_items": [],
+    "evolution_targets": [],
+    "family": [
+      {
+        "key": "MAWILEBATTLEBOND",
+        "name": "MAWILE (BATTLE BOND)",
+        "slug": "mawile-battle-bond",
+        "dex": "151",
+        "sprite_slug": "bbmawile",
+        "is_variant": false
+      }
+    ],
+    "stats": {
+      "hp": 85,
+      "atk": 115,
+      "def": 100,
+      "spa": 50,
+      "spd": 95,
+      "spe": 55,
+      "total": 500
+    },
+    "stats_vanilla": null,
+    "moves": [
+      {
+        "level": 1,
+        "name": "Shadow Sneak"
+      },
+      {
+        "level": 1,
+        "name": "Super Fang"
+      },
+      {
+        "level": 1,
+        "name": "Astonish"
+      },
+      {
+        "level": 1,
+        "name": "Growl"
+      },
+      {
+        "level": 5,
+        "name": "Tackle"
+      },
+      {
+        "level": 10,
+        "name": "Bite"
+      },
+      {
+        "level": 15,
+        "name": "Stockpile"
+      },
+      {
+        "level": 15,
+        "name": "Spit Up"
+      },
+      {
+        "level": 15,
+        "name": "Swallow"
+      },
+      {
+        "level": 20,
+        "name": "Metal Claw"
+      },
+      {
+        "level": 25,
+        "name": "Iron Defense"
+      },
+      {
+        "level": 30,
+        "name": "Crunch"
+      },
+      {
+        "level": 35,
+        "name": "Iron Head"
+      },
+      {
+        "level": 40,
+        "name": "Foul Play"
+      },
+      {
+        "level": 45,
+        "name": "Sucker Punch"
+      },
+      {
+        "level": 50,
+        "name": "Stone Edge"
+      },
+      {
+        "level": 55,
+        "name": "Energy Edge"
+      },
+      {
+        "level": 60,
+        "name": "Yggdrain"
+      }
+    ],
+    "locations": [],
+    "is_event": false,
+    "has_wild": false,
+    "variant_sprite": {
+      "normal": "assets/variants/mawile-battle-bond.png",
+      "shiny": "assets/variants/mawile-battle-bond-shiny.png",
+      "variant_name": "MAWILE (BATTLE BOND)"
+    }
+  },
+  {
     "key": "CHIKORITA",
     "display_name": "CHIKORITA",
     "name": "Chikorita",
@@ -20799,6 +21204,7 @@
     "sprite_slug": "chikorita",
     "dex": "152",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass"
@@ -20924,6 +21330,7 @@
     "sprite_slug": "bayleef",
     "dex": "153",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass"
@@ -21053,6 +21460,7 @@
     "sprite_slug": "meganium",
     "dex": "154",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -21206,6 +21614,7 @@
     "sprite_slug": "cyndaquil",
     "dex": "155",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Fire"
@@ -21331,6 +21740,7 @@
     "sprite_slug": "quilava",
     "dex": "156",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Fire"
@@ -21460,6 +21870,7 @@
     "sprite_slug": "typhlosion-hisui",
     "dex": "157",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Fire",
@@ -21597,6 +22008,7 @@
     "sprite_slug": "totodile",
     "dex": "158",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Water"
@@ -21722,6 +22134,7 @@
     "sprite_slug": "croconaw",
     "dex": "159",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Water"
@@ -21851,6 +22264,7 @@
     "sprite_slug": "feraligatr",
     "dex": "160",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Water",
@@ -21996,6 +22410,7 @@
     "sprite_slug": "sentret",
     "dex": "161",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal"
@@ -22129,6 +22544,7 @@
     "sprite_slug": "furret",
     "dex": "162",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal"
@@ -22272,6 +22688,7 @@
     "sprite_slug": "hoothoot",
     "dex": "163",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Psychic",
@@ -22406,6 +22823,7 @@
     "sprite_slug": "noctowl",
     "dex": "164",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Psychic",
@@ -22543,6 +22961,7 @@
     "sprite_slug": "ledyba",
     "dex": "165",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -22668,6 +23087,7 @@
     "sprite_slug": "ledian",
     "dex": "166",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -22784,6 +23204,7 @@
     "sprite_slug": "spinarak",
     "dex": "167",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -22916,6 +23337,7 @@
     "sprite_slug": "ariados",
     "dex": "168",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -23059,6 +23481,7 @@
     "sprite_slug": "crobat",
     "dex": "169",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Poison",
@@ -23192,6 +23615,7 @@
     "sprite_slug": "chinchou",
     "dex": "170",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Water",
@@ -23322,6 +23746,7 @@
     "sprite_slug": "lanturn",
     "dex": "171",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Water",
@@ -23455,6 +23880,7 @@
     "sprite_slug": "screamtail",
     "dex": "172",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "Paradox",
     "types": [
       "Psychic"
@@ -23582,6 +24008,7 @@
     "sprite_slug": "sandyshocks",
     "dex": "173",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "Paradox",
     "types": [
       "Electric",
@@ -23710,6 +24137,7 @@
     "sprite_slug": "togepi",
     "dex": "175",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal"
@@ -23839,6 +24267,7 @@
     "sprite_slug": "togetic",
     "dex": "176",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -23973,6 +24402,7 @@
     "sprite_slug": "natu",
     "dex": "177",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Aether",
@@ -24118,6 +24548,7 @@
     "sprite_slug": "xatu",
     "dex": "178",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Aether",
@@ -24263,6 +24694,7 @@
     "sprite_slug": "mareep",
     "dex": "179",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Electric",
@@ -24416,6 +24848,7 @@
     "sprite_slug": "flaaffy",
     "dex": "180",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Electric",
@@ -24558,6 +24991,7 @@
     "sprite_slug": "ampharos",
     "dex": "181",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Electric",
@@ -24746,6 +25180,7 @@
     "sprite_slug": "bellossom",
     "dex": "182",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Psychic",
@@ -24879,6 +25314,7 @@
     "sprite_slug": "marill",
     "dex": "183",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Water"
@@ -25022,6 +25458,7 @@
     "sprite_slug": "azumarill",
     "dex": "184",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Water"
@@ -25154,6 +25591,7 @@
     "sprite_slug": "sudowoodo",
     "dex": "185",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Rock"
@@ -25285,6 +25723,7 @@
     "sprite_slug": "politoed",
     "dex": "186",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Water"
@@ -25412,6 +25851,7 @@
     "sprite_slug": "hoppip",
     "dex": "187",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -25568,6 +26008,7 @@
     "sprite_slug": "skiploom",
     "dex": "188",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -25702,6 +26143,7 @@
     "sprite_slug": "jumpluff",
     "dex": "189",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -25835,6 +26277,7 @@
     "sprite_slug": "aipom",
     "dex": "190",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal"
@@ -25960,6 +26403,7 @@
     "sprite_slug": "sunkern",
     "dex": "191",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -26098,6 +26542,7 @@
     "sprite_slug": "sunflora",
     "dex": "192",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -26227,6 +26672,7 @@
     "sprite_slug": "yanma",
     "dex": "193",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -26361,6 +26807,7 @@
     "sprite_slug": "wooper",
     "dex": "194",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Water",
@@ -26490,6 +26937,7 @@
     "sprite_slug": "quagsire",
     "dex": "195",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Water",
@@ -26622,6 +27070,7 @@
     "sprite_slug": "espeon",
     "dex": "196",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Psychic"
@@ -26802,6 +27251,7 @@
     "sprite_slug": "umbreon",
     "dex": "197",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Dark"
@@ -26982,6 +27432,7 @@
     "sprite_slug": "murkrow",
     "dex": "198",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Dark",
@@ -27123,6 +27574,7 @@
     "sprite_slug": "slowking",
     "dex": "199",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Water",
@@ -27232,6 +27684,7 @@
     "sprite_slug": "misdreavus",
     "dex": "200",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Ghost"
@@ -27367,6 +27820,7 @@
     "sprite_slug": "gorochu",
     "dex": "201",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -27500,6 +27954,7 @@
     "sprite_slug": "wobbuffet",
     "dex": "202",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Psychic"
@@ -27619,6 +28074,7 @@
     "sprite_slug": "girafarig",
     "dex": "203",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -27764,6 +28220,7 @@
     "sprite_slug": "pineco",
     "dex": "204",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug"
@@ -27889,6 +28346,7 @@
     "sprite_slug": "forretress",
     "dex": "205",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -28010,6 +28468,7 @@
     "sprite_slug": "dunsparce",
     "dex": "206",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -28143,6 +28602,7 @@
     "sprite_slug": "gligar",
     "dex": "207",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Ground",
@@ -28273,6 +28733,7 @@
     "sprite_slug": "steelix",
     "dex": "208",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Steel",
@@ -28414,6 +28875,7 @@
     "sprite_slug": "snubbull",
     "dex": "209",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -28552,6 +29014,7 @@
     "sprite_slug": "granbull",
     "dex": "210",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -28693,6 +29156,7 @@
     "sprite_slug": "greattusk",
     "dex": "211",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "Paradox",
     "types": [
       "Ground",
@@ -28821,6 +29285,7 @@
     "sprite_slug": "scizor",
     "dex": "212",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -28957,6 +29422,7 @@
     "sprite_slug": "shuckle",
     "dex": "213",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -29078,6 +29544,7 @@
     "sprite_slug": "heracross",
     "dex": "214",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -29211,6 +29678,7 @@
     "sprite_slug": "sneasel",
     "dex": "215",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Poison",
@@ -29367,6 +29835,7 @@
     "sprite_slug": "teddiursa",
     "dex": "216",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal"
@@ -29503,6 +29972,7 @@
     "sprite_slug": "ursaring",
     "dex": "217",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal"
@@ -29646,6 +30116,7 @@
     "sprite_slug": "slugma",
     "dex": "218",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Fire"
@@ -29807,6 +30278,7 @@
     "sprite_slug": "magcargo",
     "dex": "219",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Fire",
@@ -29936,6 +30408,7 @@
     "sprite_slug": "swinub",
     "dex": "220",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Ice",
@@ -30070,6 +30543,7 @@
     "sprite_slug": "piloswine",
     "dex": "221",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Ice",
@@ -30222,6 +30696,7 @@
     "sprite_slug": "ragingbolt",
     "dex": "222",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "Paradox",
     "types": [
       "Electric",
@@ -30350,6 +30825,7 @@
     "sprite_slug": "remoraid",
     "dex": "223",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Water"
@@ -30479,6 +30955,7 @@
     "sprite_slug": "octillery",
     "dex": "224",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Water"
@@ -30603,6 +31080,7 @@
     "sprite_slug": "mantine",
     "dex": "226",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Water",
@@ -30745,6 +31223,7 @@
     "sprite_slug": "skarmory",
     "dex": "227",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Steel",
@@ -30874,6 +31353,7 @@
     "sprite_slug": "houndour",
     "dex": "228",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Dark",
@@ -31004,6 +31484,7 @@
     "sprite_slug": "houndoom",
     "dex": "229",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Dark",
@@ -31140,6 +31621,7 @@
     "sprite_slug": "kingdra",
     "dex": "230",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Water",
@@ -31269,6 +31751,7 @@
     "sprite_slug": "phanpy",
     "dex": "231",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Ground"
@@ -31390,6 +31873,7 @@
     "sprite_slug": "donphan",
     "dex": "232",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Ground"
@@ -31514,6 +31998,7 @@
     "sprite_slug": "porygon2",
     "dex": "233",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal"
@@ -31651,6 +32136,7 @@
     "sprite_slug": "tyrogue",
     "dex": "236",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Fighting"
@@ -31787,6 +32273,7 @@
     "sprite_slug": "hitmontop",
     "dex": "237",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Fighting"
@@ -31935,6 +32422,7 @@
     "sprite_slug": "smoochum",
     "dex": "238",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -32069,6 +32557,7 @@
     "sprite_slug": "elekid",
     "dex": "239",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Electric"
@@ -32214,6 +32703,7 @@
     "sprite_slug": "magby",
     "dex": "240",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Fire",
@@ -32359,6 +32849,7 @@
     "sprite_slug": "miltank",
     "dex": "241",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal"
@@ -32479,6 +32970,7 @@
     "sprite_slug": "blissey",
     "dex": "242",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -32612,6 +33104,7 @@
     "sprite_slug": "raikou",
     "dex": "243",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Electric"
@@ -32743,6 +33236,7 @@
     "sprite_slug": "entei",
     "dex": "244",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Fire"
@@ -32874,6 +33368,7 @@
     "sprite_slug": "suicune",
     "dex": "245",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Water"
@@ -33005,6 +33500,7 @@
     "sprite_slug": "larvitar",
     "dex": "246",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Rock",
@@ -33138,6 +33634,7 @@
     "sprite_slug": "pupitar",
     "dex": "247",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Rock",
@@ -33282,6 +33779,7 @@
     "sprite_slug": "tyranitar",
     "dex": "248",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Rock",
@@ -33419,6 +33917,254 @@
     "variant_sprite": null
   },
   {
+    "key": "PLUSLEBATTLEBOND",
+    "display_name": "PLUSLE (BATTLE BOND)",
+    "name": "B.B. Plusle",
+    "slug": "plusle-battle-bond",
+    "sprite_slug": "bbplusle",
+    "dex": "249",
+    "is_variant": false,
+    "is_battle_bond": true,
+    "source_sheet": "#252-386",
+    "types": [
+      "Electric",
+      "Aether"
+    ],
+    "abilities": [
+      "Abyss Grace",
+      "Plus"
+    ],
+    "evolves_at": null,
+    "evolves_at_level": null,
+    "evolves_note": null,
+    "evolution_items": [],
+    "evolution_targets": [],
+    "family": [
+      {
+        "key": "PLUSLEBATTLEBOND",
+        "name": "PLUSLE (BATTLE BOND)",
+        "slug": "plusle-battle-bond",
+        "dex": "249",
+        "sprite_slug": "bbplusle",
+        "is_variant": false
+      }
+    ],
+    "stats": {
+      "hp": 105,
+      "atk": 40,
+      "def": 115,
+      "spa": 60,
+      "spd": 115,
+      "spe": 65,
+      "total": 500
+    },
+    "stats_vanilla": null,
+    "moves": [
+      {
+        "level": 1,
+        "name": "Knock Off"
+      },
+      {
+        "level": 1,
+        "name": "Cosmic Power"
+      },
+      {
+        "level": 1,
+        "name": "Fake Out"
+      },
+      {
+        "level": 1,
+        "name": "Abyss Wrath"
+      },
+      {
+        "level": 1,
+        "name": "Follow Me"
+      },
+      {
+        "level": 1,
+        "name": "Thundershock"
+      },
+      {
+        "level": 1,
+        "name": "Helping Hand"
+      },
+      {
+        "level": 5,
+        "name": "Thunder Wave"
+      },
+      {
+        "level": 10,
+        "name": "Heal"
+      },
+      {
+        "level": 15,
+        "name": "Heal Bell"
+      },
+      {
+        "level": 20,
+        "name": "Shock Wave"
+      },
+      {
+        "level": 25,
+        "name": "Charm"
+      },
+      {
+        "level": 30,
+        "name": "Electroshock"
+      },
+      {
+        "level": 35,
+        "name": "Baton Pass"
+      },
+      {
+        "level": 40,
+        "name": "Agility"
+      },
+      {
+        "level": 40,
+        "name": "Radiant Star"
+      },
+      {
+        "level": 45,
+        "name": "Thunder"
+      },
+      {
+        "level": 50,
+        "name": "Tail Glow"
+      }
+    ],
+    "locations": [],
+    "is_event": false,
+    "has_wild": false,
+    "variant_sprite": {
+      "normal": "assets/variants/plusle-battle-bond.png",
+      "shiny": "assets/variants/plusle-battle-bond-shiny.png",
+      "variant_name": "PLUSLE (BATTLE BOND)"
+    }
+  },
+  {
+    "key": "MINUNBATTLEBOND",
+    "display_name": "MINUN (BATTLE BOND)",
+    "name": "B.B. Minun",
+    "slug": "minun-battle-bond",
+    "sprite_slug": "bbminun",
+    "dex": "250",
+    "is_variant": false,
+    "is_battle_bond": true,
+    "source_sheet": "#252-386",
+    "types": [
+      "Electric",
+      "Aether"
+    ],
+    "abilities": [
+      "Abyss Boost",
+      "Minus"
+    ],
+    "evolves_at": null,
+    "evolves_at_level": null,
+    "evolves_note": null,
+    "evolution_items": [],
+    "evolution_targets": [],
+    "family": [
+      {
+        "key": "MINUNBATTLEBOND",
+        "name": "MINUN (BATTLE BOND)",
+        "slug": "minun-battle-bond",
+        "dex": "250",
+        "sprite_slug": "bbminun",
+        "is_variant": false
+      }
+    ],
+    "stats": {
+      "hp": 75,
+      "atk": 50,
+      "def": 65,
+      "spa": 120,
+      "spd": 65,
+      "spe": 125,
+      "total": 500
+    },
+    "stats_vanilla": null,
+    "moves": [
+      {
+        "level": 1,
+        "name": "Extrasensory"
+      },
+      {
+        "level": 1,
+        "name": "Mysticalfire"
+      },
+      {
+        "level": 1,
+        "name": "Signal Beam"
+      },
+      {
+        "level": 1,
+        "name": "Abyss Miasma"
+      },
+      {
+        "level": 1,
+        "name": "Volt Switch"
+      },
+      {
+        "level": 1,
+        "name": "Thundershock"
+      },
+      {
+        "level": 5,
+        "name": "Charge"
+      },
+      {
+        "level": 20,
+        "name": "Shock Wave"
+      },
+      {
+        "level": 25,
+        "name": "Weather Ball"
+      },
+      {
+        "level": 25,
+        "name": "Water Bomb"
+      },
+      {
+        "level": 30,
+        "name": "Astral Gleam"
+      },
+      {
+        "level": 30,
+        "name": "Electroshock"
+      },
+      {
+        "level": 35,
+        "name": "Nasty Plot"
+      },
+      {
+        "level": 40,
+        "name": "Agility"
+      },
+      {
+        "level": 40,
+        "name": "Radiant Star"
+      },
+      {
+        "level": 45,
+        "name": "Thunderbolt"
+      },
+      {
+        "level": 50,
+        "name": "Thunder"
+      }
+    ],
+    "locations": [],
+    "is_event": false,
+    "has_wild": false,
+    "variant_sprite": {
+      "normal": "assets/variants/minun-battle-bond.png",
+      "shiny": "assets/variants/minun-battle-bond-shiny.png",
+      "variant_name": "MINUN (BATTLE BOND)"
+    }
+  },
+  {
     "key": "CELEBI",
     "display_name": "⭐ CELEBI",
     "name": "Celebi",
@@ -33426,6 +34172,7 @@
     "sprite_slug": "celebi",
     "dex": "251",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Psychic",
@@ -33558,6 +34305,7 @@
     "sprite_slug": "treecko",
     "dex": "252",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass"
@@ -33683,6 +34431,7 @@
     "sprite_slug": "grovyle",
     "dex": "253",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass"
@@ -33820,6 +34569,7 @@
     "sprite_slug": "sceptile",
     "dex": "254",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass"
@@ -33948,6 +34698,7 @@
     "sprite_slug": "torchic",
     "dex": "255",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Fire"
@@ -34073,6 +34824,7 @@
     "sprite_slug": "combusken",
     "dex": "256",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Fire",
@@ -34204,125 +34956,6 @@
     "variant_sprite": null
   },
   {
-    "key": "BLAZIKENBATTLEBOND",
-    "display_name": "BLAZIKEN (BATTLE BOND)",
-    "name": "Blaziken",
-    "slug": "blaziken-battle-bond",
-    "sprite_slug": "blaziken",
-    "dex": "257",
-    "is_variant": false,
-    "source_sheet": "#252-386",
-    "types": [
-      "Fire",
-      "Aether"
-    ],
-    "abilities": [
-      "Speed Boost",
-      "Blaze"
-    ],
-    "evolves_at": null,
-    "evolves_at_level": null,
-    "evolves_note": null,
-    "evolution_items": [],
-    "evolution_targets": [],
-    "family": [
-      {
-        "key": "BLAZIKENBATTLEBOND",
-        "name": "BLAZIKEN (BATTLE BOND)",
-        "slug": "blaziken-battle-bond",
-        "dex": "257",
-        "sprite_slug": "blaziken",
-        "is_variant": false
-      }
-    ],
-    "stats": {
-      "hp": 80,
-      "atk": 160,
-      "def": 80,
-      "spa": 130,
-      "spd": 80,
-      "spe": 100,
-      "total": 630
-    },
-    "stats_vanilla": {
-      "total": 0
-    },
-    "moves": [
-      {
-        "level": 1,
-        "name": "Brave Bird"
-      },
-      {
-        "level": 1,
-        "name": "U-Turn"
-      },
-      {
-        "level": 1,
-        "name": "Scratch"
-      },
-      {
-        "level": 1,
-        "name": "Growl"
-      },
-      {
-        "level": 1,
-        "name": "Focus Energy"
-      },
-      {
-        "level": 1,
-        "name": "Ember"
-      },
-      {
-        "level": 20,
-        "name": "Double Kick"
-      },
-      {
-        "level": 25,
-        "name": "Flame Charge"
-      },
-      {
-        "level": 30,
-        "name": "Flame Wheel"
-      },
-      {
-        "level": 35,
-        "name": "Slash"
-      },
-      {
-        "level": 36,
-        "name": "Hi Jump Kick"
-      },
-      {
-        "level": 40,
-        "name": "Blaze Kick"
-      },
-      {
-        "level": 45,
-        "name": "Swords Dance"
-      },
-      {
-        "level": 50,
-        "name": "Bulk Up"
-      },
-      {
-        "level": 55,
-        "name": "Close Combat"
-      },
-      {
-        "level": 60,
-        "name": "Flare Blitz"
-      },
-      {
-        "level": 65,
-        "name": "Abyss Blaze"
-      }
-    ],
-    "locations": [],
-    "is_event": false,
-    "has_wild": false,
-    "variant_sprite": null
-  },
-  {
     "key": "BLAZIKEN",
     "display_name": "BLAZIKEN",
     "name": "Blaziken",
@@ -34330,6 +34963,7 @@
     "sprite_slug": "blaziken",
     "dex": "257",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Fire",
@@ -34467,6 +35101,7 @@
     "sprite_slug": "mudkip",
     "dex": "258",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Water"
@@ -34596,6 +35231,7 @@
     "sprite_slug": "marshtomp",
     "dex": "259",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -34734,6 +35370,7 @@
     "sprite_slug": "swampert",
     "dex": "260",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -34867,6 +35504,7 @@
     "sprite_slug": "poochyena",
     "dex": "261",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Ice",
@@ -35001,6 +35639,7 @@
     "sprite_slug": "mightyena",
     "dex": "262",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Ice",
@@ -35142,6 +35781,7 @@
     "sprite_slug": "zigzagoon",
     "dex": "263",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -35271,6 +35911,7 @@
     "sprite_slug": "linoone",
     "dex": "264",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -35414,6 +36055,7 @@
     "sprite_slug": "wurmple",
     "dex": "265",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug"
@@ -35489,6 +36131,7 @@
     "sprite_slug": "silcoon",
     "dex": "266",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug"
@@ -35569,6 +36212,7 @@
     "sprite_slug": "beautifly",
     "dex": "267",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -35694,6 +36338,7 @@
     "sprite_slug": "cascoon",
     "dex": "268",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug"
@@ -35774,6 +36419,7 @@
     "sprite_slug": "dustox",
     "dex": "269",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -35899,6 +36545,7 @@
     "sprite_slug": "lotad",
     "dex": "270",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -36037,6 +36684,7 @@
     "sprite_slug": "lombre",
     "dex": "271",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -36183,6 +36831,7 @@
     "sprite_slug": "ludicolo",
     "dex": "272",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -36324,6 +36973,7 @@
     "sprite_slug": "seedot",
     "dex": "273",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass"
@@ -36461,6 +37111,7 @@
     "sprite_slug": "nuzleaf",
     "dex": "274",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass",
@@ -36611,6 +37262,7 @@
     "sprite_slug": "shiftry",
     "dex": "275",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass",
@@ -36756,6 +37408,7 @@
     "sprite_slug": "taillow",
     "dex": "276",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal",
@@ -36878,6 +37531,7 @@
     "sprite_slug": "swellow",
     "dex": "277",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal",
@@ -37003,6 +37657,7 @@
     "sprite_slug": "wingull",
     "dex": "278",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -37128,6 +37783,7 @@
     "sprite_slug": "pelipper",
     "dex": "279",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -37249,6 +37905,7 @@
     "sprite_slug": "ralts",
     "dex": "280",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Aether",
@@ -37391,6 +38048,7 @@
     "sprite_slug": "kirlia",
     "dex": "281",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Aether",
@@ -37541,6 +38199,7 @@
     "sprite_slug": "gardevoir",
     "dex": "282",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Aether",
@@ -37705,6 +38364,7 @@
     "sprite_slug": "surskit",
     "dex": "283",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -37830,6 +38490,7 @@
     "sprite_slug": "masquerain",
     "dex": "284",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -37959,6 +38620,7 @@
     "sprite_slug": "shroomish",
     "dex": "285",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Poison"
@@ -38084,6 +38746,7 @@
     "sprite_slug": "breloom",
     "dex": "286",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Poison",
@@ -38229,6 +38892,7 @@
     "sprite_slug": "slakoth",
     "dex": "287",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -38373,6 +39037,7 @@
     "sprite_slug": "vigoroth",
     "dex": "288",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -38517,6 +39182,7 @@
     "sprite_slug": "slaking",
     "dex": "289",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -38660,6 +39326,7 @@
     "sprite_slug": "nincada",
     "dex": "290",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -38781,6 +39448,7 @@
     "sprite_slug": "ninjask",
     "dex": "291",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -38909,6 +39577,7 @@
     "sprite_slug": "shedinja",
     "dex": "292",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -39029,6 +39698,7 @@
     "sprite_slug": "whismur",
     "dex": "293",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -39162,6 +39832,7 @@
     "sprite_slug": "loudred",
     "dex": "294",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -39313,6 +39984,7 @@
     "sprite_slug": "exploud",
     "dex": "295",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -39457,6 +40129,7 @@
     "sprite_slug": "makuhita",
     "dex": "296",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Fighting"
@@ -39590,6 +40263,7 @@
     "sprite_slug": "hariyama",
     "dex": "297",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Fighting"
@@ -39722,6 +40396,7 @@
     "sprite_slug": "yggdreon",
     "dex": "298",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Aether"
@@ -39900,6 +40575,7 @@
     "sprite_slug": "nosepass",
     "dex": "299",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Rock"
@@ -40036,6 +40712,7 @@
     "sprite_slug": "skitty",
     "dex": "300",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal",
@@ -40174,6 +40851,7 @@
     "sprite_slug": "delcatty",
     "dex": "301",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal",
@@ -40303,6 +40981,7 @@
     "sprite_slug": "sableye",
     "dex": "302",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Dark",
@@ -40450,6 +41129,7 @@
     "sprite_slug": "mawile",
     "dex": "303",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel"
@@ -40579,127 +41259,6 @@
     "variant_sprite": null
   },
   {
-    "key": "MAWILEBATTLEBOND",
-    "display_name": "MAWILE (BATTLE BOND)",
-    "name": "Mawile",
-    "slug": "mawile-battle-bond",
-    "sprite_slug": "mawile",
-    "dex": "303",
-    "is_variant": false,
-    "source_sheet": "#252-386",
-    "types": [
-      "Steel",
-      "Aether"
-    ],
-    "abilities": [
-      "Intimidate",
-      "Hyper Cutter"
-    ],
-    "evolves_at": null,
-    "evolves_at_level": null,
-    "evolves_note": null,
-    "evolution_items": [],
-    "evolution_targets": [],
-    "family": [
-      {
-        "key": "MAWILEBATTLEBOND",
-        "name": "MAWILE (BATTLE BOND)",
-        "slug": "mawile-battle-bond",
-        "dex": "303",
-        "sprite_slug": "mawile",
-        "is_variant": false
-      }
-    ],
-    "stats": {
-      "hp": 85,
-      "atk": 115,
-      "def": 100,
-      "spa": 50,
-      "spd": 95,
-      "spe": 55,
-      "total": 500
-    },
-    "stats_vanilla": null,
-    "moves": [
-      {
-        "level": 1,
-        "name": "Shadow Sneak"
-      },
-      {
-        "level": 1,
-        "name": "Super Fang"
-      },
-      {
-        "level": 1,
-        "name": "Astonish"
-      },
-      {
-        "level": 1,
-        "name": "Growl"
-      },
-      {
-        "level": 5,
-        "name": "Tackle"
-      },
-      {
-        "level": 10,
-        "name": "Bite"
-      },
-      {
-        "level": 15,
-        "name": "Stockpile"
-      },
-      {
-        "level": 15,
-        "name": "Spit Up"
-      },
-      {
-        "level": 15,
-        "name": "Swallow"
-      },
-      {
-        "level": 20,
-        "name": "Metal Claw"
-      },
-      {
-        "level": 25,
-        "name": "Iron Defense"
-      },
-      {
-        "level": 30,
-        "name": "Crunch"
-      },
-      {
-        "level": 35,
-        "name": "Iron Head"
-      },
-      {
-        "level": 40,
-        "name": "Foul Play"
-      },
-      {
-        "level": 45,
-        "name": "Sucker Punch"
-      },
-      {
-        "level": 50,
-        "name": "Stone Edge"
-      },
-      {
-        "level": 55,
-        "name": "Energy Edge"
-      },
-      {
-        "level": 60,
-        "name": "Yggdrain"
-      }
-    ],
-    "locations": [],
-    "is_event": false,
-    "has_wild": false,
-    "variant_sprite": null
-  },
-  {
     "key": "ARON",
     "display_name": "⭐ ARON",
     "name": "Aron",
@@ -40707,6 +41266,7 @@
     "sprite_slug": "aron",
     "dex": "304",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -40860,6 +41420,7 @@
     "sprite_slug": "lairon",
     "dex": "305",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -41013,6 +41574,7 @@
     "sprite_slug": "aggron",
     "dex": "306",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -41158,6 +41720,7 @@
     "sprite_slug": "meditite",
     "dex": "307",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Fighting",
@@ -41298,6 +41861,7 @@
     "sprite_slug": "medicham",
     "dex": "308",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Fighting",
@@ -41449,6 +42013,7 @@
     "sprite_slug": "electrike",
     "dex": "309",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Electric"
@@ -41574,6 +42139,7 @@
     "sprite_slug": "manectric",
     "dex": "310",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Electric"
@@ -41702,6 +42268,7 @@
     "sprite_slug": "plusle",
     "dex": "311",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Electric"
@@ -41802,127 +42369,6 @@
     "variant_sprite": null
   },
   {
-    "key": "PLUSLEBATTLEBOND",
-    "display_name": "PLUSLE (BATTLE BOND)",
-    "name": "Plusle",
-    "slug": "plusle-battle-bond",
-    "sprite_slug": "plusle",
-    "dex": "311",
-    "is_variant": false,
-    "source_sheet": "#252-386",
-    "types": [
-      "Electric",
-      "Aether"
-    ],
-    "abilities": [
-      "Abyss Grace",
-      "Plus"
-    ],
-    "evolves_at": null,
-    "evolves_at_level": null,
-    "evolves_note": null,
-    "evolution_items": [],
-    "evolution_targets": [],
-    "family": [
-      {
-        "key": "PLUSLEBATTLEBOND",
-        "name": "PLUSLE (BATTLE BOND)",
-        "slug": "plusle-battle-bond",
-        "dex": "311",
-        "sprite_slug": "plusle",
-        "is_variant": false
-      }
-    ],
-    "stats": {
-      "hp": 105,
-      "atk": 40,
-      "def": 115,
-      "spa": 60,
-      "spd": 115,
-      "spe": 65,
-      "total": 500
-    },
-    "stats_vanilla": null,
-    "moves": [
-      {
-        "level": 1,
-        "name": "Knock Off"
-      },
-      {
-        "level": 1,
-        "name": "Cosmic Power"
-      },
-      {
-        "level": 1,
-        "name": "Fake Out"
-      },
-      {
-        "level": 1,
-        "name": "Abyss Wrath"
-      },
-      {
-        "level": 1,
-        "name": "Follow Me"
-      },
-      {
-        "level": 1,
-        "name": "Thundershock"
-      },
-      {
-        "level": 1,
-        "name": "Helping Hand"
-      },
-      {
-        "level": 5,
-        "name": "Thunder Wave"
-      },
-      {
-        "level": 10,
-        "name": "Heal"
-      },
-      {
-        "level": 15,
-        "name": "Heal Bell"
-      },
-      {
-        "level": 20,
-        "name": "Shock Wave"
-      },
-      {
-        "level": 25,
-        "name": "Charm"
-      },
-      {
-        "level": 30,
-        "name": "Electroshock"
-      },
-      {
-        "level": 35,
-        "name": "Baton Pass"
-      },
-      {
-        "level": 40,
-        "name": "Agility"
-      },
-      {
-        "level": 40,
-        "name": "Radiant Star"
-      },
-      {
-        "level": 45,
-        "name": "Thunder"
-      },
-      {
-        "level": 50,
-        "name": "Tail Glow"
-      }
-    ],
-    "locations": [],
-    "is_event": false,
-    "has_wild": false,
-    "variant_sprite": null
-  },
-  {
     "key": "MINUN",
     "display_name": "MINUN",
     "name": "Minun",
@@ -41930,6 +42376,7 @@
     "sprite_slug": "minun",
     "dex": "312",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Electric"
@@ -42034,123 +42481,6 @@
     "variant_sprite": null
   },
   {
-    "key": "MINUNBATTLEBOND",
-    "display_name": "MINUN (BATTLE BOND)",
-    "name": "Minun",
-    "slug": "minun-battle-bond",
-    "sprite_slug": "minun",
-    "dex": "312",
-    "is_variant": false,
-    "source_sheet": "#252-386",
-    "types": [
-      "Electric",
-      "Aether"
-    ],
-    "abilities": [
-      "Abyss Boost",
-      "Minus"
-    ],
-    "evolves_at": null,
-    "evolves_at_level": null,
-    "evolves_note": null,
-    "evolution_items": [],
-    "evolution_targets": [],
-    "family": [
-      {
-        "key": "MINUNBATTLEBOND",
-        "name": "MINUN (BATTLE BOND)",
-        "slug": "minun-battle-bond",
-        "dex": "312",
-        "sprite_slug": "minun",
-        "is_variant": false
-      }
-    ],
-    "stats": {
-      "hp": 75,
-      "atk": 50,
-      "def": 65,
-      "spa": 120,
-      "spd": 65,
-      "spe": 125,
-      "total": 500
-    },
-    "stats_vanilla": null,
-    "moves": [
-      {
-        "level": 1,
-        "name": "Extrasensory"
-      },
-      {
-        "level": 1,
-        "name": "Mysticalfire"
-      },
-      {
-        "level": 1,
-        "name": "Signal Beam"
-      },
-      {
-        "level": 1,
-        "name": "Abyss Miasma"
-      },
-      {
-        "level": 1,
-        "name": "Volt Switch"
-      },
-      {
-        "level": 1,
-        "name": "Thundershock"
-      },
-      {
-        "level": 5,
-        "name": "Charge"
-      },
-      {
-        "level": 20,
-        "name": "Shock Wave"
-      },
-      {
-        "level": 25,
-        "name": "Weather Ball"
-      },
-      {
-        "level": 25,
-        "name": "Water Bomb"
-      },
-      {
-        "level": 30,
-        "name": "Astral Gleam"
-      },
-      {
-        "level": 30,
-        "name": "Electroshock"
-      },
-      {
-        "level": 35,
-        "name": "Nasty Plot"
-      },
-      {
-        "level": 40,
-        "name": "Agility"
-      },
-      {
-        "level": 40,
-        "name": "Radiant Star"
-      },
-      {
-        "level": 45,
-        "name": "Thunderbolt"
-      },
-      {
-        "level": 50,
-        "name": "Thunder"
-      }
-    ],
-    "locations": [],
-    "is_event": false,
-    "has_wild": false,
-    "variant_sprite": null
-  },
-  {
     "key": "VOLBEAT",
     "display_name": "⭐ VOLBEAT",
     "name": "Volbeat",
@@ -42158,6 +42488,7 @@
     "sprite_slug": "volbeat",
     "dex": "313",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -42275,6 +42606,7 @@
     "sprite_slug": "illumise",
     "dex": "314",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -42392,6 +42724,7 @@
     "sprite_slug": "roselia",
     "dex": "315",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass",
@@ -42538,6 +42871,7 @@
     "sprite_slug": "gulpin",
     "dex": "316",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Poison",
@@ -42676,6 +43010,7 @@
     "sprite_slug": "swalot",
     "dex": "317",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Poison",
@@ -42831,6 +43166,7 @@
     "sprite_slug": "carvanha",
     "dex": "318",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -42970,6 +43306,7 @@
     "sprite_slug": "sharpedo",
     "dex": "319",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -43098,6 +43435,7 @@
     "sprite_slug": "wailmer",
     "dex": "320",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Water"
@@ -43234,6 +43572,7 @@
     "sprite_slug": "wailord",
     "dex": "321",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -43367,6 +43706,7 @@
     "sprite_slug": "numel",
     "dex": "322",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Fire",
@@ -43496,6 +43836,7 @@
     "sprite_slug": "camerupt",
     "dex": "323",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Fire",
@@ -43628,6 +43969,7 @@
     "sprite_slug": "torkoal",
     "dex": "324",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Fire"
@@ -43773,6 +44115,7 @@
     "sprite_slug": "spoink",
     "dex": "325",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Psychic"
@@ -43898,6 +44241,7 @@
     "sprite_slug": "grumpig",
     "dex": "326",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Psychic"
@@ -44026,6 +44370,7 @@
     "sprite_slug": "regigigas",
     "dex": "327",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Dark",
@@ -44167,6 +44512,7 @@
     "sprite_slug": "trapinch",
     "dex": "328",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Ground",
@@ -44325,6 +44671,7 @@
     "sprite_slug": "vibrava",
     "dex": "329",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Ground",
@@ -44462,6 +44809,7 @@
     "sprite_slug": "flygon",
     "dex": "330",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Ground",
@@ -44610,6 +44958,7 @@
     "sprite_slug": "cacnea",
     "dex": "331",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass"
@@ -44754,6 +45103,7 @@
     "sprite_slug": "cacturne",
     "dex": "332",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass",
@@ -44887,6 +45237,7 @@
     "sprite_slug": "swablu",
     "dex": "333",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal",
@@ -45020,6 +45371,7 @@
     "sprite_slug": "altaria",
     "dex": "334",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Dragon",
@@ -45157,6 +45509,7 @@
     "sprite_slug": "zangoose",
     "dex": "335",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -45273,6 +45626,7 @@
     "sprite_slug": "seviper",
     "dex": "336",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Poison"
@@ -45397,6 +45751,7 @@
     "sprite_slug": "lunatone",
     "dex": "337",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Rock",
@@ -45532,6 +45887,7 @@
     "sprite_slug": "solrock",
     "dex": "338",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Rock",
@@ -45667,6 +46023,7 @@
     "sprite_slug": "barboach",
     "dex": "339",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Dark",
@@ -45818,6 +46175,7 @@
     "sprite_slug": "whiscash",
     "dex": "340",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Dark",
@@ -45955,6 +46313,7 @@
     "sprite_slug": "corphish",
     "dex": "341",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Water"
@@ -46084,6 +46443,7 @@
     "sprite_slug": "crawdaunt",
     "dex": "342",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -46209,6 +46569,7 @@
     "sprite_slug": "baltoy",
     "dex": "343",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel"
@@ -46368,6 +46729,7 @@
     "sprite_slug": "claydal",
     "dex": "344",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel"
@@ -46538,6 +46900,7 @@
     "sprite_slug": "lileep",
     "dex": "345",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Rock",
@@ -46668,6 +47031,7 @@
     "sprite_slug": "cradily",
     "dex": "346",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Rock",
@@ -46797,6 +47161,7 @@
     "sprite_slug": "anorith",
     "dex": "347",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Rock",
@@ -46923,6 +47288,7 @@
     "sprite_slug": "armaldo",
     "dex": "348",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Rock",
@@ -47048,6 +47414,7 @@
     "sprite_slug": "feebas",
     "dex": "349",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Water"
@@ -47180,6 +47547,7 @@
     "sprite_slug": "milotic",
     "dex": "350",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Water"
@@ -47304,6 +47672,7 @@
     "sprite_slug": "castform",
     "dex": "351",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal",
@@ -47436,6 +47805,7 @@
     "sprite_slug": "kecleon",
     "dex": "352",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -47561,131 +47931,6 @@
     "variant_sprite": null
   },
   {
-    "key": "KECLEONBATTLEBOND",
-    "display_name": "KECLEON (BATTLE BOND)",
-    "name": "Kecleon",
-    "slug": "kecleon-battle-bond",
-    "sprite_slug": "kecleon",
-    "dex": "352",
-    "is_variant": false,
-    "source_sheet": "#252-386",
-    "types": [
-      "Normal",
-      "Aether"
-    ],
-    "abilities": [
-      "Protean",
-      "Color Change"
-    ],
-    "evolves_at": null,
-    "evolves_at_level": null,
-    "evolves_note": null,
-    "evolution_items": [],
-    "evolution_targets": [],
-    "family": [
-      {
-        "key": "KECLEONBATTLEBOND",
-        "name": "KECLEON (BATTLE BOND)",
-        "slug": "kecleon-battle-bond",
-        "dex": "352",
-        "sprite_slug": "kecleon",
-        "is_variant": false
-      }
-    ],
-    "stats": {
-      "hp": 75,
-      "atk": 120,
-      "def": 75,
-      "spa": 60,
-      "spd": 130,
-      "spe": 40,
-      "total": 500
-    },
-    "stats_vanilla": null,
-    "moves": [
-      {
-        "level": 1,
-        "name": "Fake Out"
-      },
-      {
-        "level": 1,
-        "name": "PowerUpPunch"
-      },
-      {
-        "level": 1,
-        "name": "Sucker Punch"
-      },
-      {
-        "level": 1,
-        "name": "Scratch"
-      },
-      {
-        "level": 1,
-        "name": "Lick"
-      },
-      {
-        "level": 1,
-        "name": "Astonish"
-      },
-      {
-        "level": 1,
-        "name": "Tail Whip"
-      },
-      {
-        "level": 5,
-        "name": "Bind"
-      },
-      {
-        "level": 10,
-        "name": "Shadow Sneak"
-      },
-      {
-        "level": 15,
-        "name": "Feint Attack"
-      },
-      {
-        "level": 20,
-        "name": "Psybeam"
-      },
-      {
-        "level": 25,
-        "name": "Slash"
-      },
-      {
-        "level": 30,
-        "name": "Shadow Claw"
-      },
-      {
-        "level": 35,
-        "name": "Foul Play"
-      },
-      {
-        "level": 40,
-        "name": "Substitute"
-      },
-      {
-        "level": 45,
-        "name": "Recover"
-      },
-      {
-        "level": 50,
-        "name": "Double-Edge"
-      },
-      {
-        "level": 55,
-        "name": "Yggdraslash"
-      },
-      {
-        "level": 60,
-        "name": "Swords Dance"
-      }
-    ],
-    "locations": [],
-    "is_event": false,
-    "has_wild": false,
-    "variant_sprite": null
-  },
-  {
     "key": "SHUPPET",
     "display_name": "SHUPPET",
     "name": "Shuppet",
@@ -47693,6 +47938,7 @@
     "sprite_slug": "shuppet",
     "dex": "353",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Ghost"
@@ -47835,6 +48081,7 @@
     "sprite_slug": "banette",
     "dex": "354",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Ghost",
@@ -47963,6 +48210,7 @@
     "sprite_slug": "duskull",
     "dex": "355",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Ghost",
@@ -48107,6 +48355,7 @@
     "sprite_slug": "dusclops",
     "dex": "356",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Ghost",
@@ -48281,6 +48530,7 @@
     "sprite_slug": "tropius",
     "dex": "357",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass",
@@ -48414,6 +48664,7 @@
     "sprite_slug": "chimecho",
     "dex": "358",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Psychic",
@@ -48535,6 +48786,7 @@
     "sprite_slug": "absol",
     "dex": "359",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Dark",
@@ -48674,6 +48926,130 @@
     }
   },
   {
+    "key": "BLAZIKENBATTLEBOND",
+    "display_name": "BLAZIKEN (BATTLE BOND)",
+    "name": "B.B. Blaziken",
+    "slug": "blaziken-battle-bond",
+    "sprite_slug": "bbblaziken",
+    "dex": "360",
+    "is_variant": false,
+    "is_battle_bond": true,
+    "source_sheet": "#252-386",
+    "types": [
+      "Fire",
+      "Aether"
+    ],
+    "abilities": [
+      "Speed Boost",
+      "Blaze"
+    ],
+    "evolves_at": null,
+    "evolves_at_level": null,
+    "evolves_note": null,
+    "evolution_items": [],
+    "evolution_targets": [],
+    "family": [
+      {
+        "key": "BLAZIKENBATTLEBOND",
+        "name": "BLAZIKEN (BATTLE BOND)",
+        "slug": "blaziken-battle-bond",
+        "dex": "360",
+        "sprite_slug": "bbblaziken",
+        "is_variant": false
+      }
+    ],
+    "stats": {
+      "hp": 80,
+      "atk": 160,
+      "def": 80,
+      "spa": 130,
+      "spd": 80,
+      "spe": 100,
+      "total": 630
+    },
+    "stats_vanilla": {
+      "total": 0
+    },
+    "moves": [
+      {
+        "level": 1,
+        "name": "Brave Bird"
+      },
+      {
+        "level": 1,
+        "name": "U-Turn"
+      },
+      {
+        "level": 1,
+        "name": "Scratch"
+      },
+      {
+        "level": 1,
+        "name": "Growl"
+      },
+      {
+        "level": 1,
+        "name": "Focus Energy"
+      },
+      {
+        "level": 1,
+        "name": "Ember"
+      },
+      {
+        "level": 20,
+        "name": "Double Kick"
+      },
+      {
+        "level": 25,
+        "name": "Flame Charge"
+      },
+      {
+        "level": 30,
+        "name": "Flame Wheel"
+      },
+      {
+        "level": 35,
+        "name": "Slash"
+      },
+      {
+        "level": 36,
+        "name": "Hi Jump Kick"
+      },
+      {
+        "level": 40,
+        "name": "Blaze Kick"
+      },
+      {
+        "level": 45,
+        "name": "Swords Dance"
+      },
+      {
+        "level": 50,
+        "name": "Bulk Up"
+      },
+      {
+        "level": 55,
+        "name": "Close Combat"
+      },
+      {
+        "level": 60,
+        "name": "Flare Blitz"
+      },
+      {
+        "level": 65,
+        "name": "Abyss Blaze"
+      }
+    ],
+    "locations": [],
+    "is_event": false,
+    "has_wild": false,
+    "variant_sprite": {
+      "normal": "assets/variants/blaziken-battle-bond.png",
+      "shiny": "assets/variants/blaziken-battle-bond-shiny.png",
+      "variant_name": "BLAZIKEN (BATTLE BOND)"
+    }
+  },
+  {
     "key": "SNORUNT",
     "display_name": "SNORUNT",
     "name": "Snorunt",
@@ -48681,6 +49057,7 @@
     "sprite_slug": "snorunt",
     "dex": "361",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Ice"
@@ -48828,6 +49205,7 @@
     "sprite_slug": "glalie",
     "dex": "362",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Ice"
@@ -48963,6 +49341,7 @@
     "sprite_slug": "spheal",
     "dex": "363",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Ice",
@@ -49104,6 +49483,7 @@
     "sprite_slug": "sealeo",
     "dex": "364",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Ice",
@@ -49252,6 +49632,7 @@
     "sprite_slug": "walrein",
     "dex": "365",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Ice",
@@ -49384,6 +49765,7 @@
     "sprite_slug": "annihilape",
     "dex": "366",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting",
@@ -49525,6 +49907,7 @@
     "sprite_slug": "dudunsparce",
     "dex": "367",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -49657,6 +50040,7 @@
     "sprite_slug": "ursaluna",
     "dex": "368",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -49805,6 +50189,7 @@
     "sprite_slug": "relicanth",
     "dex": "369",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Ghost",
@@ -49971,6 +50356,7 @@
     "sprite_slug": "corsola",
     "dex": "370",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -50141,6 +50527,7 @@
     "sprite_slug": "bagon",
     "dex": "371",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Dragon"
@@ -50281,6 +50668,7 @@
     "sprite_slug": "shelgon",
     "dex": "372",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Dragon"
@@ -50417,6 +50805,7 @@
     "sprite_slug": "salamence",
     "dex": "373",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Dragon",
@@ -50561,6 +50950,7 @@
     "sprite_slug": "beldum",
     "dex": "374",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -50654,6 +51044,7 @@
     "sprite_slug": "metang",
     "dex": "375",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -50798,6 +51189,7 @@
     "sprite_slug": "metagross",
     "dex": "376",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -50945,6 +51337,7 @@
     "sprite_slug": "regirock",
     "dex": "377",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Rock",
@@ -51094,6 +51487,7 @@
     "sprite_slug": "regice",
     "dex": "378",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Ice",
@@ -51243,6 +51637,7 @@
     "sprite_slug": "registeel",
     "dex": "379",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -51392,6 +51787,7 @@
     "sprite_slug": "jirachi",
     "dex": "385",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -51504,6 +51900,7 @@
     "sprite_slug": "reefsola",
     "dex": "386",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -51635,6 +52032,7 @@
     "sprite_slug": "roserade",
     "dex": "387",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Grass",
@@ -51772,6 +52170,7 @@
     "sprite_slug": "ambipom",
     "dex": "388",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Normal"
@@ -51904,6 +52303,7 @@
     "sprite_slug": "mismagius",
     "dex": "389",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Ghost",
@@ -52036,6 +52436,7 @@
     "sprite_slug": "honchkrow",
     "dex": "390",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Dark",
@@ -52157,6 +52558,7 @@
     "sprite_slug": "weavile",
     "dex": "391",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Poison",
@@ -52298,6 +52700,7 @@
     "sprite_slug": "magnezone",
     "dex": "392",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Electric",
@@ -52431,6 +52834,7 @@
     "sprite_slug": "lickilicky",
     "dex": "393",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Normal"
@@ -52555,6 +52959,7 @@
     "sprite_slug": "rhyperior",
     "dex": "394",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Ground",
@@ -52692,6 +53097,7 @@
     "sprite_slug": "tangrowth",
     "dex": "395",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Grass",
@@ -52869,6 +53275,7 @@
     "sprite_slug": "electivire",
     "dex": "396",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Electric",
@@ -52997,6 +53404,7 @@
     "sprite_slug": "magmortar",
     "dex": "397",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Fire",
@@ -53118,6 +53526,7 @@
     "sprite_slug": "togekiss",
     "dex": "398",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Normal",
@@ -53255,6 +53664,7 @@
     "sprite_slug": "yanmega",
     "dex": "399",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Bug",
@@ -53388,6 +53798,7 @@
     "sprite_slug": "froslass",
     "dex": "400",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Ice",
@@ -53513,6 +53924,7 @@
     "sprite_slug": "gliscor",
     "dex": "401",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Ground",
@@ -53649,6 +54061,7 @@
     "sprite_slug": "porygonz",
     "dex": "402",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Normal"
@@ -53781,6 +54194,7 @@
     "sprite_slug": "gallade",
     "dex": "403",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Aether",
@@ -53914,6 +54328,7 @@
     "sprite_slug": "probopass",
     "dex": "404",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Rock",
@@ -54043,6 +54458,7 @@
     "sprite_slug": "dusknoir",
     "dex": "405",
     "is_variant": true,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Ghost",
@@ -54202,6 +54618,7 @@
     "sprite_slug": "mamoswine",
     "dex": "406",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Ice",
@@ -54343,6 +54760,7 @@
     "sprite_slug": "farigiraf",
     "dex": "407",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -54480,6 +54898,7 @@
     "sprite_slug": "leafeon",
     "dex": "408",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Grass"
@@ -54660,6 +55079,7 @@
     "sprite_slug": "glaceon",
     "dex": "409",
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "4th Gen",
     "types": [
       "Ice"
@@ -54836,6 +55256,7 @@
     "sprite_slug": "roaringmoon",
     "dex": null,
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "Paradox",
     "types": [
       "Dragon",
@@ -54968,6 +55389,7 @@
     "sprite_slug": "gougingfire",
     "dex": null,
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "Paradox",
     "types": [
       "Fire",
@@ -55096,6 +55518,7 @@
     "sprite_slug": "fluttermane",
     "dex": null,
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "Paradox",
     "types": [
       "Ghost"
@@ -55223,6 +55646,7 @@
     "sprite_slug": "walkingwake",
     "dex": null,
     "is_variant": false,
+    "is_battle_bond": false,
     "source_sheet": "Paradox",
     "types": [
       "Water",

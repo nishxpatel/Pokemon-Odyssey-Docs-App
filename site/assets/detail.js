@@ -247,6 +247,7 @@ function renderHeader(p) {
 
   let badges = "";
   if (p.is_variant) badges += `<span class="detail-variant-tag">Etrian Variant${p.variant_sprite && p.variant_sprite.variant_name ? `: ${escapeHTML(p.variant_sprite.variant_name)}` : ""}</span>`;
+  if (p.is_battle_bond) badges += `<span class="detail-bb-tag">Battle Bond form</span>`;
   if (p.is_event)   badges += `<span class="detail-event-tag">Event / Gift only</span>`;
 
   return `

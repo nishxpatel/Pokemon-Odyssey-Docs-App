@@ -89,6 +89,14 @@ def is_species_header(v) -> bool:
 DEX_ALIASES = {
     "CLAYDAL": "CLAYDOL",
     "DUDUNSPARS": "DUDUNSPARCE",
+    # Battle Bond forms in the Pokédex sheet are listed as "B.B. <Name>"; the
+    # species sheets call them "<NAME> (BATTLE BOND)". Map the dex entries so
+    # the species canon resolves to the right dex#.
+    "BBPLUSLE":   "PLUSLEBATTLEBOND",
+    "BBMINUN":    "MINUNBATTLEBOND",
+    "BBKECLEON":  "KECLEONBATTLEBOND",
+    "BBMAWILE":   "MAWILEBATTLEBOND",
+    "BBBLAZIKEN": "BLAZIKENBATTLEBOND",
 }
 
 # Pokédex sheet display fixes (typos): canon(dex name) -> proper name.
@@ -642,9 +650,14 @@ def extract_variant_sprites(xlsx_path: Path, out_dir: Path):
             v = r[c]
             if isinstance(v, str) and v.strip() and v.strip() == v.strip().upper():
                 base_names[c] = v.strip()
+        # Battle Bond blocks have no Odyssey rename (they're already named
+        # "<MON> (BATTLE BOND)"), and the row that would normally hold variant
+        # names actually contains stray entries from a different concept. Skip
+        # variant_names for them so sprites keep the BATTLE BOND-derived slug.
+        is_battle_bond_block = any("BATTLE BOND" in n for n in base_names.values())
         # Variant name row at i+4
         variant_names = {}
-        if i + 4 < len(sheet_rows):
+        if i + 4 < len(sheet_rows) and not is_battle_bond_block:
             rv = sheet_rows[i + 4]
             for c in range(1, 15):
                 v = rv[c]
@@ -930,12 +943,17 @@ def main():
         # so the UI ribbon doesn't claim they're Etrian Variants.
         base_only = sp["display_name"].replace("⭐", "").strip()
         is_variant = sp["is_variant"] and canon(base_only) not in NOT_ETRIAN_VARIANT
+        # Battle Bond is a separate custom-form concept from Etrian Variants —
+        # tag it independently so the UI can show its own badge and use the
+        # custom sprite the workbook provides.
+        is_battle_bond = "(BATTLE BOND)" in sp["display_name"].upper()
 
         # Variant sprite path. Comes from the Etrian Variants sheet for true
-        # Etrian Variants, or from a manually-dropped file in
-        # site/assets/variants/<slug>.png for custom-art species like Gorochu.
+        # Etrian Variants and Battle Bond forms, or from a manually-dropped
+        # file in site/assets/variants/<slug>.png for custom-art species like
+        # Gorochu.
         variant_sprite = None
-        if is_variant:
+        if is_variant or is_battle_bond:
             rec = sprite_map.get(canon(base_only)) or sprite_map.get(canon(sp["display_name"]))
             if rec:
                 variant_sprite = {
@@ -972,6 +990,7 @@ def main():
             "sprite_slug": sprite_slug_value,
             "dex": dex["dex"] if dex else None,
             "is_variant": is_variant,
+            "is_battle_bond": is_battle_bond,
             "source_sheet": sp["source_sheet"],
             "types": sp.get("types", []),
             "abilities": sp.get("abilities", []),

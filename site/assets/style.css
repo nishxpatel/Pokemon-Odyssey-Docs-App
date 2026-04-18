@@ -457,6 +457,30 @@ h3 { font-size: 1rem; margin: .8rem 0 .4rem; color: var(--text-dim); }
   border-radius: 4px;
   letter-spacing: .05em;
 }
+.bb-ribbon {
+  position: absolute;
+  top: .4rem;
+  right: .4rem;
+  background: #2a8eb0;
+  color: #fff;
+  font-size: .65rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+  letter-spacing: .05em;
+}
+.detail-bb-tag {
+  display: inline-block;
+  background: #2a8eb0;
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  margin-top: .2rem;
+  margin-left: .35rem;
+}
 
 /* --- Detail header: shiny variant preview, event tag --- */
 .detail-header .sprite-wrap {
