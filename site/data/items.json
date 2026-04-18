@@ -1,0 +1,4103 @@
+{
+  "items": [
+    {
+      "name": "Amulet Coin",
+      "slug": "amulet-coin",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "THIRD STRATUM BASE",
+          "habitat": null,
+          "note": "NPC"
+        }
+      ]
+    },
+    {
+      "name": "Antidote",
+      "slug": "antidote",
+      "sources": [
+        {
+          "kind": "location",
+          "location": null,
+          "habitat": "COASTAL ROAD",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": "FIRST STRATUM",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (RIGHT SIDE)",
+          "note": "Hidden"
+        }
+      ]
+    },
+    {
+      "name": "Apicot Berry ↑↑",
+      "slug": "apicot-berry",
+      "sources": [
+        {
+          "kind": "gather",
+          "stratum": "FOURTH STRATUM",
+          "method": null
+        }
+      ]
+    },
+    {
+      "name": "Assault Vest",
+      "slug": "assault-vest",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "CHARON",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Big Pearl",
+      "slug": "big-pearl",
+      "sources": [
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "FOURTH STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Black Augurite",
+      "slug": "black-augurite",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        }
+      ]
+    },
+    {
+      "name": "Black Belt",
+      "slug": "black-belt",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "NORTHERN ATOLL",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Black Flower",
+      "slug": "black-flower",
+      "sources": [
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIFTH STRATUM",
+          "method": "GATHERING"
+        }
+      ]
+    },
+    {
+      "name": "Blackglasses",
+      "slug": "blackglasses",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Blue Bell (Key Item)",
+      "slug": "blue-bell-key-item",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AZURE CAVE",
+          "habitat": null,
+          "note": "Chest (Magna Vis)"
+        }
+      ]
+    },
+    {
+      "name": "Blue Flower",
+      "slug": "blue-flower",
+      "sources": [
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "THIRD STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "THIRD STRATUM",
+          "method": null
+        }
+      ]
+    },
+    {
+      "name": "Blue Shard",
+      "slug": "blue-shard",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEASIDE GROTTO",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "ARUNDEL WOODS",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": "FOURTH STRATUM",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "SIXTH STRATUM - NORTH",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "gather",
+          "stratum": "FOURTH STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Brightpowder",
+      "slug": "brightpowder",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "TALREGA FARM",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Calcium",
+      "slug": "calcium",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": "FOURTH STRATUM",
+          "note": "Chest"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        }
+      ]
+    },
+    {
+      "name": "Carbos",
+      "slug": "carbos",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (LEFT SIDE)",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        }
+      ]
+    },
+    {
+      "name": "Charcoal",
+      "slug": "charcoal",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Cheri Berry",
+      "slug": "cheri-berry",
+      "sources": [
+        {
+          "kind": "gather",
+          "stratum": "FIRST STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIRST STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "SECOND STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "SECOND STRATUM",
+          "method": null
+        }
+      ]
+    },
+    {
+      "name": "Chesto Berry",
+      "slug": "chesto-berry",
+      "sources": [
+        {
+          "kind": "gather",
+          "stratum": "FIRST STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIRST STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "SECOND STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "SECOND STRATUM",
+          "method": null
+        }
+      ]
+    },
+    {
+      "name": "Choice Band",
+      "slug": "choice-band",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ETRIA",
+          "habitat": null,
+          "note": "NPC"
+        }
+      ]
+    },
+    {
+      "name": "Choice Scarf",
+      "slug": "choice-scarf",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ETRIA",
+          "habitat": null,
+          "note": "NPC"
+        }
+      ]
+    },
+    {
+      "name": "Choice Specs",
+      "slug": "choice-specs",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ETRIA",
+          "habitat": null,
+          "note": "NPC"
+        }
+      ]
+    },
+    {
+      "name": "Dawn Stone",
+      "slug": "dawn-stone",
+      "sources": [
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 2"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 4"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        },
+        {
+          "kind": "gather",
+          "stratum": "THIRD STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Dolomite",
+      "slug": "dolomite",
+      "sources": [
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "FOURTH STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Dragon Fang",
+      "slug": "dragon-fang",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Dubious Disc",
+      "slug": "dubious-disc",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "PIRATE ISLAND",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        }
+      ]
+    },
+    {
+      "name": "Dusk Stone",
+      "slug": "dusk-stone",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 2"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 4"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        }
+      ]
+    },
+    {
+      "name": "Electirizer",
+      "slug": "electirizer",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "RADE OF CARCINO",
+          "habitat": null,
+          "note": "Quest Reward"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        }
+      ]
+    },
+    {
+      "name": "Elixir",
+      "slug": "elixir",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (LEFT SIDE)",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "RADE OF CARCINO",
+          "habitat": "LOST WOODS",
+          "note": "Hidden"
+        }
+      ]
+    },
+    {
+      "name": "Emerald",
+      "slug": "emerald",
+      "sources": [
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIRST STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Ether",
+      "slug": "ether",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SECOND STRATUM (SANDY CAVES)",
+          "habitat": null,
+          "note": "Hidden"
+        }
+      ]
+    },
+    {
+      "name": "EV-Editor",
+      "slug": "ev-editor",
+      "sources": [
+        {
+          "kind": "location",
+          "location": null,
+          "habitat": "COASTAL ROAD",
+          "note": "Quest Reward"
+        }
+      ]
+    },
+    {
+      "name": "Everstone",
+      "slug": "everstone",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "TALREGA FARM",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Eviolite",
+      "slug": "eviolite",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "VARLEY",
+          "habitat": null,
+          "note": "NPC"
+        }
+      ]
+    },
+    {
+      "name": "Expert Belt",
+      "slug": "expert-belt",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "FARAWAY ISLAND",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Fire Stone",
+      "slug": "fire-stone",
+      "sources": [
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 1"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 2"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 4"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        },
+        {
+          "kind": "gather",
+          "stratum": "SECOND STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Flame Orb",
+      "slug": "flame-orb",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Ganlon Berry",
+      "slug": "ganlon-berry",
+      "sources": [
+        {
+          "kind": "gather",
+          "stratum": "FOURTH STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIFTH STRATUM",
+          "method": "GATHERING"
+        }
+      ]
+    },
+    {
+      "name": "Good Rod",
+      "slug": "good-rod",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "DESERT OF GOLGONDA",
+          "habitat": null,
+          "note": "NPC"
+        }
+      ]
+    },
+    {
+      "name": "Great Ball",
+      "slug": "great-ball",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "VARLEY WOODS",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "WATERFALL WOOD",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (LEFT SIDE)",
+          "note": "Hidden"
+        }
+      ]
+    },
+    {
+      "name": "Green Shard",
+      "slug": "green-shard",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "VARLEY WOODS",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIRST STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Hard Stone",
+      "slug": "hard-stone",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "DESERT OF GOLGONDA",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "HP Up",
+      "slug": "hp-up",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (LEFT SIDE)",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "THIEVES LAIR",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "BRIGIT FARM",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": "FOURTH STRATUM",
+          "note": "Hidden"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        }
+      ]
+    },
+    {
+      "name": "Iron",
+      "slug": "iron",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (RIGHT SIDE)",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "SIXTH STRATUM - NORTH",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        }
+      ]
+    },
+    {
+      "name": "Itemfinder (Key Item)",
+      "slug": "itemfinder-key-item",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SECOND STRATUM (SANDY CAVES)",
+          "habitat": null,
+          "note": "NPC"
+        }
+      ]
+    },
+    {
+      "name": "Items",
+      "slug": "items",
+      "sources": [
+        {
+          "kind": "location",
+          "location": null,
+          "habitat": "FIBERNIA WOODS",
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": null,
+          "habitat": "COASTAL ROAD",
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "TALREGA FARM",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "SEASIDE GROTTO",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "VARLEY",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "VARLEY WOODS",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "WATERFALL WOOD",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "NORTHERN ATOLL",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": "FIRST STRATUM",
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "ARUNDEL",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "ARUNDEL WOODS",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "CHARON",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "JAGGED MOUNTAIN",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (LEFT SIDE)",
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "CAVE OF ATHARI",
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (RIGHT SIDE)",
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "SECOND STRATUM (SANDY CAVES)",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "THIEVES LAIR",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "DESERT OF GOLGONDA",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "BRIGIT FARM",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "THIRD STRATUM BASE",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": "FOURTH STRATUM",
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "AZURE CAVE",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "ETRIA",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "RADE OF CARCINO",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "RADE OF CARCINO",
+          "habitat": "LOST WOODS",
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "ETRIA GRAVEYARD",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "PIRATE ISLAND",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "FARAWAY ISLAND",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "CAVE OF AGES",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": "FIFTH STRATUM - B1F",
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": "FIFTH STRATUM - B2F",
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": "SIXTH STRATUM - SOUTH",
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": "SIXTH STRATUM - CENTER",
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "SIXTH STRATUM - NORTH",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "SIXTH STRATUM - NORTH",
+          "habitat": "SIXTH STRATUM - WEST",
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "ABYSSAL FORTRESS",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "SEVENTH STRATUM - B1F",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "SEVENTH STRATUM - B2F",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "SEVENTH STRATUM - B3F",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "PORCELAIN CAVE",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "SEVENTH STRATUM - B4F",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "EIGHTH STRATUM - B1F",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "EIGHTH STRATUM - B2F",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "EIGHTH STRATUM - B4F",
+          "habitat": null,
+          "note": null
+        },
+        {
+          "kind": "location",
+          "location": "EIGHTH STRATUM - B5F",
+          "habitat": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "name": "Lansat Berry",
+      "slug": "lansat-berry",
+      "sources": [
+        {
+          "kind": "gather",
+          "stratum": "FIFTH STRATUM",
+          "method": "GATHERING"
+        }
+      ]
+    },
+    {
+      "name": "Leaf Stone",
+      "slug": "leaf-stone",
+      "sources": [
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 1"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 2"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 4"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIRST STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Leftovers",
+      "slug": "leftovers",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "THIEVES LAIR",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Leppa Berry ↑↑",
+      "slug": "leppa-berry",
+      "sources": [
+        {
+          "kind": "gather",
+          "stratum": "FIRST STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "THIRD STRATUM",
+          "method": null
+        }
+      ]
+    },
+    {
+      "name": "Life Orb",
+      "slug": "life-orb",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": "FOURTH STRATUM",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Light Clay",
+      "slug": "light-clay",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "CAVE OF ATHARI",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Link Stone",
+      "slug": "link-stone",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 4"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        },
+        {
+          "kind": "gather",
+          "stratum": "FOURTH STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Lucky Egg",
+      "slug": "lucky-egg",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Lum Berry",
+      "slug": "lum-berry",
+      "sources": [
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "THIRD STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "THIRD STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "FOURTH STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "FOURTH STRATUM",
+          "method": null
+        }
+      ]
+    },
+    {
+      "name": "Magmarizer",
+      "slug": "magmarizer",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "RADE OF CARCINO",
+          "habitat": null,
+          "note": "Quest Reward"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        }
+      ]
+    },
+    {
+      "name": "Magna Vis (Key Item)",
+      "slug": "magna-vis-key-item",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AZURE CAVE",
+          "habitat": null,
+          "note": "Quest Reward"
+        }
+      ]
+    },
+    {
+      "name": "Magnet",
+      "slug": "magnet",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Max Elixir",
+      "slug": "max-elixir",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "RADE OF CARCINO",
+          "habitat": "LOST WOODS",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "EIGHTH STRATUM - B2F",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Max Repel",
+      "slug": "max-repel",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "RADE OF CARCINO",
+          "habitat": "LOST WOODS",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "EIGHTH STRATUM - B2F",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Medica",
+      "slug": "medica",
+      "sources": [
+        {
+          "kind": "location",
+          "location": null,
+          "habitat": "FIBERNIA WOODS",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": "FIRST STRATUM",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Medica II",
+      "slug": "medica-ii",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "NORTHERN ATOLL",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": "FIRST STRATUM",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "ARUNDEL WOODS",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (RIGHT SIDE)",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Medica III",
+      "slug": "medica-iii",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": "FOURTH STRATUM",
+          "note": "Hidden"
+        }
+      ]
+    },
+    {
+      "name": "Medica IV",
+      "slug": "medica-iv",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": "FIFTH STRATUM - B2F",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": "SIXTH STRATUM - SOUTH",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "SEVENTH STRATUM - B2F",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Medica V",
+      "slug": "medica-v",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": "FOURTH STRATUM",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "AZURE CAVE",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "SIXTH STRATUM - NORTH",
+          "habitat": "SIXTH STRATUM - WEST",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "SEVENTH STRATUM - B1F",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "EIGHTH STRATUM - B5F",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Memento Vitae (Key Item)",
+      "slug": "memento-vitae-key-item",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "JAGGED MOUNTAIN",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Metal Coat",
+      "slug": "metal-coat",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Miracle Seed",
+      "slug": "miracle-seed",
+      "sources": [
+        {
+          "kind": "location",
+          "location": null,
+          "habitat": "FIBERNIA WOODS",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Moon Stone",
+      "slug": "moon-stone",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": "FIRST STRATUM",
+          "note": "Chest (F.O.E.)"
+        },
+        {
+          "kind": "location",
+          "location": "DESERT OF GOLGONDA",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 0"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 1"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 2"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 4"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        }
+      ]
+    },
+    {
+      "name": "Mystic Water",
+      "slug": "mystic-water",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEASIDE GROTTO",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Nectar",
+      "slug": "nectar",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "WATERFALL WOOD",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "THIEVES LAIR",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "DESERT OF GOLGONDA",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "RADE OF CARCINO",
+          "habitat": "LOST WOODS",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "SIXTH STRATUM - NORTH",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Nectar II",
+      "slug": "nectar-ii",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": "FOURTH STRATUM",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": "SIXTH STRATUM - SOUTH",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "SEVENTH STRATUM - B1F",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "EIGHTH STRATUM - B1F",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "EIGHTH STRATUM - B4F",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Nevermeltice",
+      "slug": "nevermeltice",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ARUNDEL",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Nugget",
+      "slug": "nugget",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ARUNDEL WOODS",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "JAGGED MOUNTAIN",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "CAVE OF ATHARI",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "SECOND STRATUM (SANDY CAVES)",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIFTH STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Offer. Bag (Key Item)",
+      "slug": "offer-bag-key-item",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": "FIRST STRATUM",
+          "note": "Magna Vis"
+        }
+      ]
+    },
+    {
+      "name": "Old Amber (Key Item)",
+      "slug": "old-amber-key-item",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SECOND STRATUM (SANDY CAVES)",
+          "habitat": null,
+          "note": "Sidequest"
+        }
+      ]
+    },
+    {
+      "name": "Old Rod",
+      "slug": "old-rod",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEASIDE GROTTO",
+          "habitat": null,
+          "note": "NPC"
+        }
+      ]
+    },
+    {
+      "name": "Oran Berry",
+      "slug": "oran-berry",
+      "sources": [
+        {
+          "kind": "location",
+          "location": null,
+          "habitat": "COASTAL ROAD",
+          "note": "Hidden"
+        },
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIRST STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "SECOND STRATUM",
+          "method": null
+        }
+      ]
+    },
+    {
+      "name": "Paralyz Heal",
+      "slug": "paralyz-heal",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": "FIRST STRATUM",
+          "note": "Hidden"
+        }
+      ]
+    },
+    {
+      "name": "Pearl",
+      "slug": "pearl",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": "FOURTH STRATUM",
+          "note": "Hidden"
+        },
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        }
+      ]
+    },
+    {
+      "name": "Pecha Berry",
+      "slug": "pecha-berry",
+      "sources": [
+        {
+          "kind": "gather",
+          "stratum": "FIRST STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIRST STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "SECOND STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "SECOND STRATUM",
+          "method": null
+        }
+      ]
+    },
+    {
+      "name": "Perlite",
+      "slug": "perlite",
+      "sources": [
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIFTH STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Poison Barb",
+      "slug": "poison-barb",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": null,
+          "note": "Hidden"
+        }
+      ]
+    },
+    {
+      "name": "Poké Ball",
+      "slug": "poke-ball",
+      "sources": [
+        {
+          "kind": "location",
+          "location": null,
+          "habitat": "FIBERNIA WOODS",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "SEASIDE GROTTO",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": "FIRST STRATUM",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Pokéflute (Key Item)",
+      "slug": "pokeflute-key-item",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": null,
+          "note": "Quest Reward"
+        }
+      ]
+    },
+    {
+      "name": "POWER ITEM SHOP (VARLEY)",
+      "slug": "power-item-shop-varley",
+      "sources": [
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 0"
+        }
+      ]
+    },
+    {
+      "name": "PP Up",
+      "slug": "pp-up",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEVENTH STRATUM - B3F",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "PP-Max",
+      "slug": "pp-max",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": "FIRST STRATUM",
+          "note": "Chest (F.O.E.)"
+        },
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": "SIXTH STRATUM - CENTER",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "SEVENTH STRATUM - B2F",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "SEVENTH STRATUM - B4F",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        }
+      ]
+    },
+    {
+      "name": "Prism Scale",
+      "slug": "prism-scale",
+      "sources": [
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 4"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        }
+      ]
+    },
+    {
+      "name": "Protector",
+      "slug": "protector",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "PIRATE ISLAND",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        }
+      ]
+    },
+    {
+      "name": "Protein",
+      "slug": "protein",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "WATERFALL WOOD",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "ARUNDEL WOODS",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "DESERT OF GOLGONDA",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "EIGHTH STRATUM - B1F",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        }
+      ]
+    },
+    {
+      "name": "Purple Flower",
+      "slug": "purple-flower",
+      "sources": [
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "FOURTH STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "FOURTH STRATUM",
+          "method": null
+        }
+      ]
+    },
+    {
+      "name": "Rawst Berry ↑↑",
+      "slug": "rawst-berry",
+      "sources": [
+        {
+          "kind": "gather",
+          "stratum": "THIRD STRATUM",
+          "method": null
+        }
+      ]
+    },
+    {
+      "name": "Reaper Cloth",
+      "slug": "reaper-cloth",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        }
+      ]
+    },
+    {
+      "name": "Red Bell (Key Item)",
+      "slug": "red-bell-key-item",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Red Flower",
+      "slug": "red-flower",
+      "sources": [
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIRST STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIRST STRATUM",
+          "method": null
+        }
+      ]
+    },
+    {
+      "name": "Red Shard",
+      "slug": "red-shard",
+      "sources": [
+        {
+          "kind": "gather",
+          "stratum": "THIRD STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Relic Gold",
+      "slug": "relic-gold",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "CAVE OF AGES",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        }
+      ]
+    },
+    {
+      "name": "Relic Silver",
+      "slug": "relic-silver",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "JAGGED MOUNTAIN",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "CAVE OF AGES",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        }
+      ]
+    },
+    {
+      "name": "Repel",
+      "slug": "repel",
+      "sources": [
+        {
+          "kind": "location",
+          "location": null,
+          "habitat": "FIBERNIA WOODS",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": "FIRST STRATUM",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Rocky Helmet",
+      "slug": "rocky-helmet",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (RIGHT SIDE)",
+          "note": "Chest (F.O.E.)"
+        }
+      ]
+    },
+    {
+      "name": "Salac Berry ↑↑",
+      "slug": "salac-berry",
+      "sources": [
+        {
+          "kind": "gather",
+          "stratum": "FOURTH STRATUM",
+          "method": null
+        }
+      ]
+    },
+    {
+      "name": "Sapphire",
+      "slug": "sapphire",
+      "sources": [
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "THIRD STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Scope Lens",
+      "slug": "scope-lens",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Sharp Beak",
+      "slug": "sharp-beak",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "NORTHERN ATOLL",
+          "habitat": null,
+          "note": "Hidden"
+        }
+      ]
+    },
+    {
+      "name": "Shell Bell",
+      "slug": "shell-bell",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SECOND STRATUM (SANDY CAVES)",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Shiny Stone",
+      "slug": "shiny-stone",
+      "sources": [
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 2"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 4"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        },
+        {
+          "kind": "gather",
+          "stratum": "THIRD STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Silk Scarf",
+      "slug": "silk-scarf",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": null,
+          "note": "Hidden"
+        }
+      ]
+    },
+    {
+      "name": "Silverpowder",
+      "slug": "silverpowder",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "VARLEY WOODS",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Sitrus Berry",
+      "slug": "sitrus-berry",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": "FIRST STRATUM",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "ETRIA GRAVEYARD",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "SECOND STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "THIRD STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "THIRD STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "FOURTH STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "FOURTH STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIFTH STRATUM",
+          "method": "GATHERING"
+        }
+      ]
+    },
+    {
+      "name": "Soft Sand",
+      "slug": "soft-sand",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "DESERT OF GOLGONDA",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Spell Tag",
+      "slug": "spell-tag",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ETRIA GRAVEYARD",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Star Pendant",
+      "slug": "star-pendant",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": "FIRST STRATUM",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Star Piece",
+      "slug": "star-piece",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "NORTHERN ATOLL",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "SECOND STRATUM (SANDY CAVES)",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "DESERT OF GOLGONDA",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "FOURTH STRATUM",
+          "method": "MINING"
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIFTH STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Stardust",
+      "slug": "stardust",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEASIDE GROTTO",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "CAVE OF ATHARI",
+          "note": "Hidden"
+        },
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIRST STRATUM",
+          "method": "MINING"
+        },
+        {
+          "kind": "gather",
+          "stratum": "SECOND STRATUM",
+          "method": "MINING"
+        },
+        {
+          "kind": "gather",
+          "stratum": "THIRD STRATUM",
+          "method": "MINING"
+        },
+        {
+          "kind": "gather",
+          "stratum": "FIFTH STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Sun Stone",
+      "slug": "sun-stone",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": "FIRST STRATUM",
+          "note": "Chest (F.O.E.)"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 0"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 1"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 2"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 4"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        },
+        {
+          "kind": "gather",
+          "stratum": "SECOND STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Super Repel",
+      "slug": "super-repel",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (LEFT SIDE)",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "CAVE OF ATHARI",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "DESERT OF GOLGONDA",
+          "habitat": null,
+          "note": "Hidden"
+        }
+      ]
+    },
+    {
+      "name": "Super Rod",
+      "slug": "super-rod",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AZURE CAVE",
+          "habitat": null,
+          "note": "NPC"
+        }
+      ]
+    },
+    {
+      "name": "Tent",
+      "slug": "tent",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEVENTH STRATUM - B3F",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "EIGHTH STRATUM - B5F",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Theriaca",
+      "slug": "theriaca",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "CAVE OF ATHARI",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (RIGHT SIDE)",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "AZURE CAVE",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "RADE OF CARCINO",
+          "habitat": "LOST WOODS",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Thunderstone",
+      "slug": "thunderstone",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SECOND STRATUM (SANDY CAVES)",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "BRIGIT FARM",
+          "habitat": null,
+          "note": "Chest"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 1"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 2"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 4"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        },
+        {
+          "kind": "gather",
+          "stratum": "THIRD STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Timer Ball",
+      "slug": "timer-ball",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SIXTH STRATUM - NORTH",
+          "habitat": "SIXTH STRATUM - WEST",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "SEVENTH STRATUM - B1F",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "TM TM01",
+      "slug": "tm-tm01",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM01",
+          "location": "Drain Punch"
+        }
+      ]
+    },
+    {
+      "name": "TM TM02",
+      "slug": "tm-tm02",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM02",
+          "location": "Dragon Claw"
+        }
+      ]
+    },
+    {
+      "name": "TM TM03",
+      "slug": "tm-tm03",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM03",
+          "location": "Water Pulse"
+        }
+      ]
+    },
+    {
+      "name": "TM TM04",
+      "slug": "tm-tm04",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM04",
+          "location": "Calm Mind"
+        }
+      ]
+    },
+    {
+      "name": "TM TM05",
+      "slug": "tm-tm05",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM05",
+          "location": "Snarl"
+        }
+      ]
+    },
+    {
+      "name": "TM TM06",
+      "slug": "tm-tm06",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM06",
+          "location": "Toxic"
+        }
+      ]
+    },
+    {
+      "name": "TM TM07",
+      "slug": "tm-tm07",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM07",
+          "location": "Hail"
+        }
+      ]
+    },
+    {
+      "name": "TM TM08",
+      "slug": "tm-tm08",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM08",
+          "location": "Bulk Up"
+        }
+      ]
+    },
+    {
+      "name": "TM TM09",
+      "slug": "tm-tm09",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM09",
+          "location": "Bullet Seed"
+        }
+      ]
+    },
+    {
+      "name": "TM TM10",
+      "slug": "tm-tm10",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM10",
+          "location": "Flash Cannon"
+        }
+      ]
+    },
+    {
+      "name": "TM TM11",
+      "slug": "tm-tm11",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM11",
+          "location": "Sunny Day"
+        }
+      ]
+    },
+    {
+      "name": "TM TM12",
+      "slug": "tm-tm12",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM12",
+          "location": "Taunt"
+        }
+      ]
+    },
+    {
+      "name": "TM TM13",
+      "slug": "tm-tm13",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM13",
+          "location": "Ice Beam"
+        }
+      ]
+    },
+    {
+      "name": "TM TM14",
+      "slug": "tm-tm14",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM14",
+          "location": "Blizzard"
+        }
+      ]
+    },
+    {
+      "name": "TM TM15",
+      "slug": "tm-tm15",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM15",
+          "location": "Hyper Beam"
+        }
+      ]
+    },
+    {
+      "name": "TM TM16",
+      "slug": "tm-tm16",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM16",
+          "location": "Light Screen"
+        }
+      ]
+    },
+    {
+      "name": "TM TM17",
+      "slug": "tm-tm17",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM17",
+          "location": "Protect"
+        }
+      ]
+    },
+    {
+      "name": "TM TM18",
+      "slug": "tm-tm18",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM18",
+          "location": "Rain Dance"
+        }
+      ]
+    },
+    {
+      "name": "TM TM19",
+      "slug": "tm-tm19",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM19",
+          "location": "Giga Drain"
+        }
+      ]
+    },
+    {
+      "name": "TM TM20",
+      "slug": "tm-tm20",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM20",
+          "location": "Safeguard"
+        }
+      ]
+    },
+    {
+      "name": "TM TM21",
+      "slug": "tm-tm21",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM21",
+          "location": "Frustration"
+        }
+      ]
+    },
+    {
+      "name": "TM TM22",
+      "slug": "tm-tm22",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM22",
+          "location": "Solar Beam"
+        }
+      ]
+    },
+    {
+      "name": "TM TM23",
+      "slug": "tm-tm23",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM23",
+          "location": "Iron Tail"
+        }
+      ]
+    },
+    {
+      "name": "TM TM24",
+      "slug": "tm-tm24",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM24",
+          "location": "Thunderbolt"
+        }
+      ]
+    },
+    {
+      "name": "TM TM25",
+      "slug": "tm-tm25",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM25",
+          "location": "Thunder"
+        }
+      ]
+    },
+    {
+      "name": "TM TM26",
+      "slug": "tm-tm26",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM26",
+          "location": "Earthquake"
+        }
+      ]
+    },
+    {
+      "name": "TM TM27",
+      "slug": "tm-tm27",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM27",
+          "location": "Return"
+        }
+      ]
+    },
+    {
+      "name": "TM TM28",
+      "slug": "tm-tm28",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM28",
+          "location": "Dig"
+        }
+      ]
+    },
+    {
+      "name": "TM TM29",
+      "slug": "tm-tm29",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM29",
+          "location": "Psychic"
+        }
+      ]
+    },
+    {
+      "name": "TM TM30",
+      "slug": "tm-tm30",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM30",
+          "location": "Shadow Ball"
+        }
+      ]
+    },
+    {
+      "name": "TM TM31",
+      "slug": "tm-tm31",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM31",
+          "location": "Brick Break"
+        }
+      ]
+    },
+    {
+      "name": "TM TM32",
+      "slug": "tm-tm32",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM32",
+          "location": "Double Team"
+        }
+      ]
+    },
+    {
+      "name": "TM TM33",
+      "slug": "tm-tm33",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM33",
+          "location": "Reflect"
+        }
+      ]
+    },
+    {
+      "name": "TM TM34",
+      "slug": "tm-tm34",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM34",
+          "location": "Shock Wave"
+        }
+      ]
+    },
+    {
+      "name": "TM TM35",
+      "slug": "tm-tm35",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM35",
+          "location": "Flamethrower"
+        }
+      ]
+    },
+    {
+      "name": "TM TM36",
+      "slug": "tm-tm36",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM36",
+          "location": "Sludge Bomb"
+        }
+      ]
+    },
+    {
+      "name": "TM TM37",
+      "slug": "tm-tm37",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM37",
+          "location": "Sandstorm"
+        }
+      ]
+    },
+    {
+      "name": "TM TM38",
+      "slug": "tm-tm38",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM38",
+          "location": "Fire Blast"
+        }
+      ]
+    },
+    {
+      "name": "TM TM39",
+      "slug": "tm-tm39",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM39",
+          "location": "Rock Tomb"
+        }
+      ]
+    },
+    {
+      "name": "TM TM40",
+      "slug": "tm-tm40",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM40",
+          "location": "Aerial Ace"
+        }
+      ]
+    },
+    {
+      "name": "TM TM41",
+      "slug": "tm-tm41",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM41",
+          "location": "Torment"
+        }
+      ]
+    },
+    {
+      "name": "TM TM42",
+      "slug": "tm-tm42",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM42",
+          "location": "Facade"
+        }
+      ]
+    },
+    {
+      "name": "TM TM43",
+      "slug": "tm-tm43",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM43",
+          "location": "Dragon Pulse"
+        }
+      ]
+    },
+    {
+      "name": "TM TM44",
+      "slug": "tm-tm44",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM44",
+          "location": "Rest"
+        }
+      ]
+    },
+    {
+      "name": "TM TM45",
+      "slug": "tm-tm45",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM45",
+          "location": "Attract"
+        }
+      ]
+    },
+    {
+      "name": "TM TM46",
+      "slug": "tm-tm46",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM46",
+          "location": "Dark Pulse"
+        }
+      ]
+    },
+    {
+      "name": "TM TM47",
+      "slug": "tm-tm47",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM47",
+          "location": "Steel Wing"
+        }
+      ]
+    },
+    {
+      "name": "TM TM48",
+      "slug": "tm-tm48",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM48",
+          "location": "Skill Swap"
+        }
+      ]
+    },
+    {
+      "name": "TM TM49",
+      "slug": "tm-tm49",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM49",
+          "location": "Scald"
+        }
+      ]
+    },
+    {
+      "name": "TM TM50",
+      "slug": "tm-tm50",
+      "sources": [
+        {
+          "kind": "tm",
+          "move": "TM50",
+          "location": "Overheat"
+        }
+      ]
+    },
+    {
+      "name": "TM01 (Drain Punch)",
+      "slug": "tm01-drain-punch",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": "SIXTH STRATUM - CENTER",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "TM02 (Dragon Claw)",
+      "slug": "tm02-dragon-claw",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "CAVE OF AGES",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "TM03 (Water Pulse)",
+      "slug": "tm03-water-pulse",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (RIGHT SIDE)",
+          "note": "Chest (F.O.E.)"
+        }
+      ]
+    },
+    {
+      "name": "TM04 (Calm Mind)",
+      "slug": "tm04-calm-mind",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": "FIFTH STRATUM - B1F",
+          "note": "Chest (F.O.E.)"
+        }
+      ]
+    },
+    {
+      "name": "TM06 (Toxic)",
+      "slug": "tm06-toxic",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SIXTH STRATUM - NORTH",
+          "habitat": "SIXTH STRATUM - WEST",
+          "note": "Chest (F.O.E.)"
+        }
+      ]
+    },
+    {
+      "name": "TM07 (Hail)",
+      "slug": "tm07-hail",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ARUNDEL",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "TM08 (Bulk Up)",
+      "slug": "tm08-bulk-up",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "THIRD STRATUM BASE",
+          "habitat": null,
+          "note": "Quest Reward"
+        }
+      ]
+    },
+    {
+      "name": "TM09 (Bullet Seed)",
+      "slug": "tm09-bullet-seed",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "VARLEY WOODS",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "TM10 (Flash Cannon)",
+      "slug": "tm10-flash-cannon",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEVENTH STRATUM - B1F",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "TM11 (Sunny Day)",
+      "slug": "tm11-sunny-day",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "CHARON",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "TM14 (Blizzard)",
+      "slug": "tm14-blizzard",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": "SIXTH STRATUM - SOUTH",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "TM15 (Hyper Beam)",
+      "slug": "tm15-hyper-beam",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": "FIFTH STRATUM - B2F",
+          "note": "Chest (F.O.E.)"
+        }
+      ]
+    },
+    {
+      "name": "TM17 (Protect)",
+      "slug": "tm17-protect",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": "FOURTH STRATUM",
+          "note": "Chest (F.O.E.)"
+        }
+      ]
+    },
+    {
+      "name": "TM19 (Giga Drain)",
+      "slug": "tm19-giga-drain",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": "FIRST STRATUM",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "TM21 (Return)",
+      "slug": "tm21-return",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "CHARON",
+          "habitat": null,
+          "note": "NPC"
+        }
+      ]
+    },
+    {
+      "name": "TM22 (Solar Beam)",
+      "slug": "tm22-solar-beam",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest (F.O.E.)"
+        }
+      ]
+    },
+    {
+      "name": "TM23 (Iron Tail)",
+      "slug": "tm23-iron-tail",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "THIRD STRATUM BASE",
+          "habitat": null,
+          "note": "Quest Reward"
+        }
+      ]
+    },
+    {
+      "name": "TM24 (Thunderbolt)",
+      "slug": "tm24-thunderbolt",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": null,
+          "note": "Quest Reward"
+        }
+      ]
+    },
+    {
+      "name": "TM25 (Thunder)",
+      "slug": "tm25-thunder",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "RADE OF CARCINO",
+          "habitat": null,
+          "note": "Quest Reward"
+        }
+      ]
+    },
+    {
+      "name": "TM26 (Earthquake)",
+      "slug": "tm26-earthquake",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (RIGHT SIDE)",
+          "note": "Chest (Magna Vis)"
+        }
+      ]
+    },
+    {
+      "name": "TM27 (Frustration)",
+      "slug": "tm27-frustration",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "CHARON",
+          "habitat": null,
+          "note": "NPC"
+        }
+      ]
+    },
+    {
+      "name": "TM28 (Dig)",
+      "slug": "tm28-dig",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (LEFT SIDE)",
+          "note": "Chest (F.O.E.)"
+        }
+      ]
+    },
+    {
+      "name": "TM29 (Psychic)",
+      "slug": "tm29-psychic",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": "FIFTH STRATUM - B2F",
+          "note": "Chest (F.O.E.)"
+        }
+      ]
+    },
+    {
+      "name": "TM30 (Shadow Ball)",
+      "slug": "tm30-shadow-ball",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest (F.O.E.)"
+        }
+      ]
+    },
+    {
+      "name": "TM31 (Brick Break)",
+      "slug": "tm31-brick-break",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "BRIGIT FARM",
+          "habitat": null,
+          "note": "Quest Reward"
+        }
+      ]
+    },
+    {
+      "name": "TM32 (Double Team)",
+      "slug": "tm32-double-team",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "RADE OF CARCINO",
+          "habitat": "LOST WOODS",
+          "note": "Chest (F.O.E.)"
+        }
+      ]
+    },
+    {
+      "name": "TM34 (Shock Wave)",
+      "slug": "tm34-shock-wave",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "BRIGIT FARM",
+          "habitat": null,
+          "note": "Quest Reward"
+        }
+      ]
+    },
+    {
+      "name": "TM35 (Flamethrower)",
+      "slug": "tm35-flamethrower",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest (F.O.E.)"
+        }
+      ]
+    },
+    {
+      "name": "TM36 (Sludge Bomb)",
+      "slug": "tm36-sludge-bomb",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "TM37 (Sandstorm)",
+      "slug": "tm37-sandstorm",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "DESERT OF GOLGONDA",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "TM38 (Fire Blast)",
+      "slug": "tm38-fire-blast",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "PORCELAIN CAVE",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "TM39 (Rock Tomb)",
+      "slug": "tm39-rock-tomb",
+      "sources": [
+        {
+          "kind": "location",
+          "location": null,
+          "habitat": "COASTAL ROAD",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "TM40 (Aerial Ace)",
+      "slug": "tm40-aerial-ace",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": "FIRST STRATUM",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "TM42 (Facade)",
+      "slug": "tm42-facade",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (LEFT SIDE)",
+          "note": "Chest (F.O.E.)"
+        }
+      ]
+    },
+    {
+      "name": "TM43 (Dragon Pulse)",
+      "slug": "tm43-dragon-pulse",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEVENTH STRATUM - B2F",
+          "habitat": null,
+          "note": "Chest (F.O.E.)"
+        }
+      ]
+    },
+    {
+      "name": "TM44 (Rest)",
+      "slug": "tm44-rest",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": "FOURTH STRATUM",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "TM46 (Dark Pulse)",
+      "slug": "tm46-dark-pulse",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ABYSSAL FORTRESS",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "TM48 (Skill Swap)",
+      "slug": "tm48-skill-swap",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": "FOURTH STRATUM",
+          "note": "Chest (F.O.E.)"
+        }
+      ]
+    },
+    {
+      "name": "TM49 (Scald)",
+      "slug": "tm49-scald",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AZURE CAVE",
+          "habitat": null,
+          "note": "Chest (Magna Vis)"
+        }
+      ]
+    },
+    {
+      "name": "TM50 (Overheat)",
+      "slug": "tm50-overheat",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEVENTH STRATUM - B4F",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Topaz",
+      "slug": "topaz",
+      "sources": [
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "SECOND STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Toxic Orb",
+      "slug": "toxic-orb",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": "FOURTH STRATUM",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Twistedspoon",
+      "slug": "twistedspoon",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": null,
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Ultra Ball",
+      "slug": "ultra-ball",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (RIGHT SIDE)",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "DESERT OF GOLGONDA",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "AUBURN THICKET",
+          "habitat": "FOURTH STRATUM",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": "FIFTH STRATUM - B1F",
+          "note": "Chest"
+        },
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": "SIXTH STRATUM - SOUTH",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Upgrade",
+      "slug": "upgrade",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 4"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        }
+      ]
+    },
+    {
+      "name": "Water Stone",
+      "slug": "water-stone",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "SECOND STRATUM (SANDY CAVES)",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 1"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 2"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 4"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        },
+        {
+          "kind": "gather",
+          "stratum": "THIRD STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Weakness Policy",
+      "slug": "weakness-policy",
+      "sources": [
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 4"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        }
+      ]
+    },
+    {
+      "name": "White Herb",
+      "slug": "white-herb",
+      "sources": [
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 4"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 5"
+        }
+      ]
+    },
+    {
+      "name": "Wide Lens",
+      "slug": "wide-lens",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Winged Boots",
+      "slug": "winged-boots",
+      "sources": [
+        {
+          "kind": "location",
+          "location": null,
+          "habitat": "FIBERNIA WOODS",
+          "note": "Quest Reward"
+        }
+      ]
+    },
+    {
+      "name": "Yellow Bell",
+      "slug": "yellow-bell",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "UNDERGROUND CITY",
+          "habitat": "FIFTH STRATUM - B1F",
+          "note": "Chest"
+        }
+      ]
+    },
+    {
+      "name": "Yellow Flower",
+      "slug": "yellow-flower",
+      "sources": [
+        {
+          "kind": "pickup",
+          "percent": 0.05
+        },
+        {
+          "kind": "gather",
+          "stratum": "SECOND STRATUM",
+          "method": null
+        },
+        {
+          "kind": "gather",
+          "stratum": "SECOND STRATUM",
+          "method": null
+        }
+      ]
+    },
+    {
+      "name": "Yellow Shard",
+      "slug": "yellow-shard",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "ABANDONED LAB",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (LEFT SIDE)",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "SEA TEMPLE",
+          "habitat": "SECOND STRATUM (RIGHT SIDE)",
+          "note": "Hidden"
+        },
+        {
+          "kind": "location",
+          "location": "DESERT OF GOLGONDA",
+          "habitat": null,
+          "note": "Hidden"
+        },
+        {
+          "kind": "gather",
+          "stratum": "SECOND STRATUM",
+          "method": "MINING"
+        }
+      ]
+    },
+    {
+      "name": "Zinc",
+      "slug": "zinc",
+      "sources": [
+        {
+          "kind": "location",
+          "location": "MAPLE ISLAND",
+          "habitat": "THIRD STRATUM",
+          "note": "Hidden"
+        },
+        {
+          "kind": "shop",
+          "shop": "NAPIER'S SHOP (AQUA RESORT)",
+          "level": "TREASURES OBTAINED: 3"
+        }
+      ]
+    }
+  ],
+  "tutors": [
+    {
+      "move": "Headbutt",
+      "location": "Talrega, Adventurer's Guild"
+    },
+    {
+      "move": "Fire Punch",
+      "location": "Third Stratum's Base Camp"
+    },
+    {
+      "move": "Thunderpunch",
+      "location": "Gorge of Zanado"
+    },
+    {
+      "move": "Ice Punch",
+      "location": "Rade of Carcino"
+    },
+    {
+      "move": "Rock Slide",
+      "location": "Aqua Resort"
+    },
+    {
+      "move": "Aqua Jet",
+      "location": "Aqua Resort"
+    },
+    {
+      "move": "Roost",
+      "location": "Gorenil"
+    },
+    {
+      "move": "Thunder Wave",
+      "location": "Aqua Resort"
+    },
+    {
+      "move": "Icy Wind",
+      "location": "Aqua Resort"
+    },
+    {
+      "move": "Bullet Punch",
+      "location": "Aqua Resort"
+    },
+    {
+      "move": "Substitute",
+      "location": "Fifth Stratum (B1F)"
+    },
+    {
+      "move": "Helping Hand",
+      "location": "Talrega"
+    },
+    {
+      "move": "Superpower",
+      "location": "Aqua Resort"
+    }
+  ]
+}

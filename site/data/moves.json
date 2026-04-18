@@ -1,0 +1,1122 @@
+{
+  "moves": [
+    {
+      "name": "HEAL",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "ELECTROSHOCK",
+      "type": null,
+      "category": null,
+      "power": 75,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "WATER BOMB",
+      "type": null,
+      "category": null,
+      "power": 70,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "SUMMER TANGO",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "SPRING TANGO",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "BRIGHT SONG",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "LIFE BALLAD",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "TOXIC REAP",
+      "type": null,
+      "category": null,
+      "power": 75,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "WILTING MIASMA",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "VOLT WINGS",
+      "type": null,
+      "category": null,
+      "power": 75,
+      "accuracy": 100,
+      "pp": 20,
+      "effect": null
+    },
+    {
+      "name": "CRAZED SHOUT",
+      "type": null,
+      "category": null,
+      "power": 80,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "WHIP RIPPER",
+      "type": null,
+      "category": null,
+      "power": 80,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "PHALANX GUARD",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 20,
+      "effect": null
+    },
+    {
+      "name": "VENOM GUST",
+      "type": null,
+      "category": null,
+      "power": 90,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "SUBZERO GALE",
+      "type": null,
+      "category": null,
+      "power": 90,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "DOUBLE HAMMER",
+      "type": null,
+      "category": null,
+      "power": 80,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "STOMP CRUSH",
+      "type": null,
+      "category": null,
+      "power": 90,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "ICY ARIA",
+      "type": null,
+      "category": null,
+      "power": 90,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "LADYBUG RUSH",
+      "type": null,
+      "category": null,
+      "power": 80,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "RAPID FIRE",
+      "type": null,
+      "category": null,
+      "power": 30,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "FROST CURSE",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 85,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "DIVINE STORM",
+      "type": null,
+      "category": null,
+      "power": 85,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "IZUNA",
+      "type": null,
+      "category": null,
+      "power": 50,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "FUKUBARI",
+      "type": null,
+      "category": null,
+      "power": 65,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "KUMOGAKURE",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "TAGEN BATTOU",
+      "type": null,
+      "category": null,
+      "power": 100,
+      "accuracy": 100,
+      "pp": 5,
+      "effect": null
+    },
+    {
+      "name": "PANIC SPORES",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 20,
+      "effect": null
+    },
+    {
+      "name": "SPORE BARRAGE",
+      "type": null,
+      "category": null,
+      "power": 25,
+      "accuracy": 100,
+      "pp": 20,
+      "effect": null
+    },
+    {
+      "name": "CHAIN WEATHER",
+      "type": null,
+      "category": null,
+      "power": 70,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "CHAIN KILLER",
+      "type": null,
+      "category": null,
+      "power": 60,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "CORKSCREW",
+      "type": null,
+      "category": null,
+      "power": 60,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "ONE-TWO PUNCH",
+      "type": null,
+      "category": null,
+      "power": 40,
+      "accuracy": 100,
+      "pp": 20,
+      "effect": null
+    },
+    {
+      "name": "LEADING BLOW",
+      "type": null,
+      "category": null,
+      "power": 70,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "TITAN KILLER",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 5,
+      "effect": null
+    },
+    {
+      "name": "DARKNESS FIST",
+      "type": null,
+      "category": null,
+      "power": 100,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "WAKING CHAKRA",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "CALL: SNAKE",
+      "type": null,
+      "category": null,
+      "power": 50,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "CALL: OWL",
+      "type": null,
+      "category": null,
+      "power": 60,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "CALL: LION",
+      "type": null,
+      "category": null,
+      "power": 80,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "PRIMAL DRUMS",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "MESMERIZE",
+      "type": null,
+      "category": null,
+      "power": 75,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "WOBBUSHIELD",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "ROTTEN EGG",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 20,
+      "effect": null
+    },
+    {
+      "name": "STRANGE SEEDS",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "LULLABY",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 50,
+      "pp": 20,
+      "effect": null
+    },
+    {
+      "name": "HARVEST PARTY",
+      "type": null,
+      "category": null,
+      "power": 80,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "ATROPHIC EYE",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "TIME CIRCLE",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "ARCANE BLAST",
+      "type": null,
+      "category": null,
+      "power": 110,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "SCYTHE DANCE",
+      "type": null,
+      "category": null,
+      "power": 25,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "SLASH RAMPAGE",
+      "type": null,
+      "category": null,
+      "power": 75,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "SONIC RAID",
+      "type": null,
+      "category": null,
+      "power": 40,
+      "accuracy": 100,
+      "pp": 20,
+      "effect": null
+    },
+    {
+      "name": "AKASHIC NOVA",
+      "type": null,
+      "category": null,
+      "power": 100,
+      "accuracy": 90,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "LIMIT BREAK",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "ROYAL ORDER",
+      "type": null,
+      "category": null,
+      "power": 65,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "CELL SHIELD",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "DEMONIC RUSH",
+      "type": null,
+      "category": null,
+      "power": 100,
+      "accuracy": 90,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "FREEZE RIPPLE",
+      "type": null,
+      "category": null,
+      "power": 95,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "OCEAN RAVE",
+      "type": null,
+      "category": null,
+      "power": 120,
+      "accuracy": 80,
+      "pp": 5,
+      "effect": null
+    },
+    {
+      "name": "IRON DRILL",
+      "type": null,
+      "category": null,
+      "power": 40,
+      "accuracy": 100,
+      "pp": 20,
+      "effect": null
+    },
+    {
+      "name": "FLARE MASK",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "FREEZE MASK",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "VOLT MASK",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "SOLAR FLAME",
+      "type": null,
+      "category": null,
+      "power": 130,
+      "accuracy": 100,
+      "pp": 5,
+      "effect": null
+    },
+    {
+      "name": "BAFFLING STEP",
+      "type": null,
+      "category": null,
+      "power": 80,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "ORIGIN CRUSH",
+      "type": null,
+      "category": null,
+      "power": 100,
+      "accuracy": 100,
+      "pp": 5,
+      "effect": null
+    },
+    {
+      "name": "TOXIC HERB",
+      "type": null,
+      "category": null,
+      "power": 70,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "WEIRD POTION",
+      "type": null,
+      "category": null,
+      "power": 80,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "POTION BOMB",
+      "type": null,
+      "category": null,
+      "power": 80,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "WING TALON",
+      "type": null,
+      "category": null,
+      "power": 85,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "ROCK HAMMER",
+      "type": null,
+      "category": null,
+      "power": 80,
+      "accuracy": 100,
+      "pp": 20,
+      "effect": null
+    },
+    {
+      "name": "SHATTER SHOT",
+      "type": null,
+      "category": null,
+      "power": 100,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "WATER TACKLE",
+      "type": null,
+      "category": null,
+      "power": 65,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "MIND BASH",
+      "type": null,
+      "category": null,
+      "power": 40,
+      "accuracy": 100,
+      "pp": 25,
+      "effect": null
+    },
+    {
+      "name": "COSMIC SLASH",
+      "type": null,
+      "category": null,
+      "power": 75,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "ENERGY EDGE",
+      "type": null,
+      "category": null,
+      "power": 90,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "LIGHT SHOT",
+      "type": null,
+      "category": null,
+      "power": 40,
+      "accuracy": 100,
+      "pp": 25,
+      "effect": null
+    },
+    {
+      "name": "ASTRAL GLEAM",
+      "type": null,
+      "category": null,
+      "power": 75,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "RADIANT STAR",
+      "type": null,
+      "category": null,
+      "power": 90,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "ABYSS WRATH",
+      "type": null,
+      "category": null,
+      "power": "???",
+      "accuracy": 100,
+      "pp": 5,
+      "effect": null
+    },
+    {
+      "name": "ABYSS MIASMA",
+      "type": null,
+      "category": null,
+      "power": 95,
+      "accuracy": 100,
+      "pp": 5,
+      "effect": null
+    },
+    {
+      "name": "YGGDRAIN",
+      "type": null,
+      "category": null,
+      "power": 90,
+      "accuracy": 100,
+      "pp": 5,
+      "effect": null
+    },
+    {
+      "name": "YGGDRASLASH",
+      "type": null,
+      "category": null,
+      "power": 90,
+      "accuracy": 100,
+      "pp": 5,
+      "effect": null
+    },
+    {
+      "name": "AD NIHILO",
+      "type": null,
+      "category": null,
+      "power": 90,
+      "accuracy": 100,
+      "pp": 5,
+      "effect": null
+    },
+    {
+      "name": "5-RING SWORD",
+      "type": null,
+      "category": null,
+      "power": 30,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "SHOGUN DECOY",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 5,
+      "effect": null
+    },
+    {
+      "name": "METEOR",
+      "type": null,
+      "category": null,
+      "power": 140,
+      "accuracy": 90,
+      "pp": 5,
+      "effect": null
+    },
+    {
+      "name": "CHIME BOOST",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "SOUL TRADE",
+      "type": null,
+      "category": null,
+      "power": 85,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "AZURE FLOOD",
+      "type": null,
+      "category": null,
+      "power": 80,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "MEGALODIVE",
+      "type": null,
+      "category": null,
+      "power": 90,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "SEALING LIGHT",
+      "type": null,
+      "category": null,
+      "power": "???",
+      "accuracy": 100,
+      "pp": 5,
+      "effect": null
+    },
+    {
+      "name": "LIFE CONTROL",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 5,
+      "effect": null
+    },
+    {
+      "name": "STAR DROP",
+      "type": null,
+      "category": null,
+      "power": "???",
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "ETHERIC BOON",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 20,
+      "effect": null
+    },
+    {
+      "name": "NOBLE ORDER",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "VEIL ORDER",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "CALL: ALLIES",
+      "type": null,
+      "category": null,
+      "power": 50,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "WARDING MIST",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "ABYSS BLAZE",
+      "type": null,
+      "category": null,
+      "power": 100,
+      "accuracy": 100,
+      "pp": 5,
+      "effect": null
+    }
+  ],
+  "abilities": [
+    {
+      "name": "NEEDLE ARM",
+      "type": null,
+      "category": null,
+      "power": 80,
+      "accuracy": 100,
+      "pp": 5,
+      "effect": null
+    },
+    {
+      "name": "OCTAZOOKA",
+      "type": null,
+      "category": null,
+      "power": 40,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "TWINEEDLE",
+      "type": null,
+      "category": null,
+      "power": 60,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "STONE AXE",
+      "type": null,
+      "category": null,
+      "power": 75,
+      "accuracy": 95,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "SWIFT",
+      "type": null,
+      "category": null,
+      "power": 60,
+      "accuracy": "/",
+      "pp": 20,
+      "effect": null
+    },
+    {
+      "name": "FIERY BULWARK",
+      "type": null,
+      "category": null,
+      "power": 90,
+      "accuracy": 100,
+      "pp": 5,
+      "effect": null
+    },
+    {
+      "name": "POISON FANG",
+      "type": null,
+      "category": null,
+      "power": 65,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "FIRE FANG",
+      "type": null,
+      "category": null,
+      "power": 65,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "ICE FANG",
+      "type": null,
+      "category": null,
+      "power": 65,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "THUNDER FANG",
+      "type": null,
+      "category": null,
+      "power": 65,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "POWER GEM",
+      "type": null,
+      "category": null,
+      "power": 80,
+      "accuracy": 100,
+      "pp": 20,
+      "effect": null
+    },
+    {
+      "name": "BULLDOZE",
+      "type": null,
+      "category": null,
+      "power": 60,
+      "accuracy": 100,
+      "pp": 20,
+      "effect": null
+    },
+    {
+      "name": "RAGE FIST",
+      "type": null,
+      "category": null,
+      "power": 60,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "DIG",
+      "type": null,
+      "category": null,
+      "power": 100,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "HYPNOSIS",
+      "type": null,
+      "category": null,
+      "power": null,
+      "accuracy": 70,
+      "pp": 20,
+      "effect": null
+    },
+    {
+      "name": "STEEL WING",
+      "type": null,
+      "category": null,
+      "power": 80,
+      "accuracy": 100,
+      "pp": 25,
+      "effect": null
+    },
+    {
+      "name": "ZEN HEADBUTT",
+      "type": null,
+      "category": null,
+      "power": 80,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "MUDDY WATER",
+      "type": null,
+      "category": null,
+      "power": 95,
+      "accuracy": 95,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "ICICLE CRASH",
+      "type": null,
+      "category": null,
+      "power": 85,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "SHADOW PUNCH",
+      "type": null,
+      "category": null,
+      "power": 80,
+      "accuracy": "/",
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "DRAGON RUSH",
+      "type": null,
+      "category": null,
+      "power": 100,
+      "accuracy": 85,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "BLAZE KICK",
+      "type": null,
+      "category": null,
+      "power": 85,
+      "accuracy": 100,
+      "pp": 10,
+      "effect": null
+    },
+    {
+      "name": "IRON TAIL",
+      "type": null,
+      "category": null,
+      "power": 100,
+      "accuracy": 85,
+      "pp": 15,
+      "effect": null
+    },
+    {
+      "name": "AIR SLASH",
+      "type": null,
+      "category": null,
+      "power": 75,
+      "accuracy": 100,
+      "pp": 15,
+      "effect": null
+    }
+  ]
+}

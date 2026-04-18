@@ -1,0 +1,33 @@
+{
+  "game": "Pokémon Odyssey",
+  "version": "v4.1.1",
+  "types": [
+    "Normal",
+    "Fighting",
+    "Flying",
+    "Poison",
+    "Ground",
+    "Rock",
+    "Bug",
+    "Ghost",
+    "Steel",
+    "Fire",
+    "Water",
+    "Grass",
+    "Electric",
+    "Psychic",
+    "Ice",
+    "Dragon",
+    "Dark",
+    "Fairy",
+    "Aether"
+  ],
+  "counts": {
+    "species": 404,
+    "with_stats": 404,
+    "with_locations": 277,
+    "variants": 100,
+    "events": 15,
+    "items": 225
+  }
+}
