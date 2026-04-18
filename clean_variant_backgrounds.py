@@ -1,112 +1,108 @@
-"""Remove the solid green background from variant sprites.
+"""Strict bg removal for variant sprites.
 
-Approach: flood-fill from every edge pixel inward, marking pixels within
-TOLERANCE of the sampled background color as transparent. Internal pixels
-of the same color (e.g. greens on a plant Pokemon's body) are untouched
-because the flood is only seeded from the outer border.
+Reads PNGs from `site/assets/variants_original/` (the never-modified raw
+extracts from the workbook) and writes cleaned PNGs to `site/assets/variants/`.
 
-Run from the project root:
-    python3 clean_variant_backgrounds.py [path-or-dir]
+Algorithm:
+  1. Per-image, sample the four corners. The most common corner color is
+     the background.
+  2. Replace EVERY pixel that exactly equals that color with transparent.
+  3. Do not touch any other pixel — no flood fill, no tolerance, no edge
+     expansion. The Odyssey artwork is pixel art with no anti-aliasing
+     (verified: corner-color pixels always have zero near-misses), so an
+     exact match is sound and cannot accidentally erase sprite pixels.
 
-With no args, processes every PNG in site/assets/variants/ in place.
+If the corner is already transparent (a manually-supplied PNG like
+Gorochu's), the file is copied through unchanged.
+
+Usage:
+    python3 clean_variant_backgrounds.py
+        # cleans variants_original/ -> variants/
+
+    python3 clean_variant_backgrounds.py <src.png> <dst.png>
+        # one-shot single-file clean
 """
 from __future__ import annotations
 
+import shutil
 import sys
-from collections import Counter, deque
+from collections import Counter
 from pathlib import Path
 
 from PIL import Image
 
-VARIANTS_DIR = Path(__file__).parent / "site" / "assets" / "variants"
-TOLERANCE = 38          # max Euclidean RGB distance from sampled bg to count as background
-EDGE_SAMPLE_PX = 2      # how deep into the image to look when picking seeds
+ROOT = Path(__file__).parent
+ORIGINALS_DIR = ROOT / "site" / "assets" / "variants_original"
+VARIANTS_DIR  = ROOT / "site" / "assets" / "variants"
 
 
-def _sample_bg_color(im: Image.Image) -> tuple[int, int, int]:
-    """Pick the dominant color of the four corners as the background."""
-    w, h = im.size
-    samples = []
-    for x in (0, w - 1):
-        for y in (0, h - 1):
-            r, g, b, _ = im.getpixel((x, y))
-            samples.append((r, g, b))
-    return Counter(samples).most_common(1)[0][0]
-
-
-def _close_enough(a: tuple[int, int, int], b: tuple[int, int, int], thresh_sq: int) -> bool:
-    dr, dg, db = a[0] - b[0], a[1] - b[1], a[2] - b[2]
-    return dr * dr + dg * dg + db * db <= thresh_sq
-
-
-def remove_background(path: Path) -> bool:
-    """Replace the connected outer background with transparency. Returns True if changed."""
-    im = Image.open(path).convert("RGBA")
+def _detect_bg(im: Image.Image) -> tuple[int, int, int, int] | None:
+    """Return the bg pixel value (RGBA) or None if the image is already transparent."""
     w, h = im.size
     px = im.load()
+    samples = [px[0, 0], px[w - 1, 0], px[0, h - 1], px[w - 1, h - 1]]
+    common, _ = Counter(samples).most_common(1)[0]
+    if common[3] == 0:
+        return None   # already transparent — nothing to clean
+    return common
 
-    bg = _sample_bg_color(im)
-    thresh_sq = TOLERANCE * TOLERANCE
 
-    visited = bytearray(w * h)   # 0 = unvisited, 1 = already cleared
-    queue: deque[tuple[int, int]] = deque()
+def clean_image(src: Path, dst: Path) -> tuple[int, tuple[int, int, int] | None]:
+    """Strip the bg from `src` and write to `dst`. Returns (pixels_cleared, bg_rgb_or_None)."""
+    im = Image.open(src).convert("RGBA")
+    bg = _detect_bg(im)
+    if bg is None:
+        # Pass through unchanged.
+        if src.resolve() != dst.resolve():
+            shutil.copyfile(src, dst)
+        return (0, None)
 
-    def maybe_seed(x: int, y: int) -> None:
-        if 0 <= x < w and 0 <= y < h and not visited[y * w + x]:
-            r, g, b, _a = px[x, y]
-            if _close_enough((r, g, b), bg, thresh_sq):
-                visited[y * w + x] = 1
-                queue.append((x, y))
-
-    # Seed from a thin strip along all four edges so we catch the bg even if
-    # the very corner is off (e.g. JPEG-style fringe).
-    for d in range(EDGE_SAMPLE_PX):
-        for x in range(w):
-            maybe_seed(x, d)
-            maybe_seed(x, h - 1 - d)
-        for y in range(h):
-            maybe_seed(d, y)
-            maybe_seed(w - 1 - d, y)
-
+    w, h = im.size
+    px = im.load()
     cleared = 0
-    while queue:
-        x, y = queue.popleft()
-        px[x, y] = (0, 0, 0, 0)
-        cleared += 1
-        for nx, ny in ((x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)):
-            if 0 <= nx < w and 0 <= ny < h and not visited[ny * w + nx]:
-                r, g, b, a = px[nx, ny]
-                if a != 0 and _close_enough((r, g, b), bg, thresh_sq):
-                    visited[ny * w + nx] = 1
-                    queue.append((nx, ny))
+    for y in range(h):
+        for x in range(w):
+            if px[x, y] == bg:
+                px[x, y] = (0, 0, 0, 0)
+                cleared += 1
+    im.save(dst, "PNG")
+    return (cleared, bg[:3])
 
-    if cleared == 0:
-        return False
-    im.save(path, "PNG")
-    return True
+
+def clean_dir(src_dir: Path, dst_dir: Path) -> dict[str, dict]:
+    """Clean every PNG in src_dir into dst_dir. Returns per-file stats."""
+    dst_dir.mkdir(parents=True, exist_ok=True)
+    stats: dict[str, dict] = {}
+    for src in sorted(src_dir.glob("*.png")):
+        dst = dst_dir / src.name
+        cleared, bg = clean_image(src, dst)
+        stats[src.name] = {"cleared": cleared, "bg": bg}
+    return stats
 
 
 def main(argv: list[str]) -> int:
-    targets: list[Path] = []
-    if len(argv) > 1:
-        for arg in argv[1:]:
-            p = Path(arg)
-            if p.is_dir():
-                targets.extend(sorted(p.glob("*.png")))
-            elif p.is_file():
-                targets.append(p)
-    else:
-        targets = sorted(VARIANTS_DIR.glob("*.png"))
+    if len(argv) == 3:
+        src = Path(argv[1]); dst = Path(argv[2])
+        cleared, bg = clean_image(src, dst)
+        print(f"{src.name}: cleared {cleared} px (bg={bg})")
+        return 0
 
-    if not targets:
-        print(f"no PNGs found", file=sys.stderr)
+    if not ORIGINALS_DIR.exists() or not any(ORIGINALS_DIR.glob("*.png")):
+        print(f"no PNGs in {ORIGINALS_DIR} — run build_data.py first to extract originals",
+              file=sys.stderr)
         return 1
 
-    changed = 0
-    for p in targets:
-        if remove_background(p):
-            changed += 1
-    print(f"processed {len(targets)} files, modified {changed}")
+    stats = clean_dir(ORIGINALS_DIR, VARIANTS_DIR)
+    total = sum(s["cleared"] for s in stats.values())
+    bg_counts = Counter(s["bg"] for s in stats.values() if s["bg"])
+    print(f"Cleaned {len(stats)} files; cleared {total:,} background px total.")
+    print(f"Background colors detected:")
+    for bg, n in bg_counts.most_common():
+        print(f"  {bg}: {n} files")
+    pass_through = [n for n, s in stats.items() if s["bg"] is None]
+    if pass_through:
+        print(f"{len(pass_through)} files passed through unchanged (already transparent): "
+              f"{', '.join(pass_through[:5])}{'...' if len(pass_through) > 5 else ''}")
     return 0
 
 

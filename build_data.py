@@ -31,6 +31,7 @@ BOSSES_XLSX = HERE / "Level Cap, Boss, Miniboss, Sea Map, Sidequests (v4.1.1).xl
 SITE_DIR    = HERE / "site"
 OUT_DIR     = SITE_DIR / "data"
 VARIANTS_DIR = SITE_DIR / "assets" / "variants"
+ORIGINALS_DIR = SITE_DIR / "assets" / "variants_original"
 
 STAT_SHEETS = ["#1-151", "#152-251", "#252-386", "4th Gen", "Paradox"]
 
@@ -604,17 +605,18 @@ def parse_move_tutors_sheet(wb):
 # Variant sprite extraction
 # -----------------------------------------------------------------------------
 
-def _strip_sprite_background(path: Path) -> None:
-    """Flood-fill the solid colored background out of an extracted variant sprite.
+def _clean_originals_to_variants(originals_dir: Path, cleaned_dir: Path) -> None:
+    """Strip the solid bg from every PNG in originals_dir into cleaned_dir.
 
-    Seeds the fill from every edge pixel so internal pixels of the same color
-    (e.g. greens on a plant Pokemon) are preserved.
+    Strict equality removal — bg is whatever color the corner of each image
+    actually is. Pixel-art assets have no anti-aliasing so this will not eat
+    sprite pixels even when the body color is visually similar to the bg.
     """
     try:
-        from clean_variant_backgrounds import remove_background
+        from clean_variant_backgrounds import clean_dir
     except ImportError:
         return
-    remove_background(path)
+    clean_dir(originals_dir, cleaned_dir)
 
 
 def extract_variant_sprites(xlsx_path: Path, out_dir: Path):
@@ -739,13 +741,11 @@ def extract_variant_sprites(xlsx_path: Path, out_dir: Path):
                     data = z.read(img_n)
                     p = out_dir / f"{vslug}.png"
                     p.write_bytes(data)
-                    _strip_sprite_background(p)
                     normal_path = f"assets/variants/{vslug}.png"
                 if img_s:
                     data = z.read(img_s)
                     p = out_dir / f"{vslug}-shiny.png"
                     p.write_bytes(data)
-                    _strip_sprite_background(p)
                     shiny_path = f"assets/variants/{vslug}-shiny.png"
                 rec = {
                     "base_display": base,
@@ -824,10 +824,13 @@ def detect_evolution_items(condition):
 def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    print("Extracting variant sprites...", flush=True)
-    sprite_map = extract_variant_sprites(STATS_XLSX, VARIANTS_DIR)
+    print("Extracting variant sprites to originals dir...", flush=True)
+    sprite_map = extract_variant_sprites(STATS_XLSX, ORIGINALS_DIR)
     print(f"  sprites: {sum(1 for v in sprite_map.values() if v.get('normal'))} normal, "
           f"{sum(1 for v in sprite_map.values() if v.get('shiny'))} shiny", flush=True)
+
+    print("Cleaning sprite backgrounds (originals -> variants)...", flush=True)
+    _clean_originals_to_variants(ORIGINALS_DIR, VARIANTS_DIR)
 
     print("Loading Pokémon Stats workbook...", flush=True)
     wb_stats = openpyxl.load_workbook(STATS_XLSX, read_only=True, data_only=True)
