@@ -91,6 +91,28 @@ DEX_ALIASES = {
     "DUDUNSPARS": "DUDUNSPARCE",
 }
 
+# Pokédex sheet display fixes (typos): canon(dex name) -> proper name.
+DEX_NAME_FIXES = {
+    "DUDUNSPARS": "Dudunsparce",
+}
+
+# Pokémon Showdown's sprite slug doesn't always match our derived slug. Map
+# canon(name) -> the literal slug Showdown serves.
+SPRITE_SLUG_FIXES = {
+    "SANDYSHOCK":  "sandyshocks",
+    "SANDYSHOCKS": "sandyshocks",
+    "DUDUNSPARS":  "dudunsparce",
+    "DUDUNSPARCE": "dudunsparce",
+}
+
+# Species that are flagged with ⭐ in the docs but are actually mainline-game
+# regional/Hisuian forms, not Etrian Variants. Don't ribbon them as Variant.
+NOT_ETRIAN_VARIANT = {
+    "GRIMER", "MUK",
+    "VOLTORB", "ELECTRODE",
+    "TYPHLOSION",
+}
+
 def nidoran_canon(name: str) -> str:
     n = (name or "").upper()
     if "NIDORAN" in n:
@@ -874,13 +896,17 @@ def main():
             sp2 = all_species.get(k)
             dex2 = dex_index.get(k) or dex_index.get(strip_form(k))
             disp = sp2["display_name"] if sp2 else (dex2["name"] if dex2 else k.title())
+            dex2_canon = canon(dex2["name"]) if dex2 else None
+            fam_display = DEX_NAME_FIXES.get(dex2_canon, dex2["name"] if dex2 else disp)
+            fam_sprite = SPRITE_SLUG_FIXES.get(dex2_canon) or sprite_slug(fam_display)
+            base_only2 = disp.replace("⭐", "").strip()
             family.append({
                 "key": k,
                 "name": disp,
                 "slug": slugify(disp),
                 "dex": dex2["dex"] if dex2 else None,
-                "sprite_slug": sprite_slug(dex2["name"] if dex2 else disp),
-                "is_variant": "⭐" in disp,
+                "sprite_slug": fam_sprite,
+                "is_variant": ("⭐" in disp) and canon(base_only2) not in NOT_ETRIAN_VARIANT,
             })
         family.sort(key=lambda x: (0, int(x["dex"])) if x["dex"] else (1, 9999))
 
@@ -891,11 +917,18 @@ def main():
         # Identify any items referenced by this species' own evolution condition
         evolution_items = detect_evolution_items(ev)
 
-        # Variant sprite path (for ⭐ species)
+        # Reclassify species that the docs flag with ⭐ but are actually mainline
+        # regional forms (Alolan Grimer/Muk, Hisuian Voltorb line, Hisuian
+        # Typhlosion). They keep the ⭐ in display_name but lose the variant flag
+        # so the UI ribbon doesn't claim they're Etrian Variants.
+        base_only = sp["display_name"].replace("⭐", "").strip()
+        is_variant = sp["is_variant"] and canon(base_only) not in NOT_ETRIAN_VARIANT
+
+        # Variant sprite path. Comes from the Etrian Variants sheet for true
+        # Etrian Variants, or from a manually-dropped file in
+        # site/assets/variants/<slug>.png for custom-art species like Gorochu.
         variant_sprite = None
-        if sp["is_variant"]:
-            # The ⭐ stat-sheet name is usually "⭐ BASE" e.g. "⭐ RATTATA".
-            base_only = sp["display_name"].replace("⭐", "").strip()
+        if is_variant:
             rec = sprite_map.get(canon(base_only)) or sprite_map.get(canon(sp["display_name"]))
             if rec:
                 variant_sprite = {
@@ -903,15 +936,35 @@ def main():
                     "shiny":  rec.get("shiny"),
                     "variant_name": rec.get("variant_display"),
                 }
+        # Manual sprite fallback (e.g. Gorochu): if a PNG with the slug exists
+        # in the variants dir, use it even when the species isn't a variant.
+        if not variant_sprite:
+            display_for_slug = DEX_NAME_FIXES.get(canon(dex["name"]), dex["name"]) if dex else sp["display_name"]
+            slug_for_file = slugify(display_for_slug)
+            normal_file = VARIANTS_DIR / f"{slug_for_file}.png"
+            if normal_file.exists():
+                shiny_file = VARIANTS_DIR / f"{slug_for_file}-shiny.png"
+                variant_sprite = {
+                    "normal": f"assets/variants/{slug_for_file}.png",
+                    "shiny":  f"assets/variants/{slug_for_file}-shiny.png" if shiny_file.exists() else None,
+                    "variant_name": None,
+                }
+
+        # Apply Pokédex sheet name fixes (typos in the source) and Showdown
+        # sprite-slug overrides where our derived slug doesn't match.
+        dex_name_raw = dex["name"] if dex else sp["display_name"]
+        dex_canon = canon(dex_name_raw)
+        display_name = DEX_NAME_FIXES.get(dex_canon, dex_name_raw if dex else sp["display_name"].replace("⭐","").strip().title())
+        sprite_slug_value = SPRITE_SLUG_FIXES.get(dex_canon) or sprite_slug(display_name)
 
         entry = {
             "key": key,
             "display_name": sp["display_name"],
-            "name": (dex["name"] if dex else sp["display_name"].replace("⭐","").strip().title()),
+            "name": display_name,
             "slug": slugify(sp["display_name"]),
-            "sprite_slug": sprite_slug(dex["name"] if dex else sp["display_name"]),
+            "sprite_slug": sprite_slug_value,
             "dex": dex["dex"] if dex else None,
-            "is_variant": sp["is_variant"],
+            "is_variant": is_variant,
             "source_sheet": sp["source_sheet"],
             "types": sp.get("types", []),
             "abilities": sp.get("abilities", []),

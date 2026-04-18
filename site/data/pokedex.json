@@ -10466,7 +10466,11 @@
     ],
     "is_event": false,
     "has_wild": true,
-    "variant_sprite": null
+    "variant_sprite": {
+      "normal": "assets/variants/golem.png",
+      "shiny": "assets/variants/golem-shiny.png",
+      "variant_name": null
+    }
   },
   {
     "key": "PONYTA",
@@ -11837,7 +11841,7 @@
     "slug": "grimer",
     "sprite_slug": "grimer",
     "dex": "088",
-    "is_variant": true,
+    "is_variant": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -11868,7 +11872,7 @@
         "slug": "grimer",
         "dex": "088",
         "sprite_slug": "grimer",
-        "is_variant": true
+        "is_variant": false
       },
       {
         "key": "MUK",
@@ -11876,7 +11880,7 @@
         "slug": "muk",
         "dex": "089",
         "sprite_slug": "muk",
-        "is_variant": true
+        "is_variant": false
       }
     ],
     "stats": {
@@ -11963,7 +11967,7 @@
     "slug": "muk",
     "sprite_slug": "muk",
     "dex": "089",
-    "is_variant": true,
+    "is_variant": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -11985,7 +11989,7 @@
         "slug": "grimer",
         "dex": "088",
         "sprite_slug": "grimer",
-        "is_variant": true
+        "is_variant": false
       },
       {
         "key": "MUK",
@@ -11993,7 +11997,7 @@
         "slug": "muk",
         "dex": "089",
         "sprite_slug": "muk",
-        "is_variant": true
+        "is_variant": false
       }
     ],
     "stats": {
@@ -13469,7 +13473,7 @@
     "slug": "voltorb",
     "sprite_slug": "voltorb",
     "dex": "100",
-    "is_variant": true,
+    "is_variant": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -13500,7 +13504,7 @@
         "slug": "voltorb",
         "dex": "100",
         "sprite_slug": "voltorb",
-        "is_variant": true
+        "is_variant": false
       },
       {
         "key": "ELECTRODE",
@@ -13508,7 +13512,7 @@
         "slug": "electrode",
         "dex": "101",
         "sprite_slug": "electrode",
-        "is_variant": true
+        "is_variant": false
       }
     ],
     "stats": {
@@ -13587,7 +13591,7 @@
     "slug": "electrode",
     "sprite_slug": "electrode",
     "dex": "101",
-    "is_variant": true,
+    "is_variant": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -13609,7 +13613,7 @@
         "slug": "voltorb",
         "dex": "100",
         "sprite_slug": "voltorb",
-        "is_variant": true
+        "is_variant": false
       },
       {
         "key": "ELECTRODE",
@@ -13617,7 +13621,7 @@
         "slug": "electrode",
         "dex": "101",
         "sprite_slug": "electrode",
-        "is_variant": true
+        "is_variant": false
       }
     ],
     "stats": {
@@ -21247,7 +21251,7 @@
         "slug": "typhlosion",
         "dex": "157",
         "sprite_slug": "typhlosion",
-        "is_variant": true
+        "is_variant": false
       }
     ],
     "stats": {
@@ -21372,7 +21376,7 @@
         "slug": "typhlosion",
         "dex": "157",
         "sprite_slug": "typhlosion",
-        "is_variant": true
+        "is_variant": false
       }
     ],
     "stats": {
@@ -21455,7 +21459,7 @@
     "slug": "typhlosion",
     "sprite_slug": "typhlosion",
     "dex": "157",
-    "is_variant": true,
+    "is_variant": false,
     "source_sheet": "#152-251",
     "types": [
       "Fire",
@@ -21493,7 +21497,7 @@
         "slug": "typhlosion",
         "dex": "157",
         "sprite_slug": "typhlosion",
-        "is_variant": true
+        "is_variant": false
       }
     ],
     "stats": {
@@ -23575,7 +23579,7 @@
     "display_name": "SANDY SHOCK",
     "name": "SandyShock",
     "slug": "sandy-shock",
-    "sprite_slug": "sandyshock",
+    "sprite_slug": "sandyshocks",
     "dex": "173",
     "is_variant": false,
     "source_sheet": "Paradox",
@@ -23597,7 +23601,7 @@
         "name": "SANDY SHOCK",
         "slug": "sandy-shock",
         "dex": "173",
-        "sprite_slug": "sandyshock",
+        "sprite_slug": "sandyshocks",
         "is_variant": false
       }
     ],
@@ -27482,7 +27486,11 @@
     "locations": [],
     "is_event": false,
     "has_wild": false,
-    "variant_sprite": null
+    "variant_sprite": {
+      "normal": "assets/variants/gorochu.png",
+      "shiny": "assets/variants/gorochu-shiny.png",
+      "variant_name": null
+    }
   },
   {
     "key": "WOBBUFFET",
@@ -28038,7 +28046,7 @@
         "name": "DUDUNSPARCE",
         "slug": "dudunsparce",
         "dex": "367",
-        "sprite_slug": "dudunspars",
+        "sprite_slug": "dudunsparce",
         "is_variant": false
       }
     ],
@@ -49512,9 +49520,9 @@
   {
     "key": "DUDUNSPARCE",
     "display_name": "DUDUNSPARCE",
-    "name": "Dudunspars",
+    "name": "Dudunsparce",
     "slug": "dudunsparce",
-    "sprite_slug": "dudunspars",
+    "sprite_slug": "dudunsparce",
     "dex": "367",
     "is_variant": false,
     "source_sheet": "#152-251",
@@ -49544,7 +49552,7 @@
         "name": "DUDUNSPARCE",
         "slug": "dudunsparce",
         "dex": "367",
-        "sprite_slug": "dudunspars",
+        "sprite_slug": "dudunsparce",
         "is_variant": false
       }
     ],
