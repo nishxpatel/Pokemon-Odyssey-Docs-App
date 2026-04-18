@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Items — Pokémon Odyssey Pokédex</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <span class="logo">Pokémon Odyssey</span>
+  <span class="sub">Pokédex · v4.1.1</span>
+  <nav>
+    <a href="index.html">Pokédex</a>
+    <a href="items.html">Items</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <h1>Items</h1>
+  <p class="disclaimer" id="meta-line">Loading…</p>
+
+  <div class="filters">
+    <input id="search" class="search" placeholder="Search items by name…" type="search" autocomplete="off">
+    <select id="kind-filter" class="select">
+      <option value="">All sources</option>
+      <option value="shop">Shop</option>
+      <option value="gather">Gathering / Mining</option>
+      <option value="pickup">Pickup</option>
+      <option value="location">Location (chest/quest)</option>
+      <option value="tm">TM</option>
+    </select>
+    <select id="sort" class="select">
+      <option value="name">Sort: Name (A→Z)</option>
+      <option value="sources">Sort: Most sources</option>
+    </select>
+  </div>
+
+  <table class="items-table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Sources</th>
+      </tr>
+    </thead>
+    <tbody id="items-tbody"></tbody>
+  </table>
+  <p class="empty-msg" id="empty" style="display:none">No items match your filters.</p>
+</main>
+
+<script src="assets/items-list.js"></script>
+</body>
+</html>
