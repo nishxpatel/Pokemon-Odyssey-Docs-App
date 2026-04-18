@@ -68,6 +68,15 @@ These files are laid out for human eyes, not as relational tables. Expect:
 - `Abyssal God - Bossfight guide`, `Lords of the sea`, `Sea Bosses` — one block per fight.
 - `Sidequests` — `# | Name | Location | Description | Reward` (mostly tabular, with an unlock-chain column on the right).
 
+## Version control workflow
+
+This project is tracked at https://github.com/nishxpatel/Pokemon-Odyssey-Docs-App. As you complete work, commit it to git and push to GitHub so progress is never lost and changes are easy to revert.
+
+- After finishing a logical unit of work (a feature, a bug fix, a parser change, a data regeneration), stage the relevant files and create a commit. Don't batch unrelated changes into one commit.
+- Write clean, descriptive commit messages focused on the *why* of the change, not just the *what*. One-line subject under ~70 chars; add a body if context is needed.
+- Push to `origin/main` after each commit (or after a small group of related commits) so the remote stays in sync.
+- Never force-push, never rewrite published history, never `git add -A` blindly (the `.gitignore` already excludes `.claude/`, `__pycache__/`, `.DS_Store`, `*.pyc` — but stage explicit paths anyway to avoid accidentally committing regenerated junk).
+
 ## Glossary
 
 - **Stratum** — Etrian Odyssey dungeon tier; progression gate for level caps and postgame content. Strata 1–8 exist.
