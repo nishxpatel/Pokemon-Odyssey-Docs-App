@@ -11839,7 +11839,7 @@
     "display_name": "⭐ GRIMER",
     "name": "Grimer",
     "slug": "grimer",
-    "sprite_slug": "grimer",
+    "sprite_slug": "grimer-alola",
     "dex": "088",
     "is_variant": false,
     "source_sheet": "#1-151",
@@ -11871,7 +11871,7 @@
         "name": "⭐ GRIMER",
         "slug": "grimer",
         "dex": "088",
-        "sprite_slug": "grimer",
+        "sprite_slug": "grimer-alola",
         "is_variant": false
       },
       {
@@ -11879,7 +11879,7 @@
         "name": "⭐ MUK",
         "slug": "muk",
         "dex": "089",
-        "sprite_slug": "muk",
+        "sprite_slug": "muk-alola",
         "is_variant": false
       }
     ],
@@ -11965,7 +11965,7 @@
     "display_name": "⭐ MUK",
     "name": "Muk",
     "slug": "muk",
-    "sprite_slug": "muk",
+    "sprite_slug": "muk-alola",
     "dex": "089",
     "is_variant": false,
     "source_sheet": "#1-151",
@@ -11988,7 +11988,7 @@
         "name": "⭐ GRIMER",
         "slug": "grimer",
         "dex": "088",
-        "sprite_slug": "grimer",
+        "sprite_slug": "grimer-alola",
         "is_variant": false
       },
       {
@@ -11996,7 +11996,7 @@
         "name": "⭐ MUK",
         "slug": "muk",
         "dex": "089",
-        "sprite_slug": "muk",
+        "sprite_slug": "muk-alola",
         "is_variant": false
       }
     ],
@@ -13471,7 +13471,7 @@
     "display_name": "⭐ VOLTORB",
     "name": "Voltorb",
     "slug": "voltorb",
-    "sprite_slug": "voltorb",
+    "sprite_slug": "voltorb-hisui",
     "dex": "100",
     "is_variant": false,
     "source_sheet": "#1-151",
@@ -13503,7 +13503,7 @@
         "name": "⭐ VOLTORB",
         "slug": "voltorb",
         "dex": "100",
-        "sprite_slug": "voltorb",
+        "sprite_slug": "voltorb-hisui",
         "is_variant": false
       },
       {
@@ -13511,7 +13511,7 @@
         "name": "⭐ ELECTRODE",
         "slug": "electrode",
         "dex": "101",
-        "sprite_slug": "electrode",
+        "sprite_slug": "electrode-hisui",
         "is_variant": false
       }
     ],
@@ -13589,7 +13589,7 @@
     "display_name": "⭐ ELECTRODE",
     "name": "Electrode",
     "slug": "electrode",
-    "sprite_slug": "electrode",
+    "sprite_slug": "electrode-hisui",
     "dex": "101",
     "is_variant": false,
     "source_sheet": "#1-151",
@@ -13612,7 +13612,7 @@
         "name": "⭐ VOLTORB",
         "slug": "voltorb",
         "dex": "100",
-        "sprite_slug": "voltorb",
+        "sprite_slug": "voltorb-hisui",
         "is_variant": false
       },
       {
@@ -13620,7 +13620,7 @@
         "name": "⭐ ELECTRODE",
         "slug": "electrode",
         "dex": "101",
-        "sprite_slug": "electrode",
+        "sprite_slug": "electrode-hisui",
         "is_variant": false
       }
     ],
@@ -21250,7 +21250,7 @@
         "name": "⭐ TYPHLOSION",
         "slug": "typhlosion",
         "dex": "157",
-        "sprite_slug": "typhlosion",
+        "sprite_slug": "typhlosion-hisui",
         "is_variant": false
       }
     ],
@@ -21375,7 +21375,7 @@
         "name": "⭐ TYPHLOSION",
         "slug": "typhlosion",
         "dex": "157",
-        "sprite_slug": "typhlosion",
+        "sprite_slug": "typhlosion-hisui",
         "is_variant": false
       }
     ],
@@ -21457,7 +21457,7 @@
     "display_name": "⭐ TYPHLOSION",
     "name": "Typhlosion",
     "slug": "typhlosion",
-    "sprite_slug": "typhlosion",
+    "sprite_slug": "typhlosion-hisui",
     "dex": "157",
     "is_variant": false,
     "source_sheet": "#152-251",
@@ -21496,7 +21496,7 @@
         "name": "⭐ TYPHLOSION",
         "slug": "typhlosion",
         "dex": "157",
-        "sprite_slug": "typhlosion",
+        "sprite_slug": "typhlosion-hisui",
         "is_variant": false
       }
     ],

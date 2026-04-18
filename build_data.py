@@ -103,6 +103,13 @@ SPRITE_SLUG_FIXES = {
     "SANDYSHOCKS": "sandyshocks",
     "DUDUNSPARS":  "dudunsparce",
     "DUDUNSPARCE": "dudunsparce",
+    # Mainline regional forms — the docs list only the regional form so the
+    # base slug should serve the regional Showdown sprite.
+    "GRIMER":      "grimer-alola",
+    "MUK":         "muk-alola",
+    "VOLTORB":     "voltorb-hisui",
+    "ELECTRODE":   "electrode-hisui",
+    "TYPHLOSION":  "typhlosion-hisui",
 }
 
 # Species that are flagged with ⭐ in the docs but are actually mainline-game
