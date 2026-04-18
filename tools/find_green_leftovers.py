@@ -26,8 +26,12 @@ VARIANTS_DIR = ROOT / "site" / "assets" / "variants"
 OUT_HTML = Path(__file__).parent / "green_review.html"
 
 BG_RGB = (156, 213, 164)   # the workbook's background green
-TOLERANCE_SQ = 38 * 38     # match the cleaner's tolerance
-MIN_PIXELS = 4             # at least this many surviving greenish pixels to flag
+# Tight tolerance: this detector has no edge-connectivity check, so a wide
+# tolerance would flag any "greenish" body pixel. We only want pixels that
+# are essentially the exact bg color and survived the flood fill — i.e.
+# disconnected islands of true background.
+TOLERANCE_SQ = 5 * 5
+MIN_PIXELS = 1             # surface anything with even one surviving bg pixel
 
 
 def scan(path: Path) -> int:

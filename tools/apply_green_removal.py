@@ -26,7 +26,10 @@ DEFAULT_TAGS = [
 ]
 
 BG_RGB = (156, 213, 164)
-TOLERANCE_SQ = 42 * 42   # slightly wider than the detector to catch fringe pixels
+# Tight tolerance — chroma-key the exact bg color only. A wide tolerance
+# without an edge-connectivity check would eat anti-aliased fringe pixels
+# and any body pixel that's coincidentally close to the bg green.
+TOLERANCE_SQ = 5 * 5
 
 
 def strip_green(path: Path) -> int:
