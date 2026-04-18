@@ -567,6 +567,19 @@ def parse_move_tutors_sheet(wb):
 # Variant sprite extraction
 # -----------------------------------------------------------------------------
 
+def _strip_sprite_background(path: Path) -> None:
+    """Flood-fill the solid colored background out of an extracted variant sprite.
+
+    Seeds the fill from every edge pixel so internal pixels of the same color
+    (e.g. greens on a plant Pokemon) are preserved.
+    """
+    try:
+        from clean_variant_backgrounds import remove_background
+    except ImportError:
+        return
+    remove_background(path)
+
+
 def extract_variant_sprites(xlsx_path: Path, out_dir: Path):
     """Pull embedded PNGs from the 'Etrian Variants' sheet and save under out_dir.
 
@@ -684,11 +697,13 @@ def extract_variant_sprites(xlsx_path: Path, out_dir: Path):
                     data = z.read(img_n)
                     p = out_dir / f"{vslug}.png"
                     p.write_bytes(data)
+                    _strip_sprite_background(p)
                     normal_path = f"assets/variants/{vslug}.png"
                 if img_s:
                     data = z.read(img_s)
                     p = out_dir / f"{vslug}-shiny.png"
                     p.write_bytes(data)
+                    _strip_sprite_background(p)
                     shiny_path = f"assets/variants/{vslug}-shiny.png"
                 rec = {
                     "base_display": base,
