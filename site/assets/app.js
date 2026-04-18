@@ -47,8 +47,8 @@ function cardHTML(p) {
   const starPrefix = p.is_variant ? `<span class="star">★</span>` : "";
   const dexText = p.dex ? `#${p.dex}` : "—";
   let ribbon = "";
-  if (p.is_event) ribbon = `<span class="event-ribbon">Event</span>`;
-  else if (p.is_variant) ribbon = `<span class="variant-ribbon">Variant</span>`;
+  if (p.is_variant) ribbon = `<span class="variant-ribbon">Variant</span>`;
+  else if (p.is_event) ribbon = `<span class="event-ribbon">Event</span>`;
 
   const total = p.stats && p.stats.total ? `<div class="card-total">BST ${p.stats.total}</div>` : "";
 
