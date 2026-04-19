@@ -6474,6 +6474,14 @@
         "dex": "045",
         "sprite_slug": "vileplume",
         "is_variant": false
+      },
+      {
+        "key": "BELLOSSOM",
+        "name": "⭐ BELLOSSOM",
+        "slug": "bellossom",
+        "dex": "182",
+        "sprite_slug": "bellossom",
+        "is_variant": true
       }
     ],
     "stats": {
@@ -6612,10 +6620,19 @@
         "to_key": "VILEPLUME",
         "to_name": "VILEPLUME",
         "to_slug": "vileplume",
-        "condition": "Leaf Stone/Sun Stone",
-        "kind": "stage",
+        "condition": "Leaf Stone",
+        "kind": "branch",
         "items": [
-          "Leaf Stone",
+          "Leaf Stone"
+        ]
+      },
+      {
+        "to_key": "BELLOSSOM",
+        "to_name": "⭐ BELLOSSOM",
+        "to_slug": "bellossom",
+        "condition": "Sun Stone",
+        "kind": "branch",
+        "items": [
           "Sun Stone"
         ]
       }
@@ -6644,6 +6661,14 @@
         "dex": "045",
         "sprite_slug": "vileplume",
         "is_variant": false
+      },
+      {
+        "key": "BELLOSSOM",
+        "name": "⭐ BELLOSSOM",
+        "slug": "bellossom",
+        "dex": "182",
+        "sprite_slug": "bellossom",
+        "is_variant": true
       }
     ],
     "stats": {
@@ -6792,6 +6817,14 @@
         "dex": "045",
         "sprite_slug": "vileplume",
         "is_variant": false
+      },
+      {
+        "key": "BELLOSSOM",
+        "name": "⭐ BELLOSSOM",
+        "slug": "bellossom",
+        "dex": "182",
+        "sprite_slug": "bellossom",
+        "is_variant": true
       }
     ],
     "stats": {
@@ -9131,6 +9164,14 @@
         "dex": "062",
         "sprite_slug": "poliwrath",
         "is_variant": false
+      },
+      {
+        "key": "POLITOED",
+        "name": "POLITOED",
+        "slug": "politoed",
+        "dex": "186",
+        "sprite_slug": "politoed",
+        "is_variant": false
       }
     ],
     "stats": {
@@ -9345,10 +9386,19 @@
         "to_key": "POLIWRATH",
         "to_name": "POLIWRATH",
         "to_slug": "poliwrath",
-        "condition": "Water Stone/Link Stone",
-        "kind": "stage",
+        "condition": "Water Stone",
+        "kind": "branch",
         "items": [
-          "Water Stone",
+          "Water Stone"
+        ]
+      },
+      {
+        "to_key": "POLITOED",
+        "to_name": "POLITOED",
+        "to_slug": "politoed",
+        "condition": "Link Stone",
+        "kind": "branch",
+        "items": [
           "Link Stone"
         ]
       }
@@ -9376,6 +9426,14 @@
         "slug": "poliwrath",
         "dex": "062",
         "sprite_slug": "poliwrath",
+        "is_variant": false
+      },
+      {
+        "key": "POLITOED",
+        "name": "POLITOED",
+        "slug": "politoed",
+        "dex": "186",
+        "sprite_slug": "politoed",
         "is_variant": false
       }
     ],
@@ -9552,6 +9610,14 @@
         "slug": "poliwrath",
         "dex": "062",
         "sprite_slug": "poliwrath",
+        "is_variant": false
+      },
+      {
+        "key": "POLITOED",
+        "name": "POLITOED",
+        "slug": "politoed",
+        "dex": "186",
+        "sprite_slug": "politoed",
         "is_variant": false
       }
     ],
@@ -12272,8 +12338,16 @@
         "to_key": "SLOWBRO",
         "to_name": "SLOWBRO",
         "to_slug": "slowbro",
-        "condition": "LV.37/Link Stone",
-        "kind": "stage",
+        "condition": "LV.37",
+        "kind": "branch",
+        "items": []
+      },
+      {
+        "to_key": "SLOWKING",
+        "to_name": "SLOWKING",
+        "to_slug": "slowking",
+        "condition": "Link Stone",
+        "kind": "branch",
         "items": [
           "Link Stone"
         ]
@@ -12294,6 +12368,14 @@
         "slug": "slowbro",
         "dex": "080",
         "sprite_slug": "slowbro",
+        "is_variant": false
+      },
+      {
+        "key": "SLOWKING",
+        "name": "SLOWKING",
+        "slug": "slowking",
+        "dex": "199",
+        "sprite_slug": "slowking",
         "is_variant": false
       }
     ],
@@ -12455,6 +12537,14 @@
         "slug": "slowbro",
         "dex": "080",
         "sprite_slug": "slowbro",
+        "is_variant": false
+      },
+      {
+        "key": "SLOWKING",
+        "name": "SLOWKING",
+        "slug": "slowking",
+        "dex": "199",
+        "sprite_slug": "slowking",
         "is_variant": false
       }
     ],
@@ -18959,10 +19049,19 @@
         "to_key": "KLEAVOR",
         "to_name": "KLEAVOR",
         "to_slug": "kleavor",
-        "condition": "B. Augurite/Link Stone",
-        "kind": "stage",
+        "condition": "B. Augurite",
+        "kind": "branch",
         "items": [
-          "B. Augurite",
+          "B. Augurite"
+        ]
+      },
+      {
+        "to_key": "SCIZOR",
+        "to_name": "SCIZOR",
+        "to_slug": "scizor",
+        "condition": "Link Stone",
+        "kind": "branch",
+        "items": [
           "Link Stone"
         ]
       }
@@ -18982,6 +19081,14 @@
         "slug": "kleavor",
         "dex": "132",
         "sprite_slug": "kleavor",
+        "is_variant": false
+      },
+      {
+        "key": "SCIZOR",
+        "name": "SCIZOR",
+        "slug": "scizor",
+        "dex": "212",
+        "sprite_slug": "scizor",
         "is_variant": false
       }
     ],
@@ -20569,6 +20676,14 @@
         "slug": "kleavor",
         "dex": "132",
         "sprite_slug": "kleavor",
+        "is_variant": false
+      },
+      {
+        "key": "SCIZOR",
+        "name": "SCIZOR",
+        "slug": "scizor",
+        "dex": "212",
+        "sprite_slug": "scizor",
         "is_variant": false
       }
     ],
@@ -28623,6 +28738,30 @@
     "evolution_targets": [],
     "family": [
       {
+        "key": "ODDISH",
+        "name": "ODDISH",
+        "slug": "oddish",
+        "dex": "043",
+        "sprite_slug": "oddish",
+        "is_variant": false
+      },
+      {
+        "key": "GLOOM",
+        "name": "GLOOM",
+        "slug": "gloom",
+        "dex": "044",
+        "sprite_slug": "gloom",
+        "is_variant": false
+      },
+      {
+        "key": "VILEPLUME",
+        "name": "VILEPLUME",
+        "slug": "vileplume",
+        "dex": "045",
+        "sprite_slug": "vileplume",
+        "is_variant": false
+      },
+      {
         "key": "BELLOSSOM",
         "name": "⭐ BELLOSSOM",
         "slug": "bellossom",
@@ -29242,6 +29381,30 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "POLIWAG",
+        "name": "POLIWAG",
+        "slug": "poliwag",
+        "dex": "060",
+        "sprite_slug": "poliwag",
+        "is_variant": false
+      },
+      {
+        "key": "POLIWHIRL",
+        "name": "POLIWHIRL",
+        "slug": "poliwhirl",
+        "dex": "061",
+        "sprite_slug": "poliwhirl",
+        "is_variant": false
+      },
+      {
+        "key": "POLIWRATH",
+        "name": "POLIWRATH",
+        "slug": "poliwrath",
+        "dex": "062",
+        "sprite_slug": "poliwrath",
+        "is_variant": false
+      },
       {
         "key": "POLITOED",
         "name": "POLITOED",
@@ -31294,6 +31457,22 @@
     "evolution_targets": [],
     "family": [
       {
+        "key": "SLOWPOKE",
+        "name": "SLOWPOKE",
+        "slug": "slowpoke",
+        "dex": "079",
+        "sprite_slug": "slowpoke",
+        "is_variant": false
+      },
+      {
+        "key": "SLOWBRO",
+        "name": "SLOWBRO",
+        "slug": "slowbro",
+        "dex": "080",
+        "sprite_slug": "slowbro",
+        "is_variant": false
+      },
+      {
         "key": "SLOWKING",
         "name": "SLOWKING",
         "slug": "slowking",
@@ -33210,6 +33389,22 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "SCYTHER",
+        "name": "SCYTHER",
+        "slug": "scyther",
+        "dex": "123",
+        "sprite_slug": "scyther",
+        "is_variant": false
+      },
+      {
+        "key": "KLEAVOR",
+        "name": "KLEAVOR",
+        "slug": "kleavor",
+        "dex": "132",
+        "sprite_slug": "kleavor",
+        "is_variant": false
+      },
       {
         "key": "SCIZOR",
         "name": "SCIZOR",
@@ -42916,6 +43111,14 @@
         "dex": "282",
         "sprite_slug": "gardevoir",
         "is_variant": true
+      },
+      {
+        "key": "GALLADE",
+        "name": "⭐ GALLADE",
+        "slug": "gallade",
+        "dex": "403",
+        "sprite_slug": "gallade",
+        "is_variant": true
       }
     ],
     "stats": {
@@ -43050,8 +43253,16 @@
         "to_key": "GARDEVOIR",
         "to_name": "⭐ GARDEVOIR",
         "to_slug": "gardevoir",
-        "condition": "LV.30/Dawn Stone",
-        "kind": "stage",
+        "condition": "LV.30",
+        "kind": "branch",
+        "items": []
+      },
+      {
+        "to_key": "GALLADE",
+        "to_name": "⭐ GALLADE",
+        "to_slug": "gallade",
+        "condition": "Dawn Stone",
+        "kind": "branch",
         "items": [
           "Dawn Stone"
         ]
@@ -43080,6 +43291,14 @@
         "slug": "gardevoir",
         "dex": "282",
         "sprite_slug": "gardevoir",
+        "is_variant": true
+      },
+      {
+        "key": "GALLADE",
+        "name": "⭐ GALLADE",
+        "slug": "gallade",
+        "dex": "403",
+        "sprite_slug": "gallade",
         "is_variant": true
       }
     ],
@@ -43239,6 +43458,14 @@
         "slug": "gardevoir",
         "dex": "282",
         "sprite_slug": "gardevoir",
+        "is_variant": true
+      },
+      {
+        "key": "GALLADE",
+        "name": "⭐ GALLADE",
+        "slug": "gallade",
+        "dex": "403",
+        "sprite_slug": "gallade",
         "is_variant": true
       }
     ],
@@ -55530,8 +55757,16 @@
         "to_key": "GLALIE",
         "to_name": "GLALIE",
         "to_slug": "glalie",
-        "condition": "LV.42/Dawn Stone",
-        "kind": "stage",
+        "condition": "LV.42",
+        "kind": "branch",
+        "items": []
+      },
+      {
+        "to_key": "FROSLASS",
+        "to_name": "FROSLASS",
+        "to_slug": "froslass",
+        "condition": "Dawn Stone",
+        "kind": "branch",
         "items": [
           "Dawn Stone"
         ]
@@ -55552,6 +55787,14 @@
         "slug": "glalie",
         "dex": "362",
         "sprite_slug": "glalie",
+        "is_variant": false
+      },
+      {
+        "key": "FROSLASS",
+        "name": "FROSLASS",
+        "slug": "froslass",
+        "dex": "400",
+        "sprite_slug": "froslass",
         "is_variant": false
       }
     ],
@@ -55705,6 +55948,14 @@
         "slug": "glalie",
         "dex": "362",
         "sprite_slug": "glalie",
+        "is_variant": false
+      },
+      {
+        "key": "FROSLASS",
+        "name": "FROSLASS",
+        "slug": "froslass",
+        "dex": "400",
+        "sprite_slug": "froslass",
         "is_variant": false
       }
     ],
@@ -60831,6 +61082,22 @@
     "evolution_targets": [],
     "family": [
       {
+        "key": "SNORUNT",
+        "name": "SNORUNT",
+        "slug": "snorunt",
+        "dex": "361",
+        "sprite_slug": "snorunt",
+        "is_variant": false
+      },
+      {
+        "key": "GLALIE",
+        "name": "GLALIE",
+        "slug": "glalie",
+        "dex": "362",
+        "sprite_slug": "glalie",
+        "is_variant": false
+      },
+      {
         "key": "FROSLASS",
         "name": "FROSLASS",
         "slug": "froslass",
@@ -61264,6 +61531,30 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "RALTS",
+        "name": "⭐ RALTS",
+        "slug": "ralts",
+        "dex": "280",
+        "sprite_slug": "ralts",
+        "is_variant": true
+      },
+      {
+        "key": "KIRLIA",
+        "name": "⭐ KIRLIA",
+        "slug": "kirlia",
+        "dex": "281",
+        "sprite_slug": "kirlia",
+        "is_variant": true
+      },
+      {
+        "key": "GARDEVOIR",
+        "name": "⭐ GARDEVOIR",
+        "slug": "gardevoir",
+        "dex": "282",
+        "sprite_slug": "gardevoir",
+        "is_variant": true
+      },
       {
         "key": "GALLADE",
         "name": "⭐ GALLADE",

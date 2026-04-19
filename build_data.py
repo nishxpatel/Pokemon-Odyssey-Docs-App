@@ -38,6 +38,21 @@ STAT_SHEETS = ["#1-151", "#152-251", "#252-386", "4th Gen", "Paradox"]
 LABELS = {"TYPE:", "ABILITY:", "EVOLUTION:", "MOVES"}
 STAT_HEADERS = {"HP", "ATK", "DEF", "SP.ATK", "SP.DEF", "SPD", "TOTAL", "GAME"}
 
+# Branching evolutions that the spreadsheet layout cannot express unambiguously:
+# the source species shows a combined "A/B" evolution condition in one cell, with
+# only one branch target placed in the same band (col G). The second branch target
+# lives in a separate sheet as an apparent standalone. Each entry here overrides the
+# combined condition on the existing edge AND adds the missing second branch edge.
+# Format: from_key -> [(to_key, condition_for_that_branch), ...]
+EXPLICIT_BRANCHES = {
+    "GLOOM":    [("VILEPLUME",  "Leaf Stone"), ("BELLOSSOM", "Sun Stone")],
+    "POLIWHIRL":[("POLIWRATH",  "Water Stone"), ("POLITOED",  "Link Stone")],
+    "SLOWPOKE": [("SLOWBRO",   "LV.37"),       ("SLOWKING",  "Link Stone")],
+    "SCYTHER":  [("KLEAVOR",   "B. Augurite"), ("SCIZOR",    "Link Stone")],
+    "KIRLIA":   [("GARDEVOIR", "LV.30"),       ("GALLADE",   "Dawn Stone")],
+    "SNORUNT":  [("GLALIE",    "LV.42"),       ("FROSLASS",  "Dawn Stone")],
+}
+
 # Items that can trigger evolution. The UI links these to item pages.
 EVOLUTION_ITEMS = {
     "Fire Stone", "Water Stone", "Leaf Stone", "Thunder Stone", "Thunderstone",
@@ -1116,6 +1131,13 @@ def build_evolution_graph(all_species, all_bands):
             add_edge(src, dst, cond, "stage")
         for b in band["branches"]:
             add_edge(b["from"], b["to"], b["condition"], "branch")
+
+    # Apply explicit branch overrides: fixes branching lines where the spreadsheet
+    # layout puts only one branch target in the same band (col G) and uses a
+    # combined "A/B" condition string, leaving the second target as a standalone.
+    for from_key, branches in EXPLICIT_BRANCHES.items():
+        for to_key, cond in branches:
+            add_edge(from_key, to_key, cond, "branch")
 
     return graph, reverse
 
