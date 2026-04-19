@@ -1591,7 +1591,7 @@ def main():
         "game": "Pokémon Odyssey",
         "version": "v4.1.1",
         "types": ["Normal","Fighting","Flying","Poison","Ground","Rock","Bug","Ghost",
-                  "Steel","Fire","Water","Grass","Electric","Psychic","Ice","Dragon","Dark","Fairy","Aether"],
+                  "Steel","Fire","Water","Grass","Electric","Psychic","Ice","Dragon","Dark","Aether"],
         "type_chart": type_chart,
         "counts": {
             "species": len(merged),

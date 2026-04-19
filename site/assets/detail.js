@@ -90,11 +90,7 @@ function renderMatchups(types) {
         </div>
       `).join("")}
     </div>`).join("");
-  const hasAether = types.includes("Aether") || keys.some(k => groups[k].includes("Aether"));
-  const note = hasAether
-    ? `<p class="disclaimer">Aether is Pokémon Odyssey's custom type; effectiveness values aren't encoded in the source workbook (they're shown via cell fill color). Treated as neutral here.</p>`
-    : "";
-  return sections + note;
+  return sections;
 }
 
 function renderMoves(moves, customMoveSlugs) {
