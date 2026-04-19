@@ -177,7 +177,8 @@ async function main() {
     render();
   } catch (e) {
     grid.innerHTML = `<p class="empty-msg">Failed to load data: ${escapeHTML(e.message)}. ` +
-                     `Run <code>python3 build_data.py</code>, then serve with <code>python3 -m http.server 8000</code>.</p>`;
+                     `Run <code>python3 build_data.py</code>, then serve with <code>python3 -m http.server 8000</code>. ` +
+                     `<a href="index.html">← back to Home</a></p>`;
   }
 }
 main();

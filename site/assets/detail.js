@@ -320,7 +320,7 @@ async function main() {
     if (slugQ) p = pokedex.find(x => x.slug === slugQ);
     if (!p && dexQ) p = pokedex.find(x => x.dex === String(dexQ).padStart(3, "0"));
     if (!p) {
-      root.innerHTML = `<p>Pokémon not found. <a href="index.html">← back to Pokédex</a></p>`;
+      root.innerHTML = `<p>Pokémon not found. <a href="pokedex.html">← back to Pokédex</a></p>`;
       return;
     }
     document.title = `${p.name} — Pokémon Odyssey Pokédex`;

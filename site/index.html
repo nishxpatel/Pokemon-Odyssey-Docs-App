@@ -2,69 +2,169 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Pokédex — Pokémon Odyssey v4.1.1</title>
+<title>Pokémon Odyssey — Fan Documentation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body class="home">
 
 <header class="site-header">
-  <span class="logo">Pokémon Odyssey</span>
-  <span class="sub">Pokédex · v4.1.1</span>
+  <a class="logo" href="index.html">Pokémon Odyssey</a>
+  <span class="sub">Documentation · v4.1.1</span>
   <nav>
-    <a href="index.html">Pokédex</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="pokedex.html">Pokédex</a>
     <a href="moves.html">Moves</a>
     <a href="abilities.html">Abilities</a>
     <a href="items.html">Items</a>
   </nav>
 </header>
 
-<main class="wrap">
-  <h1>Pokédex</h1>
-  <p class="disclaimer" id="meta-line">Loading…</p>
-
-  <div class="filters">
-    <input id="search" class="search" placeholder="Search by name or dex number…" type="search" autocomplete="off">
-
-    <select id="sort" class="select" title="Sort by">
-      <option value="dex">Sort: Dex №</option>
-      <option value="name">Sort: Name (A→Z)</option>
-      <option value="total-desc">Sort: Total stats (high→low)</option>
-      <option value="total-asc">Sort: Total stats (low→high)</option>
-      <option value="hp-desc">Sort: HP (high→low)</option>
-      <option value="atk-desc">Sort: Attack (high→low)</option>
-      <option value="def-desc">Sort: Defense (high→low)</option>
-      <option value="spa-desc">Sort: Sp. Atk (high→low)</option>
-      <option value="spd-desc">Sort: Sp. Def (high→low)</option>
-      <option value="spe-desc">Sort: Speed (high→low)</option>
-    </select>
-
-    <select id="ability" class="select">
-      <option value="">All abilities</option>
-    </select>
-
-    <label class="check-label">
-      <input type="checkbox" id="variants-only"> Variants only
-    </label>
-    <label class="check-label">
-      <input type="checkbox" id="event-only"> Event/Gift only
-    </label>
-    <label class="check-label">
-      <input type="checkbox" id="wild-only"> Wild-encounterable
-    </label>
-    <label class="check-label">
-      <input type="checkbox" id="final-only"> Final forms only
-    </label>
-    <button id="reset-btn" class="reset-btn">Reset</button>
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('assets/YggdrasilProjectFull.png')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <img class="hero-logo" src="assets/PokemonOdysseyLogo.png" alt="Pokémon Odyssey">
+    <p class="hero-tagline">A fan-made Pokémon adventure with Etrian Odyssey mechanics — Strata, F.O.E.s, Etrian Variants, and the custom <span class="t-aether-text">Aether</span> type.</p>
+    <p class="hero-version">Documentation for <strong>v4.1.1</strong></p>
+    <div class="hero-cta">
+      <a class="btn primary" href="pokedex.html">Open the Pokédex →</a>
+      <a class="btn ghost" href="moves.html">Browse Moves</a>
+    </div>
   </div>
-  <div class="type-chips" id="type-chips"></div>
-  <p class="hint" id="active-hint"></p>
+</section>
 
-  <div id="grid" class="dex-grid"></div>
-  <p class="empty-msg" id="empty" style="display:none">No Pokémon match your filters.</p>
+<main class="wrap home-wrap">
+  <h2 class="section-title">Browse the docs</h2>
+  <div class="home-cards">
+    <a class="home-card" href="pokedex.html">
+      <div class="home-card-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="28" fill="#e62829" stroke="#1b1f23" stroke-width="3"/>
+          <path d="M4 32h56" stroke="#1b1f23" stroke-width="4"/>
+          <circle cx="32" cy="32" r="9" fill="#fff" stroke="#1b1f23" stroke-width="3"/>
+          <circle cx="32" cy="32" r="3.5" fill="#1b1f23"/>
+        </svg>
+      </div>
+      <div class="home-card-body">
+        <h3>Pokédex</h3>
+        <p>Every species, including <strong>Etrian Variants</strong> and event-only Pokémon. Stats, types, abilities, learnsets, evolution chains, and wild-encounter locations.</p>
+        <p class="home-card-stat" data-stat="species"></p>
+      </div>
+    </a>
+
+    <a class="home-card" href="moves.html">
+      <div class="home-card-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none">
+          <path d="M14 50L50 14" stroke="#3b82f6" stroke-width="6" stroke-linecap="round"/>
+          <path d="M44 8h12v12" stroke="#3b82f6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="18" cy="46" r="6" fill="#ffcb05" stroke="#1b1f23" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="home-card-body">
+        <h3>Moves</h3>
+        <p>Custom and reworked moves alongside vanilla baselines. Filter by type, category, and source — including the new <span class="t-aether-text">Aether-type</span> moves.</p>
+        <p class="home-card-stat" data-stat="moves"></p>
+      </div>
+    </a>
+
+    <a class="home-card" href="abilities.html">
+      <div class="home-card-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none">
+          <path d="M32 6l8 18 20 2-15 14 4 20-17-10-17 10 4-20L4 26l20-2z" fill="#ffcb05" stroke="#1b1f23" stroke-width="2.5" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="home-card-body">
+        <h3>Abilities</h3>
+        <p>New Odyssey-original abilities, buffed reworks, and the full vanilla set — each with the Pokémon that get it.</p>
+        <p class="home-card-stat" data-stat="abilities"></p>
+      </div>
+    </a>
+
+    <a class="home-card" href="items.html">
+      <div class="home-card-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none">
+          <rect x="10" y="20" width="44" height="32" rx="4" fill="#915121" stroke="#1b1f23" stroke-width="3"/>
+          <rect x="10" y="20" width="44" height="10" fill="#b07442"/>
+          <rect x="6" y="14" width="52" height="10" rx="2" fill="#b94a48" stroke="#1b1f23" stroke-width="3"/>
+          <rect x="28" y="14" width="8" height="38" fill="#ffcb05" stroke="#1b1f23" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="home-card-body">
+        <h3>Items</h3>
+        <p>Held items, evolution stones, TMs, gathered/mined materials, shop inventories, and pickup tables — with reverse links from each item's evolution targets.</p>
+        <p class="home-card-stat" data-stat="items"></p>
+      </div>
+    </a>
+  </div>
+
+  <section class="home-features">
+    <h2 class="section-title">What's in the docs</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-tag">Etrian Variants</div>
+        <p>Sprite-extracted ⭐ variants from the workbook, with Normal and Shiny art preserved per species.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-tag">Custom type chart</div>
+        <p>Full type matchup data including the 19th type, <span class="t-aether-text">Aether</span>.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-tag">Cross-linked</div>
+        <p>Every Pokémon links to its moves and abilities; every move and ability lists its Pokémon users.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-tag">Sourced</div>
+        <p>Custom Odyssey docs win on conflicts. Vanilla data is backfilled from PokeAPI and clearly labelled as baseline.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-about">
+    <h2 class="section-title">About</h2>
+    <p>
+      Pokémon Odyssey is a fan-made Pokémon game that fuses Pokémon mechanics with
+      <strong>Etrian Odyssey</strong> dungeon-crawler systems — Strata, F.O.E. overworld
+      super-encounters, regional <strong>Etrian Variants</strong>, and a custom 19th type
+      called <span class="t-aether-text">Aether</span>. This documentation is generated
+      directly from the v4.1.1 design workbooks, with vanilla move and ability data
+      backfilled from PokeAPI.
+    </p>
+    <p class="home-meta" id="home-meta">Loading data…</p>
+  </section>
 </main>
 
-<script src="assets/types.js"></script>
-<script src="assets/app.js"></script>
+<footer class="site-footer">
+  <p>Pokémon Odyssey is a fan project. This site documents v4.1.1 of the game.</p>
+  <p><a href="https://github.com/nishxpatel/Pokemon-Odyssey-Docs-App" target="_blank" rel="noopener">View source on GitHub</a></p>
+</footer>
+
+<script>
+(async () => {
+  try {
+    const meta = await fetch("data/meta.json").then(r => r.json());
+    const c = meta.counts || {};
+    const set = (key, text) => {
+      const el = document.querySelector(`.home-card-stat[data-stat="${key}"]`);
+      if (el) el.textContent = text;
+    };
+    set("species",   `${c.species ?? "—"} species · ${c.variants ?? 0} variants`);
+    set("moves",     `${c.moves ?? "—"} moves · ${c.moves_custom ?? 0} custom`);
+    set("abilities", `${c.abilities ?? "—"} abilities · ${c.abilities_custom ?? 0} custom`);
+    set("items",     `${c.items ?? "—"} items indexed`);
+    const homeMeta = document.getElementById("home-meta");
+    if (homeMeta) {
+      homeMeta.textContent =
+        `${meta.game} ${meta.version} — ` +
+        `${c.species ?? "?"} species (${c.variants ?? 0} Etrian variants, ${c.events ?? 0} event-only), ` +
+        `${c.moves ?? "?"} moves (${c.moves_custom ?? 0} custom), ` +
+        `${c.abilities ?? "?"} abilities (${c.abilities_custom ?? 0} custom), ` +
+        `${c.items ?? "?"} items.`;
+    }
+  } catch (e) {
+    /* leave the placeholder text */
+  }
+})();
+</script>
 </body>
 </html>

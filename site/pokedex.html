@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pokédex — Pokémon Odyssey v4.1.1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">Pokémon Odyssey</a>
+  <span class="sub">Pokédex · v4.1.1</span>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pokedex.html" class="active">Pokédex</a>
+    <a href="moves.html">Moves</a>
+    <a href="abilities.html">Abilities</a>
+    <a href="items.html">Items</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <h1>Pokédex</h1>
+  <p class="disclaimer" id="meta-line">Loading…</p>
+
+  <div class="filters">
+    <input id="search" class="search" placeholder="Search by name or dex number…" type="search" autocomplete="off">
+
+    <select id="sort" class="select" title="Sort by">
+      <option value="dex">Sort: Dex №</option>
+      <option value="name">Sort: Name (A→Z)</option>
+      <option value="total-desc">Sort: Total stats (high→low)</option>
+      <option value="total-asc">Sort: Total stats (low→high)</option>
+      <option value="hp-desc">Sort: HP (high→low)</option>
+      <option value="atk-desc">Sort: Attack (high→low)</option>
+      <option value="def-desc">Sort: Defense (high→low)</option>
+      <option value="spa-desc">Sort: Sp. Atk (high→low)</option>
+      <option value="spd-desc">Sort: Sp. Def (high→low)</option>
+      <option value="spe-desc">Sort: Speed (high→low)</option>
+    </select>
+
+    <select id="ability" class="select">
+      <option value="">All abilities</option>
+    </select>
+
+    <label class="check-label">
+      <input type="checkbox" id="variants-only"> Variants only
+    </label>
+    <label class="check-label">
+      <input type="checkbox" id="event-only"> Event/Gift only
+    </label>
+    <label class="check-label">
+      <input type="checkbox" id="wild-only"> Wild-encounterable
+    </label>
+    <label class="check-label">
+      <input type="checkbox" id="final-only"> Final forms only
+    </label>
+    <button id="reset-btn" class="reset-btn">Reset</button>
+  </div>
+  <div class="type-chips" id="type-chips"></div>
+  <p class="hint" id="active-hint"></p>
+
+  <div id="grid" class="dex-grid"></div>
+  <p class="empty-msg" id="empty" style="display:none">No Pokémon match your filters.</p>
+</main>
+
+<script src="assets/types.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
