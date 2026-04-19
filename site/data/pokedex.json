@@ -45436,7 +45436,15 @@
         "to_name": "NINJASK",
         "to_slug": "ninjask",
         "condition": "LV. 20",
-        "kind": "stage",
+        "kind": "branch",
+        "items": []
+      },
+      {
+        "to_key": "SHEDINJA",
+        "to_name": "SHEDINJA",
+        "to_slug": "shedinja",
+        "condition": "LV. 20 (spare slot)",
+        "kind": "branch",
         "items": []
       }
     ],
@@ -45455,6 +45463,14 @@
         "slug": "ninjask",
         "dex": "291",
         "sprite_slug": "ninjask",
+        "is_variant": false
+      },
+      {
+        "key": "SHEDINJA",
+        "name": "SHEDINJA",
+        "slug": "shedinja",
+        "dex": "292",
+        "sprite_slug": "shedinja",
         "is_variant": false
       }
     ],
@@ -45581,6 +45597,14 @@
         "slug": "ninjask",
         "dex": "291",
         "sprite_slug": "ninjask",
+        "is_variant": false
+      },
+      {
+        "key": "SHEDINJA",
+        "name": "SHEDINJA",
+        "slug": "shedinja",
+        "dex": "292",
+        "sprite_slug": "shedinja",
         "is_variant": false
       }
     ],
@@ -45715,6 +45739,22 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "NINCADA",
+        "name": "NINCADA",
+        "slug": "nincada",
+        "dex": "290",
+        "sprite_slug": "nincada",
+        "is_variant": false
+      },
+      {
+        "key": "NINJASK",
+        "name": "NINJASK",
+        "slug": "ninjask",
+        "dex": "291",
+        "sprite_slug": "ninjask",
+        "is_variant": false
+      },
       {
         "key": "SHEDINJA",
         "name": "SHEDINJA",

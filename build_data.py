@@ -69,6 +69,12 @@ EXPLICIT_BRANCHES = {
     # Wurmple: branching in-sheet but isolated in its own block; Silcoon/Cascoon
     # appear on separate rows so no band spans Wurmple to either target.
     "WURMPLE":  [("SILCOON",   "LV. 7"),       ("CASCOON",   "LV. 7")],
+    # Nincada: the band detector produces stages=[NINCADA, NINJASK, SHEDINJA] and
+    # tries NINJASK→SHEDINJA as the second sequential edge. But NINJASK has no
+    # evolves_at so that edge is dropped and Shedinja ends up standalone. The
+    # correct structure is both NINJASK and SHEDINJA branching from NINCADA at
+    # the same level-up event (Shedinja requires an empty party slot + spare Ball).
+    "NINCADA":  [("NINJASK",   "LV. 20"),      ("SHEDINJA",  "LV. 20 (spare slot)")],
 }
 
 # Cross-sheet/cross-generation linear evolutions.
