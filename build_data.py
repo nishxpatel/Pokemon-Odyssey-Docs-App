@@ -379,58 +379,283 @@ def parse_wild_encounters(wb):
     return out
 
 # -----------------------------------------------------------------------------
-# New Moves & Abilities
+# New Moves & Abilities — full extractor with type/category icon decoding
 # -----------------------------------------------------------------------------
 
-def parse_new_moves(wb):
-    ws = wb["New Moves & Abilities"]
-    rows = [list(r) + [None] * (20 - len(r))
-            for r in ws.iter_rows(max_col=20, values_only=True)]
-    moves = {}
-    abilities = {}
-    mode = None
-    for i, row in enumerate(rows):
-        first = row[0]
-        if isinstance(first, str):
-            t = first.strip().upper()
-            if t == "NEW MOVES": mode = "moves"; continue
-            if t == "NEW ABILITIES": mode = "abilities"; continue
-        name_slots = [(1, row[1]), (4, row[4]), (7, row[7]),
-                      (10, row[10]), (13, row[13]), (16, row[16])]
-        header_candidates = [(c, v) for c, v in name_slots
-                             if isinstance(v, str) and v.strip() and v.strip().upper() == v.strip()
-                             and v.strip() not in {"TYPE","CATEGORY","POWER","ACCURACY","PP","EFFECT"}]
-        if not header_candidates: continue
-        if i + 1 >= len(rows): continue
-        next_row = rows[i + 1]
-        confirmed = [(c, v) for c, v in header_candidates
-                     if isinstance(next_row[c], str) and next_row[c].strip().upper() == "TYPE"]
-        if not confirmed: continue
-        for col, name in confirmed:
-            move_name = name.strip()
-            def get(offset_r, offset_c=1):
-                if i + offset_r >= len(rows): return None
-                return rows[i + offset_r][col + offset_c]
-            data = {
-                "name": move_name,
-                "type": str(get(1) or "").strip() or None,
-                "category": str(get(2) or "").strip() or None,
-                "power": get(3),
-                "accuracy": get(4),
-                "pp": get(5),
-                "effect": str(get(6) or "").strip() or None,
-            }
-            for k in ("power", "accuracy", "pp"):
-                v = data[k]
-                if isinstance(v, (int, float)):
-                    data[k] = int(v) if float(v).is_integer() else v
-                elif v in (None, "", "-"):
-                    data[k] = None
-                else:
-                    data[k] = str(v).strip()
-            target = moves if mode == "moves" else (abilities if mode == "abilities" else moves)
-            target[canon(move_name)] = data
-    return moves, abilities
+# md5(image_bytes)[:10] → label, derived once by visual inspection of the
+# embedded icons in the New Moves & Abilities sheet. Type/category cells in
+# the workbook are images, not text — without this map they read as None.
+TYPE_ICON_HASHES = {
+    "acedc2bd1d": "Normal",   "a651c0dc46": "Electric", "cc6cb7014f": "Water",
+    "5c42af5ab1": "Fire",     "cfe79204eb": "Grass",    "fe7e013ede": "Psychic",
+    "7e6817ca40": "Poison",   "f4bd1b822a": "Dark",     "0d75b05da7": "Ground",
+    "5db711ef2f": "Fighting", "3c86284e71": "Ice",      "7e1f45411f": "Steel",
+    "475797df1a": "Rock",     "411514b790": "Bug",      "1f57507c9f": "Flying",
+    "c824276960": "Dragon",   "ccd8a2bd27": "Ghost",    "705cc39322": "Aether",
+}
+CATEGORY_ICON_HASHES = {
+    "67f4636950": "Status",
+    "110a105c8e": "Special",
+    "db7984cc21": "Physical",
+}
+
+# Maps the workbook's section header → (kind, label). The label appears on
+# each entry so the UI can distinguish e.g. brand-new moves from reworked
+# vanilla ones.
+_MOVE_SECTIONS = {
+    "NEW MOVES":              ("move",    "new"),
+    "AETHER-TYPE MOVES":      ("move",    "aether"),
+    "BUFFED/REWORKED MOVES":  ("move",    "reworked"),
+    "NEW ABILITIES":          ("ability", "new"),
+    "BUFFED ABILITIES":       ("ability", "reworked"),
+}
+
+# Field labels we must skip when scanning for entry-name candidates.
+_FIELD_LABELS = {"TYPE", "CATEGORY", "POWER", "ACCURACY", "PP", "EFFECT"}
+
+
+def _build_icon_map(ws):
+    """Return {(anchor_row, anchor_col): label} for every type/category icon
+    embedded in the worksheet. Coords are 0-indexed (openpyxl image anchors)."""
+    import hashlib
+    out = {}
+    for img in getattr(ws, "_images", []):
+        data = img._data() if callable(img._data) else img._data
+        h = hashlib.md5(data).hexdigest()[:10]
+        label = TYPE_ICON_HASHES.get(h) or CATEGORY_ICON_HASHES.get(h)
+        if not label:
+            continue
+        a = img.anchor._from
+        out[(a.row, a.col)] = label
+    return out
+
+
+def _norm_num(v):
+    """Normalize a numeric workbook cell. Returns int, str (e.g. '???'), or None."""
+    if v is None or v == "" or v == "-":
+        return None
+    if isinstance(v, (int, float)):
+        return int(v) if float(v).is_integer() else v
+    return str(v).strip()
+
+
+def parse_moves_and_abilities(xlsx_path):
+    """Parse the 'New Moves & Abilities' sheet. Returns (moves, abilities)
+    dicts keyed by the entry's site slug.
+
+    Five sections in the sheet are recognized:
+      - NEW MOVES, AETHER-TYPE MOVES, BUFFED/REWORKED MOVES → moves
+      - NEW ABILITIES, BUFFED ABILITIES                     → abilities
+
+    Move blocks are 8 rows tall (name, type, category, power, accuracy, pp,
+    'Effect' label, effect text) with up to 6 entries per band at a 3-col
+    stride. Ability blocks are 2 rows (name + effect text)."""
+    # Must NOT be read_only — image objects aren't exposed in read-only mode.
+    wb = openpyxl.load_workbook(xlsx_path, data_only=True)
+    try:
+        ws = wb["New Moves & Abilities"]
+        icon_map = _build_icon_map(ws)
+        rows = [list(r) + [None] * (20 - len(r))
+                for r in ws.iter_rows(max_col=20, values_only=True)]
+
+        moves, abilities = {}, {}
+        section_kind = None
+        section_label = None
+        name_cols = (1, 4, 7, 10, 13, 16)
+
+        for i, row in enumerate(rows):
+            first = row[0]
+            if isinstance(first, str):
+                t = first.strip().upper()
+                if t in _MOVE_SECTIONS:
+                    section_kind, section_label = _MOVE_SECTIONS[t]
+                    continue
+            if section_kind is None:
+                continue
+
+            # Cells that look like ALL-CAPS entry names (filters out the
+            # field-label rows and the lower-case effect-text rows).
+            candidates = [(c, row[c]) for c in name_cols
+                          if isinstance(row[c], str) and row[c].strip()
+                          and row[c].strip() == row[c].strip().upper()
+                          and row[c].strip() not in _FIELD_LABELS]
+            if not candidates:
+                continue
+
+            if section_kind == "ability":
+                # 2-row block: name + effect text directly below.
+                if i + 1 >= len(rows):
+                    continue
+                for col, name in candidates:
+                    nm = name.strip()
+                    slug = slugify(nm)
+                    eff = rows[i + 1][col]
+                    abilities[slug] = {
+                        "name": nm,
+                        "slug": slug,
+                        "effect": str(eff).strip() if eff else None,
+                        "kind": section_label,         # 'new' | 'reworked'
+                        "is_custom": True,
+                    }
+            else:  # 'move' — 8-row block, confirmed by next row's TYPE label
+                if i + 1 >= len(rows):
+                    continue
+                confirmed = [(c, n) for c, n in candidates
+                             if isinstance(rows[i + 1][c], str)
+                             and rows[i + 1][c].strip().upper() == "TYPE"]
+                for col, name in confirmed:
+                    nm = name.strip()
+                    slug = slugify(nm)
+                    type_lbl = icon_map.get((i + 1, col + 1))
+                    cat_lbl  = icon_map.get((i + 2, col + 1))
+                    eff = rows[i + 7][col] if i + 7 < len(rows) else None
+                    moves[slug] = {
+                        "name": nm,
+                        "slug": slug,
+                        "type": type_lbl,
+                        "category": cat_lbl,
+                        "power":    _norm_num(rows[i + 3][col + 1]) if i + 3 < len(rows) else None,
+                        "accuracy": _norm_num(rows[i + 4][col + 1]) if i + 4 < len(rows) else None,
+                        "pp":       _norm_num(rows[i + 5][col + 1]) if i + 5 < len(rows) else None,
+                        "effect":   str(eff).strip() if eff else None,
+                        "kind": section_label,         # 'new' | 'aether' | 'reworked'
+                        "is_custom": True,
+                    }
+        return moves, abilities
+    finally:
+        wb.close()
+
+
+# -----------------------------------------------------------------------------
+# Type chart — extracted from cell fill colors on the Type Chart sheet.
+# -----------------------------------------------------------------------------
+
+# Legend colors verified against the workbook's own legend rows (R22/R24/R26).
+_TYPE_FILL_TO_MULT = {
+    "FFE06666": 0,    # red    — no effect
+    "FFFFE599": 0.5,  # yellow — not very effective
+    "FF93C47D": 2,    # green  — super effective
+}
+
+
+def parse_type_chart(xlsx_path):
+    """Return {attacker: {defender: multiplier}} for every non-1x interaction.
+    Reads the Type Chart sheet's cell fills since the multipliers themselves
+    aren't stored as text. Aether is the 18th type and only differs from the
+    standard chart in those rows/cols."""
+    wb = openpyxl.load_workbook(xlsx_path, data_only=True)
+    try:
+        ws = wb["Type Chart"]
+        defenders = [ws.cell(2, c).value for c in range(3, 21)]
+        attackers = [ws.cell(r, 2).value for r in range(3, 21)]
+        chart = {}
+        for ri, atk in enumerate(attackers, start=3):
+            chart[atk] = {}
+            for ci, deff in enumerate(defenders, start=3):
+                f = ws.cell(ri, ci).fill
+                if not (f and f.patternType == "solid" and f.fgColor):
+                    continue
+                rgb = (f.fgColor.rgb or "").upper()
+                if rgb in _TYPE_FILL_TO_MULT:
+                    chart[atk][deff] = _TYPE_FILL_TO_MULT[rgb]
+        return chart
+    finally:
+        wb.close()
+
+
+# -----------------------------------------------------------------------------
+# PokeAPI baseline fetcher (with on-disk cache)
+# -----------------------------------------------------------------------------
+
+POKEAPI_BASE  = "https://pokeapi.co/api/v2"
+POKEAPI_CACHE = HERE / "pokeapi_cache"
+
+
+def _pokeapi_slug(name):
+    """Convert a workbook entry name to a PokeAPI URL slug."""
+    s = (name or "").strip().lower()
+    s = s.replace("\u2019", "").replace("'", "")     # apostrophes
+    s = s.replace("\u2014", "-").replace("\u2013", "-")
+    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    return s
+
+
+def _fetch_pokeapi(kind, slug):
+    """kind: 'move' or 'ability'. Returns the raw dict, or None on 404.
+    Caches every response (including 404s as 'null') under pokeapi_cache/."""
+    import time
+    import urllib.request, urllib.error
+    cache_dir = POKEAPI_CACHE / f"{kind}s"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    cache_file = cache_dir / f"{slug}.json"
+    if cache_file.exists():
+        txt = cache_file.read_text()
+        return json.loads(txt) if txt.strip() != "null" else None
+    url = f"{POKEAPI_BASE}/{kind}/{slug}"
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "PokemonOdysseyDocs/1.0 (+github.com/nishxpatel/Pokemon-Odyssey-Docs-App)",
+        "Accept": "application/json",
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            data = json.loads(r.read().decode())
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            cache_file.write_text("null")
+            return None
+        raise
+    cache_file.write_text(json.dumps(data))
+    time.sleep(0.05)   # be polite
+    return data
+
+
+def _english_short_effect(data):
+    """Best-effort English effect text from a PokeAPI move/ability response."""
+    for e in (data.get("effect_entries") or []):
+        if (e.get("language") or {}).get("name") == "en":
+            return (e.get("short_effect") or e.get("effect") or "").strip() or None
+    # Some moves only have flavor_text_entries
+    for e in (data.get("flavor_text_entries") or []):
+        if (e.get("language") or {}).get("name") == "en":
+            return (e.get("flavor_text") or "").replace("\n", " ").replace("\f", " ").strip() or None
+    return None
+
+
+def baseline_move(name):
+    """Fetch a baseline (non-custom) move from PokeAPI. Returns a normalized
+    entry matching parse_moves_and_abilities output, or None if unknown."""
+    slug = _pokeapi_slug(name)
+    data = _fetch_pokeapi("move", slug)
+    if not data:
+        return None
+    cat = (data.get("damage_class") or {}).get("name")
+    return {
+        "name": name.strip().upper(),
+        "slug": slugify(name),
+        "type": ((data.get("type") or {}).get("name") or "").title() or None,
+        "category": cat.title() if cat else None,
+        "power": data.get("power"),
+        "accuracy": data.get("accuracy"),
+        "pp": data.get("pp"),
+        "effect": _english_short_effect(data),
+        "kind": "baseline",
+        "is_custom": False,
+    }
+
+
+def baseline_ability(name):
+    """Fetch a baseline ability from PokeAPI. Returns normalized entry or None."""
+    slug = _pokeapi_slug(name)
+    data = _fetch_pokeapi("ability", slug)
+    if not data:
+        return None
+    return {
+        "name": name.strip().upper(),
+        "slug": slugify(name),
+        "effect": _english_short_effect(data),
+        "kind": "baseline",
+        "is_custom": False,
+    }
 
 # -----------------------------------------------------------------------------
 # Items: shops, pickup, gathering/mining, TM, tutors
@@ -845,8 +1070,11 @@ def main():
         all_stats.update(st)
         all_bands.extend(bands)
     dex_index = load_pokedex_index(wb_stats)
-    new_moves, new_abilities = parse_new_moves(wb_stats)
     wb_stats.close()
+
+    # Reopen non-readonly to access embedded type/category icons.
+    custom_moves, custom_abilities = parse_moves_and_abilities(STATS_XLSX)
+    type_chart = parse_type_chart(STATS_XLSX)
 
     print("Loading Wild encounters workbook...", flush=True)
     wb_wild = openpyxl.load_workbook(WILD_XLSX, read_only=True, data_only=True)
@@ -866,10 +1094,55 @@ def main():
     print(f"Species parsed: {len(all_species)}", flush=True)
     print(f"Stat blocks parsed: {len(all_stats)}", flush=True)
     print(f"Dex entries: {len(dex_index)}", flush=True)
-    print(f"New moves: {len(new_moves)} | New abilities: {len(new_abilities)}", flush=True)
+    print(f"Custom moves: {len(custom_moves)} | Custom abilities: {len(custom_abilities)}", flush=True)
     print(f"Pokémon with wild locations: {len(locations)}", flush=True)
     print(f"Evolution edges: {sum(len(v) for v in graph.values())}", flush=True)
     print(f"Items: {len(items)}", flush=True)
+
+    # -- assemble move/ability indexes (custom + PokeAPI baseline) --
+    # Collect every move/ability name referenced across all species.
+    referenced_moves = set()
+    referenced_abilities = set()
+    for sp in all_species.values():
+        for m in sp.get("moves", []):
+            nm = (m.get("name") or "").strip()
+            if nm:
+                referenced_moves.add(nm)
+        for a in sp.get("abilities", []):
+            if a and a.strip():
+                referenced_abilities.add(a.strip())
+
+    move_index = {}     # slug -> entry (custom or baseline) with used_by[]
+    ability_index = {}
+    for m in custom_moves.values():
+        move_index[m["slug"]] = dict(m, used_by=[])
+    for a in custom_abilities.values():
+        ability_index[a["slug"]] = dict(a, used_by=[])
+
+    print("Backfilling baseline data from PokeAPI (cached)...", flush=True)
+    fetched_m = fetched_a = missing_m = missing_a = 0
+    for nm in sorted(referenced_moves):
+        slug = slugify(nm)
+        if slug in move_index:
+            continue
+        base = baseline_move(nm)
+        if base:
+            move_index[slug] = dict(base, used_by=[])
+            fetched_m += 1
+        else:
+            missing_m += 1
+    for nm in sorted(referenced_abilities):
+        slug = slugify(nm)
+        if slug in ability_index:
+            continue
+        base = baseline_ability(nm)
+        if base:
+            ability_index[slug] = dict(base, used_by=[])
+            fetched_a += 1
+        else:
+            missing_a += 1
+    print(f"  fetched {fetched_m} moves + {fetched_a} abilities from PokeAPI; "
+          f"{missing_m} moves + {missing_a} abilities unresolved", flush=True)
 
     # -- merge into final Pokédex array --
     merged = []
@@ -985,18 +1258,58 @@ def main():
         display_name = DEX_NAME_FIXES.get(dex_canon, dex_name_raw if dex else sp["display_name"].replace("⭐","").strip().title())
         sprite_slug_value = SPRITE_SLUG_FIXES.get(dex_canon) or sprite_slug(display_name)
 
+        # Linked moves: each gets its slug and feeds the move's used_by[].
+        species_slug = slugify(sp["display_name"])
+        moves_linked = []
+        seen_in_used_by = set()
+        for m in sp.get("moves", []):
+            nm = (m.get("name") or "").strip()
+            mslug = slugify(nm) if nm else None
+            in_index = mslug in move_index if mslug else False
+            moves_linked.append({
+                "level": m.get("level"),
+                "name":  nm,
+                "slug":  mslug if in_index else None,
+            })
+            if in_index and (key, mslug) not in seen_in_used_by:
+                seen_in_used_by.add((key, mslug))
+                move_index[mslug]["used_by"].append({
+                    "key":   key,
+                    "slug":  species_slug,
+                    "name":  display_name,
+                    "dex":   dex["dex"] if dex else None,
+                    "level": m.get("level"),
+                })
+
+        # Linked abilities.
+        abilities_linked = []
+        for a in sp.get("abilities", []):
+            nm = (a or "").strip()
+            if not nm:
+                continue
+            aslug = slugify(nm)
+            in_index = aslug in ability_index
+            abilities_linked.append({"name": nm, "slug": aslug if in_index else None})
+            if in_index and not any(u["key"] == key for u in ability_index[aslug]["used_by"]):
+                ability_index[aslug]["used_by"].append({
+                    "key":  key,
+                    "slug": species_slug,
+                    "name": display_name,
+                    "dex":  dex["dex"] if dex else None,
+                })
+
         entry = {
             "key": key,
             "display_name": sp["display_name"],
             "name": display_name,
-            "slug": slugify(sp["display_name"]),
+            "slug": species_slug,
             "sprite_slug": sprite_slug_value,
             "dex": dex["dex"] if dex else None,
             "is_variant": is_variant,
             "is_battle_bond": is_battle_bond,
             "source_sheet": sp["source_sheet"],
             "types": sp.get("types", []),
-            "abilities": sp.get("abilities", []),
+            "abilities": abilities_linked,
             "evolves_at": ev,
             "evolves_at_level": ev_level,
             "evolves_note": ev_note,
@@ -1005,7 +1318,7 @@ def main():
             "family": family,
             "stats": stats.get("odyssey") if stats else None,
             "stats_vanilla": stats.get("vanilla") if stats else None,
-            "moves": sp.get("moves", []),
+            "moves": moves_linked,
             "locations": locs,
             "is_event": is_event,
             "has_wild": has_wild,
@@ -1026,15 +1339,20 @@ def main():
     (OUT_DIR / "items.json").write_text(
         json.dumps({"items": items_out, "tutors": tutors}, indent=2, ensure_ascii=False),
         encoding="utf-8")
-    (OUT_DIR / "moves.json").write_text(json.dumps({
-        "moves": list(new_moves.values()),
-        "abilities": list(new_abilities.values()),
-    }, indent=2, ensure_ascii=False), encoding="utf-8")
+    moves_out = sorted(move_index.values(), key=lambda x: x["name"].lower())
+    abilities_out = sorted(ability_index.values(), key=lambda x: x["name"].lower())
+    (OUT_DIR / "moves.json").write_text(
+        json.dumps({"moves": moves_out}, indent=2, ensure_ascii=False),
+        encoding="utf-8")
+    (OUT_DIR / "abilities.json").write_text(
+        json.dumps({"abilities": abilities_out}, indent=2, ensure_ascii=False),
+        encoding="utf-8")
     (OUT_DIR / "meta.json").write_text(json.dumps({
         "game": "Pokémon Odyssey",
         "version": "v4.1.1",
         "types": ["Normal","Fighting","Flying","Poison","Ground","Rock","Bug","Ghost",
                   "Steel","Fire","Water","Grass","Electric","Psychic","Ice","Dragon","Dark","Fairy","Aether"],
+        "type_chart": type_chart,
         "counts": {
             "species": len(merged),
             "with_stats": sum(1 for e in merged if e["stats"]),
@@ -1042,12 +1360,17 @@ def main():
             "variants": sum(1 for e in merged if e["is_variant"]),
             "events": sum(1 for e in merged if e["is_event"]),
             "items": len(items_out),
+            "moves": len(moves_out),
+            "moves_custom": sum(1 for m in moves_out if m.get("is_custom")),
+            "abilities": len(abilities_out),
+            "abilities_custom": sum(1 for a in abilities_out if a.get("is_custom")),
         },
     }, indent=2, ensure_ascii=False), encoding="utf-8")
 
     print(f"\nWrote {OUT_DIR / 'pokedex.json'}")
     print(f"Wrote {OUT_DIR / 'items.json'}")
     print(f"Wrote {OUT_DIR / 'moves.json'}")
+    print(f"Wrote {OUT_DIR / 'abilities.json'}")
     print(f"Wrote {OUT_DIR / 'meta.json'}")
     if unmatched_species:
         print(f"\n{len(unmatched_species)} species have no dex entry (likely Paradox/variants):")

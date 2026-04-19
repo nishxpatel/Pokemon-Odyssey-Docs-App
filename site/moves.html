@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Moves — Pokémon Odyssey Pokédex</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <span class="logo">Pokémon Odyssey</span>
+  <span class="sub">Pokédex · v4.1.1</span>
+  <nav>
+    <a href="index.html">Pokédex</a>
+    <a href="moves.html">Moves</a>
+    <a href="abilities.html">Abilities</a>
+    <a href="items.html">Items</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <h1>Moves</h1>
+  <p class="disclaimer" id="meta-line">Loading…</p>
+
+  <div class="filters">
+    <input id="search" class="search" placeholder="Search by name or effect…" type="search" autocomplete="off">
+    <select id="type-filter" class="select">
+      <option value="">All types</option>
+    </select>
+    <select id="cat-filter" class="select">
+      <option value="">All categories</option>
+      <option value="Physical">Physical</option>
+      <option value="Special">Special</option>
+      <option value="Status">Status</option>
+    </select>
+    <select id="kind-filter" class="select">
+      <option value="">All sources</option>
+      <option value="custom">Custom only (new + reworked)</option>
+      <option value="new">New (Odyssey-original)</option>
+      <option value="aether">Aether-type</option>
+      <option value="reworked">Reworked vanilla</option>
+      <option value="baseline">Baseline (vanilla)</option>
+    </select>
+    <select id="sort" class="select">
+      <option value="name">Sort: Name (A→Z)</option>
+      <option value="power-desc">Sort: Power (high→low)</option>
+      <option value="users-desc">Sort: Most users</option>
+    </select>
+  </div>
+
+  <table class="moves-table">
+    <thead>
+      <tr>
+        <th>Move</th>
+        <th>Type</th>
+        <th>Cat.</th>
+        <th>Power</th>
+        <th>Acc.</th>
+        <th>PP</th>
+        <th>Effect</th>
+        <th>Users</th>
+      </tr>
+    </thead>
+    <tbody id="moves-tbody"></tbody>
+  </table>
+  <p class="empty-msg" id="empty" style="display:none">No moves match your filters.</p>
+</main>
+
+<script src="assets/types.js"></script>
+<script src="assets/moves-list.js"></script>
+</body>
+</html>

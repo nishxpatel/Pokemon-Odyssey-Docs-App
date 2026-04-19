@@ -102,15 +102,18 @@ function renderMatchups(types) {
   return sections + note;
 }
 
-function renderMoves(moves, movesMeta) {
+function renderMoves(moves, customMoveSlugs) {
   if (!moves || !moves.length) return `<p class="empty-msg">No learnset data.</p>`;
   const rows = moves.map(m => {
     const lvl = m.level === 1 ? "Start" : m.level;
-    const isNew = movesMeta.has((m.name || "").toUpperCase().replace(/[^A-Z0-9]/g, ""));
-    const newTag = isNew ? `<span class="new-move">NEW</span>` : "";
+    const isCustom = m.slug && customMoveSlugs.has(m.slug);
+    const newTag = isCustom ? `<span class="new-move">NEW</span>` : "";
+    const nameCell = m.slug
+      ? `<a href="move.html?slug=${encodeURIComponent(m.slug)}">${escapeHTML(m.name)}</a>${newTag}`
+      : `${escapeHTML(m.name)}${newTag}`;
     return `<tr>
       <td class="lv">${escapeHTML(String(lvl))}</td>
-      <td class="move-name">${escapeHTML(m.name)}${newTag}</td>
+      <td class="move-name">${nameCell}</td>
     </tr>`;
   }).join("");
   return `
@@ -262,9 +265,18 @@ function renderHeader(p) {
     </section>`;
 }
 
-function renderInfo(p) {
+function renderInfo(p, customAbilitySlugs) {
+  const abilityCell = (p.abilities || []).map(a => {
+    if (typeof a === "string") return escapeHTML(a);
+    const isCustom = a.slug && customAbilitySlugs && customAbilitySlugs.has(a.slug);
+    const tag = isCustom ? `<span class="new-move">NEW</span>` : "";
+    if (a.slug) {
+      return `<a href="ability.html?slug=${encodeURIComponent(a.slug)}">${escapeHTML(a.name)}</a>${tag}`;
+    }
+    return escapeHTML(a.name) + tag;
+  }).join(" <span style='color:var(--text-dim)'>/</span> ");
   const abilityRow = (p.abilities || []).length
-    ? `<tr><td>Abilities</td><td>${p.abilities.map(a => escapeHTML(a)).join(" <span style='color:var(--text-dim)'>/</span> ")}</td></tr>`
+    ? `<tr><td>Abilities</td><td>${abilityCell}</td></tr>`
     : `<tr><td>Abilities</td><td class="empty-msg">—</td></tr>`;
 
   let evoRow;
@@ -289,21 +301,19 @@ function renderInfo(p) {
     </table>`;
 }
 
-function canonForMoves(name) {
-  return (name || "").toUpperCase().replace(/[^A-Z0-9]/g, "");
-}
-
 async function main() {
   const params = new URLSearchParams(location.search);
   const slugQ = params.get("slug");
   const dexQ = params.get("dex");
   const root = document.getElementById("root");
   try {
-    const [pokedex, movesFile] = await Promise.all([
+    const [pokedex, movesFile, abilitiesFile] = await Promise.all([
       fetch("data/pokedex.json").then(r => r.json()),
       fetch("data/moves.json").then(r => r.json()),
+      fetch("data/abilities.json").then(r => r.json()),
     ]);
-    const newMoveSet = new Set(movesFile.moves.map(m => canonForMoves(m.name)));
+    const customMoveSlugs = new Set(movesFile.moves.filter(m => m.is_custom).map(m => m.slug));
+    const customAbilitySlugs = new Set(abilitiesFile.abilities.filter(a => a.is_custom).map(a => a.slug));
     const byKey = new Map(pokedex.map(p => [p.key, p]));
 
     let p = null;
@@ -319,7 +329,7 @@ async function main() {
       <div class="panels">
         <div class="panel">
           <h2>Info</h2>
-          ${renderInfo(p)}
+          ${renderInfo(p, customAbilitySlugs)}
         </div>
         <div class="panel">
           <h2>Base Stats (Odyssey)</h2>
@@ -337,7 +347,7 @@ async function main() {
       <div class="panels">
         <div class="panel">
           <h2>Level-Up Moves</h2>
-          ${renderMoves(p.moves, newMoveSet)}
+          ${renderMoves(p.moves, customMoveSlugs)}
         </div>
         <div class="panel">
           <h2>Wild Locations</h2>

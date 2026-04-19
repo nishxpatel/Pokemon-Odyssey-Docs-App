@@ -105,11 +105,11 @@ function render() {
     if (wildOnly.checked && !p.has_wild) return false;
     if (finalOnly.checked && (p.evolution_targets || []).length > 0) return false;
     if (activeTypes.size && !(p.types || []).some(t => activeTypes.has(t))) return false;
-    if (ability && !(p.abilities || []).some(a => a === ability)) return false;
+    if (ability && !(p.abilities || []).some(a => (typeof a === "string" ? a : a.name) === ability)) return false;
     if (q) {
       const n = (p.name || "").toLowerCase();
       const d = p.dex || "";
-      const an = (p.abilities || []).join(" ").toLowerCase();
+      const an = (p.abilities || []).map(a => typeof a === "string" ? a : a.name).join(" ").toLowerCase();
       if (!n.includes(q) && !d.includes(q.replace(/^#/, "")) && !an.includes(q)) return false;
     }
     return true;
@@ -136,7 +136,10 @@ function buildChips() {
 
 function buildAbilityList() {
   const set = new Set();
-  for (const p of DATA) for (const a of (p.abilities || [])) if (a) set.add(a);
+  for (const p of DATA) for (const a of (p.abilities || [])) {
+    const name = typeof a === "string" ? a : a.name;
+    if (name) set.add(name);
+  }
   const sorted = [...set].sort((a, b) => a.localeCompare(b));
   abilitySel.innerHTML = `<option value="">All abilities</option>` +
     sorted.map(a => `<option value="${escapeHTML(a)}">${escapeHTML(a)}</option>`).join("");

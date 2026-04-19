@@ -1,0 +1,5197 @@
+{
+  "abilities": [
+    {
+      "name": "ABYSS BOOST",
+      "slug": "abyss-boost",
+      "effect": "Raises the user's best stat after it KOs an opponent.",
+      "kind": "new",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "MINUNBATTLEBOND",
+          "slug": "minun-battle-bond",
+          "name": "B.B. Minun",
+          "dex": "250"
+        }
+      ]
+    },
+    {
+      "name": "ABYSS GRACE",
+      "slug": "abyss-grace",
+      "effect": "Raises the team's accuracy by 10% while it's battling.",
+      "kind": "new",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "PLUSLEBATTLEBOND",
+          "slug": "plusle-battle-bond",
+          "name": "B.B. Plusle",
+          "dex": "249"
+        }
+      ]
+    },
+    {
+      "name": "ADAPTABILITY",
+      "slug": "adaptability",
+      "effect": "Increases the same-type attack bonus from 1.5× to 2×.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "NIDORANF",
+          "slug": "nidoran-f",
+          "name": "Nidoran♀",
+          "dex": "029"
+        },
+        {
+          "key": "NIDORANM",
+          "slug": "nidoran-m",
+          "name": "Nidoran♂",
+          "dex": "032"
+        },
+        {
+          "key": "CUBONE",
+          "slug": "cubone",
+          "name": "Cubone",
+          "dex": "104"
+        },
+        {
+          "key": "EEVEE",
+          "slug": "eevee",
+          "name": "Eevee",
+          "dex": "133"
+        },
+        {
+          "key": "PORYGON",
+          "slug": "porygon",
+          "name": "Porygon",
+          "dex": "137"
+        },
+        {
+          "key": "NIDORINA",
+          "slug": "nidorina",
+          "name": "Nidorina",
+          "dex": "030"
+        },
+        {
+          "key": "NIDORINO",
+          "slug": "nidorino",
+          "name": "Nidorino",
+          "dex": "033"
+        },
+        {
+          "key": "MAROWAK",
+          "slug": "marowak",
+          "name": "Marowak",
+          "dex": "105"
+        },
+        {
+          "key": "KLEAVOR",
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "dex": "132"
+        },
+        {
+          "key": "PORYGON2",
+          "slug": "porygon2",
+          "name": "Porygon2",
+          "dex": "233"
+        },
+        {
+          "key": "NIDOQUEEN",
+          "slug": "nidoqueen",
+          "name": "Nidoqueen",
+          "dex": "031"
+        },
+        {
+          "key": "NIDOKING",
+          "slug": "nidoking",
+          "name": "Nidoking",
+          "dex": "034"
+        },
+        {
+          "key": "SCIZOR",
+          "slug": "scizor",
+          "name": "Scizor",
+          "dex": "212"
+        },
+        {
+          "key": "SENTRET",
+          "slug": "sentret",
+          "name": "Sentret",
+          "dex": "161"
+        },
+        {
+          "key": "AIPOM",
+          "slug": "aipom",
+          "name": "Aipom",
+          "dex": "190"
+        },
+        {
+          "key": "FURRET",
+          "slug": "furret",
+          "name": "Furret",
+          "dex": "162"
+        },
+        {
+          "key": "AMBIPOM",
+          "slug": "ambipom",
+          "name": "Ambipom",
+          "dex": "388"
+        },
+        {
+          "key": "PORYGONZ",
+          "slug": "porygon-z",
+          "name": "Porygon-Z",
+          "dex": "402"
+        },
+        {
+          "key": "CORPHISH",
+          "slug": "corphish",
+          "name": "Corphish",
+          "dex": "341"
+        },
+        {
+          "key": "BRELOOM",
+          "slug": "breloom",
+          "name": "Breloom",
+          "dex": "286"
+        },
+        {
+          "key": "CRAWDAUNT",
+          "slug": "crawdaunt",
+          "name": "Crawdaunt",
+          "dex": "342"
+        }
+      ]
+    },
+    {
+      "name": "ARCANIST",
+      "slug": "arcanist",
+      "effect": "Boosts Psychic-type moves by 20%",
+      "kind": "new",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "CELEBI",
+          "slug": "celebi",
+          "name": "Celebi",
+          "dex": "251"
+        }
+      ]
+    },
+    {
+      "name": "ARENA TRAP",
+      "slug": "arena-trap",
+      "effect": "Prevents opponents from fleeing or switching out.  Eluded by flying-types and Pokémon in the air.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "DIGLETT",
+          "slug": "diglett",
+          "name": "Diglett",
+          "dex": "050"
+        },
+        {
+          "key": "DUGTRIO",
+          "slug": "dugtrio",
+          "name": "Dugtrio",
+          "dex": "051"
+        }
+      ]
+    },
+    {
+      "name": "BATTLE ARMOR",
+      "slug": "battle-armor",
+      "effect": "Protects against critical hits.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "ANORITH",
+          "slug": "anorith",
+          "name": "Anorith",
+          "dex": "347"
+        },
+        {
+          "key": "ARMALDO",
+          "slug": "armaldo",
+          "name": "Armaldo",
+          "dex": "348"
+        }
+      ]
+    },
+    {
+      "name": "BLAZE",
+      "slug": "blaze",
+      "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "CHARMANDER",
+          "slug": "charmander",
+          "name": "Charmander",
+          "dex": "004"
+        },
+        {
+          "key": "CHARMELEON",
+          "slug": "charmeleon",
+          "name": "Charmeleon",
+          "dex": "005"
+        },
+        {
+          "key": "CHARIZARD",
+          "slug": "charizard",
+          "name": "Charizard",
+          "dex": "006"
+        },
+        {
+          "key": "CYNDAQUIL",
+          "slug": "cyndaquil",
+          "name": "Cyndaquil",
+          "dex": "155"
+        },
+        {
+          "key": "QUILAVA",
+          "slug": "quilava",
+          "name": "Quilava",
+          "dex": "156"
+        },
+        {
+          "key": "TYPHLOSION",
+          "slug": "typhlosion",
+          "name": "Typhlosion",
+          "dex": "157"
+        },
+        {
+          "key": "TORCHIC",
+          "slug": "torchic",
+          "name": "Torchic",
+          "dex": "255"
+        },
+        {
+          "key": "BLAZIKENBATTLEBOND",
+          "slug": "blaziken-battle-bond",
+          "name": "B.B. Blaziken",
+          "dex": "360"
+        },
+        {
+          "key": "COMBUSKEN",
+          "slug": "combusken",
+          "name": "Combusken",
+          "dex": "256"
+        },
+        {
+          "key": "BLAZIKEN",
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "dex": "257"
+        }
+      ]
+    },
+    {
+      "name": "BOTANIST",
+      "slug": "botanist",
+      "effect": "\"Herb\" and \"Potion\" moves gain +1 priority.",
+      "kind": "new",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "BELLOSSOM",
+          "slug": "bellossom",
+          "name": "Bellossom",
+          "dex": "182"
+        }
+      ]
+    },
+    {
+      "name": "CHLOROPHYLL",
+      "slug": "chlorophyll",
+      "effect": "Doubles Speed during strong sunlight.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "BULBASAUR",
+          "slug": "bulbasaur",
+          "name": "Bulbasaur",
+          "dex": "001"
+        },
+        {
+          "key": "ODDISH",
+          "slug": "oddish",
+          "name": "Oddish",
+          "dex": "043"
+        },
+        {
+          "key": "BELLSPROUT",
+          "slug": "bellsprout",
+          "name": "Bellsprout",
+          "dex": "069"
+        },
+        {
+          "key": "EXEGGCUTE",
+          "slug": "exeggcute",
+          "name": "Exeggcute",
+          "dex": "102"
+        },
+        {
+          "key": "TANGELA",
+          "slug": "tangela",
+          "name": "Tangela",
+          "dex": "114"
+        },
+        {
+          "key": "IVYSAUR",
+          "slug": "ivysaur",
+          "name": "Ivysaur",
+          "dex": "002"
+        },
+        {
+          "key": "GLOOM",
+          "slug": "gloom",
+          "name": "Gloom",
+          "dex": "044"
+        },
+        {
+          "key": "WEEPINBELL",
+          "slug": "weepinbell",
+          "name": "Weepinbell",
+          "dex": "070"
+        },
+        {
+          "key": "EXEGGUTOR",
+          "slug": "exeggutor",
+          "name": "Exeggutor",
+          "dex": "103"
+        },
+        {
+          "key": "TANGROWTH",
+          "slug": "tangrowth",
+          "name": "Tangrowth",
+          "dex": "395"
+        },
+        {
+          "key": "VENUSAUR",
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "dex": "003"
+        },
+        {
+          "key": "VILEPLUME",
+          "slug": "vileplume",
+          "name": "Vileplume",
+          "dex": "045"
+        },
+        {
+          "key": "VICTREEBEL",
+          "slug": "victreebel",
+          "name": "Victreebel",
+          "dex": "071"
+        },
+        {
+          "key": "BELLOSSOM",
+          "slug": "bellossom",
+          "name": "Bellossom",
+          "dex": "182"
+        },
+        {
+          "key": "HOPPIP",
+          "slug": "hoppip",
+          "name": "Hoppip",
+          "dex": "187"
+        },
+        {
+          "key": "SUNKERN",
+          "slug": "sunkern",
+          "name": "Sunkern",
+          "dex": "191"
+        },
+        {
+          "key": "SKIPLOOM",
+          "slug": "skiploom",
+          "name": "Skiploom",
+          "dex": "188"
+        },
+        {
+          "key": "SUNFLORA",
+          "slug": "sunflora",
+          "name": "Sunflora",
+          "dex": "192"
+        },
+        {
+          "key": "JUMPLUFF",
+          "slug": "jumpluff",
+          "name": "Jumpluff",
+          "dex": "189"
+        },
+        {
+          "key": "SEEDOT",
+          "slug": "seedot",
+          "name": "Seedot",
+          "dex": "273"
+        },
+        {
+          "key": "TROPIUS",
+          "slug": "tropius",
+          "name": "Tropius",
+          "dex": "357"
+        },
+        {
+          "key": "NUZLEAF",
+          "slug": "nuzleaf",
+          "name": "Nuzleaf",
+          "dex": "274"
+        },
+        {
+          "key": "SHIFTRY",
+          "slug": "shiftry",
+          "name": "Shiftry",
+          "dex": "275"
+        },
+        {
+          "key": "LEAFEON",
+          "slug": "leafeon",
+          "name": "Leafeon",
+          "dex": "408"
+        }
+      ]
+    },
+    {
+      "name": "CLEAR BODY",
+      "slug": "clear-body",
+      "effect": "Prevents stats from being lowered by other Pokémon.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "TENTACOOL",
+          "slug": "tentacool",
+          "name": "Tentacool",
+          "dex": "072"
+        },
+        {
+          "key": "TENTACRUEL",
+          "slug": "tentacruel",
+          "name": "Tentacruel",
+          "dex": "073"
+        },
+        {
+          "key": "SABLEYE",
+          "slug": "sableye",
+          "name": "Sableye",
+          "dex": "302"
+        },
+        {
+          "key": "BELDUM",
+          "slug": "beldum",
+          "name": "Beldum",
+          "dex": "374"
+        },
+        {
+          "key": "REGIROCK",
+          "slug": "regirock",
+          "name": "Regirock",
+          "dex": "377"
+        },
+        {
+          "key": "METANG",
+          "slug": "metang",
+          "name": "Metang",
+          "dex": "375"
+        },
+        {
+          "key": "REGICE",
+          "slug": "regice",
+          "name": "Regice",
+          "dex": "378"
+        },
+        {
+          "key": "METAGROSS",
+          "slug": "metagross",
+          "name": "Metagross",
+          "dex": "376"
+        },
+        {
+          "key": "REGISTEEL",
+          "slug": "registeel",
+          "name": "Registeel",
+          "dex": "379"
+        },
+        {
+          "key": "REGIGIGAS",
+          "slug": "regigigas",
+          "name": "Regigigas",
+          "dex": "327"
+        },
+        {
+          "key": "SANDYSHOCK",
+          "slug": "sandy-shock",
+          "name": "SandyShock",
+          "dex": "173"
+        }
+      ]
+    },
+    {
+      "name": "CLOUD NINE",
+      "slug": "cloud-nine",
+      "effect": "Negates all effects of weather, but does not prevent the weather itself.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "PSYDUCK",
+          "slug": "psyduck",
+          "name": "Psyduck",
+          "dex": "054"
+        },
+        {
+          "key": "SLOWPOKE",
+          "slug": "slowpoke",
+          "name": "Slowpoke",
+          "dex": "079"
+        },
+        {
+          "key": "GOLDUCK",
+          "slug": "golduck",
+          "name": "Golduck",
+          "dex": "055"
+        },
+        {
+          "key": "SLOWBRO",
+          "slug": "slowbro",
+          "name": "Slowbro",
+          "dex": "080"
+        },
+        {
+          "key": "SLOWKING",
+          "slug": "slowking",
+          "name": "Slowking",
+          "dex": "199"
+        },
+        {
+          "key": "GIRAFARIG",
+          "slug": "girafarig",
+          "name": "Girafarig",
+          "dex": "203"
+        },
+        {
+          "key": "FARIGIRAF",
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "dex": "407"
+        }
+      ]
+    },
+    {
+      "name": "COLOR CHANGE",
+      "slug": "color-change",
+      "effect": "Changes type to match when hit by a damaging move.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "KECLEON",
+          "slug": "kecleon",
+          "name": "Kecleon",
+          "dex": "352"
+        },
+        {
+          "key": "KECLEONBATTLEBOND",
+          "slug": "kecleon-battle-bond",
+          "name": "B.B. Kecleon",
+          "dex": "150"
+        }
+      ]
+    },
+    {
+      "name": "COMPETITIVE",
+      "slug": "competitive",
+      "effect": "Raises Special Attack by two stages upon having any stat lowered.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "WALKINGWAKE",
+          "slug": "walking-wake",
+          "name": "Walking Wake",
+          "dex": null
+        }
+      ]
+    },
+    {
+      "name": "DEFIANT",
+      "slug": "defiant",
+      "effect": "Raises Attack two stages upon having any stat lowered.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "EKANS",
+          "slug": "ekans",
+          "name": "Ekans",
+          "dex": "023"
+        },
+        {
+          "key": "MANKEY",
+          "slug": "mankey",
+          "name": "Mankey",
+          "dex": "056"
+        },
+        {
+          "key": "ARBOK",
+          "slug": "arbok",
+          "name": "Arbok",
+          "dex": "024"
+        },
+        {
+          "key": "PRIMEAPE",
+          "slug": "primeape",
+          "name": "Primeape",
+          "dex": "057"
+        },
+        {
+          "key": "ANNIHILAPE",
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "dex": "366"
+        }
+      ]
+    },
+    {
+      "name": "DRAGON FRUIT",
+      "slug": "dragon-fruit",
+      "effect": "Boosts Dragon-type moves by 50%",
+      "kind": "new",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "TROPIUS",
+          "slug": "tropius",
+          "name": "Tropius",
+          "dex": "357"
+        }
+      ]
+    },
+    {
+      "name": "DRIZZLE",
+      "slug": "drizzle",
+      "effect": "Summons rain that lasts indefinitely upon entering battle.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "POLITOED",
+          "slug": "politoed",
+          "name": "Politoed",
+          "dex": "186"
+        },
+        {
+          "key": "PELIPPER",
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "dex": "279"
+        },
+        {
+          "key": "WAILORD",
+          "slug": "wailord",
+          "name": "Wailord",
+          "dex": "321"
+        }
+      ]
+    },
+    {
+      "name": "DROUGHT",
+      "slug": "drought",
+      "effect": "Summons strong sunlight that lasts indefinitely upon entering battle.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "NINETALES",
+          "slug": "ninetales",
+          "name": "Ninetales",
+          "dex": "038"
+        },
+        {
+          "key": "SUNFLORA",
+          "slug": "sunflora",
+          "name": "Sunflora",
+          "dex": "192"
+        },
+        {
+          "key": "TORKOAL",
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "dex": "324"
+        }
+      ]
+    },
+    {
+      "name": "EARLY BIRD",
+      "slug": "early-bird",
+      "effect": "Makes sleep pass twice as quickly.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "DODUO",
+          "slug": "doduo",
+          "name": "Doduo",
+          "dex": "084"
+        },
+        {
+          "key": "DODRIO",
+          "slug": "dodrio",
+          "name": "Dodrio",
+          "dex": "085"
+        },
+        {
+          "key": "HOUNDOUR",
+          "slug": "houndour",
+          "name": "Houndour",
+          "dex": "228"
+        },
+        {
+          "key": "HOUNDOOM",
+          "slug": "houndoom",
+          "name": "Houndoom",
+          "dex": "229"
+        },
+        {
+          "key": "SEEDOT",
+          "slug": "seedot",
+          "name": "Seedot",
+          "dex": "273"
+        },
+        {
+          "key": "NUZLEAF",
+          "slug": "nuzleaf",
+          "name": "Nuzleaf",
+          "dex": "274"
+        },
+        {
+          "key": "SHIFTRY",
+          "slug": "shiftry",
+          "name": "Shiftry",
+          "dex": "275"
+        }
+      ]
+    },
+    {
+      "name": "EERIE AURA",
+      "slug": "eerie-aura",
+      "effect": "Boosts Ghost-type moves by 20%.",
+      "kind": "new",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "TANGELA",
+          "slug": "tangela",
+          "name": "Tangela",
+          "dex": "114"
+        },
+        {
+          "key": "TANGROWTH",
+          "slug": "tangrowth",
+          "name": "Tangrowth",
+          "dex": "395"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT SPORE",
+      "slug": "effect-spore",
+      "effect": "Has a 30% chance of inflcting either paralysis, poison, or sleep on attacking Pokémon on contact.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "PARAS",
+          "slug": "paras",
+          "name": "Paras",
+          "dex": "046"
+        },
+        {
+          "key": "PARASECT",
+          "slug": "parasect",
+          "name": "Parasect",
+          "dex": "047"
+        },
+        {
+          "key": "SHROOMISH",
+          "slug": "shroomish",
+          "name": "Shroomish",
+          "dex": "285"
+        }
+      ]
+    },
+    {
+      "name": "FAFNIR",
+      "slug": "fafnir",
+      "effect": "Boosts Electric and Dragon-type moves by 20%",
+      "kind": "new",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "ELECTIVIRE",
+          "slug": "electivire",
+          "name": "Electivire",
+          "dex": "396"
+        }
+      ]
+    },
+    {
+      "name": "FILTER",
+      "slug": "filter",
+      "effect": "Decreases damage taken from super-effective moves by 1/4.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "JIGGLYPUFF",
+          "slug": "jigglypuff",
+          "name": "Jigglypuff",
+          "dex": "039"
+        },
+        {
+          "key": "MRMIME",
+          "slug": "mr-mime",
+          "name": "Mr. Mime",
+          "dex": "122"
+        },
+        {
+          "key": "WIGGLYTUFF",
+          "slug": "wigglytuff",
+          "name": "Wigglytuff",
+          "dex": "040"
+        },
+        {
+          "key": "GULPIN",
+          "slug": "gulpin",
+          "name": "Gulpin",
+          "dex": "316"
+        },
+        {
+          "key": "SWALOT",
+          "slug": "swalot",
+          "name": "Swalot",
+          "dex": "317"
+        },
+        {
+          "key": "REGIGIGAS",
+          "slug": "regigigas",
+          "name": "Regigigas",
+          "dex": "327"
+        },
+        {
+          "key": "SCREAMTAIL",
+          "slug": "scream-tail",
+          "name": "ScreamTail",
+          "dex": "172"
+        }
+      ]
+    },
+    {
+      "name": "FLAME BODY",
+      "slug": "flame-body",
+      "effect": "Has a 30% chance of burning attacking Pokémon on contact.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SLUGMA",
+          "slug": "slugma",
+          "name": "Slugma",
+          "dex": "218"
+        },
+        {
+          "key": "MAGCARGO",
+          "slug": "magcargo",
+          "name": "Magcargo",
+          "dex": "219"
+        }
+      ]
+    },
+    {
+      "name": "FLARE BOOST",
+      "slug": "flare-boost",
+      "effect": "Increases Special Attack to 1.5× when burned.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "NATU",
+          "slug": "natu",
+          "name": "Natu",
+          "dex": "177"
+        },
+        {
+          "key": "XATU",
+          "slug": "xatu",
+          "name": "Xatu",
+          "dex": "178"
+        }
+      ]
+    },
+    {
+      "name": "FLASH FIRE",
+      "slug": "flash-fire",
+      "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "CHARMANDER",
+          "slug": "charmander",
+          "name": "Charmander",
+          "dex": "004"
+        },
+        {
+          "key": "VULPIX",
+          "slug": "vulpix",
+          "name": "Vulpix",
+          "dex": "037"
+        },
+        {
+          "key": "GROWLITHE",
+          "slug": "growlithe",
+          "name": "Growlithe",
+          "dex": "058"
+        },
+        {
+          "key": "PONYTA",
+          "slug": "ponyta",
+          "name": "Ponyta",
+          "dex": "077"
+        },
+        {
+          "key": "CHARMELEON",
+          "slug": "charmeleon",
+          "name": "Charmeleon",
+          "dex": "005"
+        },
+        {
+          "key": "ARCANINE",
+          "slug": "arcanine",
+          "name": "Arcanine",
+          "dex": "059"
+        },
+        {
+          "key": "RAPIDASH",
+          "slug": "rapidash",
+          "name": "Rapidash",
+          "dex": "078"
+        },
+        {
+          "key": "CHARIZARD",
+          "slug": "charizard",
+          "name": "Charizard",
+          "dex": "006"
+        },
+        {
+          "key": "FLAREON",
+          "slug": "flareon",
+          "name": "Flareon",
+          "dex": "136"
+        },
+        {
+          "key": "SUNKERN",
+          "slug": "sunkern",
+          "name": "Sunkern",
+          "dex": "191"
+        },
+        {
+          "key": "HOUNDOUR",
+          "slug": "houndour",
+          "name": "Houndour",
+          "dex": "228"
+        },
+        {
+          "key": "HOUNDOOM",
+          "slug": "houndoom",
+          "name": "Houndoom",
+          "dex": "229"
+        }
+      ]
+    },
+    {
+      "name": "FORECAST",
+      "slug": "forecast",
+      "effect": "Changes castform's type and form to match the weather.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "CASTFORM",
+          "slug": "castform",
+          "name": "Castform",
+          "dex": "351"
+        }
+      ]
+    },
+    {
+      "name": "FUR COAT",
+      "slug": "fur-coat",
+      "effect": "Halves damage from physical attacks.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "MEOWTH",
+          "slug": "meowth",
+          "name": "Meowth",
+          "dex": "052"
+        },
+        {
+          "key": "PERSIAN",
+          "slug": "persian",
+          "name": "Persian",
+          "dex": "053"
+        },
+        {
+          "key": "SENTRET",
+          "slug": "sentret",
+          "name": "Sentret",
+          "dex": "161"
+        },
+        {
+          "key": "FURRET",
+          "slug": "furret",
+          "name": "Furret",
+          "dex": "162"
+        },
+        {
+          "key": "POOCHYENA",
+          "slug": "poochyena",
+          "name": "Poochyena",
+          "dex": "261"
+        },
+        {
+          "key": "SKITTY",
+          "slug": "skitty",
+          "name": "Skitty",
+          "dex": "300"
+        },
+        {
+          "key": "SWABLU",
+          "slug": "swablu",
+          "name": "Swablu",
+          "dex": "333"
+        },
+        {
+          "key": "MIGHTYENA",
+          "slug": "mightyena",
+          "name": "Mightyena",
+          "dex": "262"
+        },
+        {
+          "key": "DELCATTY",
+          "slug": "delcatty",
+          "name": "Delcatty",
+          "dex": "301"
+        },
+        {
+          "key": "ALTARIA",
+          "slug": "altaria",
+          "name": "Altaria",
+          "dex": "334"
+        }
+      ]
+    },
+    {
+      "name": "GALE WINGS",
+      "slug": "gale-wings",
+      "effect": "Raises flying moves' priority by one stage.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "TAILLOW",
+          "slug": "taillow",
+          "name": "Taillow",
+          "dex": "276"
+        },
+        {
+          "key": "SWELLOW",
+          "slug": "swellow",
+          "name": "Swellow",
+          "dex": "277"
+        }
+      ]
+    },
+    {
+      "name": "GLUTTONY",
+      "slug": "gluttony",
+      "effect": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "BELLSPROUT",
+          "slug": "bellsprout",
+          "name": "Bellsprout",
+          "dex": "069"
+        },
+        {
+          "key": "GRIMER",
+          "slug": "grimer",
+          "name": "Grimer",
+          "dex": "088"
+        },
+        {
+          "key": "EXEGGCUTE",
+          "slug": "exeggcute",
+          "name": "Exeggcute",
+          "dex": "102"
+        },
+        {
+          "key": "SNORLAX",
+          "slug": "snorlax",
+          "name": "Snorlax",
+          "dex": "143"
+        },
+        {
+          "key": "WEEPINBELL",
+          "slug": "weepinbell",
+          "name": "Weepinbell",
+          "dex": "070"
+        },
+        {
+          "key": "MUK",
+          "slug": "muk",
+          "name": "Muk",
+          "dex": "089"
+        },
+        {
+          "key": "EXEGGUTOR",
+          "slug": "exeggutor",
+          "name": "Exeggutor",
+          "dex": "103"
+        },
+        {
+          "key": "VICTREEBEL",
+          "slug": "victreebel",
+          "name": "Victreebel",
+          "dex": "071"
+        },
+        {
+          "key": "ZIGZAGOON",
+          "slug": "zigzagoon",
+          "name": "Zigzagoon",
+          "dex": "263"
+        },
+        {
+          "key": "LINOONE",
+          "slug": "linoone",
+          "name": "Linoone",
+          "dex": "264"
+        }
+      ]
+    },
+    {
+      "name": "GUTS",
+      "slug": "guts",
+      "effect": "Increases Attack to 1.5× with a major status ailment.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "RATTATA",
+          "slug": "rattata",
+          "name": "Rattata",
+          "dex": "019"
+        },
+        {
+          "key": "MACHOP",
+          "slug": "machop",
+          "name": "Machop",
+          "dex": "066"
+        },
+        {
+          "key": "RATREECATE",
+          "slug": "ratreecate",
+          "name": "Ratreecate",
+          "dex": "020"
+        },
+        {
+          "key": "MACHOKE",
+          "slug": "machoke",
+          "name": "Machoke",
+          "dex": "067"
+        },
+        {
+          "key": "MACHAMP",
+          "slug": "machamp",
+          "name": "Machamp",
+          "dex": "068"
+        },
+        {
+          "key": "FLAREON",
+          "slug": "flareon",
+          "name": "Flareon",
+          "dex": "136"
+        },
+        {
+          "key": "TOTODILE",
+          "slug": "totodile",
+          "name": "Totodile",
+          "dex": "158"
+        },
+        {
+          "key": "HERACROSS",
+          "slug": "heracross",
+          "name": "Heracross",
+          "dex": "214"
+        },
+        {
+          "key": "TEDDIURSA",
+          "slug": "teddiursa",
+          "name": "Teddiursa",
+          "dex": "216"
+        },
+        {
+          "key": "TYROGUE",
+          "slug": "tyrogue",
+          "name": "Tyrogue",
+          "dex": "236"
+        },
+        {
+          "key": "LARVITAR",
+          "slug": "larvitar",
+          "name": "Larvitar",
+          "dex": "246"
+        },
+        {
+          "key": "CROCONAW",
+          "slug": "croconaw",
+          "name": "Croconaw",
+          "dex": "159"
+        },
+        {
+          "key": "URSARING",
+          "slug": "ursaring",
+          "name": "Ursaring",
+          "dex": "217"
+        },
+        {
+          "key": "FERALIGATR",
+          "slug": "feraligatr",
+          "name": "Feraligatr",
+          "dex": "160"
+        },
+        {
+          "key": "URSALUNA",
+          "slug": "ursaluna",
+          "name": "Ursaluna",
+          "dex": "368"
+        },
+        {
+          "key": "TAILLOW",
+          "slug": "taillow",
+          "name": "Taillow",
+          "dex": "276"
+        },
+        {
+          "key": "SKITTY",
+          "slug": "skitty",
+          "name": "Skitty",
+          "dex": "300"
+        },
+        {
+          "key": "MAKUHITA",
+          "slug": "makuhita",
+          "name": "Makuhita",
+          "dex": "296"
+        },
+        {
+          "key": "SWELLOW",
+          "slug": "swellow",
+          "name": "Swellow",
+          "dex": "277"
+        },
+        {
+          "key": "DELCATTY",
+          "slug": "delcatty",
+          "name": "Delcatty",
+          "dex": "301"
+        },
+        {
+          "key": "HARIYAMA",
+          "slug": "hariyama",
+          "name": "Hariyama",
+          "dex": "297"
+        }
+      ]
+    },
+    {
+      "name": "HUGE POWER",
+      "slug": "huge-power",
+      "effect": "Doubles Attack in battle.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "LEDYBA",
+          "slug": "ledyba",
+          "name": "Ledyba",
+          "dex": "165"
+        },
+        {
+          "key": "MARILL",
+          "slug": "marill",
+          "name": "Marill",
+          "dex": "183"
+        },
+        {
+          "key": "LEDIAN",
+          "slug": "ledian",
+          "name": "Ledian",
+          "dex": "166"
+        },
+        {
+          "key": "AZUMARILL",
+          "slug": "azumarill",
+          "name": "Azumarill",
+          "dex": "184"
+        }
+      ]
+    },
+    {
+      "name": "HUSTLE",
+      "slug": "hustle",
+      "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "EEVEE",
+          "slug": "eevee",
+          "name": "Eevee",
+          "dex": "133"
+        },
+        {
+          "key": "REMORAID",
+          "slug": "remoraid",
+          "name": "Remoraid",
+          "dex": "223"
+        }
+      ]
+    },
+    {
+      "name": "HYPER CUTTER",
+      "slug": "hyper-cutter",
+      "effect": "Prevents Attack from being lowered by other Pokémon.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "KRABBY",
+          "slug": "krabby",
+          "name": "Krabby",
+          "dex": "098"
+        },
+        {
+          "key": "PINSIR",
+          "slug": "pinsir",
+          "name": "Pinsir",
+          "dex": "127"
+        },
+        {
+          "key": "KINGLER",
+          "slug": "kingler",
+          "name": "Kingler",
+          "dex": "099"
+        },
+        {
+          "key": "CORPHISH",
+          "slug": "corphish",
+          "name": "Corphish",
+          "dex": "341"
+        },
+        {
+          "key": "TRAPINCH",
+          "slug": "trapinch",
+          "name": "Trapinch",
+          "dex": "328"
+        },
+        {
+          "key": "MAWILE",
+          "slug": "mawile",
+          "name": "Mawile",
+          "dex": "303"
+        },
+        {
+          "key": "CRAWDAUNT",
+          "slug": "crawdaunt",
+          "name": "Crawdaunt",
+          "dex": "342"
+        },
+        {
+          "key": "MAWILEBATTLEBOND",
+          "slug": "mawile-battle-bond",
+          "name": "B.B. Mawile",
+          "dex": "151"
+        }
+      ]
+    },
+    {
+      "name": "ILLUMINATE",
+      "slug": "illuminate",
+      "effect": "Doubles the wild encounter rate.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "STARYU",
+          "slug": "staryu",
+          "name": "Staryu",
+          "dex": "120"
+        },
+        {
+          "key": "STARMIE",
+          "slug": "starmie",
+          "name": "Starmie",
+          "dex": "121"
+        }
+      ]
+    },
+    {
+      "name": "IMMUNITY",
+      "slug": "immunity",
+      "effect": "Prevents poison.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "CATERPIE",
+          "slug": "caterpie",
+          "name": "Caterpie",
+          "dex": "010"
+        },
+        {
+          "key": "ZANGOOSE",
+          "slug": "zangoose",
+          "name": "Zangoose",
+          "dex": "335"
+        }
+      ]
+    },
+    {
+      "name": "INNER FOCUS",
+      "slug": "inner-focus",
+      "effect": "Prevents flinching.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "ZUBAT",
+          "slug": "zubat",
+          "name": "Zubat",
+          "dex": "041"
+        },
+        {
+          "key": "MEOWTH",
+          "slug": "meowth",
+          "name": "Meowth",
+          "dex": "052"
+        },
+        {
+          "key": "MANKEY",
+          "slug": "mankey",
+          "name": "Mankey",
+          "dex": "056"
+        },
+        {
+          "key": "ABRA",
+          "slug": "abra",
+          "name": "Abra",
+          "dex": "063"
+        },
+        {
+          "key": "FARFETCHD",
+          "slug": "farfetch-d",
+          "name": "Farfetch'd",
+          "dex": "144"
+        },
+        {
+          "key": "DROWZEE",
+          "slug": "drowzee",
+          "name": "Drowzee",
+          "dex": "096"
+        },
+        {
+          "key": "KANGASKHAN",
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "dex": "115"
+        },
+        {
+          "key": "GOLBAT",
+          "slug": "golbat",
+          "name": "Golbat",
+          "dex": "042"
+        },
+        {
+          "key": "PERSIAN",
+          "slug": "persian",
+          "name": "Persian",
+          "dex": "053"
+        },
+        {
+          "key": "PRIMEAPE",
+          "slug": "primeape",
+          "name": "Primeape",
+          "dex": "057"
+        },
+        {
+          "key": "KADABRA",
+          "slug": "kadabra",
+          "name": "Kadabra",
+          "dex": "064"
+        },
+        {
+          "key": "FARFETCHDGALAR",
+          "slug": "farfetch-d-galar",
+          "name": "Farfetch'd",
+          "dex": "144"
+        },
+        {
+          "key": "HYPNO",
+          "slug": "hypno",
+          "name": "Hypno",
+          "dex": "097"
+        },
+        {
+          "key": "HITMONCHAN",
+          "slug": "hitmonchan",
+          "name": "Hitmonchan",
+          "dex": "107"
+        },
+        {
+          "key": "CROBAT",
+          "slug": "crobat",
+          "name": "Crobat",
+          "dex": "169"
+        },
+        {
+          "key": "ANNIHILAPE",
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "dex": "366"
+        },
+        {
+          "key": "ALAKAZAM",
+          "slug": "alakazam",
+          "name": "Alakazam",
+          "dex": "065"
+        },
+        {
+          "key": "SIRFETCHD",
+          "slug": "sirfetch-d",
+          "name": "Sirfetch'd",
+          "dex": "145"
+        },
+        {
+          "key": "DRAGONITE",
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "dex": "149"
+        },
+        {
+          "key": "GIRAFARIG",
+          "slug": "girafarig",
+          "name": "Girafarig",
+          "dex": "203"
+        },
+        {
+          "key": "SNEASEL",
+          "slug": "sneasel",
+          "name": "Sneasel",
+          "dex": "215"
+        },
+        {
+          "key": "RAIKOU",
+          "slug": "raikou",
+          "name": "Raikou",
+          "dex": "243"
+        },
+        {
+          "key": "FARIGIRAF",
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "dex": "407"
+        },
+        {
+          "key": "WEAVILE",
+          "slug": "weavile",
+          "name": "Weavile",
+          "dex": "391"
+        },
+        {
+          "key": "ENTEI",
+          "slug": "entei",
+          "name": "Entei",
+          "dex": "244"
+        },
+        {
+          "key": "SUICUNE",
+          "slug": "suicune",
+          "name": "Suicune",
+          "dex": "245"
+        },
+        {
+          "key": "SNORUNT",
+          "slug": "snorunt",
+          "name": "Snorunt",
+          "dex": "361"
+        },
+        {
+          "key": "LINOONE",
+          "slug": "linoone",
+          "name": "Linoone",
+          "dex": "264"
+        },
+        {
+          "key": "GLALIE",
+          "slug": "glalie",
+          "name": "Glalie",
+          "dex": "362"
+        },
+        {
+          "key": "GALLADE",
+          "slug": "gallade",
+          "name": "Gallade",
+          "dex": "403"
+        }
+      ]
+    },
+    {
+      "name": "INSOMNIA",
+      "slug": "insomnia",
+      "effect": "Prevents sleep.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "DROWZEE",
+          "slug": "drowzee",
+          "name": "Drowzee",
+          "dex": "096"
+        },
+        {
+          "key": "HYPNO",
+          "slug": "hypno",
+          "name": "Hypno",
+          "dex": "097"
+        },
+        {
+          "key": "SPINARAK",
+          "slug": "spinarak",
+          "name": "Spinarak",
+          "dex": "167"
+        },
+        {
+          "key": "MURKROW",
+          "slug": "murkrow",
+          "name": "Murkrow",
+          "dex": "198"
+        },
+        {
+          "key": "HONCHKROW",
+          "slug": "honchkrow",
+          "name": "Honchkrow",
+          "dex": "390"
+        }
+      ]
+    },
+    {
+      "name": "INTENSE CARE",
+      "slug": "intense-care",
+      "effect": "Healing moves gain +1 priority.",
+      "kind": "new",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "CHANSEY",
+          "slug": "chansey",
+          "name": "Chansey",
+          "dex": "113"
+        },
+        {
+          "key": "BLISSEY",
+          "slug": "blissey",
+          "name": "Blissey",
+          "dex": "242"
+        }
+      ]
+    },
+    {
+      "name": "INTIMIDATE",
+      "slug": "intimidate",
+      "effect": "Lowers opponents' Attack one stage upon entering battle.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "EKANS",
+          "slug": "ekans",
+          "name": "Ekans",
+          "dex": "023"
+        },
+        {
+          "key": "GROWLITHE",
+          "slug": "growlithe",
+          "name": "Growlithe",
+          "dex": "058"
+        },
+        {
+          "key": "TAUROS",
+          "slug": "tauros",
+          "name": "Tauros",
+          "dex": "128"
+        },
+        {
+          "key": "ARBOK",
+          "slug": "arbok",
+          "name": "Arbok",
+          "dex": "024"
+        },
+        {
+          "key": "ARCANINE",
+          "slug": "arcanine",
+          "name": "Arcanine",
+          "dex": "059"
+        },
+        {
+          "key": "GYARADOS",
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "dex": "130"
+        },
+        {
+          "key": "SNUBBULL",
+          "slug": "snubbull",
+          "name": "Snubbull",
+          "dex": "209"
+        },
+        {
+          "key": "STANTLER",
+          "slug": "stantler",
+          "name": "Stantler",
+          "dex": "146"
+        },
+        {
+          "key": "ARIADOS",
+          "slug": "ariados",
+          "name": "Ariados",
+          "dex": "168"
+        },
+        {
+          "key": "GRANBULL",
+          "slug": "granbull",
+          "name": "Granbull",
+          "dex": "210"
+        },
+        {
+          "key": "HITMONTOP",
+          "slug": "hitmontop",
+          "name": "Hitmontop",
+          "dex": "237"
+        },
+        {
+          "key": "POOCHYENA",
+          "slug": "poochyena",
+          "name": "Poochyena",
+          "dex": "261"
+        },
+        {
+          "key": "BALTOY",
+          "slug": "baltoy",
+          "name": "Baltoy",
+          "dex": "343"
+        },
+        {
+          "key": "ELECTRIKE",
+          "slug": "electrike",
+          "name": "Electrike",
+          "dex": "309"
+        },
+        {
+          "key": "MAWILE",
+          "slug": "mawile",
+          "name": "Mawile",
+          "dex": "303"
+        },
+        {
+          "key": "MIGHTYENA",
+          "slug": "mightyena",
+          "name": "Mightyena",
+          "dex": "262"
+        },
+        {
+          "key": "MASQUERAIN",
+          "slug": "masquerain",
+          "name": "Masquerain",
+          "dex": "284"
+        },
+        {
+          "key": "CLAYDOL",
+          "slug": "claydol",
+          "name": "Claydal",
+          "dex": "344"
+        },
+        {
+          "key": "MANECTRIC",
+          "slug": "manectric",
+          "name": "Manectric",
+          "dex": "310"
+        },
+        {
+          "key": "MAWILEBATTLEBOND",
+          "slug": "mawile-battle-bond",
+          "name": "B.B. Mawile",
+          "dex": "151"
+        },
+        {
+          "key": "SALAMENCE",
+          "slug": "salamence",
+          "name": "Salamence",
+          "dex": "373"
+        },
+        {
+          "key": "ROARINGMOON",
+          "slug": "roaring-moon",
+          "name": "Roaring Moon",
+          "dex": null
+        }
+      ]
+    },
+    {
+      "name": "JUNGLE KING",
+      "slug": "jungle-king",
+      "effect": "Boosts Ground and Fighting-type moves by 50%",
+      "kind": "new",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "SLAKOTH",
+          "slug": "slakoth",
+          "name": "Slakoth",
+          "dex": "287"
+        },
+        {
+          "key": "VIGOROTH",
+          "slug": "vigoroth",
+          "name": "Vigoroth",
+          "dex": "288"
+        },
+        {
+          "key": "SLAKING",
+          "slug": "slaking",
+          "name": "Slaking",
+          "dex": "289"
+        }
+      ]
+    },
+    {
+      "name": "KEEN EYE",
+      "slug": "keen-eye",
+      "effect": "Prevents accuracy from being lowered.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "PIDGEY",
+          "slug": "pidgey",
+          "name": "Pidgey",
+          "dex": "016"
+        },
+        {
+          "key": "PIDGEOTTO",
+          "slug": "pidgeotto",
+          "name": "Pidgeotto",
+          "dex": "017"
+        },
+        {
+          "key": "PIDGEOT",
+          "slug": "pidgeot",
+          "name": "Pidgeot",
+          "dex": "018"
+        },
+        {
+          "key": "HOOTHOOT",
+          "slug": "hoothoot",
+          "name": "Hoothoot",
+          "dex": "163"
+        },
+        {
+          "key": "SKARMORY",
+          "slug": "skarmory",
+          "name": "Skarmory",
+          "dex": "227"
+        },
+        {
+          "key": "NOCTOWL",
+          "slug": "noctowl",
+          "name": "Noctowl",
+          "dex": "164"
+        },
+        {
+          "key": "WINGULL",
+          "slug": "wingull",
+          "name": "Wingull",
+          "dex": "278"
+        }
+      ]
+    },
+    {
+      "name": "LEVITATE",
+      "slug": "levitate",
+      "effect": "Evades ground moves.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "GASTLY",
+          "slug": "gastly",
+          "name": "Gastly",
+          "dex": "092"
+        },
+        {
+          "key": "KOFFING",
+          "slug": "koffing",
+          "name": "Koffing",
+          "dex": "109"
+        },
+        {
+          "key": "AERODACTYL",
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "dex": "142"
+        },
+        {
+          "key": "HAUNTER",
+          "slug": "haunter",
+          "name": "Haunter",
+          "dex": "093"
+        },
+        {
+          "key": "WEEZING",
+          "slug": "weezing",
+          "name": "Weezing",
+          "dex": "110"
+        },
+        {
+          "key": "MISDREAVUS",
+          "slug": "misdreavus",
+          "name": "Misdreavus",
+          "dex": "200"
+        },
+        {
+          "key": "MANTINE",
+          "slug": "mantine",
+          "name": "Mantine",
+          "dex": "226"
+        },
+        {
+          "key": "LUNATONE",
+          "slug": "lunatone",
+          "name": "Lunatone",
+          "dex": "337"
+        },
+        {
+          "key": "DUSKULL",
+          "slug": "duskull",
+          "name": "Duskull",
+          "dex": "355"
+        },
+        {
+          "key": "CHIMECHO",
+          "slug": "chimecho",
+          "name": "Chimecho",
+          "dex": "358"
+        },
+        {
+          "key": "PROBOPASS",
+          "slug": "probopass",
+          "name": "Probopass",
+          "dex": "404"
+        },
+        {
+          "key": "VIBRAVA",
+          "slug": "vibrava",
+          "name": "Vibrava",
+          "dex": "329"
+        },
+        {
+          "key": "SOLROCK",
+          "slug": "solrock",
+          "name": "Solrock",
+          "dex": "338"
+        },
+        {
+          "key": "FLYGON",
+          "slug": "flygon",
+          "name": "Flygon",
+          "dex": "330"
+        },
+        {
+          "key": "FLUTTERMANE",
+          "slug": "flutter-mane",
+          "name": "Flutter Mane",
+          "dex": null
+        }
+      ]
+    },
+    {
+      "name": "LIQUID OOZE",
+      "slug": "liquid-ooze",
+      "effect": "Damages opponents using leeching moves for as much as they would heal.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "TENTACOOL",
+          "slug": "tentacool",
+          "name": "Tentacool",
+          "dex": "072"
+        },
+        {
+          "key": "TENTACRUEL",
+          "slug": "tentacruel",
+          "name": "Tentacruel",
+          "dex": "073"
+        }
+      ]
+    },
+    {
+      "name": "MAGMA ARMOR",
+      "slug": "magma-armor",
+      "effect": "Prevents freezing.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SLUGMA",
+          "slug": "slugma",
+          "name": "Slugma",
+          "dex": "218"
+        },
+        {
+          "key": "MAGCARGO",
+          "slug": "magcargo",
+          "name": "Magcargo",
+          "dex": "219"
+        }
+      ]
+    },
+    {
+      "name": "MAGNET PULL",
+      "slug": "magnet-pull",
+      "effect": "Prevents steel opponents from fleeing or switching out.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "MAGNEMITE",
+          "slug": "magnemite",
+          "name": "Magnemite",
+          "dex": "081"
+        },
+        {
+          "key": "MAGNETON",
+          "slug": "magneton",
+          "name": "Magneton",
+          "dex": "082"
+        },
+        {
+          "key": "MAGNEZONE",
+          "slug": "magnezone",
+          "name": "Magnezone",
+          "dex": "392"
+        },
+        {
+          "key": "NOSEPASS",
+          "slug": "nosepass",
+          "name": "Nosepass",
+          "dex": "299"
+        },
+        {
+          "key": "PROBOPASS",
+          "slug": "probopass",
+          "name": "Probopass",
+          "dex": "404"
+        }
+      ]
+    },
+    {
+      "name": "MARVEL SCALE",
+      "slug": "marvel-scale",
+      "effect": "Increases Defense to 1.5× with a major status ailment.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "YGGDREON",
+          "slug": "yggdreon",
+          "name": "Yggdreon",
+          "dex": "298"
+        },
+        {
+          "key": "MILOTIC",
+          "slug": "milotic",
+          "name": "Milotic",
+          "dex": "350"
+        }
+      ]
+    },
+    {
+      "name": "MINUS",
+      "slug": "minus",
+      "effect": "Increases Special Attack to 1.5× when a friendly Pokémon has plus or minus.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "MINUN",
+          "slug": "minun",
+          "name": "Minun",
+          "dex": "312"
+        },
+        {
+          "key": "MINUNBATTLEBOND",
+          "slug": "minun-battle-bond",
+          "name": "B.B. Minun",
+          "dex": "250"
+        },
+        {
+          "key": "ILLUMISE",
+          "slug": "illumise",
+          "name": "Illumise",
+          "dex": "314"
+        }
+      ]
+    },
+    {
+      "name": "MOXIE",
+      "slug": "moxie",
+      "effect": "Raises Attack one stage upon KOing a Pokémon.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "PINSIR",
+          "slug": "pinsir",
+          "name": "Pinsir",
+          "dex": "127"
+        },
+        {
+          "key": "SNUBBULL",
+          "slug": "snubbull",
+          "name": "Snubbull",
+          "dex": "209"
+        },
+        {
+          "key": "HERACROSS",
+          "slug": "heracross",
+          "name": "Heracross",
+          "dex": "214"
+        },
+        {
+          "key": "GRANBULL",
+          "slug": "granbull",
+          "name": "Granbull",
+          "dex": "210"
+        }
+      ]
+    },
+    {
+      "name": "MULTISCALE",
+      "slug": "multiscale",
+      "effect": "Halves damage taken from full HP.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "OMANYTE",
+          "slug": "omanyte",
+          "name": "Omanyte",
+          "dex": "138"
+        },
+        {
+          "key": "DRATINI",
+          "slug": "dratini",
+          "name": "Dratini",
+          "dex": "147"
+        },
+        {
+          "key": "OMASTAR",
+          "slug": "omastar",
+          "name": "Omastar",
+          "dex": "139"
+        },
+        {
+          "key": "DRAGONAIR",
+          "slug": "dragonair",
+          "name": "Dragonair",
+          "dex": "148"
+        },
+        {
+          "key": "DRAGONITE",
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "dex": "149"
+        },
+        {
+          "key": "FEEBAS",
+          "slug": "feebas",
+          "name": "Feebas",
+          "dex": "349"
+        },
+        {
+          "key": "MILOTIC",
+          "slug": "milotic",
+          "name": "Milotic",
+          "dex": "350"
+        },
+        {
+          "key": "GOUGINGFIRE",
+          "slug": "gouging-fire",
+          "name": "Gouging Fire",
+          "dex": null
+        }
+      ]
+    },
+    {
+      "name": "NATURAL CURE",
+      "slug": "natural-cure",
+      "effect": "Cures any major status ailment upon switching out.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "STARYU",
+          "slug": "staryu",
+          "name": "Staryu",
+          "dex": "120"
+        },
+        {
+          "key": "STARMIE",
+          "slug": "starmie",
+          "name": "Starmie",
+          "dex": "121"
+        },
+        {
+          "key": "CHIKORITA",
+          "slug": "chikorita",
+          "name": "Chikorita",
+          "dex": "152"
+        },
+        {
+          "key": "BAYLEEF",
+          "slug": "bayleef",
+          "name": "Bayleef",
+          "dex": "153"
+        },
+        {
+          "key": "SWABLU",
+          "slug": "swablu",
+          "name": "Swablu",
+          "dex": "333"
+        },
+        {
+          "key": "ROSELIA",
+          "slug": "roselia",
+          "name": "Roselia",
+          "dex": "315"
+        },
+        {
+          "key": "ALTARIA",
+          "slug": "altaria",
+          "name": "Altaria",
+          "dex": "334"
+        },
+        {
+          "key": "ROSERADE",
+          "slug": "roserade",
+          "name": "Roserade",
+          "dex": "387"
+        }
+      ]
+    },
+    {
+      "name": "NO GUARD",
+      "slug": "no-guard",
+      "effect": "Ensures all moves used by and against the Pokémon hit.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "PIDGEY",
+          "slug": "pidgey",
+          "name": "Pidgey",
+          "dex": "016"
+        },
+        {
+          "key": "MACHOP",
+          "slug": "machop",
+          "name": "Machop",
+          "dex": "066"
+        },
+        {
+          "key": "PIDGEOTTO",
+          "slug": "pidgeotto",
+          "name": "Pidgeotto",
+          "dex": "017"
+        },
+        {
+          "key": "MACHOKE",
+          "slug": "machoke",
+          "name": "Machoke",
+          "dex": "067"
+        },
+        {
+          "key": "PIDGEOT",
+          "slug": "pidgeot",
+          "name": "Pidgeot",
+          "dex": "018"
+        },
+        {
+          "key": "MACHAMP",
+          "slug": "machamp",
+          "name": "Machamp",
+          "dex": "068"
+        }
+      ]
+    },
+    {
+      "name": "OBLIVIOUS",
+      "slug": "oblivious",
+      "effect": "Prevents infatuation and protects against captivate.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SLOWPOKE",
+          "slug": "slowpoke",
+          "name": "Slowpoke",
+          "dex": "079"
+        },
+        {
+          "key": "LICKITUNG",
+          "slug": "lickitung",
+          "name": "Lickitung",
+          "dex": "108"
+        },
+        {
+          "key": "SLOWBRO",
+          "slug": "slowbro",
+          "name": "Slowbro",
+          "dex": "080"
+        },
+        {
+          "key": "LICKILICKY",
+          "slug": "lickilicky",
+          "name": "Lickilicky",
+          "dex": "393"
+        },
+        {
+          "key": "SLOWKING",
+          "slug": "slowking",
+          "name": "Slowking",
+          "dex": "199"
+        },
+        {
+          "key": "SMOOCHUM",
+          "slug": "smoochum",
+          "name": "Smoochum",
+          "dex": "238"
+        },
+        {
+          "key": "WAILMER",
+          "slug": "wailmer",
+          "name": "Wailmer",
+          "dex": "320"
+        },
+        {
+          "key": "NUMEL",
+          "slug": "numel",
+          "name": "Numel",
+          "dex": "322"
+        },
+        {
+          "key": "WAILORD",
+          "slug": "wailord",
+          "name": "Wailord",
+          "dex": "321"
+        },
+        {
+          "key": "CAMERUPT",
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "dex": "323"
+        }
+      ]
+    },
+    {
+      "name": "OMNI-CHASE",
+      "slug": "omni-chase",
+      "effect": "50% Speed up during weather.",
+      "kind": "new",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "FARFETCHD",
+          "slug": "farfetch-d",
+          "name": "Farfetch'd",
+          "dex": "144"
+        }
+      ]
+    },
+    {
+      "name": "OMNIHUNTER",
+      "slug": "omnihunter",
+      "effect": "Boosts Flying-type moves by 50%",
+      "kind": "new",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "KABUTO",
+          "slug": "kabuto",
+          "name": "Kabuto",
+          "dex": "140"
+        },
+        {
+          "key": "KABUTOPS",
+          "slug": "kabutops",
+          "name": "Kabutops",
+          "dex": "141"
+        }
+      ]
+    },
+    {
+      "name": "OVERGROW",
+      "slug": "overgrow",
+      "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "BULBASAUR",
+          "slug": "bulbasaur",
+          "name": "Bulbasaur",
+          "dex": "001"
+        },
+        {
+          "key": "IVYSAUR",
+          "slug": "ivysaur",
+          "name": "Ivysaur",
+          "dex": "002"
+        },
+        {
+          "key": "VENUSAUR",
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "dex": "003"
+        },
+        {
+          "key": "CHIKORITA",
+          "slug": "chikorita",
+          "name": "Chikorita",
+          "dex": "152"
+        },
+        {
+          "key": "BAYLEEF",
+          "slug": "bayleef",
+          "name": "Bayleef",
+          "dex": "153"
+        },
+        {
+          "key": "MEGANIUM",
+          "slug": "meganium",
+          "name": "Meganium",
+          "dex": "154"
+        },
+        {
+          "key": "TREECKO",
+          "slug": "treecko",
+          "name": "Treecko",
+          "dex": "252"
+        },
+        {
+          "key": "GROVYLE",
+          "slug": "grovyle",
+          "name": "Grovyle",
+          "dex": "253"
+        },
+        {
+          "key": "SCEPTILE",
+          "slug": "sceptile",
+          "name": "Sceptile",
+          "dex": "254"
+        }
+      ]
+    },
+    {
+      "name": "OWN TEMPO",
+      "slug": "own-tempo",
+      "effect": "Prevents confusion.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "ODDISH",
+          "slug": "oddish",
+          "name": "Oddish",
+          "dex": "043"
+        },
+        {
+          "key": "LICKITUNG",
+          "slug": "lickitung",
+          "name": "Lickitung",
+          "dex": "108"
+        },
+        {
+          "key": "GLOOM",
+          "slug": "gloom",
+          "name": "Gloom",
+          "dex": "044"
+        },
+        {
+          "key": "LICKILICKY",
+          "slug": "lickilicky",
+          "name": "Lickilicky",
+          "dex": "393"
+        },
+        {
+          "key": "VILEPLUME",
+          "slug": "vileplume",
+          "name": "Vileplume",
+          "dex": "045"
+        },
+        {
+          "key": "SPOINK",
+          "slug": "spoink",
+          "name": "Spoink",
+          "dex": "325"
+        },
+        {
+          "key": "GRUMPIG",
+          "slug": "grumpig",
+          "name": "Grumpig",
+          "dex": "326"
+        }
+      ]
+    },
+    {
+      "name": "PICKUP",
+      "slug": "pickup",
+      "effect": "Picks up other Pokémon's used and Flung held items.  May also pick up an item after battle.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "JIGGLYPUFF",
+          "slug": "jigglypuff",
+          "name": "Jigglypuff",
+          "dex": "039"
+        },
+        {
+          "key": "WIGGLYTUFF",
+          "slug": "wigglytuff",
+          "name": "Wigglytuff",
+          "dex": "040"
+        },
+        {
+          "key": "ZIGZAGOON",
+          "slug": "zigzagoon",
+          "name": "Zigzagoon",
+          "dex": "263"
+        }
+      ]
+    },
+    {
+      "name": "PLUS",
+      "slug": "plus",
+      "effect": "Increases Special Attack to 1.5× when a friendly Pokémon has plus or minus.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "PLUSLE",
+          "slug": "plusle",
+          "name": "Plusle",
+          "dex": "311"
+        },
+        {
+          "key": "VOLBEAT",
+          "slug": "volbeat",
+          "name": "Volbeat",
+          "dex": "313"
+        },
+        {
+          "key": "PLUSLEBATTLEBOND",
+          "slug": "plusle-battle-bond",
+          "name": "B.B. Plusle",
+          "dex": "249"
+        }
+      ]
+    },
+    {
+      "name": "POISON POINT",
+      "slug": "poison-point",
+      "effect": "Has a 30% chance of poisoning attacking Pokémon on contact.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "NIDORANF",
+          "slug": "nidoran-f",
+          "name": "Nidoran♀",
+          "dex": "029"
+        },
+        {
+          "key": "NIDORANM",
+          "slug": "nidoran-m",
+          "name": "Nidoran♂",
+          "dex": "032"
+        },
+        {
+          "key": "NIDORINA",
+          "slug": "nidorina",
+          "name": "Nidorina",
+          "dex": "030"
+        },
+        {
+          "key": "NIDORINO",
+          "slug": "nidorino",
+          "name": "Nidorino",
+          "dex": "033"
+        },
+        {
+          "key": "NIDOQUEEN",
+          "slug": "nidoqueen",
+          "name": "Nidoqueen",
+          "dex": "031"
+        },
+        {
+          "key": "NIDOKING",
+          "slug": "nidoking",
+          "name": "Nidoking",
+          "dex": "034"
+        },
+        {
+          "key": "ROSELIA",
+          "slug": "roselia",
+          "name": "Roselia",
+          "dex": "315"
+        },
+        {
+          "key": "ROSERADE",
+          "slug": "roserade",
+          "name": "Roserade",
+          "dex": "387"
+        }
+      ]
+    },
+    {
+      "name": "PRANKSTER",
+      "slug": "prankster",
+      "effect": "Raises non-damaging moves' priority by one stage.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SABLEYE",
+          "slug": "sableye",
+          "name": "Sableye",
+          "dex": "302"
+        }
+      ]
+    },
+    {
+      "name": "PRESSURE",
+      "slug": "pressure",
+      "effect": "Increases the PP cost of moves targetting the Pokémon by one.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "WAILMER",
+          "slug": "wailmer",
+          "name": "Wailmer",
+          "dex": "320"
+        },
+        {
+          "key": "DUSCLOPS",
+          "slug": "dusclops",
+          "name": "Dusclops",
+          "dex": "356"
+        },
+        {
+          "key": "DUSKNOIR",
+          "slug": "dusknoir",
+          "name": "Dusknoir",
+          "dex": "405"
+        }
+      ]
+    },
+    {
+      "name": "PRISM LENS",
+      "slug": "prism-lens",
+      "effect": "Boosts Psychic-type moves by 50%.",
+      "kind": "new",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "VENONAT",
+          "slug": "venonat",
+          "name": "Venonat",
+          "dex": "048"
+        },
+        {
+          "key": "VENOMOTH",
+          "slug": "venomoth",
+          "name": "Venomoth",
+          "dex": "049"
+        }
+      ]
+    },
+    {
+      "name": "PROTEAN",
+      "slug": "protean",
+      "effect": "Changes the bearer's type to match each move it uses.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SCYTHER",
+          "slug": "scyther",
+          "name": "Scyther",
+          "dex": "123"
+        },
+        {
+          "key": "KECLEON",
+          "slug": "kecleon",
+          "name": "Kecleon",
+          "dex": "352"
+        },
+        {
+          "key": "BALTOY",
+          "slug": "baltoy",
+          "name": "Baltoy",
+          "dex": "343"
+        },
+        {
+          "key": "KECLEONBATTLEBOND",
+          "slug": "kecleon-battle-bond",
+          "name": "B.B. Kecleon",
+          "dex": "150"
+        },
+        {
+          "key": "CLAYDOL",
+          "slug": "claydol",
+          "name": "Claydal",
+          "dex": "344"
+        }
+      ]
+    },
+    {
+      "name": "PURE POWER",
+      "slug": "pure-power",
+      "effect": "Doubles Attack in battle.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "MEDITITE",
+          "slug": "meditite",
+          "name": "Meditite",
+          "dex": "307"
+        },
+        {
+          "key": "MEDICHAM",
+          "slug": "medicham",
+          "name": "Medicham",
+          "dex": "308"
+        }
+      ]
+    },
+    {
+      "name": "RADIANCE",
+      "slug": "radiance",
+      "effect": "Normal-type moves become Aether type and get a 30% damage boost.",
+      "kind": "new",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "YGGDREON",
+          "slug": "yggdreon",
+          "name": "Yggdreon",
+          "dex": "298"
+        }
+      ]
+    },
+    {
+      "name": "RAIN DISH",
+      "slug": "rain-dish",
+      "effect": "Heals for 1/16 max HP after each turn during rain.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "PARAS",
+          "slug": "paras",
+          "name": "Paras",
+          "dex": "046"
+        },
+        {
+          "key": "VAPOREON",
+          "slug": "vaporeon",
+          "name": "Vaporeon",
+          "dex": "134"
+        },
+        {
+          "key": "PARASECT",
+          "slug": "parasect",
+          "name": "Parasect",
+          "dex": "047"
+        },
+        {
+          "key": "LOTAD",
+          "slug": "lotad",
+          "name": "Lotad",
+          "dex": "270"
+        },
+        {
+          "key": "WINGULL",
+          "slug": "wingull",
+          "name": "Wingull",
+          "dex": "278"
+        },
+        {
+          "key": "LOMBRE",
+          "slug": "lombre",
+          "name": "Lombre",
+          "dex": "271"
+        },
+        {
+          "key": "LUDICOLO",
+          "slug": "ludicolo",
+          "name": "Ludicolo",
+          "dex": "272"
+        }
+      ]
+    },
+    {
+      "name": "ROCK HEAD",
+      "slug": "rock-head",
+      "effect": "Protects against recoil damage.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SPEAROW",
+          "slug": "spearow",
+          "name": "Spearow",
+          "dex": "021"
+        },
+        {
+          "key": "GEODUDE",
+          "slug": "geodude",
+          "name": "Geodude",
+          "dex": "074"
+        },
+        {
+          "key": "ONIX",
+          "slug": "onix",
+          "name": "Onix",
+          "dex": "095"
+        },
+        {
+          "key": "RHYHORN",
+          "slug": "rhyhorn",
+          "name": "Rhyhorn",
+          "dex": "111"
+        },
+        {
+          "key": "TAUROS",
+          "slug": "tauros",
+          "name": "Tauros",
+          "dex": "128"
+        },
+        {
+          "key": "FEAROW",
+          "slug": "fearow",
+          "name": "Fearow",
+          "dex": "022"
+        },
+        {
+          "key": "GRAVELER",
+          "slug": "graveler",
+          "name": "Graveler",
+          "dex": "075"
+        },
+        {
+          "key": "STEELIX",
+          "slug": "steelix",
+          "name": "Steelix",
+          "dex": "208"
+        },
+        {
+          "key": "RHYDON",
+          "slug": "rhydon",
+          "name": "Rhydon",
+          "dex": "112"
+        },
+        {
+          "key": "GOLEM",
+          "slug": "golem",
+          "name": "Golem",
+          "dex": "076"
+        },
+        {
+          "key": "RELICANTH",
+          "slug": "relicanth",
+          "name": "Relicanth",
+          "dex": "369"
+        },
+        {
+          "key": "ARON",
+          "slug": "aron",
+          "name": "Aron",
+          "dex": "304"
+        },
+        {
+          "key": "BAGON",
+          "slug": "bagon",
+          "name": "Bagon",
+          "dex": "371"
+        },
+        {
+          "key": "LAIRON",
+          "slug": "lairon",
+          "name": "Lairon",
+          "dex": "305"
+        },
+        {
+          "key": "SHELGON",
+          "slug": "shelgon",
+          "name": "Shelgon",
+          "dex": "372"
+        },
+        {
+          "key": "AGGRON",
+          "slug": "aggron",
+          "name": "Aggron",
+          "dex": "306"
+        }
+      ]
+    },
+    {
+      "name": "ROUGH SKIN",
+      "slug": "rough-skin",
+      "effect": "Damages attacking Pokémon for 1/8 their max HP on contact.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "CARVANHA",
+          "slug": "carvanha",
+          "name": "Carvanha",
+          "dex": "318"
+        }
+      ]
+    },
+    {
+      "name": "SAND RUSH",
+      "slug": "sand-rush",
+      "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SANDSHREW",
+          "slug": "sandshrew",
+          "name": "Sandshrew",
+          "dex": "027"
+        },
+        {
+          "key": "CUBONE",
+          "slug": "cubone",
+          "name": "Cubone",
+          "dex": "104"
+        },
+        {
+          "key": "SANDSLASH",
+          "slug": "sandslash",
+          "name": "Sandslash",
+          "dex": "028"
+        },
+        {
+          "key": "MAROWAK",
+          "slug": "marowak",
+          "name": "Marowak",
+          "dex": "105"
+        },
+        {
+          "key": "GLIGAR",
+          "slug": "gligar",
+          "name": "Gligar",
+          "dex": "207"
+        },
+        {
+          "key": "GLISCOR",
+          "slug": "gliscor",
+          "name": "Gliscor",
+          "dex": "401"
+        }
+      ]
+    },
+    {
+      "name": "SAND STREAM",
+      "slug": "sand-stream",
+      "effect": "Summons a sandstorm that lasts indefinitely upon entering battle.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SUDOWOODO",
+          "slug": "sudowoodo",
+          "name": "Sudowoodo",
+          "dex": "185"
+        },
+        {
+          "key": "SHUCKLE",
+          "slug": "shuckle",
+          "name": "Shuckle",
+          "dex": "213"
+        },
+        {
+          "key": "TYRANITAR",
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "dex": "248"
+        }
+      ]
+    },
+    {
+      "name": "SAND VEIL",
+      "slug": "sand-veil",
+      "effect": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "DIGLETT",
+          "slug": "diglett",
+          "name": "Diglett",
+          "dex": "050"
+        },
+        {
+          "key": "DUGTRIO",
+          "slug": "dugtrio",
+          "name": "Dugtrio",
+          "dex": "051"
+        },
+        {
+          "key": "GLIGAR",
+          "slug": "gligar",
+          "name": "Gligar",
+          "dex": "207"
+        },
+        {
+          "key": "GLISCOR",
+          "slug": "gliscor",
+          "name": "Gliscor",
+          "dex": "401"
+        },
+        {
+          "key": "CACNEA",
+          "slug": "cacnea",
+          "name": "Cacnea",
+          "dex": "331"
+        },
+        {
+          "key": "CACTURNE",
+          "slug": "cacturne",
+          "name": "Cacturne",
+          "dex": "332"
+        }
+      ]
+    },
+    {
+      "name": "SCRAPPY",
+      "slug": "scrappy",
+      "effect": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "RATTATA",
+          "slug": "rattata",
+          "name": "Rattata",
+          "dex": "019"
+        },
+        {
+          "key": "KANGASKHAN",
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "dex": "115"
+        },
+        {
+          "key": "RATREECATE",
+          "slug": "ratreecate",
+          "name": "Ratreecate",
+          "dex": "020"
+        },
+        {
+          "key": "FARFETCHDGALAR",
+          "slug": "farfetch-d-galar",
+          "name": "Farfetch'd",
+          "dex": "144"
+        },
+        {
+          "key": "SIRFETCHD",
+          "slug": "sirfetch-d",
+          "name": "Sirfetch'd",
+          "dex": "145"
+        },
+        {
+          "key": "STANTLER",
+          "slug": "stantler",
+          "name": "Stantler",
+          "dex": "146"
+        },
+        {
+          "key": "MILTANK",
+          "slug": "miltank",
+          "name": "Miltank",
+          "dex": "241"
+        },
+        {
+          "key": "WHISMUR",
+          "slug": "whismur",
+          "name": "Whismur",
+          "dex": "293"
+        },
+        {
+          "key": "LOUDRED",
+          "slug": "loudred",
+          "name": "Loudred",
+          "dex": "294"
+        },
+        {
+          "key": "EXPLOUD",
+          "slug": "exploud",
+          "name": "Exploud",
+          "dex": "295"
+        }
+      ]
+    },
+    {
+      "name": "SERENE GRACE",
+      "slug": "serene-grace",
+      "effect": "Doubles the chance of moves' extra effects occurring.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "CLEFAIRY",
+          "slug": "clefairy",
+          "name": "Clefairy",
+          "dex": "035"
+        },
+        {
+          "key": "CHANSEY",
+          "slug": "chansey",
+          "name": "Chansey",
+          "dex": "113"
+        },
+        {
+          "key": "CLEFABLE",
+          "slug": "clefable",
+          "name": "Clefable",
+          "dex": "036"
+        },
+        {
+          "key": "BLISSEY",
+          "slug": "blissey",
+          "name": "Blissey",
+          "dex": "242"
+        },
+        {
+          "key": "ESPEON",
+          "slug": "espeon",
+          "name": "Espeon",
+          "dex": "196"
+        },
+        {
+          "key": "TOGEPI",
+          "slug": "togepi",
+          "name": "Togepi",
+          "dex": "175"
+        },
+        {
+          "key": "DUNSPARCE",
+          "slug": "dunsparce",
+          "name": "Dunsparce",
+          "dex": "206"
+        },
+        {
+          "key": "TOGETIC",
+          "slug": "togetic",
+          "name": "Togetic",
+          "dex": "176"
+        },
+        {
+          "key": "UMBREON",
+          "slug": "umbreon",
+          "name": "Umbreon",
+          "dex": "197"
+        },
+        {
+          "key": "MISMAGIUS",
+          "slug": "mismagius",
+          "name": "Mismagius",
+          "dex": "389"
+        },
+        {
+          "key": "DUDUNSPARCE",
+          "slug": "dudunsparce",
+          "name": "Dudunsparce",
+          "dex": "367"
+        },
+        {
+          "key": "TOGEKISS",
+          "slug": "togekiss",
+          "name": "Togekiss",
+          "dex": "398"
+        },
+        {
+          "key": "CHIMECHO",
+          "slug": "chimecho",
+          "name": "Chimecho",
+          "dex": "358"
+        },
+        {
+          "key": "JIRACHI",
+          "slug": "jirachi",
+          "name": "Jirachi",
+          "dex": "385"
+        },
+        {
+          "key": "ILLUMISE",
+          "slug": "illumise",
+          "name": "Illumise",
+          "dex": "314"
+        }
+      ]
+    },
+    {
+      "name": "SHADOW TAG",
+      "slug": "shadow-tag",
+      "effect": "Prevents opponents from fleeing or switching out.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "GENGAR",
+          "slug": "gengar",
+          "name": "Gengar",
+          "dex": "094"
+        },
+        {
+          "key": "WOBBUFFET",
+          "slug": "wobbuffet",
+          "name": "Wobbuffet",
+          "dex": "202"
+        }
+      ]
+    },
+    {
+      "name": "SHED SKIN",
+      "slug": "shed-skin",
+      "effect": "Has a 33% chance of curing any major status ailment after each turn.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "WEEDLE",
+          "slug": "weedle",
+          "name": "Weedle",
+          "dex": "013"
+        },
+        {
+          "key": "DRATINI",
+          "slug": "dratini",
+          "name": "Dratini",
+          "dex": "147"
+        },
+        {
+          "key": "METAPOD",
+          "slug": "metapod",
+          "name": "Metapod",
+          "dex": "011"
+        },
+        {
+          "key": "KAKUNA",
+          "slug": "kakuna",
+          "name": "Kakuna",
+          "dex": "014"
+        },
+        {
+          "key": "DRAGONAIR",
+          "slug": "dragonair",
+          "name": "Dragonair",
+          "dex": "148"
+        },
+        {
+          "key": "PUPITAR",
+          "slug": "pupitar",
+          "name": "Pupitar",
+          "dex": "247"
+        },
+        {
+          "key": "SILCOON",
+          "slug": "silcoon",
+          "name": "Silcoon",
+          "dex": "266"
+        },
+        {
+          "key": "CASCOON",
+          "slug": "cascoon",
+          "name": "Cascoon",
+          "dex": "268"
+        },
+        {
+          "key": "SEVIPER",
+          "slug": "seviper",
+          "name": "Seviper",
+          "dex": "336"
+        }
+      ]
+    },
+    {
+      "name": "SHELL ARMOR",
+      "slug": "shell-armor",
+      "effect": "Protects against critical hits.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SQUIRTLE",
+          "slug": "squirtle",
+          "name": "Squirtle",
+          "dex": "007"
+        },
+        {
+          "key": "KRABBY",
+          "slug": "krabby",
+          "name": "Krabby",
+          "dex": "098"
+        },
+        {
+          "key": "LAPRAS",
+          "slug": "lapras",
+          "name": "Lapras",
+          "dex": "131"
+        },
+        {
+          "key": "WARTORTLE",
+          "slug": "wartortle",
+          "name": "Wartortle",
+          "dex": "008"
+        },
+        {
+          "key": "METAPOD",
+          "slug": "metapod",
+          "name": "Metapod",
+          "dex": "011"
+        },
+        {
+          "key": "KAKUNA",
+          "slug": "kakuna",
+          "name": "Kakuna",
+          "dex": "014"
+        },
+        {
+          "key": "KINGLER",
+          "slug": "kingler",
+          "name": "Kingler",
+          "dex": "099"
+        },
+        {
+          "key": "BLASTOISE",
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "dex": "009"
+        },
+        {
+          "key": "CORSOLA",
+          "slug": "corsola",
+          "name": "Corsola",
+          "dex": "370"
+        }
+      ]
+    },
+    {
+      "name": "SHIELD DUST",
+      "slug": "shield-dust",
+      "effect": "Protects against incoming moves' extra effects.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "CATERPIE",
+          "slug": "caterpie",
+          "name": "Caterpie",
+          "dex": "010"
+        },
+        {
+          "key": "WEEDLE",
+          "slug": "weedle",
+          "name": "Weedle",
+          "dex": "013"
+        },
+        {
+          "key": "WURMPLE",
+          "slug": "wurmple",
+          "name": "Wurmple",
+          "dex": "265"
+        },
+        {
+          "key": "DUSTOX",
+          "slug": "dustox",
+          "name": "Dustox",
+          "dex": "269"
+        }
+      ]
+    },
+    {
+      "name": "SINGULARITY",
+      "slug": "singularity",
+      "effect": "Boosts Fire and Ice-type moves by 25%",
+      "kind": "new",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "NATU",
+          "slug": "natu",
+          "name": "Natu",
+          "dex": "177"
+        },
+        {
+          "key": "XATU",
+          "slug": "xatu",
+          "name": "Xatu",
+          "dex": "178"
+        }
+      ]
+    },
+    {
+      "name": "SKILL LINK",
+      "slug": "skill-link",
+      "effect": "Extends two-to-five-hit moves and triple kick to their full length every time.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SHELLDER",
+          "slug": "shellder",
+          "name": "Shellder",
+          "dex": "090"
+        },
+        {
+          "key": "CLOYSTER",
+          "slug": "cloyster",
+          "name": "Cloyster",
+          "dex": "091"
+        },
+        {
+          "key": "AIPOM",
+          "slug": "aipom",
+          "name": "Aipom",
+          "dex": "190"
+        },
+        {
+          "key": "PINECO",
+          "slug": "pineco",
+          "name": "Pineco",
+          "dex": "204"
+        },
+        {
+          "key": "AMBIPOM",
+          "slug": "ambipom",
+          "name": "Ambipom",
+          "dex": "388"
+        },
+        {
+          "key": "FORRETRESS",
+          "slug": "forretress",
+          "name": "Forretress",
+          "dex": "205"
+        },
+        {
+          "key": "SHROOMISH",
+          "slug": "shroomish",
+          "name": "Shroomish",
+          "dex": "285"
+        },
+        {
+          "key": "BRELOOM",
+          "slug": "breloom",
+          "name": "Breloom",
+          "dex": "286"
+        }
+      ]
+    },
+    {
+      "name": "SLUSH RUSH",
+      "slug": "slush-rush",
+      "effect": "During Hail, this Pokémon has double Speed.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "PONYTA",
+          "slug": "ponyta",
+          "name": "Ponyta",
+          "dex": "077"
+        },
+        {
+          "key": "RAPIDASH",
+          "slug": "rapidash",
+          "name": "Rapidash",
+          "dex": "078"
+        },
+        {
+          "key": "GLACEON",
+          "slug": "glaceon",
+          "name": "Glaceon",
+          "dex": "409"
+        },
+        {
+          "key": "SWINUB",
+          "slug": "swinub",
+          "name": "Swinub",
+          "dex": "220"
+        },
+        {
+          "key": "PILOSWINE",
+          "slug": "piloswine",
+          "name": "Piloswine",
+          "dex": "221"
+        },
+        {
+          "key": "MAMOSWINE",
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "dex": "406"
+        }
+      ]
+    },
+    {
+      "name": "SNIPER",
+      "slug": "sniper",
+      "effect": "Strengthens critical hits to inflict 3× damage rather than 2×.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "DODUO",
+          "slug": "doduo",
+          "name": "Doduo",
+          "dex": "084"
+        },
+        {
+          "key": "HORSEA",
+          "slug": "horsea",
+          "name": "Horsea",
+          "dex": "116"
+        },
+        {
+          "key": "DODRIO",
+          "slug": "dodrio",
+          "name": "Dodrio",
+          "dex": "085"
+        },
+        {
+          "key": "SEADRA",
+          "slug": "seadra",
+          "name": "Seadra",
+          "dex": "117"
+        },
+        {
+          "key": "MAGMORTAR",
+          "slug": "magmortar",
+          "name": "Magmortar",
+          "dex": "397"
+        },
+        {
+          "key": "BEEDRILL",
+          "slug": "beedrill",
+          "name": "Beedrill",
+          "dex": "015"
+        },
+        {
+          "key": "KINGDRA",
+          "slug": "kingdra",
+          "name": "Kingdra",
+          "dex": "230"
+        },
+        {
+          "key": "REMORAID",
+          "slug": "remoraid",
+          "name": "Remoraid",
+          "dex": "223"
+        },
+        {
+          "key": "MAGBY",
+          "slug": "magby",
+          "name": "Magby",
+          "dex": "240"
+        },
+        {
+          "key": "OCTILLERY",
+          "slug": "octillery",
+          "name": "Octillery",
+          "dex": "224"
+        }
+      ]
+    },
+    {
+      "name": "SNOW CLOAK",
+      "slug": "snow-cloak",
+      "effect": "Increases evasion to 1.25× during hail.  Protects against hail damage.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SEEL",
+          "slug": "seel",
+          "name": "Seel",
+          "dex": "086"
+        },
+        {
+          "key": "SNEASEL",
+          "slug": "sneasel",
+          "name": "Sneasel",
+          "dex": "215"
+        },
+        {
+          "key": "SMOOCHUM",
+          "slug": "smoochum",
+          "name": "Smoochum",
+          "dex": "238"
+        },
+        {
+          "key": "WEAVILE",
+          "slug": "weavile",
+          "name": "Weavile",
+          "dex": "391"
+        },
+        {
+          "key": "SNORUNT",
+          "slug": "snorunt",
+          "name": "Snorunt",
+          "dex": "361"
+        },
+        {
+          "key": "BEAUTIFLY",
+          "slug": "beautifly",
+          "name": "Beautifly",
+          "dex": "267"
+        },
+        {
+          "key": "FROSLASS",
+          "slug": "froslass",
+          "name": "Froslass",
+          "dex": "400"
+        }
+      ]
+    },
+    {
+      "name": "SNOW WARNING",
+      "slug": "snow-warning",
+      "effect": "Summons hail that lasts indefinitely upon entering battle.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "DEWGONG",
+          "slug": "dewgong",
+          "name": "Dewgong",
+          "dex": "087"
+        },
+        {
+          "key": "GLACEON",
+          "slug": "glaceon",
+          "name": "Glaceon",
+          "dex": "409"
+        },
+        {
+          "key": "GLALIE",
+          "slug": "glalie",
+          "name": "Glalie",
+          "dex": "362"
+        }
+      ]
+    },
+    {
+      "name": "SOLID ROCK",
+      "slug": "solid-rock",
+      "effect": "Decreases damage taken from super-effective moves by 1/4.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SANDSHREW",
+          "slug": "sandshrew",
+          "name": "Sandshrew",
+          "dex": "027"
+        },
+        {
+          "key": "SANDSLASH",
+          "slug": "sandslash",
+          "name": "Sandslash",
+          "dex": "028"
+        },
+        {
+          "key": "KLEAVOR",
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "dex": "132"
+        },
+        {
+          "key": "RHYPERIOR",
+          "slug": "rhyperior",
+          "name": "Rhyperior",
+          "dex": "394"
+        },
+        {
+          "key": "REEFSOLA",
+          "slug": "reefsola",
+          "name": "Reefsola",
+          "dex": "386"
+        },
+        {
+          "key": "NUMEL",
+          "slug": "numel",
+          "name": "Numel",
+          "dex": "322"
+        },
+        {
+          "key": "LILEEP",
+          "slug": "lileep",
+          "name": "Lileep",
+          "dex": "345"
+        },
+        {
+          "key": "REGIROCK",
+          "slug": "regirock",
+          "name": "Regirock",
+          "dex": "377"
+        },
+        {
+          "key": "CAMERUPT",
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "dex": "323"
+        },
+        {
+          "key": "CRADILY",
+          "slug": "cradily",
+          "name": "Cradily",
+          "dex": "346"
+        },
+        {
+          "key": "REGICE",
+          "slug": "regice",
+          "name": "Regice",
+          "dex": "378"
+        },
+        {
+          "key": "REGISTEEL",
+          "slug": "registeel",
+          "name": "Registeel",
+          "dex": "379"
+        }
+      ]
+    },
+    {
+      "name": "SOUNDPROOF",
+      "slug": "soundproof",
+      "effect": "Protects against sound-based moves.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "VOLTORB",
+          "slug": "voltorb",
+          "name": "Voltorb",
+          "dex": "100"
+        },
+        {
+          "key": "ELECTRODE",
+          "slug": "electrode",
+          "name": "Electrode",
+          "dex": "101"
+        },
+        {
+          "key": "WHISMUR",
+          "slug": "whismur",
+          "name": "Whismur",
+          "dex": "293"
+        },
+        {
+          "key": "LOUDRED",
+          "slug": "loudred",
+          "name": "Loudred",
+          "dex": "294"
+        },
+        {
+          "key": "EXPLOUD",
+          "slug": "exploud",
+          "name": "Exploud",
+          "dex": "295"
+        }
+      ]
+    },
+    {
+      "name": "SOVEREIGNTY",
+      "slug": "sovereignty",
+      "effect": "\"Order\" moves gain +1 priority.",
+      "kind": "new",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "RALTS",
+          "slug": "ralts",
+          "name": "Ralts",
+          "dex": "280"
+        },
+        {
+          "key": "KIRLIA",
+          "slug": "kirlia",
+          "name": "Kirlia",
+          "dex": "281"
+        },
+        {
+          "key": "GARDEVOIR",
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "dex": "282"
+        }
+      ]
+    },
+    {
+      "name": "SPEED BOOST",
+      "slug": "speed-boost",
+      "effect": "Raises Speed one stage after each turn.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "YANMA",
+          "slug": "yanma",
+          "name": "Yanma",
+          "dex": "193"
+        },
+        {
+          "key": "PHANPY",
+          "slug": "phanpy",
+          "name": "Phanpy",
+          "dex": "231"
+        },
+        {
+          "key": "YANMEGA",
+          "slug": "yanmega",
+          "name": "Yanmega",
+          "dex": "399"
+        },
+        {
+          "key": "DONPHAN",
+          "slug": "donphan",
+          "name": "Donphan",
+          "dex": "232"
+        },
+        {
+          "key": "TORCHIC",
+          "slug": "torchic",
+          "name": "Torchic",
+          "dex": "255"
+        },
+        {
+          "key": "BLAZIKENBATTLEBOND",
+          "slug": "blaziken-battle-bond",
+          "name": "B.B. Blaziken",
+          "dex": "360"
+        },
+        {
+          "key": "COMBUSKEN",
+          "slug": "combusken",
+          "name": "Combusken",
+          "dex": "256"
+        },
+        {
+          "key": "NINJASK",
+          "slug": "ninjask",
+          "name": "Ninjask",
+          "dex": "291"
+        },
+        {
+          "key": "SHARPEDO",
+          "slug": "sharpedo",
+          "name": "Sharpedo",
+          "dex": "319"
+        },
+        {
+          "key": "BLAZIKEN",
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "dex": "257"
+        }
+      ]
+    },
+    {
+      "name": "STATIC",
+      "slug": "static",
+      "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "VOLTORB",
+          "slug": "voltorb",
+          "name": "Voltorb",
+          "dex": "100"
+        },
+        {
+          "key": "ELECTRODE",
+          "slug": "electrode",
+          "name": "Electrode",
+          "dex": "101"
+        },
+        {
+          "key": "MAREEP",
+          "slug": "mareep",
+          "name": "Mareep",
+          "dex": "179"
+        },
+        {
+          "key": "ELEKID",
+          "slug": "elekid",
+          "name": "Elekid",
+          "dex": "239"
+        },
+        {
+          "key": "FLAAFFY",
+          "slug": "flaaffy",
+          "name": "Flaaffy",
+          "dex": "180"
+        },
+        {
+          "key": "AMPHAROS",
+          "slug": "ampharos",
+          "name": "Ampharos",
+          "dex": "181"
+        }
+      ]
+    },
+    {
+      "name": "STICKY HOLD",
+      "slug": "sticky-hold",
+      "effect": "Prevents a held item from being removed by other Pokémon.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "GRIMER",
+          "slug": "grimer",
+          "name": "Grimer",
+          "dex": "088"
+        },
+        {
+          "key": "MUK",
+          "slug": "muk",
+          "name": "Muk",
+          "dex": "089"
+        }
+      ]
+    },
+    {
+      "name": "STURDY",
+      "slug": "sturdy",
+      "effect": "The user gains the \"Endure\" effect as long as it's full HP at the beginning of the turn.",
+      "kind": "reworked",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "GEODUDE",
+          "slug": "geodude",
+          "name": "Geodude",
+          "dex": "074"
+        },
+        {
+          "key": "MAGNEMITE",
+          "slug": "magnemite",
+          "name": "Magnemite",
+          "dex": "081"
+        },
+        {
+          "key": "ONIX",
+          "slug": "onix",
+          "name": "Onix",
+          "dex": "095"
+        },
+        {
+          "key": "GRAVELER",
+          "slug": "graveler",
+          "name": "Graveler",
+          "dex": "075"
+        },
+        {
+          "key": "MAGNETON",
+          "slug": "magneton",
+          "name": "Magneton",
+          "dex": "082"
+        },
+        {
+          "key": "STEELIX",
+          "slug": "steelix",
+          "name": "Steelix",
+          "dex": "208"
+        },
+        {
+          "key": "GOLEM",
+          "slug": "golem",
+          "name": "Golem",
+          "dex": "076"
+        },
+        {
+          "key": "MAGNEZONE",
+          "slug": "magnezone",
+          "name": "Magnezone",
+          "dex": "392"
+        },
+        {
+          "key": "SUDOWOODO",
+          "slug": "sudowoodo",
+          "name": "Sudowoodo",
+          "dex": "185"
+        },
+        {
+          "key": "PINECO",
+          "slug": "pineco",
+          "name": "Pineco",
+          "dex": "204"
+        },
+        {
+          "key": "SHUCKLE",
+          "slug": "shuckle",
+          "name": "Shuckle",
+          "dex": "213"
+        },
+        {
+          "key": "SKARMORY",
+          "slug": "skarmory",
+          "name": "Skarmory",
+          "dex": "227"
+        },
+        {
+          "key": "PHANPY",
+          "slug": "phanpy",
+          "name": "Phanpy",
+          "dex": "231"
+        },
+        {
+          "key": "FORRETRESS",
+          "slug": "forretress",
+          "name": "Forretress",
+          "dex": "205"
+        },
+        {
+          "key": "DONPHAN",
+          "slug": "donphan",
+          "name": "Donphan",
+          "dex": "232"
+        },
+        {
+          "key": "NOSEPASS",
+          "slug": "nosepass",
+          "name": "Nosepass",
+          "dex": "299"
+        },
+        {
+          "key": "ARON",
+          "slug": "aron",
+          "name": "Aron",
+          "dex": "304"
+        },
+        {
+          "key": "LAIRON",
+          "slug": "lairon",
+          "name": "Lairon",
+          "dex": "305"
+        },
+        {
+          "key": "AGGRON",
+          "slug": "aggron",
+          "name": "Aggron",
+          "dex": "306"
+        },
+        {
+          "key": "GREATTUSK",
+          "slug": "great-tusk",
+          "name": "Great Tusk",
+          "dex": "211"
+        }
+      ]
+    },
+    {
+      "name": "SUPER LUCK",
+      "slug": "super-luck",
+      "effect": "Raises moves' critical hit rates one stage.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "ZUBAT",
+          "slug": "zubat",
+          "name": "Zubat",
+          "dex": "041"
+        },
+        {
+          "key": "KABUTO",
+          "slug": "kabuto",
+          "name": "Kabuto",
+          "dex": "140"
+        },
+        {
+          "key": "GOLBAT",
+          "slug": "golbat",
+          "name": "Golbat",
+          "dex": "042"
+        },
+        {
+          "key": "MAGMORTAR",
+          "slug": "magmortar",
+          "name": "Magmortar",
+          "dex": "397"
+        },
+        {
+          "key": "KABUTOPS",
+          "slug": "kabutops",
+          "name": "Kabutops",
+          "dex": "141"
+        },
+        {
+          "key": "CROBAT",
+          "slug": "crobat",
+          "name": "Crobat",
+          "dex": "169"
+        },
+        {
+          "key": "TOGEPI",
+          "slug": "togepi",
+          "name": "Togepi",
+          "dex": "175"
+        },
+        {
+          "key": "MURKROW",
+          "slug": "murkrow",
+          "name": "Murkrow",
+          "dex": "198"
+        },
+        {
+          "key": "MAGBY",
+          "slug": "magby",
+          "name": "Magby",
+          "dex": "240"
+        },
+        {
+          "key": "TOGETIC",
+          "slug": "togetic",
+          "name": "Togetic",
+          "dex": "176"
+        },
+        {
+          "key": "HONCHKROW",
+          "slug": "honchkrow",
+          "name": "Honchkrow",
+          "dex": "390"
+        },
+        {
+          "key": "TOGEKISS",
+          "slug": "togekiss",
+          "name": "Togekiss",
+          "dex": "398"
+        },
+        {
+          "key": "ABSOL",
+          "slug": "absol",
+          "name": "Absol",
+          "dex": "359"
+        },
+        {
+          "key": "GALLADE",
+          "slug": "gallade",
+          "name": "Gallade",
+          "dex": "403"
+        }
+      ]
+    },
+    {
+      "name": "SWARM",
+      "slug": "swarm",
+      "effect": "Strengthens bug moves to inflict 1.5× damage at 1/3 max HP or less.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "BEEDRILL",
+          "slug": "beedrill",
+          "name": "Beedrill",
+          "dex": "015"
+        },
+        {
+          "key": "SURSKIT",
+          "slug": "surskit",
+          "name": "Surskit",
+          "dex": "283"
+        }
+      ]
+    },
+    {
+      "name": "SWIFT SWIM",
+      "slug": "swift-swim",
+      "effect": "Doubles Speed during rain.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "PSYDUCK",
+          "slug": "psyduck",
+          "name": "Psyduck",
+          "dex": "054"
+        },
+        {
+          "key": "POLIWAG",
+          "slug": "poliwag",
+          "name": "Poliwag",
+          "dex": "060"
+        },
+        {
+          "key": "SHELLDER",
+          "slug": "shellder",
+          "name": "Shellder",
+          "dex": "090"
+        },
+        {
+          "key": "HORSEA",
+          "slug": "horsea",
+          "name": "Horsea",
+          "dex": "116"
+        },
+        {
+          "key": "GOLDEEN",
+          "slug": "goldeen",
+          "name": "Goldeen",
+          "dex": "118"
+        },
+        {
+          "key": "MAGIKARP",
+          "slug": "magikarp",
+          "name": "Magikarp",
+          "dex": "129"
+        },
+        {
+          "key": "OMANYTE",
+          "slug": "omanyte",
+          "name": "Omanyte",
+          "dex": "138"
+        },
+        {
+          "key": "GOLDUCK",
+          "slug": "golduck",
+          "name": "Golduck",
+          "dex": "055"
+        },
+        {
+          "key": "POLIWHIRL",
+          "slug": "poliwhirl",
+          "name": "Poliwhirl",
+          "dex": "061"
+        },
+        {
+          "key": "CLOYSTER",
+          "slug": "cloyster",
+          "name": "Cloyster",
+          "dex": "091"
+        },
+        {
+          "key": "SEADRA",
+          "slug": "seadra",
+          "name": "Seadra",
+          "dex": "117"
+        },
+        {
+          "key": "SEAKING",
+          "slug": "seaking",
+          "name": "Seaking",
+          "dex": "119"
+        },
+        {
+          "key": "OMASTAR",
+          "slug": "omastar",
+          "name": "Omastar",
+          "dex": "139"
+        },
+        {
+          "key": "POLIWRATH",
+          "slug": "poliwrath",
+          "name": "Poliwrath",
+          "dex": "062"
+        },
+        {
+          "key": "KINGDRA",
+          "slug": "kingdra",
+          "name": "Kingdra",
+          "dex": "230"
+        },
+        {
+          "key": "OCTILLERY",
+          "slug": "octillery",
+          "name": "Octillery",
+          "dex": "224"
+        },
+        {
+          "key": "MUDKIP",
+          "slug": "mudkip",
+          "name": "Mudkip",
+          "dex": "258"
+        },
+        {
+          "key": "LOTAD",
+          "slug": "lotad",
+          "name": "Lotad",
+          "dex": "270"
+        },
+        {
+          "key": "SURSKIT",
+          "slug": "surskit",
+          "name": "Surskit",
+          "dex": "283"
+        },
+        {
+          "key": "BARBOACH",
+          "slug": "barboach",
+          "name": "Barboach",
+          "dex": "339"
+        },
+        {
+          "key": "FEEBAS",
+          "slug": "feebas",
+          "name": "Feebas",
+          "dex": "349"
+        },
+        {
+          "key": "RELICANTH",
+          "slug": "relicanth",
+          "name": "Relicanth",
+          "dex": "369"
+        },
+        {
+          "key": "ANORITH",
+          "slug": "anorith",
+          "name": "Anorith",
+          "dex": "347"
+        },
+        {
+          "key": "MARSHTOMP",
+          "slug": "marshtomp",
+          "name": "Marshtomp",
+          "dex": "259"
+        },
+        {
+          "key": "LOMBRE",
+          "slug": "lombre",
+          "name": "Lombre",
+          "dex": "271"
+        },
+        {
+          "key": "MASQUERAIN",
+          "slug": "masquerain",
+          "name": "Masquerain",
+          "dex": "284"
+        },
+        {
+          "key": "WHISCASH",
+          "slug": "whiscash",
+          "name": "Whiscash",
+          "dex": "340"
+        },
+        {
+          "key": "ARMALDO",
+          "slug": "armaldo",
+          "name": "Armaldo",
+          "dex": "348"
+        },
+        {
+          "key": "SWAMPERT",
+          "slug": "swampert",
+          "name": "Swampert",
+          "dex": "260"
+        },
+        {
+          "key": "LUDICOLO",
+          "slug": "ludicolo",
+          "name": "Ludicolo",
+          "dex": "272"
+        }
+      ]
+    },
+    {
+      "name": "SYNCHRONIZE",
+      "slug": "synchronize",
+      "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "ABRA",
+          "slug": "abra",
+          "name": "Abra",
+          "dex": "063"
+        },
+        {
+          "key": "KADABRA",
+          "slug": "kadabra",
+          "name": "Kadabra",
+          "dex": "064"
+        },
+        {
+          "key": "ALAKAZAM",
+          "slug": "alakazam",
+          "name": "Alakazam",
+          "dex": "065"
+        },
+        {
+          "key": "ESPEON",
+          "slug": "espeon",
+          "name": "Espeon",
+          "dex": "196"
+        },
+        {
+          "key": "UMBREON",
+          "slug": "umbreon",
+          "name": "Umbreon",
+          "dex": "197"
+        }
+      ]
+    },
+    {
+      "name": "TECHNICIAN",
+      "slug": "technician",
+      "effect": "Strengthens moves of 60 base power or less to 1.5× their power.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SCYTHER",
+          "slug": "scyther",
+          "name": "Scyther",
+          "dex": "123"
+        },
+        {
+          "key": "SCIZOR",
+          "slug": "scizor",
+          "name": "Scizor",
+          "dex": "212"
+        },
+        {
+          "key": "HITMONTOP",
+          "slug": "hitmontop",
+          "name": "Hitmontop",
+          "dex": "237"
+        }
+      ]
+    },
+    {
+      "name": "THICK FAT",
+      "slug": "thick-fat",
+      "effect": "Halves damage from fire and ice moves.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SEEL",
+          "slug": "seel",
+          "name": "Seel",
+          "dex": "086"
+        },
+        {
+          "key": "SNORLAX",
+          "slug": "snorlax",
+          "name": "Snorlax",
+          "dex": "143"
+        },
+        {
+          "key": "DEWGONG",
+          "slug": "dewgong",
+          "name": "Dewgong",
+          "dex": "087"
+        },
+        {
+          "key": "MARILL",
+          "slug": "marill",
+          "name": "Marill",
+          "dex": "183"
+        },
+        {
+          "key": "SWINUB",
+          "slug": "swinub",
+          "name": "Swinub",
+          "dex": "220"
+        },
+        {
+          "key": "MILTANK",
+          "slug": "miltank",
+          "name": "Miltank",
+          "dex": "241"
+        },
+        {
+          "key": "AZUMARILL",
+          "slug": "azumarill",
+          "name": "Azumarill",
+          "dex": "184"
+        },
+        {
+          "key": "PILOSWINE",
+          "slug": "piloswine",
+          "name": "Piloswine",
+          "dex": "221"
+        },
+        {
+          "key": "MAMOSWINE",
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "dex": "406"
+        },
+        {
+          "key": "MAKUHITA",
+          "slug": "makuhita",
+          "name": "Makuhita",
+          "dex": "296"
+        },
+        {
+          "key": "SPHEAL",
+          "slug": "spheal",
+          "name": "Spheal",
+          "dex": "363"
+        },
+        {
+          "key": "SPOINK",
+          "slug": "spoink",
+          "name": "Spoink",
+          "dex": "325"
+        },
+        {
+          "key": "HARIYAMA",
+          "slug": "hariyama",
+          "name": "Hariyama",
+          "dex": "297"
+        },
+        {
+          "key": "SEALEO",
+          "slug": "sealeo",
+          "name": "Sealeo",
+          "dex": "364"
+        },
+        {
+          "key": "GRUMPIG",
+          "slug": "grumpig",
+          "name": "Grumpig",
+          "dex": "326"
+        },
+        {
+          "key": "WALREIN",
+          "slug": "walrein",
+          "name": "Walrein",
+          "dex": "365"
+        }
+      ]
+    },
+    {
+      "name": "TINTED LENS",
+      "slug": "tinted-lens",
+      "effect": "Doubles damage inflicted with not-very-effective moves.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "VENONAT",
+          "slug": "venonat",
+          "name": "Venonat",
+          "dex": "048"
+        },
+        {
+          "key": "VENOMOTH",
+          "slug": "venomoth",
+          "name": "Venomoth",
+          "dex": "049"
+        },
+        {
+          "key": "BUTTERFREE",
+          "slug": "butterfree",
+          "name": "Butterfree",
+          "dex": "012"
+        },
+        {
+          "key": "HOOTHOOT",
+          "slug": "hoothoot",
+          "name": "Hoothoot",
+          "dex": "163"
+        },
+        {
+          "key": "NOCTOWL",
+          "slug": "noctowl",
+          "name": "Noctowl",
+          "dex": "164"
+        },
+        {
+          "key": "BEAUTIFLY",
+          "slug": "beautifly",
+          "name": "Beautifly",
+          "dex": "267"
+        },
+        {
+          "key": "DUSTOX",
+          "slug": "dustox",
+          "name": "Dustox",
+          "dex": "269"
+        }
+      ]
+    },
+    {
+      "name": "TORRENT",
+      "slug": "torrent",
+      "effect": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SQUIRTLE",
+          "slug": "squirtle",
+          "name": "Squirtle",
+          "dex": "007"
+        },
+        {
+          "key": "WARTORTLE",
+          "slug": "wartortle",
+          "name": "Wartortle",
+          "dex": "008"
+        },
+        {
+          "key": "BLASTOISE",
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "dex": "009"
+        },
+        {
+          "key": "TOTODILE",
+          "slug": "totodile",
+          "name": "Totodile",
+          "dex": "158"
+        },
+        {
+          "key": "CROCONAW",
+          "slug": "croconaw",
+          "name": "Croconaw",
+          "dex": "159"
+        },
+        {
+          "key": "FERALIGATR",
+          "slug": "feraligatr",
+          "name": "Feraligatr",
+          "dex": "160"
+        },
+        {
+          "key": "MUDKIP",
+          "slug": "mudkip",
+          "name": "Mudkip",
+          "dex": "258"
+        },
+        {
+          "key": "MARSHTOMP",
+          "slug": "marshtomp",
+          "name": "Marshtomp",
+          "dex": "259"
+        },
+        {
+          "key": "SWAMPERT",
+          "slug": "swampert",
+          "name": "Swampert",
+          "dex": "260"
+        }
+      ]
+    },
+    {
+      "name": "TOXIC BOOST",
+      "slug": "toxic-boost",
+      "effect": "Increases Attack to 1.5× when poisoned.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "ZANGOOSE",
+          "slug": "zangoose",
+          "name": "Zangoose",
+          "dex": "335"
+        }
+      ]
+    },
+    {
+      "name": "TRACE",
+      "slug": "trace",
+      "effect": "Copies an opponent's ability upon entering battle.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "PORYGON",
+          "slug": "porygon",
+          "name": "Porygon",
+          "dex": "137"
+        },
+        {
+          "key": "PORYGON2",
+          "slug": "porygon2",
+          "name": "Porygon2",
+          "dex": "233"
+        },
+        {
+          "key": "PORYGONZ",
+          "slug": "porygon-z",
+          "name": "Porygon-Z",
+          "dex": "402"
+        }
+      ]
+    },
+    {
+      "name": "UNAWARE",
+      "slug": "unaware",
+      "effect": "Ignores other Pokémon's stat modifiers for damage and accuracy calculation.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "CLEFAIRY",
+          "slug": "clefairy",
+          "name": "Clefairy",
+          "dex": "035"
+        },
+        {
+          "key": "CLEFABLE",
+          "slug": "clefable",
+          "name": "Clefable",
+          "dex": "036"
+        },
+        {
+          "key": "HOPPIP",
+          "slug": "hoppip",
+          "name": "Hoppip",
+          "dex": "187"
+        },
+        {
+          "key": "WOOPER",
+          "slug": "wooper",
+          "name": "Wooper",
+          "dex": "194"
+        },
+        {
+          "key": "SKIPLOOM",
+          "slug": "skiploom",
+          "name": "Skiploom",
+          "dex": "188"
+        },
+        {
+          "key": "QUAGSIRE",
+          "slug": "quagsire",
+          "name": "Quagsire",
+          "dex": "195"
+        },
+        {
+          "key": "JUMPLUFF",
+          "slug": "jumpluff",
+          "name": "Jumpluff",
+          "dex": "189"
+        },
+        {
+          "key": "SHUPPET",
+          "slug": "shuppet",
+          "name": "Shuppet",
+          "dex": "353"
+        },
+        {
+          "key": "LILEEP",
+          "slug": "lileep",
+          "name": "Lileep",
+          "dex": "345"
+        },
+        {
+          "key": "BANETTE",
+          "slug": "banette",
+          "name": "Banette",
+          "dex": "354"
+        },
+        {
+          "key": "CRADILY",
+          "slug": "cradily",
+          "name": "Cradily",
+          "dex": "346"
+        }
+      ]
+    },
+    {
+      "name": "UNBURDEN",
+      "slug": "unburden",
+      "effect": "Doubles Speed upon using or losing a held item.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "HITMONCHAN",
+          "slug": "hitmonchan",
+          "name": "Hitmonchan",
+          "dex": "107"
+        },
+        {
+          "key": "SEVIPER",
+          "slug": "seviper",
+          "name": "Seviper",
+          "dex": "336"
+        },
+        {
+          "key": "LEAFEON",
+          "slug": "leafeon",
+          "name": "Leafeon",
+          "dex": "408"
+        }
+      ]
+    },
+    {
+      "name": "VENOM BLOOD",
+      "slug": "venom-blood",
+      "effect": "Boosts Poison-type moves by 50%.",
+      "kind": "new",
+      "is_custom": true,
+      "used_by": [
+        {
+          "key": "MEGANIUM",
+          "slug": "meganium",
+          "name": "Meganium",
+          "dex": "154"
+        }
+      ]
+    },
+    {
+      "name": "VITAL SPIRIT",
+      "slug": "vital-spirit",
+      "effect": "Prevents sleep.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "MRMIME",
+          "slug": "mr-mime",
+          "name": "Mr. Mime",
+          "dex": "122"
+        },
+        {
+          "key": "ELEKID",
+          "slug": "elekid",
+          "name": "Elekid",
+          "dex": "239"
+        }
+      ]
+    },
+    {
+      "name": "VOLT ABSORB",
+      "slug": "volt-absorb",
+      "effect": "Absorbs electric moves, healing for 1/4 max HP.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SPEAROW",
+          "slug": "spearow",
+          "name": "Spearow",
+          "dex": "021"
+        },
+        {
+          "key": "PIKACHU",
+          "slug": "pikachu",
+          "name": "Pikachu",
+          "dex": "025"
+        },
+        {
+          "key": "VULPIX",
+          "slug": "vulpix",
+          "name": "Vulpix",
+          "dex": "037"
+        },
+        {
+          "key": "FEAROW",
+          "slug": "fearow",
+          "name": "Fearow",
+          "dex": "022"
+        },
+        {
+          "key": "RAICHU",
+          "slug": "raichu",
+          "name": "Raichu",
+          "dex": "026"
+        },
+        {
+          "key": "NINETALES",
+          "slug": "ninetales",
+          "name": "Ninetales",
+          "dex": "038"
+        },
+        {
+          "key": "JOLTEON",
+          "slug": "jolteon",
+          "name": "Jolteon",
+          "dex": "135"
+        },
+        {
+          "key": "GOROCHU",
+          "slug": "gorochu",
+          "name": "Gorochu",
+          "dex": "201"
+        },
+        {
+          "key": "CHINCHOU",
+          "slug": "chinchou",
+          "name": "Chinchou",
+          "dex": "170"
+        },
+        {
+          "key": "LANTURN",
+          "slug": "lanturn",
+          "name": "Lanturn",
+          "dex": "171"
+        }
+      ]
+    },
+    {
+      "name": "WATER ABSORB",
+      "slug": "water-absorb",
+      "effect": "Absorbs water moves, healing for 1/4 max HP.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "POLIWAG",
+          "slug": "poliwag",
+          "name": "Poliwag",
+          "dex": "060"
+        },
+        {
+          "key": "LAPRAS",
+          "slug": "lapras",
+          "name": "Lapras",
+          "dex": "131"
+        },
+        {
+          "key": "VAPOREON",
+          "slug": "vaporeon",
+          "name": "Vaporeon",
+          "dex": "134"
+        },
+        {
+          "key": "POLIWHIRL",
+          "slug": "poliwhirl",
+          "name": "Poliwhirl",
+          "dex": "061"
+        },
+        {
+          "key": "POLIWRATH",
+          "slug": "poliwrath",
+          "name": "Poliwrath",
+          "dex": "062"
+        },
+        {
+          "key": "CHINCHOU",
+          "slug": "chinchou",
+          "name": "Chinchou",
+          "dex": "170"
+        },
+        {
+          "key": "WOOPER",
+          "slug": "wooper",
+          "name": "Wooper",
+          "dex": "194"
+        },
+        {
+          "key": "CORSOLA",
+          "slug": "corsola",
+          "name": "Corsola",
+          "dex": "370"
+        },
+        {
+          "key": "LANTURN",
+          "slug": "lanturn",
+          "name": "Lanturn",
+          "dex": "171"
+        },
+        {
+          "key": "QUAGSIRE",
+          "slug": "quagsire",
+          "name": "Quagsire",
+          "dex": "195"
+        },
+        {
+          "key": "REEFSOLA",
+          "slug": "reefsola",
+          "name": "Reefsola",
+          "dex": "386"
+        },
+        {
+          "key": "BARBOACH",
+          "slug": "barboach",
+          "name": "Barboach",
+          "dex": "339"
+        },
+        {
+          "key": "CACNEA",
+          "slug": "cacnea",
+          "name": "Cacnea",
+          "dex": "331"
+        },
+        {
+          "key": "GULPIN",
+          "slug": "gulpin",
+          "name": "Gulpin",
+          "dex": "316"
+        },
+        {
+          "key": "WHISCASH",
+          "slug": "whiscash",
+          "name": "Whiscash",
+          "dex": "340"
+        },
+        {
+          "key": "CACTURNE",
+          "slug": "cacturne",
+          "name": "Cacturne",
+          "dex": "332"
+        },
+        {
+          "key": "SWALOT",
+          "slug": "swalot",
+          "name": "Swalot",
+          "dex": "317"
+        }
+      ]
+    },
+    {
+      "name": "WHITE SMOKE",
+      "slug": "white-smoke",
+      "effect": "Prevents stats from being lowered by other Pokémon.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "KOFFING",
+          "slug": "koffing",
+          "name": "Koffing",
+          "dex": "109"
+        },
+        {
+          "key": "WEEZING",
+          "slug": "weezing",
+          "name": "Weezing",
+          "dex": "110"
+        },
+        {
+          "key": "CYNDAQUIL",
+          "slug": "cyndaquil",
+          "name": "Cyndaquil",
+          "dex": "155"
+        },
+        {
+          "key": "QUILAVA",
+          "slug": "quilava",
+          "name": "Quilava",
+          "dex": "156"
+        },
+        {
+          "key": "TYPHLOSION",
+          "slug": "typhlosion",
+          "name": "Typhlosion",
+          "dex": "157"
+        },
+        {
+          "key": "TORKOAL",
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "dex": "324"
+        }
+      ]
+    },
+    {
+      "name": "WONDER GUARD",
+      "slug": "wonder-guard",
+      "effect": "Protects against damaging moves that are not super effective.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "SHEDINJA",
+          "slug": "shedinja",
+          "name": "Shedinja",
+          "dex": "292"
+        }
+      ]
+    },
+    {
+      "name": "WONDER SKIN",
+      "slug": "wonder-skin",
+      "effect": "Lowers incoming non-damaging moves' base accuracy to exactly 50%.",
+      "kind": "baseline",
+      "is_custom": false,
+      "used_by": [
+        {
+          "key": "RALTS",
+          "slug": "ralts",
+          "name": "Ralts",
+          "dex": "280"
+        },
+        {
+          "key": "KIRLIA",
+          "slug": "kirlia",
+          "name": "Kirlia",
+          "dex": "281"
+        },
+        {
+          "key": "FROSLASS",
+          "slug": "froslass",
+          "name": "Froslass",
+          "dex": "400"
+        },
+        {
+          "key": "GARDEVOIR",
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "dex": "282"
+        }
+      ]
+    }
+  ]
+}
