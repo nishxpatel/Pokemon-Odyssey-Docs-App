@@ -9,12 +9,6 @@ const meta   = document.getElementById("meta-line");
 
 let DATA = [];
 
-function escapeHTML(s) {
-  return (s ?? "").toString().replace(/[&<>"']/g, c => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-  }[c]));
-}
-
 function sourceSummary(item) {
   const counts = {};
   for (const s of item.sources || []) {

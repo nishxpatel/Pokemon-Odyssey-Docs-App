@@ -1,11 +1,5 @@
 // Per-item detail page. URL: item.html?slug=<item-slug>
 
-function escapeHTML(s) {
-  return (s ?? "").toString().replace(/[&<>"']/g, c => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-  }[c]));
-}
-
 function sourceLabel(kind) {
   return ({
     shop: "Shop",

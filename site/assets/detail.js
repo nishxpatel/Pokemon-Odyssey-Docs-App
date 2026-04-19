@@ -4,11 +4,6 @@ const SPRITE_URL      = (slug) => `https://play.pokemonshowdown.com/sprites/home
 const SPRITE_FALLBACK = (slug) => `https://play.pokemonshowdown.com/sprites/gen5/${slug}.png`;
 const MAX_STAT_DISPLAY = 255;
 
-function escapeHTML(s) {
-  return (s ?? "").toString().replace(/[&<>"']/g, c => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-  }[c]));
-}
 function typeBadge(t, sm=false) {
   return `<span class="type ${sm ? "sm" : ""} ${typeClass(t)}">${escapeHTML(t)}</span>`;
 }

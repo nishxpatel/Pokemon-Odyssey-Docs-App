@@ -31,6 +31,13 @@ const TYPE_CHART = {
   Aether:   {}, // custom type — effectiveness unknown from the workbook
 };
 
+/** Escape a string for safe insertion into HTML. Used by all page scripts. */
+function escapeHTML(s) {
+  return (s ?? "").toString().replace(/[&<>"']/g, c => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+  }[c]));
+}
+
 function typeClass(name) {
   return (name || "").toLowerCase().replace(/[^a-z]/g, "");
 }

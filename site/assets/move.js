@@ -2,12 +2,6 @@
 
 const root = document.getElementById("root");
 
-function escapeHTML(s) {
-  return (s ?? "").toString().replace(/[&<>"']/g, c => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-  }[c]));
-}
-
 function typeBadge(t) {
   if (!t) return `<span class="empty-msg">—</span>`;
   return `<span class="type ${typeClass(t)}">${escapeHTML(t)}</span>`;

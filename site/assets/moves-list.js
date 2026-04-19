@@ -11,12 +11,6 @@ const meta   = document.getElementById("meta-line");
 
 let DATA = [];
 
-function escapeHTML(s) {
-  return (s ?? "").toString().replace(/[&<>"']/g, c => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-  }[c]));
-}
-
 function typeBadge(t) {
   if (!t) return `<span class="empty-msg">—</span>`;
   return `<span class="type sm ${typeClass(t)}">${escapeHTML(t)}</span>`;

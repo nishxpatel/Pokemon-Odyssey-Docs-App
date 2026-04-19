@@ -2,12 +2,6 @@
 
 const root = document.getElementById("root");
 
-function escapeHTML(s) {
-  return (s ?? "").toString().replace(/[&<>"']/g, c => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-  }[c]));
-}
-
 function kindLabel(a) {
   const map = {
     "new":      "New custom ability",

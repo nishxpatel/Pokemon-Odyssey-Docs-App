@@ -31,12 +31,6 @@ let sortDir = "asc";
 const VIEW_KEY = "podx_view_mode";
 let viewMode = (localStorage.getItem(VIEW_KEY) === "table") ? "table" : "cards";
 
-function escapeHTML(s) {
-  return (s ?? "").toString().replace(/[&<>"']/g, c => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-  }[c]));
-}
-
 function typeBadge(t) {
   return `<span class="type sm ${typeClass(t)}">${escapeHTML(t)}</span>`;
 }
