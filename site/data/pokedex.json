@@ -110,7 +110,7 @@
       {
         "level": 15,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 20,
@@ -389,7 +389,7 @@
       {
         "level": 15,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 20,
@@ -547,12 +547,12 @@
       {
         "level": 15,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 20,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 25,
@@ -685,7 +685,7 @@
       {
         "level": 16,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 20,
@@ -695,7 +695,7 @@
       {
         "level": 25,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 30,
@@ -815,7 +815,7 @@
       {
         "level": 1,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 1,
@@ -835,7 +835,7 @@
       {
         "level": 25,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 30,
@@ -1544,7 +1544,7 @@
     "abilities": [
       {
         "name": "Compoundeyes",
-        "slug": null
+        "slug": "compound-eyes"
       },
       {
         "name": "Tinted Lens",
@@ -2927,7 +2927,7 @@
       {
         "level": 10,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 15,
@@ -3088,7 +3088,7 @@
       {
         "level": 10,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 15,
@@ -3532,7 +3532,7 @@
     "abilities": [
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       },
       {
         "name": "Volt Absorb",
@@ -3605,7 +3605,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 1,
@@ -3694,7 +3694,7 @@
     "abilities": [
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       },
       {
         "name": "Volt Absorb",
@@ -3763,7 +3763,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 1,
@@ -4788,7 +4788,7 @@
       {
         "level": 55,
         "name": "Eartquake",
-        "slug": null
+        "slug": "earthquake"
       }
     ],
     "locations": [
@@ -5063,7 +5063,7 @@
       {
         "level": 1,
         "name": "Hi Horsepower",
-        "slug": null
+        "slug": "high-horsepower"
       },
       {
         "level": 1,
@@ -5544,7 +5544,7 @@
       {
         "level": 5,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 10,
@@ -5564,7 +5564,7 @@
       {
         "level": 25,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 30,
@@ -5695,7 +5695,7 @@
       {
         "level": 5,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 10,
@@ -5715,7 +5715,7 @@
       {
         "level": 25,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 30,
@@ -5901,7 +5901,7 @@
       {
         "level": 40,
         "name": "Hi Horsepower",
-        "slug": null
+        "slug": "high-horsepower"
       },
       {
         "level": 45,
@@ -6060,7 +6060,7 @@
       {
         "level": 40,
         "name": "Hi Horsepower",
-        "slug": null
+        "slug": "high-horsepower"
       },
       {
         "level": 45,
@@ -6148,14 +6148,6 @@
         "slug": "golbat",
         "dex": "042",
         "sprite_slug": "golbat",
-        "is_variant": false
-      },
-      {
-        "key": "CROBAT",
-        "name": "CROBAT",
-        "slug": "crobat",
-        "dex": "169",
-        "sprite_slug": "crobat",
         "is_variant": false
       }
     ],
@@ -6280,16 +6272,7 @@
     "evolves_at_level": null,
     "evolves_note": "Happiness",
     "evolution_items": [],
-    "evolution_targets": [
-      {
-        "to_key": "CROBAT",
-        "to_name": "CROBAT",
-        "to_slug": "crobat",
-        "condition": "Happiness",
-        "kind": "stage",
-        "items": []
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "ZUBAT",
@@ -6305,14 +6288,6 @@
         "slug": "golbat",
         "dex": "042",
         "sprite_slug": "golbat",
-        "is_variant": false
-      },
-      {
-        "key": "CROBAT",
-        "name": "CROBAT",
-        "slug": "crobat",
-        "dex": "169",
-        "sprite_slug": "crobat",
         "is_variant": false
       }
     ],
@@ -6543,7 +6518,7 @@
       {
         "level": 15,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 15,
@@ -6713,7 +6688,7 @@
       {
         "level": 15,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 15,
@@ -6876,7 +6851,7 @@
       {
         "level": 20,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 20,
@@ -7015,7 +6990,7 @@
       {
         "level": 5,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 10,
@@ -7177,7 +7152,7 @@
       {
         "level": 5,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 10,
@@ -7343,7 +7318,7 @@
       {
         "level": 15,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 20,
@@ -7493,7 +7468,7 @@
       {
         "level": 15,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 20,
@@ -8581,7 +8556,7 @@
       {
         "level": 35,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 40,
@@ -8764,7 +8739,7 @@
       {
         "level": 40,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 45,
@@ -9074,7 +9049,7 @@
       {
         "level": 50,
         "name": "Extremespeed",
-        "slug": null
+        "slug": "extreme-speed"
       },
       {
         "level": 55,
@@ -9200,7 +9175,7 @@
       {
         "level": 15,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 20,
@@ -9446,7 +9421,7 @@
       {
         "level": 15,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 20,
@@ -9612,7 +9587,7 @@
       {
         "level": 1,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 1,
@@ -9637,7 +9612,7 @@
       {
         "level": 15,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 20,
@@ -10212,7 +10187,7 @@
       {
         "level": 20,
         "name": "Thunderpunch",
-        "slug": null
+        "slug": "thunder-punch"
       },
       {
         "level": 25,
@@ -10232,7 +10207,7 @@
       {
         "level": 40,
         "name": "Dynamicpunch",
-        "slug": null
+        "slug": "dynamic-punch"
       },
       {
         "level": 45,
@@ -10388,7 +10363,7 @@
       {
         "level": 25,
         "name": "Thunderpunch",
-        "slug": null
+        "slug": "thunder-punch"
       },
       {
         "level": 28,
@@ -10413,7 +10388,7 @@
       {
         "level": 45,
         "name": "Dynamicpunch",
-        "slug": null
+        "slug": "dynamic-punch"
       },
       {
         "level": 50,
@@ -10578,7 +10553,7 @@
       {
         "level": 25,
         "name": "Thunderpunch",
-        "slug": null
+        "slug": "thunder-punch"
       },
       {
         "level": 28,
@@ -10603,7 +10578,7 @@
       {
         "level": 45,
         "name": "Dynamicpunch",
-        "slug": null
+        "slug": "dynamic-punch"
       },
       {
         "level": 50,
@@ -10736,7 +10711,7 @@
       {
         "level": 15,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 15,
@@ -10897,7 +10872,7 @@
       {
         "level": 15,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 20,
@@ -11055,7 +11030,7 @@
       {
         "level": 20,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 20,
@@ -11206,7 +11181,7 @@
       {
         "level": 25,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 30,
@@ -11384,7 +11359,7 @@
       {
         "level": 25,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 30,
@@ -11541,7 +11516,7 @@
       {
         "level": 25,
         "name": "Selfdestruct",
-        "slug": null
+        "slug": "self-destruct"
       },
       {
         "level": 30,
@@ -11730,7 +11705,7 @@
       {
         "level": 25,
         "name": "Selfdestruct",
-        "slug": null
+        "slug": "self-destruct"
       },
       {
         "level": 30,
@@ -11903,7 +11878,7 @@
       {
         "level": 30,
         "name": "Selfdestruct",
-        "slug": null
+        "slug": "self-destruct"
       },
       {
         "level": 35,
@@ -12642,14 +12617,6 @@
         "dex": "082",
         "sprite_slug": "magneton",
         "is_variant": false
-      },
-      {
-        "key": "MAGNEZONE",
-        "name": "MAGNEZONE",
-        "slug": "magnezone",
-        "dex": "392",
-        "sprite_slug": "magnezone",
-        "is_variant": false
       }
     ],
     "stats": {
@@ -12679,7 +12646,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 5,
@@ -12775,18 +12742,7 @@
     "evolution_items": [
       "Thunderstone"
     ],
-    "evolution_targets": [
-      {
-        "to_key": "MAGNEZONE",
-        "to_name": "MAGNEZONE",
-        "to_slug": "magnezone",
-        "condition": "Thunderstone",
-        "kind": "stage",
-        "items": [
-          "Thunderstone"
-        ]
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "MAGNEMITE",
@@ -12802,14 +12758,6 @@
         "slug": "magneton",
         "dex": "082",
         "sprite_slug": "magneton",
-        "is_variant": false
-      },
-      {
-        "key": "MAGNEZONE",
-        "name": "MAGNEZONE",
-        "slug": "magnezone",
-        "dex": "392",
-        "sprite_slug": "magnezone",
         "is_variant": false
       }
     ],
@@ -12840,7 +12788,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 5,
@@ -13039,7 +12987,7 @@
       {
         "level": 45,
         "name": "Hi Horsepower",
-        "slug": null
+        "slug": "high-horsepower"
       },
       {
         "level": 50,
@@ -13139,7 +13087,7 @@
       {
         "level": 1,
         "name": "Hi Jump Kick",
-        "slug": null
+        "slug": "high-jump-kick"
       },
       {
         "level": 1,
@@ -13194,7 +13142,7 @@
       {
         "level": 45,
         "name": "Hi Horsepower",
-        "slug": null
+        "slug": "high-horsepower"
       },
       {
         "level": 50,
@@ -13725,7 +13673,7 @@
       {
         "level": 1,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 1,
@@ -14632,18 +14580,7 @@
     "evolution_items": [
       "Link Stone"
     ],
-    "evolution_targets": [
-      {
-        "to_key": "STEELIX",
-        "to_name": "STEELIX",
-        "to_slug": "steelix",
-        "condition": "Link Stone",
-        "kind": "stage",
-        "items": [
-          "Link Stone"
-        ]
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "ONIX",
@@ -14651,14 +14588,6 @@
         "slug": "onix",
         "dex": "095",
         "sprite_slug": "onix",
-        "is_variant": false
-      },
-      {
-        "key": "STEELIX",
-        "name": "STEELIX",
-        "slug": "steelix",
-        "dex": "208",
-        "sprite_slug": "steelix",
         "is_variant": false
       }
     ],
@@ -15468,7 +15397,7 @@
       {
         "level": 5,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 10,
@@ -15488,7 +15417,7 @@
       {
         "level": 25,
         "name": "Selfdestruct",
-        "slug": null
+        "slug": "self-destruct"
       },
       {
         "level": 30,
@@ -15605,7 +15534,7 @@
       {
         "level": 5,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 10,
@@ -15625,7 +15554,7 @@
       {
         "level": 25,
         "name": "Selfdestruct",
-        "slug": null
+        "slug": "self-destruct"
       },
       {
         "level": 30,
@@ -16241,7 +16170,7 @@
       {
         "level": 1,
         "name": "Hi Horsepower",
-        "slug": null
+        "slug": "high-horsepower"
       },
       {
         "level": 1,
@@ -16345,16 +16274,27 @@
   },
   {
     "key": "HITMONLEE",
-    "display_name": "HITMONLEE ➡️",
+    "display_name": "HITMONLEE",
     "name": "Hitmonlee",
     "slug": "hitmonlee",
     "sprite_slug": "hitmonlee",
     "dex": "106",
     "is_variant": false,
     "is_battle_bond": false,
-    "source_sheet": "#152-251",
-    "types": [],
-    "abilities": [],
+    "source_sheet": "#1-151",
+    "types": [
+      "Fighting"
+    ],
+    "abilities": [
+      {
+        "name": "Limber",
+        "slug": "limber"
+      },
+      {
+        "name": "Unburden",
+        "slug": "unburden"
+      }
+    ],
     "evolves_at": null,
     "evolves_at_level": null,
     "evolves_note": null,
@@ -16363,7 +16303,7 @@
     "family": [
       {
         "key": "HITMONLEE",
-        "name": "HITMONLEE ➡️",
+        "name": "HITMONLEE",
         "slug": "hitmonlee",
         "dex": "106",
         "sprite_slug": "hitmonlee",
@@ -16412,7 +16352,88 @@
       "spe": 87,
       "total": 455
     },
-    "moves": [],
+    "moves": [
+      {
+        "level": 1,
+        "name": "Knock Off",
+        "slug": "knock-off"
+      },
+      {
+        "level": 1,
+        "name": "Superpower",
+        "slug": "superpower"
+      },
+      {
+        "level": 1,
+        "name": "Helping Hand",
+        "slug": "helping-hand"
+      },
+      {
+        "level": 1,
+        "name": "Tackle",
+        "slug": "tackle"
+      },
+      {
+        "level": 1,
+        "name": "Focus Energy",
+        "slug": "focus-energy"
+      },
+      {
+        "level": 1,
+        "name": "Fake Out",
+        "slug": "fake-out"
+      },
+      {
+        "level": 5,
+        "name": "Double Kick",
+        "slug": "double-kick"
+      },
+      {
+        "level": 10,
+        "name": "Endure",
+        "slug": "endure"
+      },
+      {
+        "level": 15,
+        "name": "Revenge",
+        "slug": "revenge"
+      },
+      {
+        "level": 20,
+        "name": "Jump Kick",
+        "slug": "jump-kick"
+      },
+      {
+        "level": 25,
+        "name": "Blaze Kick",
+        "slug": "blaze-kick"
+      },
+      {
+        "level": 30,
+        "name": "Mega Kick",
+        "slug": "mega-kick"
+      },
+      {
+        "level": 35,
+        "name": "Low Kick",
+        "slug": "low-kick"
+      },
+      {
+        "level": 40,
+        "name": "Reversal",
+        "slug": "reversal"
+      },
+      {
+        "level": 45,
+        "name": "Hi Jump Kick",
+        "slug": "high-jump-kick"
+      },
+      {
+        "level": 50,
+        "name": "Close Combat",
+        "slug": "close-combat"
+      }
+    ],
     "locations": [],
     "is_event": false,
     "has_wild": false,
@@ -16449,7 +16470,7 @@
     "family": [
       {
         "key": "HITMONLEE",
-        "name": "HITMONLEE ➡️",
+        "name": "HITMONLEE",
         "slug": "hitmonlee",
         "dex": "106",
         "sprite_slug": "hitmonlee",
@@ -16537,7 +16558,7 @@
       {
         "level": 10,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 15,
@@ -16557,7 +16578,7 @@
       {
         "level": 25,
         "name": "Thunderpunch",
-        "slug": null
+        "slug": "thunder-punch"
       },
       {
         "level": 25,
@@ -16582,7 +16603,7 @@
       {
         "level": 45,
         "name": "Dynamicpunch",
-        "slug": null
+        "slug": "dynamic-punch"
       },
       {
         "level": 50,
@@ -16622,16 +16643,7 @@
     "evolves_at_level": 33,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [
-      {
-        "to_key": "LICKILICKY",
-        "to_name": "LICKILICKY",
-        "to_slug": "lickilicky",
-        "condition": "LV.33",
-        "kind": "stage",
-        "items": []
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "LICKITUNG",
@@ -16639,14 +16651,6 @@
         "slug": "lickitung",
         "dex": "108",
         "sprite_slug": "lickitung",
-        "is_variant": false
-      },
-      {
-        "key": "LICKILICKY",
-        "name": "LICKILICKY",
-        "slug": "lickilicky",
-        "dex": "393",
-        "sprite_slug": "lickilicky",
         "is_variant": false
       }
     ],
@@ -16850,7 +16854,7 @@
       {
         "level": 25,
         "name": "Selfdestruct",
-        "slug": null
+        "slug": "self-destruct"
       },
       {
         "level": 30,
@@ -17006,7 +17010,7 @@
       {
         "level": 25,
         "name": "Selfdestruct",
-        "slug": null
+        "slug": "self-destruct"
       },
       {
         "level": 30,
@@ -17056,7 +17060,7 @@
     "abilities": [
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       },
       {
         "name": "Rock Head",
@@ -17092,14 +17096,6 @@
         "slug": "rhydon",
         "dex": "112",
         "sprite_slug": "rhydon",
-        "is_variant": false
-      },
-      {
-        "key": "RHYPERIOR",
-        "name": "RHYPERIOR",
-        "slug": "rhyperior",
-        "dex": "394",
-        "sprite_slug": "rhyperior",
         "is_variant": false
       }
     ],
@@ -17218,7 +17214,7 @@
     "abilities": [
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       },
       {
         "name": "Rock Head",
@@ -17231,18 +17227,7 @@
     "evolution_items": [
       "Protector"
     ],
-    "evolution_targets": [
-      {
-        "to_key": "RHYPERIOR",
-        "to_name": "RHYPERIOR",
-        "to_slug": "rhyperior",
-        "condition": "Protector",
-        "kind": "stage",
-        "items": [
-          "Protector"
-        ]
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "RHYHORN",
@@ -17258,14 +17243,6 @@
         "slug": "rhydon",
         "dex": "112",
         "sprite_slug": "rhydon",
-        "is_variant": false
-      },
-      {
-        "key": "RHYPERIOR",
-        "name": "RHYPERIOR",
-        "slug": "rhyperior",
-        "dex": "394",
-        "sprite_slug": "rhyperior",
         "is_variant": false
       }
     ],
@@ -17341,7 +17318,7 @@
       {
         "level": 42,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 45,
@@ -17392,16 +17369,7 @@
     "evolves_at_level": null,
     "evolves_note": "Happiness",
     "evolution_items": [],
-    "evolution_targets": [
-      {
-        "to_key": "BLISSEY",
-        "to_name": "⭐ BLISSEY",
-        "to_slug": "blissey",
-        "condition": "Happiness",
-        "kind": "stage",
-        "items": []
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "CHANSEY",
@@ -17409,14 +17377,6 @@
         "slug": "chansey",
         "dex": "113",
         "sprite_slug": "chansey",
-        "is_variant": true
-      },
-      {
-        "key": "BLISSEY",
-        "name": "⭐ BLISSEY",
-        "slug": "blissey",
-        "dex": "242",
-        "sprite_slug": "blissey",
         "is_variant": true
       }
     ],
@@ -17467,7 +17427,7 @@
       {
         "level": 20,
         "name": "Softboiled",
-        "slug": null
+        "slug": "soft-boiled"
       },
       {
         "level": 25,
@@ -17550,16 +17510,7 @@
     "evolves_at_level": 38,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [
-      {
-        "to_key": "TANGROWTH",
-        "to_name": "⭐ TANGROWTH",
-        "to_slug": "tangrowth",
-        "condition": "LV.38",
-        "kind": "stage",
-        "items": []
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "TANGELA",
@@ -17567,14 +17518,6 @@
         "slug": "tangela",
         "dex": "114",
         "sprite_slug": "tangela",
-        "is_variant": true
-      },
-      {
-        "key": "TANGROWTH",
-        "name": "⭐ TANGROWTH",
-        "slug": "tangrowth",
-        "dex": "395",
-        "sprite_slug": "tangrowth",
         "is_variant": true
       }
     ],
@@ -17610,7 +17553,7 @@
       {
         "level": 5,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 10,
@@ -17645,7 +17588,7 @@
       {
         "level": 38,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 40,
@@ -17757,7 +17700,7 @@
       {
         "level": 1,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 1,
@@ -17886,14 +17829,6 @@
         "dex": "117",
         "sprite_slug": "seadra",
         "is_variant": false
-      },
-      {
-        "key": "KINGDRA",
-        "name": "KINGDRA",
-        "slug": "kingdra",
-        "dex": "230",
-        "sprite_slug": "kingdra",
-        "is_variant": false
       }
     ],
     "stats": {
@@ -17943,12 +17878,12 @@
       {
         "level": 20,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 25,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 30,
@@ -18102,18 +18037,7 @@
     "evolution_items": [
       "Link Stone"
     ],
-    "evolution_targets": [
-      {
-        "to_key": "KINGDRA",
-        "to_name": "KINGDRA",
-        "to_slug": "kingdra",
-        "condition": "Link Stone",
-        "kind": "stage",
-        "items": [
-          "Link Stone"
-        ]
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "HORSEA",
@@ -18129,14 +18053,6 @@
         "slug": "seadra",
         "dex": "117",
         "sprite_slug": "seadra",
-        "is_variant": false
-      },
-      {
-        "key": "KINGDRA",
-        "name": "KINGDRA",
-        "slug": "kingdra",
-        "dex": "230",
-        "sprite_slug": "kingdra",
         "is_variant": false
       }
     ],
@@ -18187,12 +18103,12 @@
       {
         "level": 20,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 25,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 30,
@@ -18281,7 +18197,7 @@
       },
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       }
     ],
     "evolves_at": "LV.33",
@@ -18436,7 +18352,7 @@
       },
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       }
     ],
     "evolves_at": null,
@@ -18951,7 +18867,7 @@
       {
         "level": 15,
         "name": "Doubleslap",
-        "slug": null
+        "slug": "double-slap"
       },
       {
         "level": 20,
@@ -19171,16 +19087,28 @@
   },
   {
     "key": "JYNX",
-    "display_name": "⭐ JYNX ➡️",
+    "display_name": "⭐ JYNX",
     "name": "Jynx",
     "slug": "jynx",
     "sprite_slug": "jynx",
     "dex": "124",
     "is_variant": true,
     "is_battle_bond": false,
-    "source_sheet": "#152-251",
-    "types": [],
-    "abilities": [],
+    "source_sheet": "#1-151",
+    "types": [
+      "Grass",
+      "Water"
+    ],
+    "abilities": [
+      {
+        "name": "Snow Cloak",
+        "slug": "snow-cloak"
+      },
+      {
+        "name": "Oblivious",
+        "slug": "oblivious"
+      }
+    ],
     "evolves_at": null,
     "evolves_at_level": null,
     "evolves_note": null,
@@ -19189,18 +19117,10 @@
     "family": [
       {
         "key": "JYNX",
-        "name": "⭐ JYNX ➡️",
+        "name": "⭐ JYNX",
         "slug": "jynx",
         "dex": "124",
         "sprite_slug": "jynx",
-        "is_variant": true
-      },
-      {
-        "key": "SMOOCHUM",
-        "name": "⭐ SMOOCHUM",
-        "slug": "smoochum",
-        "dex": "238",
-        "sprite_slug": "smoochum",
         "is_variant": true
       }
     ],
@@ -19222,7 +19142,78 @@
       "spe": 95,
       "total": 455
     },
-    "moves": [],
+    "moves": [
+      {
+        "level": 1,
+        "name": "Signal Beam",
+        "slug": "signal-beam"
+      },
+      {
+        "level": 1,
+        "name": "Fake Out",
+        "slug": "fake-out"
+      },
+      {
+        "level": 1,
+        "name": "Water Gun",
+        "slug": "water-gun"
+      },
+      {
+        "level": 1,
+        "name": "Pound",
+        "slug": "pound"
+      },
+      {
+        "level": 5,
+        "name": "Absorb",
+        "slug": "absorb"
+      },
+      {
+        "level": 10,
+        "name": "Lovely Kiss",
+        "slug": "lovely-kiss"
+      },
+      {
+        "level": 15,
+        "name": "Mega Drain",
+        "slug": "mega-drain"
+      },
+      {
+        "level": 20,
+        "name": "Water Pulse",
+        "slug": "water-pulse"
+      },
+      {
+        "level": 25,
+        "name": "Frost Curse",
+        "slug": "frost-curse"
+      },
+      {
+        "level": 30,
+        "name": "Giga Drain",
+        "slug": "giga-drain"
+      },
+      {
+        "level": 35,
+        "name": "Scald",
+        "slug": "scald"
+      },
+      {
+        "level": 40,
+        "name": "Cosmic Power",
+        "slug": "cosmic-power"
+      },
+      {
+        "level": 45,
+        "name": "Wish",
+        "slug": "wish"
+      },
+      {
+        "level": 50,
+        "name": "Hydro Pump",
+        "slug": "hydro-pump"
+      }
+    ],
     "locations": [
       {
         "display_name": "Jynx ⭐",
@@ -19277,36 +19268,38 @@
   },
   {
     "key": "ELECTABUZZ",
-    "display_name": "⭐ ELECTABUZZ ➡️",
+    "display_name": "⭐ ELECTABUZZ",
     "name": "Electabuzz",
     "slug": "electabuzz",
     "sprite_slug": "electabuzz",
     "dex": "125",
     "is_variant": true,
     "is_battle_bond": false,
-    "source_sheet": "#152-251",
-    "types": [],
-    "abilities": [],
-    "evolves_at": null,
+    "source_sheet": "#1-151",
+    "types": [
+      "Electric",
+      "Dragon"
+    ],
+    "abilities": [
+      {
+        "name": "Fafnir",
+        "slug": "fafnir"
+      }
+    ],
+    "evolves_at": "Electirizer",
     "evolves_at_level": null,
-    "evolves_note": null,
-    "evolution_items": [],
+    "evolves_note": "Electirizer",
+    "evolution_items": [
+      "Electirizer"
+    ],
     "evolution_targets": [],
     "family": [
       {
         "key": "ELECTABUZZ",
-        "name": "⭐ ELECTABUZZ ➡️",
+        "name": "⭐ ELECTABUZZ",
         "slug": "electabuzz",
         "dex": "125",
         "sprite_slug": "electabuzz",
-        "is_variant": true
-      },
-      {
-        "key": "ELEKID",
-        "name": "⭐ ELEKID",
-        "slug": "elekid",
-        "dex": "239",
-        "sprite_slug": "elekid",
         "is_variant": true
       }
     ],
@@ -19328,7 +19321,83 @@
       "spe": 105,
       "total": 490
     },
-    "moves": [],
+    "moves": [
+      {
+        "level": 1,
+        "name": "Tackle",
+        "slug": "tackle"
+      },
+      {
+        "level": 1,
+        "name": "Leer",
+        "slug": "leer"
+      },
+      {
+        "level": 5,
+        "name": "Spark",
+        "slug": "spark"
+      },
+      {
+        "level": 10,
+        "name": "Charge",
+        "slug": "charge"
+      },
+      {
+        "level": 15,
+        "name": "Sonic Raid",
+        "slug": "sonic-raid"
+      },
+      {
+        "level": 20,
+        "name": "Thunder Wave",
+        "slug": "thunder-wave"
+      },
+      {
+        "level": 25,
+        "name": "Slash",
+        "slug": "slash"
+      },
+      {
+        "level": 30,
+        "name": "Thunderpunch",
+        "slug": "thunder-punch"
+      },
+      {
+        "level": 30,
+        "name": "Dragon Claw",
+        "slug": "dragon-claw"
+      },
+      {
+        "level": 35,
+        "name": "Volt Switch",
+        "slug": "volt-switch"
+      },
+      {
+        "level": 40,
+        "name": "Outrage",
+        "slug": "outrage"
+      },
+      {
+        "level": 45,
+        "name": "Wild Charge",
+        "slug": "wild-charge"
+      },
+      {
+        "level": 50,
+        "name": "Akashic Nova",
+        "slug": "akashic-nova"
+      },
+      {
+        "level": 55,
+        "name": "Limit Break",
+        "slug": "limit-break"
+      },
+      {
+        "level": 60,
+        "name": "Close Combat",
+        "slug": "close-combat"
+      }
+    ],
     "locations": [],
     "is_event": false,
     "has_wild": false,
@@ -19340,36 +19409,42 @@
   },
   {
     "key": "MAGMAR",
-    "display_name": "⭐ MAGMAR ➡️",
+    "display_name": "⭐ MAGMAR",
     "name": "Magmar",
     "slug": "magmar",
     "sprite_slug": "magmar",
     "dex": "126",
     "is_variant": true,
     "is_battle_bond": false,
-    "source_sheet": "#152-251",
-    "types": [],
-    "abilities": [],
-    "evolves_at": null,
+    "source_sheet": "#1-151",
+    "types": [
+      "Fire",
+      "Water"
+    ],
+    "abilities": [
+      {
+        "name": "Super Luck",
+        "slug": "super-luck"
+      },
+      {
+        "name": "Sniper",
+        "slug": "sniper"
+      }
+    ],
+    "evolves_at": "Magmarizer",
     "evolves_at_level": null,
-    "evolves_note": null,
-    "evolution_items": [],
+    "evolves_note": "Magmarizer",
+    "evolution_items": [
+      "Magmarizer"
+    ],
     "evolution_targets": [],
     "family": [
       {
         "key": "MAGMAR",
-        "name": "⭐ MAGMAR ➡️",
+        "name": "⭐ MAGMAR",
         "slug": "magmar",
         "dex": "126",
         "sprite_slug": "magmar",
-        "is_variant": true
-      },
-      {
-        "key": "MAGBY",
-        "name": "⭐ MAGBY",
-        "slug": "magby",
-        "dex": "240",
-        "sprite_slug": "magby",
         "is_variant": true
       }
     ],
@@ -19391,7 +19466,73 @@
       "spe": 93,
       "total": 495
     },
-    "moves": [],
+    "moves": [
+      {
+        "level": 1,
+        "name": "Water Gun",
+        "slug": "water-gun"
+      },
+      {
+        "level": 1,
+        "name": "Leer",
+        "slug": "leer"
+      },
+      {
+        "level": 5,
+        "name": "Ember",
+        "slug": "ember"
+      },
+      {
+        "level": 10,
+        "name": "Smokescreen",
+        "slug": "smokescreen"
+      },
+      {
+        "level": 15,
+        "name": "Bubblebeam",
+        "slug": "bubble-beam"
+      },
+      {
+        "level": 20,
+        "name": "Confuse Ray",
+        "slug": "confuse-ray"
+      },
+      {
+        "level": 25,
+        "name": "Rapid Fire",
+        "slug": "rapid-fire"
+      },
+      {
+        "level": 30,
+        "name": "Scald",
+        "slug": "scald"
+      },
+      {
+        "level": 35,
+        "name": "Aura Sphere",
+        "slug": "aura-sphere"
+      },
+      {
+        "level": 40,
+        "name": "Flamethrower",
+        "slug": "flamethrower"
+      },
+      {
+        "level": 45,
+        "name": "Dark Pulse",
+        "slug": "dark-pulse"
+      },
+      {
+        "level": 50,
+        "name": "Fire Blast",
+        "slug": "fire-blast"
+      },
+      {
+        "level": 55,
+        "name": "Hydro Pump",
+        "slug": "hydro-pump"
+      }
+    ],
     "locations": [
       {
         "display_name": "Magmar ⭐",
@@ -19476,7 +19617,7 @@
       {
         "level": 1,
         "name": "First Press",
-        "slug": null
+        "slug": "first-impression"
       },
       {
         "level": 1,
@@ -19501,7 +19642,7 @@
       {
         "level": 1,
         "name": "Vicegrip",
-        "slug": null
+        "slug": "vice-grip"
       },
       {
         "level": 1,
@@ -20565,14 +20706,6 @@
     "evolution_items": [],
     "evolution_targets": [
       {
-        "to_key": "ESPEON",
-        "to_name": "ESPEON",
-        "to_slug": "espeon",
-        "condition": "➜",
-        "kind": "stage",
-        "items": []
-      },
-      {
         "to_key": "JOLTEON",
         "to_name": "JOLTEON",
         "to_slug": "jolteon",
@@ -21034,7 +21167,7 @@
     "abilities": [
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       },
       {
         "name": "Volt Absorb",
@@ -21177,7 +21310,7 @@
       {
         "level": 15,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 20,
@@ -21451,18 +21584,7 @@
     "evolution_items": [
       "Upgrade"
     ],
-    "evolution_targets": [
-      {
-        "to_key": "PORYGON2",
-        "to_name": "PORYGON2",
-        "to_slug": "porygon2",
-        "condition": "Upgrade",
-        "kind": "stage",
-        "items": [
-          "Upgrade"
-        ]
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "PORYGON",
@@ -21470,22 +21592,6 @@
         "slug": "porygon",
         "dex": "137",
         "sprite_slug": "porygon",
-        "is_variant": false
-      },
-      {
-        "key": "PORYGON2",
-        "name": "PORYGON2",
-        "slug": "porygon2",
-        "dex": "233",
-        "sprite_slug": "porygon2",
-        "is_variant": false
-      },
-      {
-        "key": "PORYGONZ",
-        "name": "PORYGON-Z",
-        "slug": "porygon-z",
-        "dex": "402",
-        "sprite_slug": "porygonz",
         "is_variant": false
       }
     ],
@@ -21511,7 +21617,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 1,
@@ -21685,7 +21791,7 @@
       {
         "level": 15,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 20,
@@ -21884,7 +21990,7 @@
       {
         "level": 15,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 20,
@@ -22335,7 +22441,7 @@
       {
         "level": 15,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 20,
@@ -22465,7 +22571,7 @@
       {
         "level": 1,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 1,
@@ -22535,7 +22641,7 @@
       {
         "level": 40,
         "name": "Hi Horsepower",
-        "slug": null
+        "slug": "high-horsepower"
       },
       {
         "level": 45,
@@ -22622,7 +22728,7 @@
       {
         "level": 1,
         "name": "First Press",
-        "slug": null
+        "slug": "first-impression"
       },
       {
         "level": 1,
@@ -22933,7 +23039,7 @@
       {
         "level": 1,
         "name": "First Press",
-        "slug": null
+        "slug": "first-impression"
       },
       {
         "level": 1,
@@ -23142,7 +23248,7 @@
       {
         "level": 45,
         "name": "Hi Jump Kick",
-        "slug": null
+        "slug": "high-jump-kick"
       },
       {
         "level": 50,
@@ -23152,7 +23258,7 @@
       {
         "level": 55,
         "name": "Mega Horn",
-        "slug": null
+        "slug": "megahorn"
       }
     ],
     "locations": [
@@ -23587,7 +23693,7 @@
       {
         "level": 1,
         "name": "Extremespeed",
-        "slug": null
+        "slug": "extreme-speed"
       },
       {
         "level": 1,
@@ -23748,7 +23854,7 @@
       {
         "level": 1,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 1,
@@ -24363,7 +24469,7 @@
       {
         "level": 1,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 1,
@@ -24575,7 +24681,7 @@
       {
         "level": 20,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 25,
@@ -24723,7 +24829,7 @@
       {
         "level": 25,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 30,
@@ -24878,7 +24984,7 @@
       {
         "level": 25,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 30,
@@ -26111,7 +26217,7 @@
       {
         "level": 25,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 30,
@@ -26131,7 +26237,7 @@
       {
         "level": 45,
         "name": "First Press",
-        "slug": null
+        "slug": "first-impression"
       }
     ],
     "locations": [
@@ -26252,7 +26358,7 @@
       {
         "level": 25,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 30,
@@ -26272,7 +26378,7 @@
       {
         "level": 45,
         "name": "First Press",
-        "slug": null
+        "slug": "first-impression"
       }
     ],
     "locations": [],
@@ -26492,7 +26598,7 @@
       {
         "level": 1,
         "name": "First Press",
-        "slug": null
+        "slug": "first-impression"
       },
       {
         "level": 1,
@@ -26620,22 +26726,6 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
-      {
-        "key": "ZUBAT",
-        "name": "ZUBAT",
-        "slug": "zubat",
-        "dex": "041",
-        "sprite_slug": "zubat",
-        "is_variant": false
-      },
-      {
-        "key": "GOLBAT",
-        "name": "GOLBAT",
-        "slug": "golbat",
-        "dex": "042",
-        "sprite_slug": "golbat",
-        "is_variant": false
-      },
       {
         "key": "CROBAT",
         "name": "CROBAT",
@@ -26833,7 +26923,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 5,
@@ -26843,7 +26933,7 @@
       {
         "level": 10,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 15,
@@ -26983,7 +27073,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 10,
@@ -26993,7 +27083,7 @@
       {
         "level": 15,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 20,
@@ -27260,7 +27350,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 1,
@@ -27399,14 +27489,6 @@
         "dex": "176",
         "sprite_slug": "togetic",
         "is_variant": false
-      },
-      {
-        "key": "TOGEKISS",
-        "name": "TOGEKISS",
-        "slug": "togekiss",
-        "dex": "398",
-        "sprite_slug": "togekiss",
-        "is_variant": false
       }
     ],
     "stats": {
@@ -27451,7 +27533,7 @@
       {
         "level": 15,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 20,
@@ -27524,18 +27606,7 @@
     "evolution_items": [
       "Shiny Stone"
     ],
-    "evolution_targets": [
-      {
-        "to_key": "TOGEKISS",
-        "to_name": "TOGEKISS",
-        "to_slug": "togekiss",
-        "condition": "Shiny Stone",
-        "kind": "stage",
-        "items": [
-          "Shiny Stone"
-        ]
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "TOGEPI",
@@ -27551,14 +27622,6 @@
         "slug": "togetic",
         "dex": "176",
         "sprite_slug": "togetic",
-        "is_variant": false
-      },
-      {
-        "key": "TOGEKISS",
-        "name": "TOGEKISS",
-        "slug": "togekiss",
-        "dex": "398",
-        "sprite_slug": "togekiss",
         "is_variant": false
       }
     ],
@@ -27604,7 +27667,7 @@
       {
         "level": 15,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 20,
@@ -27725,7 +27788,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 1,
@@ -27755,7 +27818,7 @@
       {
         "level": 20,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 20,
@@ -27891,7 +27954,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 1,
@@ -27921,7 +27984,7 @@
       {
         "level": 20,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 20,
@@ -28002,7 +28065,7 @@
       },
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       }
     ],
     "evolves_at": "LV.15",
@@ -28082,7 +28145,7 @@
       {
         "level": 10,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 15,
@@ -28175,7 +28238,7 @@
       },
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       }
     ],
     "evolves_at": "LV.30",
@@ -28255,7 +28318,7 @@
       {
         "level": 10,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 15,
@@ -28338,7 +28401,7 @@
       },
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       }
     ],
     "evolves_at": null,
@@ -28424,7 +28487,7 @@
       {
         "level": 10,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 15,
@@ -28635,7 +28698,7 @@
       {
         "level": 20,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 25,
@@ -28782,7 +28845,7 @@
       {
         "level": 5,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 10,
@@ -28945,7 +29008,7 @@
       {
         "level": 5,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 10,
@@ -29096,7 +29159,7 @@
       {
         "level": 15,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 20,
@@ -29250,7 +29313,7 @@
       {
         "level": 15,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 20,
@@ -29407,7 +29470,7 @@
       {
         "level": 15,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 15,
@@ -29442,7 +29505,7 @@
       {
         "level": 40,
         "name": "Cottonspore",
-        "slug": null
+        "slug": "cotton-spore"
       },
       {
         "level": 45,
@@ -29583,7 +29646,7 @@
       {
         "level": 15,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 15,
@@ -29618,7 +29681,7 @@
       {
         "level": 40,
         "name": "Cottonspore",
-        "slug": null
+        "slug": "cotton-spore"
       },
       {
         "level": 45,
@@ -29738,7 +29801,7 @@
       {
         "level": 15,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 15,
@@ -29773,7 +29836,7 @@
       {
         "level": 40,
         "name": "Cottonspore",
-        "slug": null
+        "slug": "cotton-spore"
       },
       {
         "level": 45,
@@ -29813,16 +29876,7 @@
     "evolves_at_level": 30,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [
-      {
-        "to_key": "AMBIPOM",
-        "to_name": "AMBIPOM",
-        "to_slug": "ambipom",
-        "condition": "LV.30",
-        "kind": "stage",
-        "items": []
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "AIPOM",
@@ -29830,14 +29884,6 @@
         "slug": "aipom",
         "dex": "190",
         "sprite_slug": "aipom",
-        "is_variant": false
-      },
-      {
-        "key": "AMBIPOM",
-        "name": "AMBIPOM",
-        "slug": "ambipom",
-        "dex": "388",
-        "sprite_slug": "ambipom",
         "is_variant": false
       }
     ],
@@ -29903,7 +29949,7 @@
       {
         "level": 35,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 40,
@@ -30258,23 +30304,14 @@
       },
       {
         "name": "Compoundeyes",
-        "slug": null
+        "slug": "compound-eyes"
       }
     ],
     "evolves_at": "LV.33",
     "evolves_at_level": 33,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [
-      {
-        "to_key": "YANMEGA",
-        "to_name": "YANMEGA",
-        "to_slug": "yanmega",
-        "condition": "LV.33",
-        "kind": "stage",
-        "items": []
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "YANMA",
@@ -30282,14 +30319,6 @@
         "slug": "yanma",
         "dex": "193",
         "sprite_slug": "yanma",
-        "is_variant": false
-      },
-      {
-        "key": "YANMEGA",
-        "name": "YANMEGA",
-        "slug": "yanmega",
-        "dex": "399",
-        "sprite_slug": "yanmega",
         "is_variant": false
       }
     ],
@@ -30355,7 +30384,7 @@
       {
         "level": 33,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 35,
@@ -30818,7 +30847,7 @@
       {
         "level": 1,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 1,
@@ -31123,18 +31152,7 @@
     "evolution_items": [
       "Dusk Stone"
     ],
-    "evolution_targets": [
-      {
-        "to_key": "HONCHKROW",
-        "to_name": "HONCHKROW",
-        "to_slug": "honchkrow",
-        "condition": "Dusk Stone",
-        "kind": "stage",
-        "items": [
-          "Dusk Stone"
-        ]
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "MURKROW",
@@ -31142,14 +31160,6 @@
         "slug": "murkrow",
         "dex": "198",
         "sprite_slug": "murkrow",
-        "is_variant": false
-      },
-      {
-        "key": "HONCHKROW",
-        "name": "HONCHKROW",
-        "slug": "honchkrow",
-        "dex": "390",
-        "sprite_slug": "honchkrow",
         "is_variant": false
       }
     ],
@@ -31407,18 +31417,7 @@
     "evolution_items": [
       "Dusk Stone"
     ],
-    "evolution_targets": [
-      {
-        "to_key": "MISMAGIUS",
-        "to_name": "⭐ MISMAGIUS",
-        "to_slug": "mismagius",
-        "condition": "Dusk Stone",
-        "kind": "stage",
-        "items": [
-          "Dusk Stone"
-        ]
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "MISDREAVUS",
@@ -31427,14 +31426,6 @@
         "dex": "200",
         "sprite_slug": "misdreavus",
         "is_variant": false
-      },
-      {
-        "key": "MISMAGIUS",
-        "name": "⭐ MISMAGIUS",
-        "slug": "mismagius",
-        "dex": "389",
-        "sprite_slug": "mismagius",
-        "is_variant": true
       }
     ],
     "stats": {
@@ -31499,7 +31490,7 @@
       {
         "level": 35,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 40,
@@ -31549,7 +31540,7 @@
     "abilities": [
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       },
       {
         "name": "Volt Absorb",
@@ -31621,7 +31612,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 5,
@@ -32088,7 +32079,7 @@
       {
         "level": 10,
         "name": "Selfdestruct",
-        "slug": null
+        "slug": "self-destruct"
       },
       {
         "level": 15,
@@ -32118,7 +32109,7 @@
       {
         "level": 40,
         "name": "First Press",
-        "slug": null
+        "slug": "first-impression"
       }
     ],
     "locations": [
@@ -32233,7 +32224,7 @@
       {
         "level": 20,
         "name": "Selfdestruct",
-        "slug": null
+        "slug": "self-destruct"
       },
       {
         "level": 25,
@@ -32263,7 +32254,7 @@
       {
         "level": 45,
         "name": "First Press",
-        "slug": null
+        "slug": "first-impression"
       },
       {
         "level": 50,
@@ -32375,12 +32366,12 @@
       {
         "level": 15,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 20,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 25,
@@ -32454,16 +32445,7 @@
     "evolves_at_level": 35,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [
-      {
-        "to_key": "GLISCOR",
-        "to_name": "GLISCOR",
-        "to_slug": "gliscor",
-        "condition": "LV.35",
-        "kind": "stage",
-        "items": []
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "GLIGAR",
@@ -32471,14 +32453,6 @@
         "slug": "gligar",
         "dex": "207",
         "sprite_slug": "gligar",
-        "is_variant": false
-      },
-      {
-        "key": "GLISCOR",
-        "name": "GLISCOR",
-        "slug": "gliscor",
-        "dex": "401",
-        "sprite_slug": "gliscor",
         "is_variant": false
       }
     ],
@@ -32605,14 +32579,6 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
-      {
-        "key": "ONIX",
-        "name": "ONIX",
-        "slug": "onix",
-        "dex": "095",
-        "sprite_slug": "onix",
-        "is_variant": false
-      },
       {
         "key": "STEELIX",
         "name": "STEELIX",
@@ -32973,7 +32939,7 @@
       {
         "level": 1,
         "name": "Thunderpunch",
-        "slug": null
+        "slug": "thunder-punch"
       },
       {
         "level": 1,
@@ -33128,7 +33094,7 @@
       {
         "level": 1,
         "name": "Defence Curl",
-        "slug": null
+        "slug": "defense-curl"
       },
       {
         "level": 1,
@@ -33193,7 +33159,7 @@
       {
         "level": 55,
         "name": "Mega Horn",
-        "slug": null
+        "slug": "megahorn"
       },
       {
         "level": 60,
@@ -33581,7 +33547,7 @@
       {
         "level": 1,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 1,
@@ -33700,16 +33666,7 @@
     "evolves_at_level": 35,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [
-      {
-        "to_key": "WEAVILE",
-        "to_name": "⭐ WEAVILE",
-        "to_slug": "weavile",
-        "condition": "LV.35",
-        "kind": "stage",
-        "items": []
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "SNEASEL",
@@ -33717,14 +33674,6 @@
         "slug": "sneasel",
         "dex": "215",
         "sprite_slug": "sneasel",
-        "is_variant": true
-      },
-      {
-        "key": "WEAVILE",
-        "name": "⭐ WEAVILE",
-        "slug": "weavile",
-        "dex": "391",
-        "sprite_slug": "weavile",
         "is_variant": true
       }
     ],
@@ -33965,7 +33914,7 @@
       {
         "level": 25,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 30,
@@ -34117,7 +34066,7 @@
       {
         "level": 30,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 35,
@@ -34262,7 +34211,7 @@
       {
         "level": 20,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 25,
@@ -34445,7 +34394,7 @@
       {
         "level": 20,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 25,
@@ -34546,14 +34495,6 @@
         "slug": "piloswine",
         "dex": "221",
         "sprite_slug": "piloswine",
-        "is_variant": false
-      },
-      {
-        "key": "MAMOSWINE",
-        "name": "MAMOSWINE",
-        "slug": "mamoswine",
-        "dex": "406",
-        "sprite_slug": "mamoswine",
         "is_variant": false
       }
     ],
@@ -34673,16 +34614,7 @@
     "evolves_at_level": 45,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [
-      {
-        "to_key": "MAMOSWINE",
-        "to_name": "MAMOSWINE",
-        "to_slug": "mamoswine",
-        "condition": "LV.45",
-        "kind": "stage",
-        "items": []
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "SWINUB",
@@ -34698,14 +34630,6 @@
         "slug": "piloswine",
         "dex": "221",
         "sprite_slug": "piloswine",
-        "is_variant": false
-      },
-      {
-        "key": "MAMOSWINE",
-        "name": "MAMOSWINE",
-        "slug": "mamoswine",
-        "dex": "406",
-        "sprite_slug": "mamoswine",
         "is_variant": false
       }
     ],
@@ -34833,7 +34757,7 @@
     "abilities": [
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       }
     ],
     "evolves_at": null,
@@ -34908,7 +34832,7 @@
       {
         "level": 20,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 25,
@@ -35681,7 +35605,7 @@
       {
         "level": 25,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 30,
@@ -35831,7 +35755,7 @@
       {
         "level": 25,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 30,
@@ -35910,22 +35834,6 @@
     "evolution_targets": [],
     "family": [
       {
-        "key": "HORSEA",
-        "name": "HORSEA",
-        "slug": "horsea",
-        "dex": "116",
-        "sprite_slug": "horsea",
-        "is_variant": false
-      },
-      {
-        "key": "SEADRA",
-        "name": "SEADRA",
-        "slug": "seadra",
-        "dex": "117",
-        "sprite_slug": "seadra",
-        "is_variant": false
-      },
-      {
         "key": "KINGDRA",
         "name": "KINGDRA",
         "slug": "kingdra",
@@ -35991,12 +35899,12 @@
       {
         "level": 25,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 30,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 35,
@@ -36280,7 +36188,7 @@
       {
         "level": 25,
         "name": "Hi Horsepower",
-        "slug": null
+        "slug": "high-horsepower"
       },
       {
         "level": 30,
@@ -36342,41 +36250,14 @@
     "evolution_items": [
       "Dubious Disc"
     ],
-    "evolution_targets": [
-      {
-        "to_key": "PORYGONZ",
-        "to_name": "PORYGON-Z",
-        "to_slug": "porygon-z",
-        "condition": "Dubious Disc",
-        "kind": "stage",
-        "items": [
-          "Dubious Disc"
-        ]
-      }
-    ],
+    "evolution_targets": [],
     "family": [
-      {
-        "key": "PORYGON",
-        "name": "PORYGON",
-        "slug": "porygon",
-        "dex": "137",
-        "sprite_slug": "porygon",
-        "is_variant": false
-      },
       {
         "key": "PORYGON2",
         "name": "PORYGON2",
         "slug": "porygon2",
         "dex": "233",
         "sprite_slug": "porygon2",
-        "is_variant": false
-      },
-      {
-        "key": "PORYGONZ",
-        "name": "PORYGON-Z",
-        "slug": "porygon-z",
-        "dex": "402",
-        "sprite_slug": "porygonz",
         "is_variant": false
       }
     ],
@@ -36402,7 +36283,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 1,
@@ -36498,13 +36379,13 @@
         "to_key": "HITMONTOP",
         "to_name": "HITMONTOP",
         "to_slug": "hitmontop",
-        "condition": "➜",
-        "kind": "stage",
+        "condition": "LV. 20 if Attack = Defense",
+        "kind": "branch",
         "items": []
       },
       {
         "to_key": "HITMONLEE",
-        "to_name": "HITMONLEE ➡️",
+        "to_name": "HITMONLEE",
         "to_slug": "hitmonlee",
         "condition": "LV. 20 if Attack > Defense",
         "kind": "branch",
@@ -36517,20 +36398,12 @@
         "condition": "LV. 20 if Attack < Defense",
         "kind": "branch",
         "items": []
-      },
-      {
-        "to_key": "HITMONTOP",
-        "to_name": "HITMONTOP",
-        "to_slug": "hitmontop",
-        "condition": "LV. 20 if Attack = Defense",
-        "kind": "branch",
-        "items": []
       }
     ],
     "family": [
       {
         "key": "HITMONLEE",
-        "name": "HITMONLEE ➡️",
+        "name": "HITMONLEE",
         "slug": "hitmonlee",
         "dex": "106",
         "sprite_slug": "hitmonlee",
@@ -36645,7 +36518,7 @@
     "family": [
       {
         "key": "HITMONLEE",
-        "name": "HITMONLEE ➡️",
+        "name": "HITMONLEE",
         "slug": "hitmonlee",
         "dex": "106",
         "sprite_slug": "hitmonlee",
@@ -36708,7 +36581,7 @@
       {
         "level": 1,
         "name": "Hi Jump Kick",
-        "slug": null
+        "slug": "high-jump-kick"
       },
       {
         "level": 1,
@@ -36814,25 +36687,8 @@
     "evolves_at_level": 30,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [
-      {
-        "to_key": "JYNX",
-        "to_name": "⭐ JYNX ➡️",
-        "to_slug": "jynx",
-        "condition": "LV.30",
-        "kind": "stage",
-        "items": []
-      }
-    ],
+    "evolution_targets": [],
     "family": [
-      {
-        "key": "JYNX",
-        "name": "⭐ JYNX ➡️",
-        "slug": "jynx",
-        "dex": "124",
-        "sprite_slug": "jynx",
-        "is_variant": true
-      },
       {
         "key": "SMOOCHUM",
         "name": "⭐ SMOOCHUM",
@@ -36966,25 +36822,8 @@
     "evolves_at_level": 30,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [
-      {
-        "to_key": "ELECTABUZZ",
-        "to_name": "⭐ ELECTABUZZ ➡️",
-        "to_slug": "electabuzz",
-        "condition": "LV.30",
-        "kind": "stage",
-        "items": []
-      }
-    ],
+    "evolution_targets": [],
     "family": [
-      {
-        "key": "ELECTABUZZ",
-        "name": "⭐ ELECTABUZZ ➡️",
-        "slug": "electabuzz",
-        "dex": "125",
-        "sprite_slug": "electabuzz",
-        "is_variant": true
-      },
       {
         "key": "ELEKID",
         "name": "⭐ ELEKID",
@@ -37051,7 +36890,7 @@
       {
         "level": 30,
         "name": "Thunderpunch",
-        "slug": null
+        "slug": "thunder-punch"
       },
       {
         "level": 30,
@@ -37134,25 +36973,8 @@
     "evolves_at_level": 30,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [
-      {
-        "to_key": "MAGMAR",
-        "to_name": "⭐ MAGMAR ➡️",
-        "to_slug": "magmar",
-        "condition": "LV.30",
-        "kind": "stage",
-        "items": []
-      }
-    ],
+    "evolution_targets": [],
     "family": [
-      {
-        "key": "MAGMAR",
-        "name": "⭐ MAGMAR ➡️",
-        "slug": "magmar",
-        "dex": "126",
-        "sprite_slug": "magmar",
-        "is_variant": true
-      },
       {
         "key": "MAGBY",
         "name": "⭐ MAGBY",
@@ -37204,7 +37026,7 @@
       {
         "level": 15,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 20,
@@ -37336,7 +37158,7 @@
       {
         "level": 1,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 1,
@@ -37396,7 +37218,7 @@
       {
         "level": 50,
         "name": "Hi Horsepower",
-        "slug": null
+        "slug": "high-horsepower"
       }
     ],
     "locations": [
@@ -37442,14 +37264,6 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
-      {
-        "key": "CHANSEY",
-        "name": "⭐ CHANSEY",
-        "slug": "chansey",
-        "dex": "113",
-        "sprite_slug": "chansey",
-        "is_variant": true
-      },
       {
         "key": "BLISSEY",
         "name": "⭐ BLISSEY",
@@ -37521,7 +37335,7 @@
       {
         "level": 20,
         "name": "Softboiled",
-        "slug": null
+        "slug": "soft-boiled"
       },
       {
         "level": 25,
@@ -37624,7 +37438,7 @@
       {
         "level": 1,
         "name": "Extremespeed",
-        "slug": null
+        "slug": "extreme-speed"
       },
       {
         "level": 1,
@@ -37644,7 +37458,7 @@
       {
         "level": 5,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 10,
@@ -37776,7 +37590,7 @@
       {
         "level": 1,
         "name": "Extremespeed",
-        "slug": null
+        "slug": "extreme-speed"
       },
       {
         "level": 1,
@@ -37928,7 +37742,7 @@
       {
         "level": 1,
         "name": "Extremespeed",
-        "slug": null
+        "slug": "extreme-speed"
       },
       {
         "level": 1,
@@ -37948,7 +37762,7 @@
       {
         "level": 5,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 10,
@@ -38574,7 +38388,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 1,
@@ -38704,7 +38518,7 @@
       {
         "level": 1,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 1,
@@ -38724,7 +38538,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 5,
@@ -38883,7 +38697,7 @@
       {
         "level": 20,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 25,
@@ -38959,7 +38773,7 @@
     "abilities": [
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       },
       {
         "name": "Overgrow",
@@ -39102,7 +38916,7 @@
     "abilities": [
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       },
       {
         "name": "Overgrow",
@@ -39260,7 +39074,7 @@
     "abilities": [
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       },
       {
         "name": "Overgrow",
@@ -39320,7 +39134,7 @@
       {
         "level": 1,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 1,
@@ -39822,7 +39636,7 @@
       {
         "level": 36,
         "name": "Hi Jump Kick",
-        "slug": null
+        "slug": "high-jump-kick"
       },
       {
         "level": 40,
@@ -40766,7 +40580,7 @@
       {
         "level": 50,
         "name": "Extremespeed",
-        "slug": null
+        "slug": "extreme-speed"
       }
     ],
     "locations": [
@@ -40925,7 +40739,7 @@
       {
         "level": 55,
         "name": "Extremespeed",
-        "slug": null
+        "slug": "extreme-speed"
       }
     ],
     "locations": [
@@ -41435,7 +41249,7 @@
       {
         "level": 15,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 20,
@@ -41606,7 +41420,7 @@
       {
         "level": 20,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 25,
@@ -41772,7 +41586,7 @@
       {
         "level": 20,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 25,
@@ -41935,7 +41749,7 @@
       {
         "level": 25,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 30,
@@ -42915,7 +42729,7 @@
     "abilities": [
       {
         "name": "Keen Eyes",
-        "slug": null
+        "slug": "keen-eye"
       },
       {
         "name": "Drizzle",
@@ -43660,7 +43474,7 @@
       {
         "level": 15,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 20,
@@ -44567,7 +44381,7 @@
       {
         "level": 1,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 1,
@@ -44577,7 +44391,7 @@
       {
         "level": 1,
         "name": "Hi Horsepower",
-        "slug": null
+        "slug": "high-horsepower"
       },
       {
         "level": 1,
@@ -44672,7 +44486,7 @@
     "abilities": [
       {
         "name": "Compoundeyes",
-        "slug": null
+        "slug": "compound-eyes"
       }
     ],
     "evolves_at": "LV. 20",
@@ -46001,7 +45815,7 @@
       {
         "level": 1,
         "name": "Hi Jump Kick",
-        "slug": null
+        "slug": "high-jump-kick"
       },
       {
         "level": 1,
@@ -46102,18 +45916,7 @@
     "evolution_items": [
       "Thunderstone"
     ],
-    "evolution_targets": [
-      {
-        "to_key": "PROBOPASS",
-        "to_name": "PROBOPASS",
-        "to_slug": "probopass",
-        "condition": "Thunderstone",
-        "kind": "stage",
-        "items": [
-          "Thunderstone"
-        ]
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "NOSEPASS",
@@ -46121,14 +45924,6 @@
         "slug": "nosepass",
         "dex": "299",
         "sprite_slug": "nosepass",
-        "is_variant": false
-      },
-      {
-        "key": "PROBOPASS",
-        "name": "PROBOPASS",
-        "slug": "probopass",
-        "dex": "404",
-        "sprite_slug": "probopass",
         "is_variant": false
       }
     ],
@@ -46164,7 +45959,7 @@
       {
         "level": 5,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 10,
@@ -47491,7 +47286,7 @@
       {
         "level": 30,
         "name": "Hi Jump Kick",
-        "slug": null
+        "slug": "high-jump-kick"
       },
       {
         "level": 35,
@@ -47608,7 +47403,7 @@
       {
         "level": 1,
         "name": "Thunderpunch",
-        "slug": null
+        "slug": "thunder-punch"
       },
       {
         "level": 1,
@@ -47658,7 +47453,7 @@
       {
         "level": 30,
         "name": "Hi Jump Kick",
-        "slug": null
+        "slug": "high-jump-kick"
       },
       {
         "level": 35,
@@ -47726,7 +47521,7 @@
     "abilities": [
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       },
       {
         "name": "Intimidate",
@@ -47787,7 +47582,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 1,
@@ -47869,7 +47664,7 @@
     "abilities": [
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       },
       {
         "name": "Intimidate",
@@ -47936,7 +47731,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 5,
@@ -48063,7 +47858,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 1,
@@ -48187,7 +47982,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 1,
@@ -48272,7 +48067,7 @@
     "abilities": [
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       },
       {
         "name": "Plus",
@@ -48557,18 +48352,7 @@
     "evolution_items": [
       "Shiny Stone"
     ],
-    "evolution_targets": [
-      {
-        "to_key": "ROSERADE",
-        "to_name": "ROSERADE",
-        "to_slug": "roserade",
-        "condition": "Shiny Stone",
-        "kind": "stage",
-        "items": [
-          "Shiny Stone"
-        ]
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "ROSELIA",
@@ -48576,14 +48360,6 @@
         "slug": "roselia",
         "dex": "315",
         "sprite_slug": "roselia",
-        "is_variant": false
-      },
-      {
-        "key": "ROSERADE",
-        "name": "ROSERADE",
-        "slug": "roserade",
-        "dex": "387",
-        "sprite_slug": "roserade",
         "is_variant": false
       }
     ],
@@ -48793,7 +48569,7 @@
       {
         "level": 15,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 20,
@@ -48957,7 +48733,7 @@
       {
         "level": 15,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 20,
@@ -50470,7 +50246,7 @@
       {
         "level": 1,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 1,
@@ -50480,7 +50256,7 @@
       {
         "level": 10,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 15,
@@ -50863,7 +50639,7 @@
       {
         "level": 35,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 40,
@@ -51019,7 +50795,7 @@
       {
         "level": 35,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 40,
@@ -51197,7 +50973,7 @@
       {
         "level": 45,
         "name": "Cottonspore",
-        "slug": null
+        "slug": "cotton-spore"
       },
       {
         "level": 50,
@@ -51369,7 +51145,7 @@
       {
         "level": 45,
         "name": "Cottonspore",
-        "slug": null
+        "slug": "cotton-spore"
       },
       {
         "level": 50,
@@ -51475,7 +51251,7 @@
       {
         "level": 5,
         "name": "Atonish",
-        "slug": null
+        "slug": "astonish"
       },
       {
         "level": 10,
@@ -51490,7 +51266,7 @@
       {
         "level": 20,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 25,
@@ -51642,7 +51418,7 @@
       {
         "level": 20,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 25,
@@ -51763,7 +51539,7 @@
       {
         "level": 1,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 1,
@@ -52710,7 +52486,7 @@
       {
         "level": 10,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 15,
@@ -52865,7 +52641,7 @@
       {
         "level": 10,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 15,
@@ -53010,7 +52786,7 @@
       {
         "level": 15,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 20,
@@ -53207,7 +52983,7 @@
       {
         "level": 15,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 20,
@@ -53389,7 +53165,7 @@
       {
         "level": 15,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 20,
@@ -53549,7 +53325,7 @@
       {
         "level": 20,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 25,
@@ -53815,7 +53591,7 @@
       {
         "level": 1,
         "name": "First Press",
-        "slug": null
+        "slug": "first-impression"
       },
       {
         "level": 1,
@@ -54389,7 +54165,7 @@
       {
         "level": 1,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 1,
@@ -54703,7 +54479,7 @@
       {
         "level": 1,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 1,
@@ -54834,14 +54610,6 @@
         "dex": "356",
         "sprite_slug": "dusclops",
         "is_variant": true
-      },
-      {
-        "key": "DUSKNOIR",
-        "name": "⭐ DUSKNOIR",
-        "slug": "dusknoir",
-        "dex": "405",
-        "sprite_slug": "dusknoir",
-        "is_variant": true
       }
     ],
     "stats": {
@@ -54969,18 +54737,7 @@
     "evolution_items": [
       "Reaper Cloth"
     ],
-    "evolution_targets": [
-      {
-        "to_key": "DUSKNOIR",
-        "to_name": "⭐ DUSKNOIR",
-        "to_slug": "dusknoir",
-        "condition": "Reaper Cloth",
-        "kind": "stage",
-        "items": [
-          "Reaper Cloth"
-        ]
-      }
-    ],
+    "evolution_targets": [],
     "family": [
       {
         "key": "DUSKULL",
@@ -54996,14 +54753,6 @@
         "slug": "dusclops",
         "dex": "356",
         "sprite_slug": "dusclops",
-        "is_variant": true
-      },
-      {
-        "key": "DUSKNOIR",
-        "name": "⭐ DUSKNOIR",
-        "slug": "dusknoir",
-        "dex": "405",
-        "sprite_slug": "dusknoir",
         "is_variant": true
       }
     ],
@@ -55705,7 +55454,7 @@
       {
         "level": 36,
         "name": "Hi Jump Kick",
-        "slug": null
+        "slug": "high-jump-kick"
       },
       {
         "level": 40,
@@ -56680,7 +56429,7 @@
       {
         "level": 40,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 45,
@@ -56808,12 +56557,12 @@
       {
         "level": 15,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 20,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 25,
@@ -56982,7 +56731,7 @@
       {
         "level": 30,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 35,
@@ -57002,7 +56751,7 @@
       {
         "level": 50,
         "name": "HiHorsepower",
-        "slug": null
+        "slug": "high-horsepower"
       },
       {
         "level": 55,
@@ -57129,7 +56878,7 @@
       {
         "level": 10,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 15,
@@ -57318,7 +57067,7 @@
       {
         "level": 15,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 20,
@@ -57328,7 +57077,7 @@
       {
         "level": 20,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 25,
@@ -57507,7 +57256,7 @@
       {
         "level": 10,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 15,
@@ -57664,7 +57413,7 @@
       {
         "level": 10,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 15,
@@ -57815,7 +57564,7 @@
       {
         "level": 10,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 15,
@@ -58071,7 +57820,7 @@
       {
         "level": 10,
         "name": "Thunderpunch",
-        "slug": null
+        "slug": "thunder-punch"
       },
       {
         "level": 15,
@@ -58237,7 +57986,7 @@
       {
         "level": 15,
         "name": "Thunderpunch",
-        "slug": null
+        "slug": "thunder-punch"
       },
       {
         "level": 20,
@@ -58391,7 +58140,7 @@
       {
         "level": 10,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 15,
@@ -58567,7 +58316,7 @@
       {
         "level": 10,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 15,
@@ -58733,7 +58482,7 @@
       {
         "level": 1,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 1,
@@ -58743,7 +58492,7 @@
       {
         "level": 10,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 15,
@@ -59064,7 +58813,7 @@
       {
         "level": 15,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 20,
@@ -59074,7 +58823,7 @@
       {
         "level": 20,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 25,
@@ -59151,14 +58900,6 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
-      {
-        "key": "ROSELIA",
-        "name": "ROSELIA",
-        "slug": "roselia",
-        "dex": "315",
-        "sprite_slug": "roselia",
-        "is_variant": false
-      },
       {
         "key": "ROSERADE",
         "name": "ROSERADE",
@@ -59313,14 +59054,6 @@
     "evolution_targets": [],
     "family": [
       {
-        "key": "AIPOM",
-        "name": "AIPOM",
-        "slug": "aipom",
-        "dex": "190",
-        "sprite_slug": "aipom",
-        "is_variant": false
-      },
-      {
         "key": "AMBIPOM",
         "name": "AMBIPOM",
         "slug": "ambipom",
@@ -59406,7 +59139,7 @@
       {
         "level": 35,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 40,
@@ -59463,14 +59196,6 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
-      {
-        "key": "MISDREAVUS",
-        "name": "MISDREAVUS",
-        "slug": "misdreavus",
-        "dex": "200",
-        "sprite_slug": "misdreavus",
-        "is_variant": false
-      },
       {
         "key": "MISMAGIUS",
         "name": "⭐ MISMAGIUS",
@@ -59547,7 +59272,7 @@
       {
         "level": 30,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 35,
@@ -59617,14 +59342,6 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
-      {
-        "key": "MURKROW",
-        "name": "MURKROW",
-        "slug": "murkrow",
-        "dex": "198",
-        "sprite_slug": "murkrow",
-        "is_variant": false
-      },
       {
         "key": "HONCHKROW",
         "name": "HONCHKROW",
@@ -59759,14 +59476,6 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
-      {
-        "key": "SNEASEL",
-        "name": "⭐ SNEASEL",
-        "slug": "sneasel",
-        "dex": "215",
-        "sprite_slug": "sneasel",
-        "is_variant": true
-      },
       {
         "key": "WEAVILE",
         "name": "⭐ WEAVILE",
@@ -59924,22 +59633,6 @@
     "evolution_targets": [],
     "family": [
       {
-        "key": "MAGNEMITE",
-        "name": "MAGNEMITE",
-        "slug": "magnemite",
-        "dex": "081",
-        "sprite_slug": "magnemite",
-        "is_variant": false
-      },
-      {
-        "key": "MAGNETON",
-        "name": "MAGNETON",
-        "slug": "magneton",
-        "dex": "082",
-        "sprite_slug": "magneton",
-        "is_variant": false
-      },
-      {
         "key": "MAGNEZONE",
         "name": "MAGNEZONE",
         "slug": "magnezone",
@@ -59985,7 +59678,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 5,
@@ -60077,14 +59770,6 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
-      {
-        "key": "LICKITUNG",
-        "name": "LICKITUNG",
-        "slug": "lickitung",
-        "dex": "108",
-        "sprite_slug": "lickitung",
-        "is_variant": false
-      },
       {
         "key": "LICKILICKY",
         "name": "LICKILICKY",
@@ -60211,7 +59896,7 @@
     "abilities": [
       {
         "name": "Lightningrod",
-        "slug": null
+        "slug": "lightning-rod"
       },
       {
         "name": "Solid Rock",
@@ -60224,22 +59909,6 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
-      {
-        "key": "RHYHORN",
-        "name": "RHYHORN",
-        "slug": "rhyhorn",
-        "dex": "111",
-        "sprite_slug": "rhyhorn",
-        "is_variant": false
-      },
-      {
-        "key": "RHYDON",
-        "name": "RHYDON",
-        "slug": "rhydon",
-        "dex": "112",
-        "sprite_slug": "rhydon",
-        "is_variant": false
-      },
       {
         "key": "RHYPERIOR",
         "name": "RHYPERIOR",
@@ -60331,7 +60000,7 @@
       {
         "level": 45,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 50,
@@ -60384,14 +60053,6 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
-      {
-        "key": "TANGELA",
-        "name": "⭐ TANGELA",
-        "slug": "tangela",
-        "dex": "114",
-        "sprite_slug": "tangela",
-        "is_variant": true
-      },
       {
         "key": "TANGROWTH",
         "name": "⭐ TANGROWTH",
@@ -60453,7 +60114,7 @@
       {
         "level": 5,
         "name": "Poisonpowder",
-        "slug": null
+        "slug": "poison-powder"
       },
       {
         "level": 10,
@@ -60488,7 +60149,7 @@
       {
         "level": 38,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 40,
@@ -60658,7 +60319,7 @@
       {
         "level": 30,
         "name": "Thunderpunch",
-        "slug": null
+        "slug": "thunder-punch"
       },
       {
         "level": 30,
@@ -60796,7 +60457,7 @@
       {
         "level": 15,
         "name": "Bubblebeam",
-        "slug": null
+        "slug": "bubble-beam"
       },
       {
         "level": 20,
@@ -60879,22 +60540,6 @@
     "evolution_targets": [],
     "family": [
       {
-        "key": "TOGEPI",
-        "name": "TOGEPI",
-        "slug": "togepi",
-        "dex": "175",
-        "sprite_slug": "togepi",
-        "is_variant": false
-      },
-      {
-        "key": "TOGETIC",
-        "name": "TOGETIC",
-        "slug": "togetic",
-        "dex": "176",
-        "sprite_slug": "togetic",
-        "is_variant": false
-      },
-      {
         "key": "TOGEKISS",
         "name": "TOGEKISS",
         "slug": "togekiss",
@@ -60965,7 +60610,7 @@
       {
         "level": 15,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 20,
@@ -61029,7 +60674,7 @@
       },
       {
         "name": "Compoundeyes",
-        "slug": null
+        "slug": "compound-eyes"
       }
     ],
     "evolves_at": null,
@@ -61038,14 +60683,6 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
-      {
-        "key": "YANMA",
-        "name": "YANMA",
-        "slug": "yanma",
-        "dex": "193",
-        "sprite_slug": "yanma",
-        "is_variant": false
-      },
       {
         "key": "YANMEGA",
         "name": "YANMEGA",
@@ -61127,7 +60764,7 @@
       {
         "level": 33,
         "name": "Ancientpower",
-        "slug": null
+        "slug": "ancient-power"
       },
       {
         "level": 35,
@@ -61341,14 +60978,6 @@
     "evolution_targets": [],
     "family": [
       {
-        "key": "GLIGAR",
-        "name": "GLIGAR",
-        "slug": "gligar",
-        "dex": "207",
-        "sprite_slug": "gligar",
-        "is_variant": false
-      },
-      {
         "key": "GLISCOR",
         "name": "GLISCOR",
         "slug": "gliscor",
@@ -61497,22 +61126,6 @@
     "evolution_targets": [],
     "family": [
       {
-        "key": "PORYGON",
-        "name": "PORYGON",
-        "slug": "porygon",
-        "dex": "137",
-        "sprite_slug": "porygon",
-        "is_variant": false
-      },
-      {
-        "key": "PORYGON2",
-        "name": "PORYGON2",
-        "slug": "porygon2",
-        "dex": "233",
-        "sprite_slug": "porygon2",
-        "is_variant": false
-      },
-      {
         "key": "PORYGONZ",
         "name": "PORYGON-Z",
         "slug": "porygon-z",
@@ -61563,7 +61176,7 @@
       {
         "level": 1,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 5,
@@ -61808,14 +61421,6 @@
     "evolution_targets": [],
     "family": [
       {
-        "key": "NOSEPASS",
-        "name": "NOSEPASS",
-        "slug": "nosepass",
-        "dex": "299",
-        "sprite_slug": "nosepass",
-        "is_variant": false
-      },
-      {
         "key": "PROBOPASS",
         "name": "PROBOPASS",
         "slug": "probopass",
@@ -61871,7 +61476,7 @@
       {
         "level": 5,
         "name": "Thundershock",
-        "slug": null
+        "slug": "thunder-shock"
       },
       {
         "level": 10,
@@ -61954,22 +61559,6 @@
     "evolution_targets": [],
     "family": [
       {
-        "key": "DUSKULL",
-        "name": "⭐ DUSKULL",
-        "slug": "duskull",
-        "dex": "355",
-        "sprite_slug": "duskull",
-        "is_variant": true
-      },
-      {
-        "key": "DUSCLOPS",
-        "name": "⭐ DUSCLOPS",
-        "slug": "dusclops",
-        "dex": "356",
-        "sprite_slug": "dusclops",
-        "is_variant": true
-      },
-      {
         "key": "DUSKNOIR",
         "name": "⭐ DUSKNOIR",
         "slug": "dusknoir",
@@ -62010,7 +61599,7 @@
       {
         "level": 1,
         "name": "PowerUpPunch",
-        "slug": null
+        "slug": "power-up-punch"
       },
       {
         "level": 1,
@@ -62137,22 +61726,6 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
-      {
-        "key": "SWINUB",
-        "name": "SWINUB",
-        "slug": "swinub",
-        "dex": "220",
-        "sprite_slug": "swinub",
-        "is_variant": false
-      },
-      {
-        "key": "PILOSWINE",
-        "name": "PILOSWINE",
-        "slug": "piloswine",
-        "dex": "221",
-        "sprite_slug": "piloswine",
-        "is_variant": false
-      },
       {
         "key": "MAMOSWINE",
         "name": "MAMOSWINE",
@@ -62559,12 +62132,12 @@
       {
         "level": 1,
         "name": "Hi Jump Kick",
-        "slug": null
+        "slug": "high-jump-kick"
       },
       {
         "level": 1,
         "name": "Hi Horsepower",
-        "slug": null
+        "slug": "high-horsepower"
       },
       {
         "level": 1,
@@ -62901,7 +62474,7 @@
       {
         "level": 1,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 1,
@@ -63074,7 +62647,7 @@
       {
         "level": 20,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 25,
@@ -63248,7 +62821,7 @@
       {
         "level": 45,
         "name": "Mysticalfire",
-        "slug": null
+        "slug": "mystical-fire"
       },
       {
         "level": 50,
@@ -63371,7 +62944,7 @@
       {
         "level": 20,
         "name": "Dragonbreath",
-        "slug": null
+        "slug": "dragon-breath"
       },
       {
         "level": 25,

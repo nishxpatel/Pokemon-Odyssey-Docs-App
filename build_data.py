@@ -85,6 +85,12 @@ def is_species_header(v) -> bool:
     if re.match(r"^\d+$", u): return False
     if "REGIONAL" in u or "VARIANT" in u: return False
     if not re.search(r"[A-Z]", u): return False
+    # Reject evolution-target placeholder cells like "HITMONLEE ➡️" or
+    # "⭐ JYNX ➡️" — these appear in evolution columns of other species'
+    # blocks and would otherwise create empty species records that
+    # overwrite real data via all_species.update(sp).
+    if any(arrow in u for arrow in ("➡️", "➡", "➜", "→", "⮕", "->")):
+        return False
     return True
 
 DEX_ALIASES = {
@@ -580,6 +586,83 @@ def _pokeapi_slug(name):
     return s
 
 
+# Manual one-off fixes for docs name typos / smashed-together names that
+# refer to known mainline moves. These map (canon-of-docs-name) -> the
+# real PokeAPI slug.
+POKEAPI_NAME_FIXES = {
+    # Typos / mis-spellings in the source spreadsheet
+    "EARTQUAKE":      "earthquake",
+    "DEFENCECURL":    "defense-curl",
+    "ATONISH":        "astonish",
+    "KEENEYES":       "keen-eye",
+    # Hi vs High
+    "HIHORSEPOWER":   "high-horsepower",
+    "HIJUMPKICK":     "high-jump-kick",
+    # "First Press" -> First Impression in mainline
+    "FIRSTPRESS":     "first-impression",
+}
+
+
+# Cached canonical-form -> real PokeAPI slug index for moves and abilities.
+# Built lazily on first miss so we only do the network round-trip when we
+# actually need to recover from a smashed-together docs name.
+_POKEAPI_INDEX_CACHE = {}  # kind -> {CANON: real-slug}
+
+
+def _pokeapi_canon_index(kind):
+    """Return {canon(real_slug): real_slug} for every entry of `kind`.
+    `kind` is "move" or "ability". Cached on disk and in-memory."""
+    if kind in _POKEAPI_INDEX_CACHE:
+        return _POKEAPI_INDEX_CACHE[kind]
+    POKEAPI_CACHE.mkdir(parents=True, exist_ok=True)
+    cache_file = POKEAPI_CACHE / f"_index_{kind}.json"
+    if cache_file.exists():
+        names = json.loads(cache_file.read_text())
+    else:
+        import urllib.request
+        url = f"{POKEAPI_BASE}/{kind}?limit=10000"
+        req = urllib.request.Request(url, headers={
+            "User-Agent": "PokemonOdysseyDocs/1.0 (+github.com/nishxpatel/Pokemon-Odyssey-Docs-App)",
+            "Accept": "application/json",
+        })
+        with urllib.request.urlopen(req, timeout=30) as r:
+            data = json.loads(r.read().decode())
+        names = [e["name"] for e in (data.get("results") or [])]
+        cache_file.write_text(json.dumps(names))
+    idx = {canon(n.replace("-", "")): n for n in names}
+    _POKEAPI_INDEX_CACHE[kind] = idx
+    return idx
+
+
+def _resolve_pokeapi(kind, name):
+    """Try to fetch a PokeAPI entry of `kind` for `name`, with multiple
+    fallback strategies for docs names that smash words together
+    (Thundershock, Lightningrod, Compoundeyes...). Returns
+    (real_slug, data) — the canonical PokeAPI slug paired with the raw
+    response dict — or (None, None)."""
+    # 1) Manual fix table (typos, hi/high, etc.)
+    fix = POKEAPI_NAME_FIXES.get(canon(name))
+    if fix:
+        d = _fetch_pokeapi(kind, fix)
+        if d: return fix, d
+    # 2) Direct slug
+    slug = _pokeapi_slug(name)
+    if slug:
+        d = _fetch_pokeapi(kind, slug)
+        if d: return slug, d
+    # 3) Canon-form lookup against the full PokeAPI listing — handles
+    # smashed-together names by collapsing both sides to letters+digits.
+    try:
+        idx = _pokeapi_canon_index(kind)
+    except Exception:
+        idx = {}
+    real = idx.get(canon(name))
+    if real and real != slug:
+        d = _fetch_pokeapi(kind, real)
+        if d: return real, d
+    return None, None
+
+
 def _fetch_pokeapi(kind, slug):
     """kind: 'move' or 'ability'. Returns the raw dict, or None on 404.
     Caches every response (including 404s as 'null') under pokeapi_cache/."""
@@ -623,15 +706,19 @@ def _english_short_effect(data):
 
 def baseline_move(name):
     """Fetch a baseline (non-custom) move from PokeAPI. Returns a normalized
-    entry matching parse_moves_and_abilities output, or None if unknown."""
-    slug = _pokeapi_slug(name)
-    data = _fetch_pokeapi("move", slug)
+    entry matching parse_moves_and_abilities output, or None if unknown.
+    Stores the entry under the canonical PokeAPI slug so docs name variants
+    (e.g. 'Bubblebeam' and 'Bubble Beam') collapse into one entry."""
+    real_slug, data = _resolve_pokeapi("move", name)
     if not data:
         return None
+    # Pretty display name comes from the PokeAPI slug, not the docs spelling,
+    # so the move list shows 'Bubble Beam' not 'BUBBLEBEAM'.
+    display = real_slug.replace("-", " ").upper() if real_slug else name.strip().upper()
     cat = (data.get("damage_class") or {}).get("name")
     return {
-        "name": name.strip().upper(),
-        "slug": slugify(name),
+        "name": display,
+        "slug": real_slug,
         "type": ((data.get("type") or {}).get("name") or "").title() or None,
         "category": cat.title() if cat else None,
         "power": data.get("power"),
@@ -644,14 +731,15 @@ def baseline_move(name):
 
 
 def baseline_ability(name):
-    """Fetch a baseline ability from PokeAPI. Returns normalized entry or None."""
-    slug = _pokeapi_slug(name)
-    data = _fetch_pokeapi("ability", slug)
+    """Fetch a baseline ability from PokeAPI. Returns normalized entry or None.
+    Stored under the canonical PokeAPI slug to dedupe docs name variants."""
+    real_slug, data = _resolve_pokeapi("ability", name)
     if not data:
         return None
+    display = real_slug.replace("-", " ").upper() if real_slug else name.strip().upper()
     return {
-        "name": name.strip().upper(),
-        "slug": slugify(name),
+        "name": display,
+        "slug": real_slug,
         "effect": _english_short_effect(data),
         "kind": "baseline",
         "is_custom": False,
@@ -994,9 +1082,21 @@ def build_evolution_graph(all_species, all_bands):
     Also constructs each species' full "family" (the rooted set of connected stages)."""
     graph = {}   # key -> list of edges
     reverse = {} # key -> list of predecessors (for family lookup)
+    edge_keys = {}  # (from, to) -> edge dict (so we can dedupe / upgrade kind)
     def add_edge(a, b, cond, kind):
         if a == b: return
-        graph.setdefault(a, []).append({"to": b, "condition": cond, "kind": kind})
+        existing = edge_keys.get((a, b))
+        if existing is not None:
+            # Branch edges carry more specific conditions than the inferred
+            # sequential "stage" edge — prefer them when both exist for the
+            # same (from, to) pair (fixes Tyrogue → two Hitmontops dupe).
+            if kind == "branch" and existing["kind"] != "branch":
+                existing["condition"] = cond
+                existing["kind"] = kind
+            return
+        edge = {"to": b, "condition": cond, "kind": kind}
+        edge_keys[(a, b)] = edge
+        graph.setdefault(a, []).append(edge)
         reverse.setdefault(b, []).append(a)
 
     for band in all_bands:
@@ -1120,29 +1220,61 @@ def main():
         ability_index[a["slug"]] = dict(a, used_by=[])
 
     print("Backfilling baseline data from PokeAPI (cached)...", flush=True)
+    # Aliases map a docs-derived slug (slugify(name)) to the canonical
+    # PokeAPI slug used as the index key. This is how two docs name
+    # variants (e.g. 'Mega Horn' / 'Megahorn' / 'mega-horn' / 'megahorn')
+    # collapse to a single move entry while species-level links still
+    # resolve from either spelling.
+    move_alias = {}
+    ability_alias = {}
     fetched_m = fetched_a = missing_m = missing_a = 0
     for nm in sorted(referenced_moves):
-        slug = slugify(nm)
-        if slug in move_index:
+        docs_slug = slugify(nm)
+        if docs_slug in move_index:
+            continue
+        # If this docs spelling already aliases to a stored entry, skip.
+        if move_alias.get(docs_slug) in move_index:
             continue
         base = baseline_move(nm)
-        if base:
-            move_index[slug] = dict(base, used_by=[])
-            fetched_m += 1
-        else:
+        if not base:
             missing_m += 1
+            continue
+        real_slug = base["slug"]
+        if real_slug not in move_index:
+            move_index[real_slug] = dict(base, used_by=[])
+            fetched_m += 1
+        if real_slug != docs_slug:
+            move_alias[docs_slug] = real_slug
     for nm in sorted(referenced_abilities):
-        slug = slugify(nm)
-        if slug in ability_index:
+        docs_slug = slugify(nm)
+        if docs_slug in ability_index:
+            continue
+        if ability_alias.get(docs_slug) in ability_index:
             continue
         base = baseline_ability(nm)
-        if base:
-            ability_index[slug] = dict(base, used_by=[])
-            fetched_a += 1
-        else:
+        if not base:
             missing_a += 1
+            continue
+        real_slug = base["slug"]
+        if real_slug not in ability_index:
+            ability_index[real_slug] = dict(base, used_by=[])
+            fetched_a += 1
+        if real_slug != docs_slug:
+            ability_alias[docs_slug] = real_slug
     print(f"  fetched {fetched_m} moves + {fetched_a} abilities from PokeAPI; "
           f"{missing_m} moves + {missing_a} abilities unresolved", flush=True)
+    print(f"  aliased {len(move_alias)} move name variants, "
+          f"{len(ability_alias)} ability name variants", flush=True)
+
+    def resolve_move_slug(s):
+        if s in move_index: return s
+        if s in move_alias: return move_alias[s]
+        return None
+
+    def resolve_ability_slug(s):
+        if s in ability_index: return s
+        if s in ability_alias: return ability_alias[s]
+        return None
 
     # -- merge into final Pokédex array --
     merged = []
@@ -1264,16 +1396,16 @@ def main():
         seen_in_used_by = set()
         for m in sp.get("moves", []):
             nm = (m.get("name") or "").strip()
-            mslug = slugify(nm) if nm else None
-            in_index = mslug in move_index if mslug else False
+            docs_slug = slugify(nm) if nm else None
+            real_slug = resolve_move_slug(docs_slug) if docs_slug else None
             moves_linked.append({
                 "level": m.get("level"),
                 "name":  nm,
-                "slug":  mslug if in_index else None,
+                "slug":  real_slug,
             })
-            if in_index and (key, mslug) not in seen_in_used_by:
-                seen_in_used_by.add((key, mslug))
-                move_index[mslug]["used_by"].append({
+            if real_slug and (key, real_slug) not in seen_in_used_by:
+                seen_in_used_by.add((key, real_slug))
+                move_index[real_slug]["used_by"].append({
                     "key":   key,
                     "slug":  species_slug,
                     "name":  display_name,
@@ -1287,11 +1419,11 @@ def main():
             nm = (a or "").strip()
             if not nm:
                 continue
-            aslug = slugify(nm)
-            in_index = aslug in ability_index
-            abilities_linked.append({"name": nm, "slug": aslug if in_index else None})
-            if in_index and not any(u["key"] == key for u in ability_index[aslug]["used_by"]):
-                ability_index[aslug]["used_by"].append({
+            docs_slug = slugify(nm)
+            real_slug = resolve_ability_slug(docs_slug)
+            abilities_linked.append({"name": nm, "slug": real_slug})
+            if real_slug and not any(u["key"] == key for u in ability_index[real_slug]["used_by"]):
+                ability_index[real_slug]["used_by"].append({
                     "key":  key,
                     "slug": species_slug,
                     "name": display_name,
