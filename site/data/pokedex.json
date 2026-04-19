@@ -54511,8 +54511,8 @@
         "slug": "battle-armor"
       }
     ],
-    "evolves_at": "LV.40",
-    "evolves_at_level": 40,
+    "evolves_at": null,
+    "evolves_at_level": null,
     "evolves_note": null,
     "evolution_items": [],
     "evolution_targets": [],

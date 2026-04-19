@@ -111,9 +111,16 @@ CROSS_SHEET_EVOS = {
     "DUSCLOPS":   [("DUSKNOIR",   "Reaper Cloth")],
     "NOSEPASS":   [("PROBOPASS",  "Thunderstone")],
     "ROSELIA":    [("ROSERADE",   "Shiny Stone")],
-    # NOTE: Armaldo (#348) has evolves_at='LV.40' in the spreadsheet, but this is
-    # a copy-paste error — the cell duplicates Anorith's evolution value. Armaldo
-    # has no evolution target in the docs and is correctly treated as a final form.
+}
+
+# Known data errors in the workbook: evolves_at values that are wrong due to
+# copy-paste mistakes in the source spreadsheet. Applied to all_species before
+# the evolution graph is built so both the graph and the JSON output are clean.
+# Format: canon_key -> corrected evolves_at value (None = terminal/no evolution)
+EVOLVES_AT_OVERRIDES = {
+    # Armaldo #348: spreadsheet duplicates Anorith's 'LV.40' into Armaldo's
+    # adjacent evolution cell. Armaldo is a final form with no evolution.
+    "ARMALDO": None,
 }
 
 # Items that can trigger evolution. The UI links these to item pages.
@@ -1262,6 +1269,10 @@ def main():
         all_bands.extend(bands)
     dex_index = load_pokedex_index(wb_stats)
     wb_stats.close()
+
+    for key, val in EVOLVES_AT_OVERRIDES.items():
+        if key in all_species:
+            all_species[key]["evolves_at"] = val
 
     # Reopen non-readonly to access embedded type/category icons.
     custom_moves, custom_abilities = parse_moves_and_abilities(STATS_XLSX)
