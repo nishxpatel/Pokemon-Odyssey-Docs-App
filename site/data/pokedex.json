@@ -23203,7 +23203,7 @@
     "display_name": "FARFETCH'D (GALAR)",
     "name": "Farfetch'd",
     "slug": "farfetch-d-galar",
-    "sprite_slug": "farfetchd",
+    "sprite_slug": "farfetchd-galar",
     "dex": "144",
     "is_variant": false,
     "is_battle_bond": false,
@@ -23241,7 +23241,7 @@
         "name": "FARFETCH'D (GALAR)",
         "slug": "farfetch-d-galar",
         "dex": "144",
-        "sprite_slug": "farfetchd",
+        "sprite_slug": "farfetchd-galar",
         "is_variant": false
       },
       {
@@ -23385,7 +23385,7 @@
         "name": "FARFETCH'D (GALAR)",
         "slug": "farfetch-d-galar",
         "dex": "144",
-        "sprite_slug": "farfetchd",
+        "sprite_slug": "farfetchd-galar",
         "is_variant": false
       },
       {

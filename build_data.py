@@ -211,11 +211,14 @@ SPRITE_SLUG_FIXES = {
     "DUDUNSPARCE": "dudunsparce",
     # Mainline regional forms — the docs list only the regional form so the
     # base slug should serve the regional Showdown sprite.
-    "GRIMER":      "grimer-alola",
-    "MUK":         "muk-alola",
-    "VOLTORB":     "voltorb-hisui",
-    "ELECTRODE":   "electrode-hisui",
-    "TYPHLOSION":  "typhlosion-hisui",
+    "GRIMER":         "grimer-alola",
+    "MUK":            "muk-alola",
+    "VOLTORB":        "voltorb-hisui",
+    "ELECTRODE":      "electrode-hisui",
+    "TYPHLOSION":     "typhlosion-hisui",
+    # sprite_slug() strips parentheticals (e.g. "(Galar)"), so regional forms
+    # whose key includes the region tag need an explicit override here.
+    "FARFETCHDGALAR": "farfetchd-galar",
 }
 
 # Species that are flagged with ⭐ in the docs but are actually mainline-game
@@ -1434,7 +1437,7 @@ def main():
             disp = sp2["display_name"] if sp2 else (dex2["name"] if dex2 else k.title())
             dex2_canon = canon(dex2["name"]) if dex2 else None
             fam_display = DEX_NAME_FIXES.get(dex2_canon, dex2["name"] if dex2 else disp)
-            fam_sprite = SPRITE_SLUG_FIXES.get(dex2_canon) or sprite_slug(fam_display)
+            fam_sprite = SPRITE_SLUG_FIXES.get(k) or SPRITE_SLUG_FIXES.get(dex2_canon) or sprite_slug(fam_display)
             base_only2 = disp.replace("⭐", "").strip()
             family.append({
                 "key": k,
@@ -1496,7 +1499,7 @@ def main():
         dex_name_raw = dex["name"] if dex else sp["display_name"]
         dex_canon = canon(dex_name_raw)
         display_name = DEX_NAME_FIXES.get(dex_canon, dex_name_raw if dex else sp["display_name"].replace("⭐","").strip().title())
-        sprite_slug_value = SPRITE_SLUG_FIXES.get(dex_canon) or sprite_slug(display_name)
+        sprite_slug_value = SPRITE_SLUG_FIXES.get(key) or SPRITE_SLUG_FIXES.get(dex_canon) or sprite_slug(display_name)
 
         # Linked moves: each gets its slug and feeds the move's used_by[].
         species_slug = slugify(sp["display_name"])
