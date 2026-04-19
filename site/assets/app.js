@@ -65,11 +65,10 @@ function cardHTML(p) {
           onerror="this.outerHTML='<div class=\\'sprite-placeholder\\'>${escapeHTML(initial)}</div>'">`
     : `<div class="sprite-placeholder">${escapeHTML(initial)}</div>`;
 
-  const starPrefix = p.is_variant ? `<span class="star">★</span>` : "";
+  const nameHtml = p.is_variant ? `<span class="odyssey">${escapeHTML(p.name)}</span>` : escapeHTML(p.name);
   const dexText = p.dex ? `#${p.dex}` : "—";
   let ribbon = "";
-  if (p.is_variant) ribbon = `<span class="variant-ribbon">Variant</span>`;
-  else if (p.is_battle_bond) ribbon = `<span class="bb-ribbon">B.B.</span>`;
+  if (p.is_battle_bond) ribbon = `<span class="bb-ribbon">B.B.</span>`;
   else if (p.is_event) ribbon = `<span class="event-ribbon">Event</span>`;
 
   const total = p.stats && p.stats.total ? `<div class="card-total">BST ${p.stats.total}</div>` : "";
@@ -79,7 +78,7 @@ function cardHTML(p) {
       ${ribbon}
       <div class="dex-num">${dexText}</div>
       ${spriteImg}
-      <div class="name">${starPrefix}${escapeHTML(p.name)}</div>
+      <div class="name">${nameHtml}</div>
       <div class="types">${(p.types || []).map(typeBadge).join("")}</div>
       ${total}
     </a>`;
@@ -100,16 +99,15 @@ function rowHTML(p) {
   const stats = p.stats || {};
   const cell = (k) => `<td class="num">${stats[k] ?? "—"}</td>`;
 
-  const star = p.is_variant ? `<span class="star">★</span> ` : "";
+  const rowNameHtml = p.is_variant ? `<span class="odyssey">${escapeHTML(p.name)}</span>` : escapeHTML(p.name);
   let badge = "";
-  if (p.is_variant) badge = `<span class="row-tag tag-variant">Variant</span>`;
-  else if (p.is_battle_bond) badge = `<span class="row-tag tag-bb">B.B.</span>`;
+  if (p.is_battle_bond) badge = `<span class="row-tag tag-bb">B.B.</span>`;
   else if (p.is_event) badge = `<span class="row-tag tag-event">Event</span>`;
 
   return `<tr>
     <td class="row-sprite-cell"><a href="pokemon.html?slug=${encodeURIComponent(p.slug)}" tabindex="-1">${sprite}</a></td>
     <td class="num dim">${p.dex ? "#" + escapeHTML(p.dex) : "—"}</td>
-    <td class="row-name"><a href="pokemon.html?slug=${encodeURIComponent(p.slug)}">${star}${escapeHTML(p.name)}</a>${badge}</td>
+    <td class="row-name"><a href="pokemon.html?slug=${encodeURIComponent(p.slug)}">${rowNameHtml}</a>${badge}</td>
     <td class="row-types">${types}</td>
     <td class="row-ab">${abilities}</td>
     ${cell("hp")}${cell("atk")}${cell("def")}${cell("spa")}${cell("spd")}${cell("spe")}

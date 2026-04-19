@@ -9,6 +9,7 @@
   --text-dim: #9aa4b1;
   --accent: #ffcb05;
   --accent-blue: #3b82f6;
+  --odyssey: #7dd3fc;
   --shadow: 0 4px 16px rgba(0,0,0,.4);
   --radius: 10px;
 
@@ -33,6 +34,8 @@
   --t-fairy: #ef70ef;
   --t-aether: #c0c0e8;
 }
+
+.odyssey { color: var(--odyssey); }
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
@@ -176,25 +179,11 @@ h3 { font-size: 1rem; margin: .8rem 0 .4rem; color: var(--text-dim); }
   font-size: .95rem;
   margin: .15rem 0 .3rem;
 }
-.dex-card .name .star { color: var(--accent); margin-right: .15rem; }
 .dex-card .types {
   display: flex;
   justify-content: center;
   gap: .25rem;
 }
-.variant-ribbon {
-  position: absolute;
-  top: .4rem;
-  right: .4rem;
-  background: var(--accent);
-  color: #000;
-  font-size: .65rem;
-  font-weight: 700;
-  padding: 1px 6px;
-  border-radius: 4px;
-  letter-spacing: .05em;
-}
-
 /* --- Type badges --- */
 .type {
   display: inline-block;
@@ -267,16 +256,16 @@ h3 { font-size: 1rem; margin: .8rem 0 .4rem; color: var(--text-dim); }
   font-weight: 700;
   margin: .2rem 0 .6rem;
 }
-.detail-title .name .star { color: var(--accent); }
 .detail-title .types { display: flex; gap: .4rem; margin-bottom: .4rem; }
 .detail-variant-tag {
   display: inline-block;
-  background: var(--accent);
-  color: #000;
+  color: var(--odyssey);
+  border: 1px solid var(--odyssey);
+  background: rgba(125, 211, 252, .08);
   padding: 2px 10px;
   border-radius: 4px;
   font-size: .75rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: .05em;
   margin-top: .2rem;
 }
@@ -360,13 +349,6 @@ h3 { font-size: 1rem; margin: .8rem 0 .4rem; color: var(--text-dim); }
   text-align: right;
   color: var(--text-dim);
 }
-.learnset .move-name .new-move {
-  color: var(--accent);
-  font-size: .7rem;
-  margin-left: .3rem;
-  font-weight: 700;
-}
-
 /* Locations table */
 .locations th { text-align: left; font-size: .75rem; text-transform: uppercase; color: var(--text-dim); padding: .4rem .6rem; border-bottom: 1px solid var(--border); }
 .locations td { padding: .4rem .6rem; border-bottom: 1px solid var(--border); }
@@ -561,7 +543,6 @@ h3 { font-size: 1rem; margin: .8rem 0 .4rem; color: var(--text-dim); }
   font-weight: 600;
 }
 .row-name a:hover { color: var(--accent); text-decoration: none; }
-.row-name .star { color: var(--accent); }
 .row-tag {
   display: inline-block;
   margin-left: .4rem;
@@ -572,7 +553,6 @@ h3 { font-size: 1rem; margin: .8rem 0 .4rem; color: var(--text-dim); }
   border-radius: 4px;
   vertical-align: middle;
 }
-.row-tag.tag-variant { background: var(--accent); color: #000; }
 .row-tag.tag-event   { background: #b94a48; color: #fff; }
 .row-tag.tag-bb      { background: #2a8eb0; color: #fff; }
 .row-types { white-space: nowrap; }
@@ -1113,13 +1093,6 @@ body.home { background: var(--bg); }
   font-weight: 600;
   color: var(--text);
 }
-.custom-dot {
-  color: var(--accent);
-  margin-left: .35rem;
-  font-size: .7rem;
-  vertical-align: middle;
-}
-
 /* --- Category badges (Physical / Special / Status) --- */
 .cat-badge {
   display: inline-block;
@@ -1134,29 +1107,6 @@ body.home { background: var(--bg); }
 .cat-physical { background: #b94a48; }
 .cat-special  { background: #3b82f6; }
 .cat-status   { background: #6e6e6e; }
-
-/* --- Custom / Baseline source tags on detail pages --- */
-.custom-tag {
-  display: inline-block;
-  background: var(--accent);
-  color: #000;
-  padding: 2px 10px;
-  border-radius: 4px;
-  font-size: .75rem;
-  font-weight: 700;
-  letter-spacing: .04em;
-}
-.baseline-tag {
-  display: inline-block;
-  background: var(--panel-2);
-  border: 1px solid var(--border);
-  color: var(--text-dim);
-  padding: 2px 10px;
-  border-radius: 4px;
-  font-size: .75rem;
-  font-weight: 600;
-  letter-spacing: .04em;
-}
 
 /* Detail-header badges row (used on move/ability pages) */
 .detail-header .badges {

@@ -102,10 +102,9 @@ function renderMoves(moves, customMoveSlugs) {
   const rows = moves.map(m => {
     const lvl = m.level === 1 ? "Start" : m.level;
     const isCustom = m.slug && customMoveSlugs.has(m.slug);
-    const newTag = isCustom ? `<span class="new-move">NEW</span>` : "";
     const nameCell = m.slug
-      ? `<a href="move.html?slug=${encodeURIComponent(m.slug)}">${escapeHTML(m.name)}</a>${newTag}`
-      : `${escapeHTML(m.name)}${newTag}`;
+      ? `<a href="move.html?slug=${encodeURIComponent(m.slug)}"${isCustom ? ' class="odyssey"' : ''}>${escapeHTML(m.name)}</a>`
+      : (isCustom ? `<span class="odyssey">${escapeHTML(m.name)}</span>` : escapeHTML(m.name));
     return `<tr>
       <td class="lv">${escapeHTML(String(lvl))}</td>
       <td class="move-name">${nameCell}</td>
@@ -178,14 +177,14 @@ function renderEvolutionChain(p, byKey) {
     const sprite = sp && sp.variant_sprite && sp.variant_sprite.normal
       ? sp.variant_sprite.normal
       : `https://play.pokemonshowdown.com/sprites/gen5/${f.sprite_slug}.png`;
-    const variantTag = f.is_variant ? `<span class="variant-ribbon" style="position:static; display:inline-block; margin-left:.3rem;">Variant</span>` : "";
+    const evoNodeName = f.is_variant ? `<span class="odyssey">${escapeHTML(f.name)}</span>` : escapeHTML(f.name);
     const isCurrent = key === p.key;
     return `
       <div class="evo-node ${isCurrent ? "current" : ""}">
         <a href="pokemon.html?slug=${encodeURIComponent(f.slug)}">
           <img class="sprite" loading="lazy" src="${sprite}" alt="${escapeHTML(f.name)}"
                onerror="this.onerror=null; this.src='https://play.pokemonshowdown.com/sprites/gen5/${f.sprite_slug}.png';">
-          <div class="name">${escapeHTML(f.name)}${variantTag}</div>
+          <div class="name">${evoNodeName}</div>
           <div class="dim">${f.dex ? "#" + escapeHTML(f.dex) : ""}</div>
         </a>
       </div>`;
@@ -223,7 +222,9 @@ function renderEvolutionChain(p, byKey) {
 
 function renderHeader(p) {
   const dex = p.dex ? `#${p.dex}` : "—";
-  const name = (p.is_variant ? `<span class="star">★</span> ` : "") + escapeHTML(p.name || p.display_name);
+  const name = p.is_variant
+    ? `<span class="odyssey">${escapeHTML(p.name || p.display_name)}</span>`
+    : escapeHTML(p.name || p.display_name);
   const initial = escapeHTML((p.name || "?")[0]);
   const localSpr = p.variant_sprite && p.variant_sprite.normal;
   let sprite;
@@ -264,11 +265,10 @@ function renderInfo(p, customAbilitySlugs) {
   const abilityCell = (p.abilities || []).map(a => {
     if (typeof a === "string") return escapeHTML(a);
     const isCustom = a.slug && customAbilitySlugs && customAbilitySlugs.has(a.slug);
-    const tag = isCustom ? `<span class="new-move">NEW</span>` : "";
     if (a.slug) {
-      return `<a href="ability.html?slug=${encodeURIComponent(a.slug)}">${escapeHTML(a.name)}</a>${tag}`;
+      return `<a href="ability.html?slug=${encodeURIComponent(a.slug)}"${isCustom ? ' class="odyssey"' : ''}>${escapeHTML(a.name)}</a>`;
     }
-    return escapeHTML(a.name) + tag;
+    return isCustom ? `<span class="odyssey">${escapeHTML(a.name)}</span>` : escapeHTML(a.name);
   }).join(" <span style='color:var(--text-dim)'>/</span> ");
   const abilityRow = (p.abilities || []).length
     ? `<tr><td>Abilities</td><td>${abilityCell}</td></tr>`

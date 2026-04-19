@@ -14,9 +14,8 @@ function rowHTML(a) {
   const usersCell = users
     ? `<span class="users-count">${users}</span>`
     : `<span class="empty-msg">0</span>`;
-  const customDot = a.is_custom ? `<span class="custom-dot" title="${escapeHTML(a.kind)}">●</span>` : "";
   return `<tr>
-    <td><a href="ability.html?slug=${encodeURIComponent(a.slug)}">${escapeHTML(a.name)}</a>${customDot}</td>
+    <td><a href="ability.html?slug=${encodeURIComponent(a.slug)}"${a.is_custom ? ' class="odyssey"' : ''}>${escapeHTML(a.name)}</a></td>
     <td class="effect-cell">${escapeHTML(a.effect || "")}</td>
     <td class="num">${usersCell}</td>
   </tr>`;
@@ -42,7 +41,7 @@ function render() {
   tbody.innerHTML = rows.map(rowHTML).join("");
   empty.style.display = rows.length ? "none" : "block";
   const customN = DATA.filter(a => a.is_custom).length;
-  meta.textContent = `${rows.length} abilit${rows.length === 1 ? "y" : "ies"} shown · ${DATA.length} total (${customN} custom Odyssey abilities; rest from PokeAPI baseline). ● marks custom Odyssey content.`;
+  meta.textContent = `${rows.length} abilit${rows.length === 1 ? "y" : "ies"} shown · ${DATA.length} total (${customN} custom Odyssey abilities; rest from PokeAPI baseline).`;
 }
 
 async function main() {

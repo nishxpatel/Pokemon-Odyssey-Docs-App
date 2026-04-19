@@ -47,10 +47,7 @@ async function main() {
       <p class="breadcrumb"><a href="abilities.html">← Abilities</a></p>
       <section class="detail-header">
         <div class="detail-title">
-          <div class="name">${escapeHTML(ability.name)}</div>
-          <div class="badges">
-            ${ability.is_custom ? `<span class="custom-tag">${escapeHTML(kindLabel(ability))}</span>` : `<span class="baseline-tag">${escapeHTML(kindLabel(ability))}</span>`}
-          </div>
+          <div class="name">${ability.is_custom ? `<span class="odyssey">${escapeHTML(ability.name)}</span>` : escapeHTML(ability.name)}</div>
         </div>
       </section>
 

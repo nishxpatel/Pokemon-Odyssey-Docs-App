@@ -66,11 +66,10 @@ async function main() {
       <p class="breadcrumb"><a href="moves.html">← Moves</a></p>
       <section class="detail-header">
         <div class="detail-title">
-          <div class="name">${escapeHTML(move.name)}</div>
+          <div class="name">${move.is_custom ? `<span class="odyssey">${escapeHTML(move.name)}</span>` : escapeHTML(move.name)}</div>
           <div class="badges">
             ${typeBadge(move.type)}
             ${catBadge(move.category)}
-            ${move.is_custom ? `<span class="custom-tag">${escapeHTML(kindLabel(move))}</span>` : `<span class="baseline-tag">${escapeHTML(kindLabel(move))}</span>`}
           </div>
         </div>
       </section>

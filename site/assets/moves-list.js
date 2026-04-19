@@ -42,9 +42,8 @@ function rowHTML(m) {
   const usersCell = users
     ? `<span class="users-count">${users}</span>`
     : `<span class="empty-msg">0</span>`;
-  const customDot = m.is_custom ? `<span class="custom-dot" title="${escapeHTML(m.kind)}">●</span>` : "";
   return `<tr>
-    <td><a href="move.html?slug=${encodeURIComponent(m.slug)}">${escapeHTML(m.name)}</a>${customDot}</td>
+    <td><a href="move.html?slug=${encodeURIComponent(m.slug)}"${m.is_custom ? ' class="odyssey"' : ''}>${escapeHTML(m.name)}</a></td>
     <td>${typeBadge(m.type)}</td>
     <td>${catBadge(m.category)}</td>
     <td class="num">${fmtNum(m.power)}</td>
@@ -81,7 +80,7 @@ function render() {
   tbody.innerHTML = rows.map(rowHTML).join("");
   empty.style.display = rows.length ? "none" : "block";
   const customN = DATA.filter(m => m.is_custom).length;
-  meta.textContent = `${rows.length} move${rows.length === 1 ? "" : "s"} shown · ${DATA.length} total (${customN} custom Odyssey moves; rest from PokeAPI baseline). ● marks custom Odyssey content.`;
+  meta.textContent = `${rows.length} move${rows.length === 1 ? "" : "s"} shown · ${DATA.length} total (${customN} custom Odyssey moves; rest from PokeAPI baseline).`;
 }
 
 async function main() {
