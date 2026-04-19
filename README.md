@@ -10,7 +10,7 @@ An unofficial, fan-made interactive reference site for **Pokémon Odyssey v4.1.1
 
 ## What is Pokémon Odyssey?
 
-Pokémon Odyssey is a fan-made ROM hack / fan game that fuses classic Pokémon gameplay with Etrian Odyssey systems — think dungeon strata, F.O.E. (overworld super-encounters), stratum-gated level caps, and a custom 19th type called **Aether**. It also introduces **Etrian Variants** (regional-form-style alternate Pokémon, marked with ⭐) and a large roster of custom moves and abilities.
+Pokémon Odyssey is a fan-made ROM hack / fan game that fuses classic Pokémon gameplay with Etrian Odyssey systems — think dungeon strata, F.O.E. (overworld super-encounters), stratum-gated level caps, and a custom **Aether** type (replacing Fairy as the 18th type). It also introduces **Etrian Variants** (regional-form-style alternate Pokémon, marked with ⭐) and a large roster of custom moves and abilities.
 
 ---
 
@@ -20,14 +20,15 @@ The docs app is a fully static website that turns three Excel spreadsheets (the 
 
 | Page | Description |
 |---|---|
-| **Pokédex** | Full species list with search, type filters, stat sort, and a "final forms only" toggle |
+| **Pokédex** | 404 species with search, type filters, stat sort, and a "final forms only" toggle |
 | **Pokémon detail** | Types, base stats, abilities, level-up moves, evolution chain, wild locations |
-| **Moves** | Index of all moves (including custom Odyssey moves) with power/accuracy/PP/type |
+| **Moves** | 439 moves (124 custom) with power/accuracy/PP/type |
 | **Move detail** | Full effect description, category, and which Pokémon learn it |
-| **Abilities** | Index of all abilities (including custom ones) |
+| **Abilities** | 112 abilities (17 custom) |
 | **Ability detail** | Full effect text and Pokémon with that ability |
-| **Items** | All items with their sources (shops, pickup, gathering/mining, TMs, move tutors) |
+| **Items** | 225 items with their sources (shops, pickup, gathering/mining, TMs, move tutors) |
 | **Item detail** | Full source list for a single item; links to evolution Pokémon where relevant |
+| **Type Chart** | Full 18×18 matchup grid including the custom Aether type |
 
 ---
 
@@ -72,6 +73,7 @@ Then open [http://localhost:8000](http://localhost:8000).
 │   ├── moves.html / move.html             # Move index + detail
 │   ├── abilities.html / ability.html      # Ability index + detail
 │   ├── items.html / item.html             # Item index + detail
+│   ├── type-chart.html                    # Full 18×18 type effectiveness grid
 │   ├── data/                              # Generated JSON (pokedex, moves, abilities, items, meta)
 │   └── assets/
 │       ├── style.css
@@ -96,7 +98,7 @@ Then open [http://localhost:8000](http://localhost:8000).
 
 ## Notable Odyssey-specific features handled
 
-- **Aether type** — custom 19th type; included in the full 19×19 type chart.
+- **Aether type** — custom 18th type (replacing Fairy); included in the full 18×18 type chart.
 - **Etrian Variants (⭐)** — alternate forms with unique sprites, extracted directly from the spreadsheet's embedded images.
 - **Stratum level caps** — gated progression system referenced in encounter and boss data.
 - **F.O.E.s** — special overworld encounters parsed from the naval/encounter tables.
