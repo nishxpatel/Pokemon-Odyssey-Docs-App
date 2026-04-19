@@ -2,9 +2,33 @@
 
 const root = document.getElementById("root");
 
-function typeBadge(t) {
+function typeBadge(t, sm = false) {
   if (!t) return `<span class="empty-msg">—</span>`;
-  return `<span class="type ${typeClass(t)}">${escapeHTML(t)}</span>`;
+  return `<span class="type ${sm ? "sm " : ""}${typeClass(t)}">${escapeHTML(t)}</span>`;
+}
+
+function renderMoveOffenses(moveType) {
+  if (!moveType) return `<p class="empty-msg">No type data.</p>`;
+  const matchups = offensiveMatchups([moveType]);
+  const groups = { 0: [], 0.5: [], 2: [] };
+  for (const t of TYPE_LIST) {
+    const m = matchups[t];
+    if (groups[m] !== undefined) groups[m].push(t);
+  }
+  const labelFor = m => ({ 0: "0×", 0.5: "½×", 2: "2×" }[m] || `${m}×`);
+  const classFor = m => ({ 0: "x0", 0.5: "x05", 2: "x2" }[m] || "x1");
+  const keys = [2, 0.5, 0].filter(k => groups[k] && groups[k].length);
+  if (!keys.length) return `<p class="empty-msg">Neutral to all types.</p>`;
+  return keys.map(k => `
+    <h3>${labelFor(k)} damage to</h3>
+    <div class="weakness-grid">
+      ${groups[k].map(t => `
+        <div class="weakness-cell ${classFor(k)}">
+          ${typeBadge(t, true)}
+          <span class="mult">${labelFor(k)}</span>
+        </div>
+      `).join("")}
+    </div>`).join("");
 }
 
 function catBadge(c) {
@@ -91,6 +115,11 @@ async function main() {
           ${!move.is_custom ? `<p class="disclaimer">Effect text from PokeAPI. Pokémon Odyssey may rebalance this move; the custom docs only re-document moves that were intentionally changed.</p>` : ""}
         </div>
       </div>
+
+      <section>
+        <h2>Type Offenses</h2>
+        ${renderMoveOffenses(move.type)}
+      </section>
 
       <section>
         <h2>Used by (level-up learnsets)</h2>
