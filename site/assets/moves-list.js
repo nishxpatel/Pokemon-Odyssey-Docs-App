@@ -42,7 +42,7 @@ function rowHTML(m) {
   const usersCell = users
     ? `<span class="users-count">${users}</span>`
     : `<span class="empty-msg">0</span>`;
-  return `<tr>
+  return `<tr${m.is_custom ? ' class="odyssey-bg"' : ''}>
     <td><a href="move.html?slug=${encodeURIComponent(m.slug)}"${m.is_custom ? ' class="odyssey"' : ''}>${escapeHTML(m.name)}</a></td>
     <td>${typeBadge(m.type)}</td>
     <td>${catBadge(m.category)}</td>

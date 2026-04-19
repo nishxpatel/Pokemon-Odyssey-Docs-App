@@ -45,7 +45,7 @@ async function main() {
     document.title = `${ability.name} — Pokémon Odyssey Ability`;
     root.innerHTML = `
       <p class="breadcrumb"><a href="abilities.html">← Abilities</a></p>
-      <section class="detail-header">
+      <section class="detail-header${ability.is_custom ? " odyssey-bg" : ""}">
         <div class="detail-title">
           <div class="name">${ability.is_custom ? `<span class="odyssey">${escapeHTML(ability.name)}</span>` : escapeHTML(ability.name)}</div>
         </div>

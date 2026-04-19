@@ -562,6 +562,8 @@ h3 { font-size: 1rem; margin: .8rem 0 .4rem; color: var(--text-dim); }
   min-width: 160px;
   color: var(--text);
 }
+.row-ab a { color: var(--text); }
+.row-ab a:hover { color: var(--accent); text-decoration: none; }
 
 @media (max-width: 900px) {
   .dex-table { font-size: .82rem; }
@@ -1057,32 +1059,8 @@ body.home { background: var(--bg); }
   .home-card { flex-direction: column; align-items: stretch; }
 }
 
-/* --- Moves & Abilities tables --- */
-.moves-table, .abilities-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: .5rem;
-}
-.moves-table th, .abilities-table th {
-  text-align: left;
-  font-size: .75rem;
-  text-transform: uppercase;
-  color: var(--text-dim);
-  padding: .5rem .6rem;
-  border-bottom: 1px solid var(--border);
-}
-.moves-table td, .abilities-table td {
-  padding: .45rem .6rem;
-  border-bottom: 1px solid var(--border);
-  vertical-align: top;
-}
-.moves-table tr:hover td, .abilities-table tr:hover td { background: var(--panel-2); }
-.moves-table .num, .abilities-table .num {
-  font-family: monospace;
-  text-align: right;
-  width: 60px;
-  color: var(--text-dim);
-}
+/* --- Moves & Abilities tables (extend .dex-table) --- */
+/* Base layout, header, hover, and .num styles come from .dex-table */
 .effect-cell {
   color: var(--text-dim);
   font-size: .85rem;
@@ -1180,3 +1158,22 @@ body.home { background: var(--bg); }
   .evo-row { flex-direction: column; align-items: stretch; }
   .evo-branches { padding-left: .5rem; }
 }
+
+/* === Odyssey-specific content treatment ==============================
+   .odyssey      — text color for names/labels (spans, links)
+   .odyssey-bg   — card/row/section background + border tint
+   ================================================================== */
+.odyssey-bg {
+  background: rgba(125, 211, 252, .05);
+  border-color: rgba(125, 211, 252, .3);
+}
+a.dex-card.odyssey-bg:hover {
+  background: rgba(125, 211, 252, .1);
+  border-color: var(--odyssey);
+}
+section.detail-header.odyssey-bg {
+  background: rgba(125, 211, 252, .05);
+  border-color: rgba(125, 211, 252, .3);
+}
+tr.odyssey-bg td            { background: rgba(125, 211, 252, .05); }
+tr.odyssey-bg:hover td      { background: rgba(125, 211, 252, .1); }

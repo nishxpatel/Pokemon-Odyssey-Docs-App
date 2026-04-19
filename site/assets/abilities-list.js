@@ -14,7 +14,7 @@ function rowHTML(a) {
   const usersCell = users
     ? `<span class="users-count">${users}</span>`
     : `<span class="empty-msg">0</span>`;
-  return `<tr>
+  return `<tr${a.is_custom ? ' class="odyssey-bg"' : ''}>
     <td><a href="ability.html?slug=${encodeURIComponent(a.slug)}"${a.is_custom ? ' class="odyssey"' : ''}>${escapeHTML(a.name)}</a></td>
     <td class="effect-cell">${escapeHTML(a.effect || "")}</td>
     <td class="num">${usersCell}</td>

@@ -250,7 +250,7 @@ function renderHeader(p) {
   if (p.is_event)   badges += `<span class="detail-event-tag">Event / Gift only</span>`;
 
   return `
-    <section class="detail-header">
+    <section class="detail-header${p.is_variant ? " odyssey-bg" : ""}">
       <div class="sprite-wrap">${sprite}${shinyPreview}</div>
       <div class="detail-title">
         <div class="dex-num">${dex}</div>

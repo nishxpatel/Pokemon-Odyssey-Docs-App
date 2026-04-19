@@ -20,6 +20,7 @@ const resetBtn = document.getElementById("reset-btn");
 const viewToggle = document.getElementById("view-toggle");
 
 let DATA = [];
+let customAbilitySlugs = new Set();
 let activeTypes = new Set();
 
 // Sort state — single source of truth shared by the dropdown and the
@@ -50,9 +51,11 @@ function abilityLink(a) {
   const name = abilityName(a);
   if (!name) return "";
   const slug = (typeof a === "object" && a) ? a.slug : null;
+  const isCustom = slug && customAbilitySlugs.has(slug);
+  const nameHtml = isCustom ? `<span class="odyssey">${escapeHTML(name)}</span>` : escapeHTML(name);
   return slug
-    ? `<a href="ability.html?slug=${encodeURIComponent(slug)}">${escapeHTML(name)}</a>`
-    : escapeHTML(name);
+    ? `<a href="ability.html?slug=${encodeURIComponent(slug)}">${nameHtml}</a>`
+    : nameHtml;
 }
 
 /* ---------- Card view ---------- */
@@ -74,7 +77,7 @@ function cardHTML(p) {
   const total = p.stats && p.stats.total ? `<div class="card-total">BST ${p.stats.total}</div>` : "";
 
   return `
-    <a class="dex-card" href="pokemon.html?slug=${encodeURIComponent(p.slug)}">
+    <a class="dex-card${p.is_variant ? " odyssey-bg" : ""}" href="pokemon.html?slug=${encodeURIComponent(p.slug)}">
       ${ribbon}
       <div class="dex-num">${dexText}</div>
       ${spriteImg}
@@ -104,7 +107,7 @@ function rowHTML(p) {
   if (p.is_battle_bond) badge = `<span class="row-tag tag-bb">B.B.</span>`;
   else if (p.is_event) badge = `<span class="row-tag tag-event">Event</span>`;
 
-  return `<tr>
+  return `<tr${p.is_variant ? ' class="odyssey-bg"' : ''}>
     <td class="row-sprite-cell"><a href="pokemon.html?slug=${encodeURIComponent(p.slug)}" tabindex="-1">${sprite}</a></td>
     <td class="num dim">${p.dex ? "#" + escapeHTML(p.dex) : "—"}</td>
     <td class="row-name"><a href="pokemon.html?slug=${encodeURIComponent(p.slug)}">${rowNameHtml}</a>${badge}</td>
@@ -283,11 +286,13 @@ function reset() {
 
 async function main() {
   try {
-    const [pokedex, meta] = await Promise.all([
+    const [pokedex, meta, abilitiesFile] = await Promise.all([
       fetch("data/pokedex.json").then(r => r.json()),
       fetch("data/meta.json").then(r => r.json()),
+      fetch("data/abilities.json").then(r => r.json()),
     ]);
     DATA = pokedex;
+    customAbilitySlugs = new Set(abilitiesFile.abilities.filter(a => a.is_custom).map(a => a.slug));
     metaLine.textContent =
       `${meta.game} ${meta.version} · ${meta.counts.species} species ` +
       `(${meta.counts.variants} Etrian variants, ${meta.counts.events} event-only). ` +
