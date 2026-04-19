@@ -20,7 +20,7 @@ Also extracts embedded variant sprites from the Etrian Variants sheet into
 ./site/assets/variants_original/<slug>.png (raw), then strips backgrounds into
 ./site/assets/variants/<slug>.png (served by the site).
 
-Run with: python3 build_data.py
+Run with: python3 scripts/build_data.py  (from the project root)
 """
 
 import json

@@ -31,7 +31,8 @@ from pathlib import Path
 
 from PIL import Image
 
-ROOT = Path(__file__).parent
+HERE = Path(__file__).parent
+ROOT = HERE.parent
 ORIGINALS_DIR = ROOT / "site" / "assets" / "variants_original"
 VARIANTS_DIR  = ROOT / "site" / "assets" / "variants"
 

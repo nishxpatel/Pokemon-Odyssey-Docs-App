@@ -73,7 +73,7 @@ Then open [http://localhost:8000](http://localhost:8000).
 │   ├── build_data.py                      # Parses workbooks → site/data/*.json + variant sprites
 │   └── clean_variant_backgrounds.py       # Re-runs only the sprite background-removal step
 ├── cache/
-│   └── pokeapi_cache/                     # Cached PokeAPI responses (committed — do not delete)
+│   └── pokeapi_cache/                     # Cached PokeAPI responses (gitignored; do not delete locally)
 ├── site/                                  # Static website
 │   ├── index.html                         # Landing page
 │   ├── pokedex.html / pokemon.html        # Pokédex + species detail
@@ -96,7 +96,7 @@ Then open [http://localhost:8000](http://localhost:8000).
 ## Data sources
 
 - **Pokémon Odyssey spreadsheets (v4.1.1)** — the three `.xlsx` files in `docs/`, authored by the original game creator. These are the source of truth for everything Odyssey-specific.
-- **PokeAPI** (`https://pokeapi.co`) — used to fill in baseline move/ability data (effect text, power, accuracy, PP, type) for non-custom entries. Responses are cached locally in `pokeapi_cache/`.
+- **PokeAPI** (`https://pokeapi.co`) — used to fill in baseline move/ability data (effect text, power, accuracy, PP, type) for non-custom entries. Responses are cached locally in `cache/pokeapi_cache/`.
 - **Pokémon Showdown sprites** — non-variant Pokémon sprites are loaded at runtime from Showdown's CDN (`play.pokemonshowdown.com/sprites/gen5/`).
 
 ---
