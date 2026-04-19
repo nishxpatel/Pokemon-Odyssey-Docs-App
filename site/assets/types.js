@@ -54,3 +54,20 @@ function defensiveMatchups(defenderTypes) {
   }
   return out;
 }
+
+/** Compute offensive multipliers for a Pokémon with the given types.
+ *  For each defender type, returns the best (max) effectiveness across
+ *  all of the attacker's types — i.e. the strongest STAB option available. */
+function offensiveMatchups(attackerTypes) {
+  const out = {};
+  for (const def of TYPE_LIST) {
+    let best = -Infinity;
+    for (const atk of attackerTypes) {
+      const m = (TYPE_CHART[atk] || {})[def];
+      const mult = m !== undefined ? m : 1;
+      if (mult > best) best = mult;
+    }
+    out[def] = best === -Infinity ? 1 : best;
+  }
+  return out;
+}

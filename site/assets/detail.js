@@ -93,6 +93,31 @@ function renderMatchups(types) {
   return sections;
 }
 
+function renderOffenses(types) {
+  if (!types.length) return `<p class="empty-msg">No type data.</p>`;
+  const matchups = offensiveMatchups(types);
+  const groups = { 0: [], 0.5: [], 2: [] };
+  for (const t of TYPE_LIST) {
+    const m = matchups[t];
+    if (groups[m] !== undefined) groups[m].push(t);
+  }
+  const labelFor = m => ({ 0: "0×", 0.5: "½×", 2: "2×" }[m] || `${m}×`);
+  const classFor = m => ({ 0: "x0", 0.5: "x05", 2: "x2" }[m] || "x1");
+  const keys = [2, 0.5, 0].filter(k => groups[k] && groups[k].length);
+  if (!keys.length) return `<p class="empty-msg">Neutral to all types.</p>`;
+  const sections = keys.map(k => `
+    <h3>${labelFor(k)} damage to</h3>
+    <div class="weakness-grid">
+      ${groups[k].map(t => `
+        <div class="weakness-cell ${classFor(k)}">
+          ${typeBadge(t, true)}
+          <span class="mult">${labelFor(k)}</span>
+        </div>
+      `).join("")}
+    </div>`).join("");
+  return sections;
+}
+
 function renderMoves(moves, customMoveSlugs) {
   if (!moves || !moves.length) return `<p class="empty-msg">No learnset data.</p>`;
   const rows = moves.map(m => {
@@ -331,10 +356,16 @@ async function main() {
         <h2>Evolution Chain</h2>
         ${renderEvolutionChain(p, byKey)}
       </section>
-      <section>
-        <h2>Type Defenses</h2>
-        ${renderMatchups(p.types || [])}
-      </section>
+      <div class="panels">
+        <div class="panel">
+          <h2>Type Defenses</h2>
+          ${renderMatchups(p.types || [])}
+        </div>
+        <div class="panel">
+          <h2>Type Offenses</h2>
+          ${renderOffenses(p.types || [])}
+        </div>
+      </div>
       <div class="panels">
         <div class="panel">
           <h2>Level-Up Moves</h2>
