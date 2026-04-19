@@ -377,12 +377,12 @@ h3 { font-size: 1rem; margin: .8rem 0 .4rem; color: var(--text-dim); }
   margin-top: .15rem;
   font-weight: 600;
 }
-.weakness-cell.x0   { opacity: .45; }
-.weakness-cell.x025 { background: rgba(63,161,41,.25); border-color: var(--t-grass); }
-.weakness-cell.x05  { background: rgba(63,161,41,.15); border-color: var(--t-grass); }
+.weakness-cell.x0   { background: rgba(220,40,40,.22); border-color: #e62829; }
+.weakness-cell.x025 { background: rgba(200,160,0,.30); border-color: #c8a000; }
+.weakness-cell.x05  { background: rgba(200,160,0,.20); border-color: #c8a000; }
 .weakness-cell.x1   { }
-.weakness-cell.x2   { background: rgba(230,40,41,.2); border-color: var(--t-fire); }
-.weakness-cell.x4   { background: rgba(230,40,41,.35); border-color: var(--t-fire); }
+.weakness-cell.x2   { background: rgba(34,160,80,.24); border-color: #22a050; }
+.weakness-cell.x4   { background: rgba(34,160,80,.42); border-color: #22a050; }
 
 /* --- Per-type offense sections (Pokémon detail page) --- */
 .offense-type-label {
@@ -479,9 +479,9 @@ h3 { font-size: 1rem; margin: .8rem 0 .4rem; color: var(--text-dim); }
   font-size: .8rem;
 }
 .tc-1  { background: var(--panel); color: var(--text-dim); font-weight: 400; }
-.tc-2  { background: rgba(230,40,41,.25); }
-.tc-05 { background: rgba(63,161,41,.2); }
-.tc-0  { background: var(--panel-2); opacity: .55; }
+.tc-2  { background: rgba(34,160,80,.25); }
+.tc-05 { background: rgba(200,160,0,.22); }
+.tc-0  { background: rgba(220,40,40,.22); }
 
 .disclaimer {
   color: var(--text-dim);
