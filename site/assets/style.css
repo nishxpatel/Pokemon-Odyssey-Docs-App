@@ -236,7 +236,9 @@ h3 { font-size: 1rem; margin: .8rem 0 .4rem; color: var(--text-dim); }
   object-fit: contain;
   margin: 0 auto;
   display: block;
+  image-rendering: pixelated;
 }
+.sprite-clickable { cursor: zoom-in; }
 .detail-sprite-placeholder {
   width: 220px;
   height: 220px;
@@ -633,6 +635,29 @@ h3 { font-size: 1rem; margin: .8rem 0 .4rem; color: var(--text-dim); }
   border-radius: 8px;
   padding: 4px;
   image-rendering: pixelated;
+  cursor: zoom-in;
+}
+
+/* Sprite lightbox modal */
+#sprite-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .82);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+#sprite-modal.open { display: flex; }
+#sprite-modal img {
+  max-width: min(480px, 90vw);
+  max-height: 90vh;
+  image-rendering: pixelated;
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, .7);
 }
 .detail-event-tag {
   display: inline-block;

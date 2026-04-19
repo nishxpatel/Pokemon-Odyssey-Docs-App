@@ -1,7 +1,8 @@
 // Per-Pokémon detail page. URL: pokemon.html?slug=<slug>
 
-const SPRITE_URL      = (slug) => `https://play.pokemonshowdown.com/sprites/home/${slug}.png`;
-const SPRITE_FALLBACK = (slug) => `https://play.pokemonshowdown.com/sprites/gen5/${slug}.png`;
+// gen5 = pixel-art sprites (96px); gen5-shiny = shiny variant in same style.
+const SPRITE_URL       = (slug) => `https://play.pokemonshowdown.com/sprites/gen5/${slug}.png`;
+const SPRITE_SHINY_URL = (slug) => `https://play.pokemonshowdown.com/sprites/gen5-shiny/${slug}.png`;
 const MAX_STAT_DISPLAY = 255;
 
 function typeBadge(t, sm=false) {
@@ -241,6 +242,20 @@ function renderEvolutionChain(p, byKey) {
   return `<div class="evo-chain">${roots.map(r => renderFromRoot(r.key)).join("")}</div>`;
 }
 
+function initSpriteModal() {
+  const overlay = document.createElement("div");
+  overlay.id = "sprite-modal";
+  overlay.innerHTML = `<img id="sprite-modal-img" alt="Enlarged sprite">`;
+  overlay.addEventListener("click", () => overlay.classList.remove("open"));
+  document.addEventListener("keydown", e => { if (e.key === "Escape") overlay.classList.remove("open"); });
+  document.body.appendChild(overlay);
+}
+
+function openSpriteModal(src) {
+  document.getElementById("sprite-modal-img").src = src;
+  document.getElementById("sprite-modal").classList.add("open");
+}
+
 function renderHeader(p) {
   const dex = p.dex ? `#${p.dex}` : "—";
   const name = p.is_variant
@@ -248,22 +263,27 @@ function renderHeader(p) {
     : escapeHTML(p.name || p.display_name);
   const initial = escapeHTML((p.name || "?")[0]);
   const localSpr = p.variant_sprite && p.variant_sprite.normal;
+
+  // Main sprite — local PNG for variants/doc-art, gen5 pixel-art CDN otherwise.
   let sprite;
   if (localSpr) {
-    sprite = `<img class="detail-sprite" src="${escapeHTML(localSpr)}" alt="${escapeHTML(p.name)}">`;
+    sprite = `<img class="detail-sprite sprite-clickable" src="${escapeHTML(localSpr)}" alt="${escapeHTML(p.name)}" onclick="openSpriteModal(this.src)">`;
   } else if (p.sprite_slug) {
-    sprite = `<img class="detail-sprite" src="${SPRITE_URL(p.sprite_slug)}" alt="${escapeHTML(p.name)}"
-        data-fallback="${SPRITE_FALLBACK(p.sprite_slug)}"
-        onerror="if(!this.dataset.fallbackUsed){this.dataset.fallbackUsed=1;this.src=this.dataset.fallback;}else{this.outerHTML='<div class=\\'detail-sprite-placeholder\\'>${initial}</div>';}">`;
+    sprite = `<img class="detail-sprite sprite-clickable" src="${SPRITE_URL(p.sprite_slug)}" alt="${escapeHTML(p.name)}"
+        onclick="openSpriteModal(this.src)"
+        onerror="this.outerHTML='<div class=\\'detail-sprite-placeholder\\'>${initial}</div>'">`;
   } else {
     sprite = `<div class="detail-sprite-placeholder">${initial}</div>`;
   }
 
-  // Shiny variant sprite preview
-  let shinyPreview = "";
-  if (p.variant_sprite && p.variant_sprite.shiny) {
-    shinyPreview = `<img class="detail-sprite-shiny" src="${escapeHTML(p.variant_sprite.shiny)}" alt="Shiny ${escapeHTML(p.name)}" title="Shiny variant">`;
-  }
+  // Shiny thumbnail — doc shiny PNG for variants; gen5-shiny CDN for all others.
+  // CDN shiny is silently removed via onerror if not available.
+  const shinySrc = p.variant_sprite && p.variant_sprite.shiny
+    ? p.variant_sprite.shiny
+    : (p.sprite_slug ? SPRITE_SHINY_URL(p.sprite_slug) : null);
+  const shinyPreview = shinySrc
+    ? `<img class="detail-sprite-shiny sprite-clickable" src="${escapeHTML(shinySrc)}" alt="Shiny ${escapeHTML(p.name)}" title="Shiny" onclick="openSpriteModal(this.src)" onerror="this.remove()">`
+    : "";
 
   let badges = "";
   if (p.is_variant) badges += `<span class="detail-variant-tag">Etrian Variant${p.variant_sprite && p.variant_sprite.variant_name ? `: ${escapeHTML(p.variant_sprite.variant_name)}` : ""}</span>`;
@@ -318,6 +338,7 @@ function renderInfo(p, customAbilitySlugs) {
 }
 
 async function main() {
+  initSpriteModal();
   const params = new URLSearchParams(location.search);
   const slugQ = params.get("slug");
   const dexQ = params.get("dex");
