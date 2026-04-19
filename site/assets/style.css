@@ -759,21 +759,8 @@ h3 { font-size: 1rem; margin: .8rem 0 .4rem; color: var(--text-dim); }
   border-color: #b94a48;
 }
 
-/* --- Items page --- */
-.items-table { width: 100%; border-collapse: collapse; }
-.items-table th {
-  text-align: left;
-  font-size: .75rem;
-  text-transform: uppercase;
-  color: var(--text-dim);
-  padding: .5rem .6rem;
-  border-bottom: 1px solid var(--border);
-}
-.items-table td {
-  padding: .45rem .6rem;
-  border-bottom: 1px solid var(--border);
-}
-.items-table tr:hover td { background: var(--panel-2); }
+/* --- Items page (extends .dex-table) --- */
+/* Base layout, header, hover, and .num styles come from .dex-table */
 .source-tag {
   display: inline-block;
   font-size: .65rem;

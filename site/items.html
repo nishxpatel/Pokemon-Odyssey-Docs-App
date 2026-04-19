@@ -40,15 +40,17 @@
     </select>
   </div>
 
-  <table class="items-table">
-    <thead>
-      <tr>
-        <th>Item</th>
-        <th>Sources</th>
-      </tr>
-    </thead>
-    <tbody id="items-tbody"></tbody>
-  </table>
+  <div class="dex-table-wrap">
+    <table class="dex-table items-table">
+      <thead>
+        <tr>
+          <th data-sort-key="name">Item</th>
+          <th data-sort-key="sources">Sources</th>
+        </tr>
+      </thead>
+      <tbody id="items-tbody"></tbody>
+    </table>
+  </div>
   <p class="empty-msg" id="empty" style="display:none">No items match your filters.</p>
 </main>
 

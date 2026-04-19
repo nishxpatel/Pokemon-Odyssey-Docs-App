@@ -10,6 +10,10 @@ const empty  = document.getElementById("empty");
 const meta   = document.getElementById("meta-line");
 
 let DATA = [];
+let sortKey = "name";
+let sortDir = "asc";
+
+const NUMERIC_KEYS = new Set(["power", "accuracy", "pp", "users"]);
 
 function typeBadge(t) {
   if (!t) return `<span class="empty-msg">—</span>`;
@@ -54,6 +58,48 @@ function rowHTML(m) {
   </tr>`;
 }
 
+function accSortVal(v) {
+  if (v === "/") return 101; // always hits — rank above percentage values
+  const n = Number(v);
+  return (v === null || v === undefined || v === "" || isNaN(n)) ? -1 : n;
+}
+
+function applySort(rows) {
+  const sign = sortDir === "asc" ? 1 : -1;
+  if (sortKey === "type")     return [...rows].sort((a, b) => sign * (a.type     || "").localeCompare(b.type     || ""));
+  if (sortKey === "category") return [...rows].sort((a, b) => sign * (a.category || "").localeCompare(b.category || ""));
+  if (sortKey === "power")    return [...rows].sort((a, b) => sign * ((Number(a.power)  || -1) - (Number(b.power)  || -1)));
+  if (sortKey === "accuracy") return [...rows].sort((a, b) => sign * (accSortVal(a.accuracy) - accSortVal(b.accuracy)));
+  if (sortKey === "pp")       return [...rows].sort((a, b) => sign * ((Number(a.pp)     || -1) - (Number(b.pp)     || -1)));
+  if (sortKey === "users")    return [...rows].sort((a, b) => sign * ((a.used_by || []).length - (b.used_by || []).length));
+  return [...rows].sort((a, b) => sign * a.name.localeCompare(b.name)); // default: name
+}
+
+function dropdownValueForState() {
+  if (sortKey === "name"     && sortDir === "asc")  return "name";
+  if (sortKey === "power"    && sortDir === "desc") return "power-desc";
+  if (sortKey === "users"    && sortDir === "desc") return "users-desc";
+  return null;
+}
+
+function syncDropdown() {
+  const v = dropdownValueForState();
+  if (v !== null) sortS.value = v;
+}
+
+function applyDropdownToState() {
+  if      (sortS.value === "power-desc") { sortKey = "power"; sortDir = "desc"; }
+  else if (sortS.value === "users-desc") { sortKey = "users"; sortDir = "desc"; }
+  else                                   { sortKey = "name";  sortDir = "asc";  }
+}
+
+function updateSortIndicators() {
+  for (const th of document.querySelectorAll(".moves-table th[data-sort-key]")) {
+    th.classList.toggle("sort-asc",  th.dataset.sortKey === sortKey && sortDir === "asc");
+    th.classList.toggle("sort-desc", th.dataset.sortKey === sortKey && sortDir === "desc");
+  }
+}
+
 function render() {
   const q = search.value.trim().toLowerCase();
   const t = typeF.value;
@@ -70,15 +116,10 @@ function render() {
     }
     return true;
   });
-  if (sortS.value === "power-desc") {
-    rows.sort((a, b) => (Number(b.power) || -1) - (Number(a.power) || -1));
-  } else if (sortS.value === "users-desc") {
-    rows.sort((a, b) => (b.used_by || []).length - (a.used_by || []).length);
-  } else {
-    rows.sort((a, b) => a.name.localeCompare(b.name));
-  }
+  rows = applySort(rows);
   tbody.innerHTML = rows.map(rowHTML).join("");
   empty.style.display = rows.length ? "none" : "block";
+  updateSortIndicators();
   const customN = DATA.filter(m => m.is_custom).length;
   meta.textContent = `${rows.length} move${rows.length === 1 ? "" : "s"} shown · ${DATA.length} total (${customN} custom Odyssey moves; rest from PokeAPI baseline).`;
 }
@@ -88,7 +129,24 @@ async function main() {
     const f = await fetch("data/moves.json").then(r => r.json());
     DATA = f.moves;
     buildTypeOptions();
-    [search, typeF, catF, kindF, sortS].forEach(el => el.addEventListener("input", render));
+
+    [search, typeF, catF, kindF].forEach(el => el.addEventListener("input", render));
+    sortS.addEventListener("input", () => { applyDropdownToState(); render(); });
+
+    document.querySelector(".moves-table thead").addEventListener("click", e => {
+      const th = e.target.closest("th[data-sort-key]");
+      if (!th) return;
+      const key = th.dataset.sortKey;
+      if (sortKey === key) {
+        sortDir = sortDir === "asc" ? "desc" : "asc";
+      } else {
+        sortKey = key;
+        sortDir = NUMERIC_KEYS.has(key) ? "desc" : "asc";
+      }
+      syncDropdown();
+      render();
+    });
+
     render();
   } catch (e) {
     tbody.innerHTML = `<tr><td colspan="8"><p class="empty-msg">Failed to load: ${escapeHTML(e.message)}.</p></td></tr>`;

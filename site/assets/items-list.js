@@ -8,6 +8,8 @@ const empty  = document.getElementById("empty");
 const meta   = document.getElementById("meta-line");
 
 let DATA = [];
+let sortKey = "name";
+let sortDir = "asc";
 
 function sourceSummary(item) {
   const counts = {};
@@ -27,6 +29,35 @@ function rowHTML(item) {
   </tr>`;
 }
 
+function applySort(rows) {
+  const sign = sortDir === "asc" ? 1 : -1;
+  if (sortKey === "sources") return [...rows].sort((a, b) => sign * ((a.sources || []).length - (b.sources || []).length));
+  return [...rows].sort((a, b) => sign * a.name.localeCompare(b.name)); // default: name
+}
+
+function dropdownValueForState() {
+  if (sortKey === "name"    && sortDir === "asc")  return "name";
+  if (sortKey === "sources" && sortDir === "desc") return "sources";
+  return null;
+}
+
+function syncDropdown() {
+  const v = dropdownValueForState();
+  if (v !== null) sortS.value = v;
+}
+
+function applyDropdownToState() {
+  if (sortS.value === "sources") { sortKey = "sources"; sortDir = "desc"; }
+  else                           { sortKey = "name";    sortDir = "asc";  }
+}
+
+function updateSortIndicators() {
+  for (const th of document.querySelectorAll(".items-table th[data-sort-key]")) {
+    th.classList.toggle("sort-asc",  th.dataset.sortKey === sortKey && sortDir === "asc");
+    th.classList.toggle("sort-desc", th.dataset.sortKey === sortKey && sortDir === "desc");
+  }
+}
+
 function render() {
   const q = search.value.trim().toLowerCase();
   const k = kindF.value;
@@ -35,13 +66,10 @@ function render() {
     if (k && !(i.sources || []).some(s => s.kind === k)) return false;
     return true;
   });
-  if (sortS.value === "sources") {
-    rows.sort((a, b) => (b.sources || []).length - (a.sources || []).length);
-  } else {
-    rows.sort((a, b) => a.name.localeCompare(b.name));
-  }
+  rows = applySort(rows);
   tbody.innerHTML = rows.map(rowHTML).join("");
   empty.style.display = rows.length ? "none" : "block";
+  updateSortIndicators();
   meta.textContent = `${rows.length} item${rows.length === 1 ? "" : "s"} shown · ${DATA.length} total.`;
 }
 
@@ -49,7 +77,24 @@ async function main() {
   try {
     const f = await fetch("data/items.json").then(r => r.json());
     DATA = f.items;
-    [search, kindF, sortS].forEach(el => el.addEventListener("input", render));
+
+    [search, kindF].forEach(el => el.addEventListener("input", render));
+    sortS.addEventListener("input", () => { applyDropdownToState(); render(); });
+
+    document.querySelector(".items-table thead").addEventListener("click", e => {
+      const th = e.target.closest("th[data-sort-key]");
+      if (!th) return;
+      const key = th.dataset.sortKey;
+      if (sortKey === key) {
+        sortDir = sortDir === "asc" ? "desc" : "asc";
+      } else {
+        sortKey = key;
+        sortDir = key === "sources" ? "desc" : "asc";
+      }
+      syncDropdown();
+      render();
+    });
+
     render();
   } catch (e) {
     tbody.innerHTML = `<tr><td colspan="2"><p class="empty-msg">Failed to load: ${escapeHTML(e.message)}.</p></td></tr>`;
