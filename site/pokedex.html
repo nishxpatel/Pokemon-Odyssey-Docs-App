@@ -57,11 +57,36 @@
       <input type="checkbox" id="final-only"> Final forms only
     </label>
     <button id="reset-btn" class="reset-btn">Reset</button>
+    <div class="view-toggle" id="view-toggle" role="tablist" aria-label="View mode">
+      <button type="button" data-view="cards" class="active" title="Card view">Cards</button>
+      <button type="button" data-view="table" title="Table view">Table</button>
+    </div>
   </div>
   <div class="type-chips" id="type-chips"></div>
   <p class="hint" id="active-hint"></p>
 
   <div id="grid" class="dex-grid"></div>
+  <div id="dex-table-wrap" class="dex-table-wrap" style="display:none">
+    <table id="dex-table" class="dex-table">
+      <thead>
+        <tr>
+          <th class="th-sprite" aria-label="Sprite"></th>
+          <th class="num" data-sort-key="dex">№</th>
+          <th data-sort-key="name">Name</th>
+          <th data-sort-key="types">Types</th>
+          <th data-sort-key="abilities">Abilities</th>
+          <th class="num" data-sort-key="hp" title="HP">HP</th>
+          <th class="num" data-sort-key="atk" title="Attack">Atk</th>
+          <th class="num" data-sort-key="def" title="Defense">Def</th>
+          <th class="num" data-sort-key="spa" title="Special Attack">SpA</th>
+          <th class="num" data-sort-key="spd" title="Special Defense">SpD</th>
+          <th class="num" data-sort-key="spe" title="Speed">Spe</th>
+          <th class="num" data-sort-key="total" title="Base Stat Total">BST</th>
+        </tr>
+      </thead>
+      <tbody id="dex-table-body"></tbody>
+    </table>
+  </div>
   <p class="empty-msg" id="empty" style="display:none">No Pokémon match your filters.</p>
 </main>
 
