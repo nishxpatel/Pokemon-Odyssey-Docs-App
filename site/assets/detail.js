@@ -94,9 +94,8 @@ function renderMatchups(types) {
   return sections;
 }
 
-function renderOffenses(types) {
-  if (!types.length) return `<p class="empty-msg">No type data.</p>`;
-  const matchups = offensiveMatchups(types);
+function renderOffenseForType(type) {
+  const matchups = offensiveMatchups([type]);
   const groups = { 0: [], 0.5: [], 2: [] };
   for (const t of TYPE_LIST) {
     const m = matchups[t];
@@ -105,18 +104,28 @@ function renderOffenses(types) {
   const labelFor = m => ({ 0: "0×", 0.5: "½×", 2: "2×" }[m] || `${m}×`);
   const classFor = m => ({ 0: "x0", 0.5: "x05", 2: "x2" }[m] || "x1");
   const keys = [2, 0.5, 0].filter(k => groups[k] && groups[k].length);
-  if (!keys.length) return `<p class="empty-msg">Neutral to all types.</p>`;
-  const sections = keys.map(k => `
-    <h3>${labelFor(k)} damage to</h3>
-    <div class="weakness-grid">
-      ${groups[k].map(t => `
-        <div class="weakness-cell ${classFor(k)}">
-          ${typeBadge(t, true)}
-          <span class="mult">${labelFor(k)}</span>
-        </div>
-      `).join("")}
-    </div>`).join("");
-  return sections;
+  const body = keys.length
+    ? keys.map(k => `
+        <h3>${labelFor(k)} damage to</h3>
+        <div class="weakness-grid">
+          ${groups[k].map(t => `
+            <div class="weakness-cell ${classFor(k)}">
+              ${typeBadge(t, true)}
+              <span class="mult">${labelFor(k)}</span>
+            </div>
+          `).join("")}
+        </div>`).join("")
+    : `<p class="empty-msg">Neutral to all types.</p>`;
+  return `<div class="offense-section">
+    <div class="offense-type-label">${typeBadge(type)} <span>type moves</span></div>
+    ${body}
+  </div>`;
+}
+
+function renderOffenses(types) {
+  if (!types.length) return `<p class="empty-msg">No type data.</p>`;
+  // One chart per type — dual-type Pokémon get two separate sections.
+  return types.map(renderOffenseForType).join("");
 }
 
 function renderMoves(moves, customMoveSlugs) {
