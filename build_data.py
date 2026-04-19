@@ -53,6 +53,11 @@ STAT_HEADERS = {"HP", "ATK", "DEF", "SP.ATK", "SP.DEF", "SPD", "TOTAL", "GAME"}
 # only one branch target placed in the same band (col G). The second branch target
 # lives in a separate sheet as an apparent standalone. Each entry here overrides the
 # combined condition on the existing edge AND adds the missing second branch edge.
+#
+# Also includes within-sheet branching where the layout isolates the source species
+# in its own block (e.g. Wurmple is alone at row 132 while its two targets each
+# appear on separate rows further down).
+#
 # Format: from_key -> [(to_key, condition_for_that_branch), ...]
 EXPLICIT_BRANCHES = {
     "GLOOM":    [("VILEPLUME",  "Leaf Stone"), ("BELLOSSOM", "Sun Stone")],
@@ -61,6 +66,54 @@ EXPLICIT_BRANCHES = {
     "SCYTHER":  [("KLEAVOR",   "B. Augurite"), ("SCIZOR",    "Link Stone")],
     "KIRLIA":   [("GARDEVOIR", "LV.30"),       ("GALLADE",   "Dawn Stone")],
     "SNORUNT":  [("GLALIE",    "LV.42"),       ("FROSLASS",  "Dawn Stone")],
+    # Wurmple: branching in-sheet but isolated in its own block; Silcoon/Cascoon
+    # appear on separate rows so no band spans Wurmple to either target.
+    "WURMPLE":  [("SILCOON",   "LV. 7"),       ("CASCOON",   "LV. 7")],
+}
+
+# Cross-sheet/cross-generation linear evolutions.
+# The band parser only connects species that appear on the same spreadsheet row.
+# Any evolution where the source and target live on different sheets (e.g. a Gen 1
+# Pokémon evolving into a Gen 4 form) will have no band, so no edge is inferred.
+# These entries wire them explicitly.  Conditions are taken verbatim from the
+# source species' evolves_at cell in the workbook.
+#
+# Format: from_key -> [(to_key, condition), ...]
+CROSS_SHEET_EVOS = {
+    # Gen 1 base → Gen 2 evolution  (#1-151 → #152-251)
+    "CHANSEY":    [("BLISSEY",    "Happiness")],
+    "GOLBAT":     [("CROBAT",     "Happiness")],
+    "ONIX":       [("STEELIX",    "Link Stone")],
+    "SEADRA":     [("KINGDRA",    "Link Stone")],
+    "PORYGON":    [("PORYGON2",   "Upgrade")],
+    # Gen 2 baby → Gen 1 mid-stage  (#152-251 → #1-151)
+    "SMOOCHUM":   [("JYNX",       "LV.30")],
+    "ELEKID":     [("ELECTABUZZ", "LV.30")],
+    "MAGBY":      [("MAGMAR",     "LV.30")],
+    # Gen 1 base/mid → Gen 4 final  (#1-151 → 4th Gen)
+    "TANGELA":    [("TANGROWTH",  "LV.38")],
+    "LICKITUNG":  [("LICKILICKY", "LV.33")],
+    "RHYDON":     [("RHYPERIOR",  "Protector")],
+    "ELECTABUZZ": [("ELECTIVIRE", "Electirizer")],
+    "MAGMAR":     [("MAGMORTAR",  "Magmarizer")],
+    "MAGNETON":   [("MAGNEZONE",  "Thunderstone")],
+    # Gen 2 base → Gen 4 evolution  (#152-251 → 4th Gen)
+    "SNEASEL":    [("WEAVILE",    "LV.35")],
+    "MISDREAVUS": [("MISMAGIUS",  "Dusk Stone")],
+    "AIPOM":      [("AMBIPOM",    "LV.30")],
+    "YANMA":      [("YANMEGA",    "LV.33")],
+    "MURKROW":    [("HONCHKROW",  "Dusk Stone")],
+    "GLIGAR":     [("GLISCOR",    "LV.35")],
+    "PILOSWINE":  [("MAMOSWINE",  "LV.45")],
+    "PORYGON2":   [("PORYGONZ",   "Dubious Disc")],
+    "TOGETIC":    [("TOGEKISS",   "Shiny Stone")],
+    # Gen 3 base → Gen 4 evolution  (#252-386 → 4th Gen)
+    "DUSCLOPS":   [("DUSKNOIR",   "Reaper Cloth")],
+    "NOSEPASS":   [("PROBOPASS",  "Thunderstone")],
+    "ROSELIA":    [("ROSERADE",   "Shiny Stone")],
+    # NOTE: Armaldo (#348) has evolves_at='LV.40' in the spreadsheet, but this is
+    # a copy-paste error — the cell duplicates Anorith's evolution value. Armaldo
+    # has no evolution target in the docs and is correctly treated as a final form.
 }
 
 # Items that can trigger evolution. The UI links these to item pages.
@@ -1144,12 +1197,16 @@ def build_evolution_graph(all_species, all_bands):
         for b in band["branches"]:
             add_edge(b["from"], b["to"], b["condition"], "branch")
 
-    # Apply explicit branch overrides: fixes branching lines where the spreadsheet
-    # layout puts only one branch target in the same band (col G) and uses a
-    # combined "A/B" condition string, leaving the second target as a standalone.
+    # Apply explicit branch overrides (EXPLICIT_BRANCHES) and cross-sheet stage
+    # evolutions (CROSS_SHEET_EVOS).  Both use the same edge-insertion path;
+    # the only difference is the kind tag ("branch" vs "stage"), which the UI
+    # uses for display but not for family grouping.
     for from_key, branches in EXPLICIT_BRANCHES.items():
         for to_key, cond in branches:
             add_edge(from_key, to_key, cond, "branch")
+    for from_key, evos in CROSS_SHEET_EVOS.items():
+        for to_key, cond in evos:
+            add_edge(from_key, to_key, cond, "stage")
 
     return graph, reverse
 

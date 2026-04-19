@@ -6149,6 +6149,14 @@
         "dex": "042",
         "sprite_slug": "golbat",
         "is_variant": false
+      },
+      {
+        "key": "CROBAT",
+        "name": "CROBAT",
+        "slug": "crobat",
+        "dex": "169",
+        "sprite_slug": "crobat",
+        "is_variant": false
       }
     ],
     "stats": {
@@ -6272,7 +6280,16 @@
     "evolves_at_level": null,
     "evolves_note": "Happiness",
     "evolution_items": [],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "CROBAT",
+        "to_name": "CROBAT",
+        "to_slug": "crobat",
+        "condition": "Happiness",
+        "kind": "stage",
+        "items": []
+      }
+    ],
     "family": [
       {
         "key": "ZUBAT",
@@ -6288,6 +6305,14 @@
         "slug": "golbat",
         "dex": "042",
         "sprite_slug": "golbat",
+        "is_variant": false
+      },
+      {
+        "key": "CROBAT",
+        "name": "CROBAT",
+        "slug": "crobat",
+        "dex": "169",
+        "sprite_slug": "crobat",
         "is_variant": false
       }
     ],
@@ -12707,6 +12732,14 @@
         "dex": "082",
         "sprite_slug": "magneton",
         "is_variant": false
+      },
+      {
+        "key": "MAGNEZONE",
+        "name": "MAGNEZONE",
+        "slug": "magnezone",
+        "dex": "392",
+        "sprite_slug": "magnezone",
+        "is_variant": false
       }
     ],
     "stats": {
@@ -12832,7 +12865,18 @@
     "evolution_items": [
       "Thunderstone"
     ],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "MAGNEZONE",
+        "to_name": "MAGNEZONE",
+        "to_slug": "magnezone",
+        "condition": "Thunderstone",
+        "kind": "stage",
+        "items": [
+          "Thunderstone"
+        ]
+      }
+    ],
     "family": [
       {
         "key": "MAGNEMITE",
@@ -12848,6 +12892,14 @@
         "slug": "magneton",
         "dex": "082",
         "sprite_slug": "magneton",
+        "is_variant": false
+      },
+      {
+        "key": "MAGNEZONE",
+        "name": "MAGNEZONE",
+        "slug": "magnezone",
+        "dex": "392",
+        "sprite_slug": "magnezone",
         "is_variant": false
       }
     ],
@@ -14670,7 +14722,18 @@
     "evolution_items": [
       "Link Stone"
     ],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "STEELIX",
+        "to_name": "STEELIX",
+        "to_slug": "steelix",
+        "condition": "Link Stone",
+        "kind": "stage",
+        "items": [
+          "Link Stone"
+        ]
+      }
+    ],
     "family": [
       {
         "key": "ONIX",
@@ -14678,6 +14741,14 @@
         "slug": "onix",
         "dex": "095",
         "sprite_slug": "onix",
+        "is_variant": false
+      },
+      {
+        "key": "STEELIX",
+        "name": "STEELIX",
+        "slug": "steelix",
+        "dex": "208",
+        "sprite_slug": "steelix",
         "is_variant": false
       }
     ],
@@ -16733,7 +16804,16 @@
     "evolves_at_level": 33,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "LICKILICKY",
+        "to_name": "LICKILICKY",
+        "to_slug": "lickilicky",
+        "condition": "LV.33",
+        "kind": "stage",
+        "items": []
+      }
+    ],
     "family": [
       {
         "key": "LICKITUNG",
@@ -16741,6 +16821,14 @@
         "slug": "lickitung",
         "dex": "108",
         "sprite_slug": "lickitung",
+        "is_variant": false
+      },
+      {
+        "key": "LICKILICKY",
+        "name": "LICKILICKY",
+        "slug": "lickilicky",
+        "dex": "393",
+        "sprite_slug": "lickilicky",
         "is_variant": false
       }
     ],
@@ -17187,6 +17275,14 @@
         "dex": "112",
         "sprite_slug": "rhydon",
         "is_variant": false
+      },
+      {
+        "key": "RHYPERIOR",
+        "name": "RHYPERIOR",
+        "slug": "rhyperior",
+        "dex": "394",
+        "sprite_slug": "rhyperior",
+        "is_variant": false
       }
     ],
     "stats": {
@@ -17317,7 +17413,18 @@
     "evolution_items": [
       "Protector"
     ],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "RHYPERIOR",
+        "to_name": "RHYPERIOR",
+        "to_slug": "rhyperior",
+        "condition": "Protector",
+        "kind": "stage",
+        "items": [
+          "Protector"
+        ]
+      }
+    ],
     "family": [
       {
         "key": "RHYHORN",
@@ -17333,6 +17440,14 @@
         "slug": "rhydon",
         "dex": "112",
         "sprite_slug": "rhydon",
+        "is_variant": false
+      },
+      {
+        "key": "RHYPERIOR",
+        "name": "RHYPERIOR",
+        "slug": "rhyperior",
+        "dex": "394",
+        "sprite_slug": "rhyperior",
         "is_variant": false
       }
     ],
@@ -17459,7 +17574,16 @@
     "evolves_at_level": null,
     "evolves_note": "Happiness",
     "evolution_items": [],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "BLISSEY",
+        "to_name": "⭐ BLISSEY",
+        "to_slug": "blissey",
+        "condition": "Happiness",
+        "kind": "stage",
+        "items": []
+      }
+    ],
     "family": [
       {
         "key": "CHANSEY",
@@ -17467,6 +17591,14 @@
         "slug": "chansey",
         "dex": "113",
         "sprite_slug": "chansey",
+        "is_variant": true
+      },
+      {
+        "key": "BLISSEY",
+        "name": "⭐ BLISSEY",
+        "slug": "blissey",
+        "dex": "242",
+        "sprite_slug": "blissey",
         "is_variant": true
       }
     ],
@@ -17600,7 +17732,16 @@
     "evolves_at_level": 38,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "TANGROWTH",
+        "to_name": "⭐ TANGROWTH",
+        "to_slug": "tangrowth",
+        "condition": "LV.38",
+        "kind": "stage",
+        "items": []
+      }
+    ],
     "family": [
       {
         "key": "TANGELA",
@@ -17608,6 +17749,14 @@
         "slug": "tangela",
         "dex": "114",
         "sprite_slug": "tangela",
+        "is_variant": true
+      },
+      {
+        "key": "TANGROWTH",
+        "name": "⭐ TANGROWTH",
+        "slug": "tangrowth",
+        "dex": "395",
+        "sprite_slug": "tangrowth",
         "is_variant": true
       }
     ],
@@ -17919,6 +18068,14 @@
         "dex": "117",
         "sprite_slug": "seadra",
         "is_variant": false
+      },
+      {
+        "key": "KINGDRA",
+        "name": "KINGDRA",
+        "slug": "kingdra",
+        "dex": "230",
+        "sprite_slug": "kingdra",
+        "is_variant": false
       }
     ],
     "stats": {
@@ -18127,7 +18284,18 @@
     "evolution_items": [
       "Link Stone"
     ],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "KINGDRA",
+        "to_name": "KINGDRA",
+        "to_slug": "kingdra",
+        "condition": "Link Stone",
+        "kind": "stage",
+        "items": [
+          "Link Stone"
+        ]
+      }
+    ],
     "family": [
       {
         "key": "HORSEA",
@@ -18143,6 +18311,14 @@
         "slug": "seadra",
         "dex": "117",
         "sprite_slug": "seadra",
+        "is_variant": false
+      },
+      {
+        "key": "KINGDRA",
+        "name": "KINGDRA",
+        "slug": "kingdra",
+        "dex": "230",
+        "sprite_slug": "kingdra",
         "is_variant": false
       }
     ],
@@ -19229,6 +19405,14 @@
         "dex": "124",
         "sprite_slug": "jynx",
         "is_variant": true
+      },
+      {
+        "key": "SMOOCHUM",
+        "name": "⭐ SMOOCHUM",
+        "slug": "smoochum",
+        "dex": "238",
+        "sprite_slug": "smoochum",
+        "is_variant": true
       }
     ],
     "stats": {
@@ -19399,7 +19583,18 @@
     "evolution_items": [
       "Electirizer"
     ],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "ELECTIVIRE",
+        "to_name": "⭐ ELECTIVIRE",
+        "to_slug": "electivire",
+        "condition": "Electirizer",
+        "kind": "stage",
+        "items": [
+          "Electirizer"
+        ]
+      }
+    ],
     "family": [
       {
         "key": "ELECTABUZZ",
@@ -19407,6 +19602,22 @@
         "slug": "electabuzz",
         "dex": "125",
         "sprite_slug": "electabuzz",
+        "is_variant": true
+      },
+      {
+        "key": "ELEKID",
+        "name": "⭐ ELEKID",
+        "slug": "elekid",
+        "dex": "239",
+        "sprite_slug": "elekid",
+        "is_variant": true
+      },
+      {
+        "key": "ELECTIVIRE",
+        "name": "⭐ ELECTIVIRE",
+        "slug": "electivire",
+        "dex": "396",
+        "sprite_slug": "electivire",
         "is_variant": true
       }
     ],
@@ -19544,7 +19755,18 @@
     "evolution_items": [
       "Magmarizer"
     ],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "MAGMORTAR",
+        "to_name": "⭐ MAGMORTAR",
+        "to_slug": "magmortar",
+        "condition": "Magmarizer",
+        "kind": "stage",
+        "items": [
+          "Magmarizer"
+        ]
+      }
+    ],
     "family": [
       {
         "key": "MAGMAR",
@@ -19552,6 +19774,22 @@
         "slug": "magmar",
         "dex": "126",
         "sprite_slug": "magmar",
+        "is_variant": true
+      },
+      {
+        "key": "MAGBY",
+        "name": "⭐ MAGBY",
+        "slug": "magby",
+        "dex": "240",
+        "sprite_slug": "magby",
+        "is_variant": true
+      },
+      {
+        "key": "MAGMORTAR",
+        "name": "⭐ MAGMORTAR",
+        "slug": "magmortar",
+        "dex": "397",
+        "sprite_slug": "magmortar",
         "is_variant": true
       }
     ],
@@ -21699,7 +21937,18 @@
     "evolution_items": [
       "Upgrade"
     ],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "PORYGON2",
+        "to_name": "PORYGON2",
+        "to_slug": "porygon2",
+        "condition": "Upgrade",
+        "kind": "stage",
+        "items": [
+          "Upgrade"
+        ]
+      }
+    ],
     "family": [
       {
         "key": "PORYGON",
@@ -21707,6 +21956,22 @@
         "slug": "porygon",
         "dex": "137",
         "sprite_slug": "porygon",
+        "is_variant": false
+      },
+      {
+        "key": "PORYGON2",
+        "name": "PORYGON2",
+        "slug": "porygon2",
+        "dex": "233",
+        "sprite_slug": "porygon2",
+        "is_variant": false
+      },
+      {
+        "key": "PORYGONZ",
+        "name": "PORYGON-Z",
+        "slug": "porygon-z",
+        "dex": "402",
+        "sprite_slug": "porygonz",
         "is_variant": false
       }
     ],
@@ -26842,6 +27107,22 @@
     "evolution_targets": [],
     "family": [
       {
+        "key": "ZUBAT",
+        "name": "ZUBAT",
+        "slug": "zubat",
+        "dex": "041",
+        "sprite_slug": "zubat",
+        "is_variant": false
+      },
+      {
+        "key": "GOLBAT",
+        "name": "GOLBAT",
+        "slug": "golbat",
+        "dex": "042",
+        "sprite_slug": "golbat",
+        "is_variant": false
+      },
+      {
         "key": "CROBAT",
         "name": "CROBAT",
         "slug": "crobat",
@@ -27604,6 +27885,14 @@
         "dex": "176",
         "sprite_slug": "togetic",
         "is_variant": false
+      },
+      {
+        "key": "TOGEKISS",
+        "name": "TOGEKISS",
+        "slug": "togekiss",
+        "dex": "398",
+        "sprite_slug": "togekiss",
+        "is_variant": false
       }
     ],
     "stats": {
@@ -27721,7 +28010,18 @@
     "evolution_items": [
       "Shiny Stone"
     ],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "TOGEKISS",
+        "to_name": "TOGEKISS",
+        "to_slug": "togekiss",
+        "condition": "Shiny Stone",
+        "kind": "stage",
+        "items": [
+          "Shiny Stone"
+        ]
+      }
+    ],
     "family": [
       {
         "key": "TOGEPI",
@@ -27737,6 +28037,14 @@
         "slug": "togetic",
         "dex": "176",
         "sprite_slug": "togetic",
+        "is_variant": false
+      },
+      {
+        "key": "TOGEKISS",
+        "name": "TOGEKISS",
+        "slug": "togekiss",
+        "dex": "398",
+        "sprite_slug": "togekiss",
         "is_variant": false
       }
     ],
@@ -30039,7 +30347,16 @@
     "evolves_at_level": 30,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "AMBIPOM",
+        "to_name": "AMBIPOM",
+        "to_slug": "ambipom",
+        "condition": "LV.30",
+        "kind": "stage",
+        "items": []
+      }
+    ],
     "family": [
       {
         "key": "AIPOM",
@@ -30047,6 +30364,14 @@
         "slug": "aipom",
         "dex": "190",
         "sprite_slug": "aipom",
+        "is_variant": false
+      },
+      {
+        "key": "AMBIPOM",
+        "name": "AMBIPOM",
+        "slug": "ambipom",
+        "dex": "388",
+        "sprite_slug": "ambipom",
         "is_variant": false
       }
     ],
@@ -30474,7 +30799,16 @@
     "evolves_at_level": 33,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "YANMEGA",
+        "to_name": "YANMEGA",
+        "to_slug": "yanmega",
+        "condition": "LV.33",
+        "kind": "stage",
+        "items": []
+      }
+    ],
     "family": [
       {
         "key": "YANMA",
@@ -30482,6 +30816,14 @@
         "slug": "yanma",
         "dex": "193",
         "sprite_slug": "yanma",
+        "is_variant": false
+      },
+      {
+        "key": "YANMEGA",
+        "name": "YANMEGA",
+        "slug": "yanmega",
+        "dex": "399",
+        "sprite_slug": "yanmega",
         "is_variant": false
       }
     ],
@@ -31315,7 +31657,18 @@
     "evolution_items": [
       "Dusk Stone"
     ],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "HONCHKROW",
+        "to_name": "HONCHKROW",
+        "to_slug": "honchkrow",
+        "condition": "Dusk Stone",
+        "kind": "stage",
+        "items": [
+          "Dusk Stone"
+        ]
+      }
+    ],
     "family": [
       {
         "key": "MURKROW",
@@ -31323,6 +31676,14 @@
         "slug": "murkrow",
         "dex": "198",
         "sprite_slug": "murkrow",
+        "is_variant": false
+      },
+      {
+        "key": "HONCHKROW",
+        "name": "HONCHKROW",
+        "slug": "honchkrow",
+        "dex": "390",
+        "sprite_slug": "honchkrow",
         "is_variant": false
       }
     ],
@@ -31596,7 +31957,18 @@
     "evolution_items": [
       "Dusk Stone"
     ],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "MISMAGIUS",
+        "to_name": "⭐ MISMAGIUS",
+        "to_slug": "mismagius",
+        "condition": "Dusk Stone",
+        "kind": "stage",
+        "items": [
+          "Dusk Stone"
+        ]
+      }
+    ],
     "family": [
       {
         "key": "MISDREAVUS",
@@ -31605,6 +31977,14 @@
         "dex": "200",
         "sprite_slug": "misdreavus",
         "is_variant": false
+      },
+      {
+        "key": "MISMAGIUS",
+        "name": "⭐ MISMAGIUS",
+        "slug": "mismagius",
+        "dex": "389",
+        "sprite_slug": "mismagius",
+        "is_variant": true
       }
     ],
     "stats": {
@@ -32624,7 +33004,16 @@
     "evolves_at_level": 35,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "GLISCOR",
+        "to_name": "GLISCOR",
+        "to_slug": "gliscor",
+        "condition": "LV.35",
+        "kind": "stage",
+        "items": []
+      }
+    ],
     "family": [
       {
         "key": "GLIGAR",
@@ -32632,6 +33021,14 @@
         "slug": "gligar",
         "dex": "207",
         "sprite_slug": "gligar",
+        "is_variant": false
+      },
+      {
+        "key": "GLISCOR",
+        "name": "GLISCOR",
+        "slug": "gliscor",
+        "dex": "401",
+        "sprite_slug": "gliscor",
         "is_variant": false
       }
     ],
@@ -32758,6 +33155,14 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "ONIX",
+        "name": "ONIX",
+        "slug": "onix",
+        "dex": "095",
+        "sprite_slug": "onix",
+        "is_variant": false
+      },
       {
         "key": "STEELIX",
         "name": "STEELIX",
@@ -33861,7 +34266,16 @@
     "evolves_at_level": 35,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "WEAVILE",
+        "to_name": "⭐ WEAVILE",
+        "to_slug": "weavile",
+        "condition": "LV.35",
+        "kind": "stage",
+        "items": []
+      }
+    ],
     "family": [
       {
         "key": "SNEASEL",
@@ -33869,6 +34283,14 @@
         "slug": "sneasel",
         "dex": "215",
         "sprite_slug": "sneasel",
+        "is_variant": true
+      },
+      {
+        "key": "WEAVILE",
+        "name": "⭐ WEAVILE",
+        "slug": "weavile",
+        "dex": "391",
+        "sprite_slug": "weavile",
         "is_variant": true
       }
     ],
@@ -34691,6 +35113,14 @@
         "dex": "221",
         "sprite_slug": "piloswine",
         "is_variant": false
+      },
+      {
+        "key": "MAMOSWINE",
+        "name": "MAMOSWINE",
+        "slug": "mamoswine",
+        "dex": "406",
+        "sprite_slug": "mamoswine",
+        "is_variant": false
       }
     ],
     "stats": {
@@ -34809,7 +35239,16 @@
     "evolves_at_level": 45,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "MAMOSWINE",
+        "to_name": "MAMOSWINE",
+        "to_slug": "mamoswine",
+        "condition": "LV.45",
+        "kind": "stage",
+        "items": []
+      }
+    ],
     "family": [
       {
         "key": "SWINUB",
@@ -34825,6 +35264,14 @@
         "slug": "piloswine",
         "dex": "221",
         "sprite_slug": "piloswine",
+        "is_variant": false
+      },
+      {
+        "key": "MAMOSWINE",
+        "name": "MAMOSWINE",
+        "slug": "mamoswine",
+        "dex": "406",
+        "sprite_slug": "mamoswine",
         "is_variant": false
       }
     ],
@@ -36029,6 +36476,22 @@
     "evolution_targets": [],
     "family": [
       {
+        "key": "HORSEA",
+        "name": "HORSEA",
+        "slug": "horsea",
+        "dex": "116",
+        "sprite_slug": "horsea",
+        "is_variant": false
+      },
+      {
+        "key": "SEADRA",
+        "name": "SEADRA",
+        "slug": "seadra",
+        "dex": "117",
+        "sprite_slug": "seadra",
+        "is_variant": false
+      },
+      {
         "key": "KINGDRA",
         "name": "KINGDRA",
         "slug": "kingdra",
@@ -36445,14 +36908,41 @@
     "evolution_items": [
       "Dubious Disc"
     ],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "PORYGONZ",
+        "to_name": "PORYGON-Z",
+        "to_slug": "porygon-z",
+        "condition": "Dubious Disc",
+        "kind": "stage",
+        "items": [
+          "Dubious Disc"
+        ]
+      }
+    ],
     "family": [
+      {
+        "key": "PORYGON",
+        "name": "PORYGON",
+        "slug": "porygon",
+        "dex": "137",
+        "sprite_slug": "porygon",
+        "is_variant": false
+      },
       {
         "key": "PORYGON2",
         "name": "PORYGON2",
         "slug": "porygon2",
         "dex": "233",
         "sprite_slug": "porygon2",
+        "is_variant": false
+      },
+      {
+        "key": "PORYGONZ",
+        "name": "PORYGON-Z",
+        "slug": "porygon-z",
+        "dex": "402",
+        "sprite_slug": "porygonz",
         "is_variant": false
       }
     ],
@@ -36882,8 +37372,25 @@
     "evolves_at_level": 30,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "JYNX",
+        "to_name": "⭐ JYNX",
+        "to_slug": "jynx",
+        "condition": "LV.30",
+        "kind": "stage",
+        "items": []
+      }
+    ],
     "family": [
+      {
+        "key": "JYNX",
+        "name": "⭐ JYNX",
+        "slug": "jynx",
+        "dex": "124",
+        "sprite_slug": "jynx",
+        "is_variant": true
+      },
       {
         "key": "SMOOCHUM",
         "name": "⭐ SMOOCHUM",
@@ -37017,14 +37524,39 @@
     "evolves_at_level": 30,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "ELECTABUZZ",
+        "to_name": "⭐ ELECTABUZZ",
+        "to_slug": "electabuzz",
+        "condition": "LV.30",
+        "kind": "stage",
+        "items": []
+      }
+    ],
     "family": [
+      {
+        "key": "ELECTABUZZ",
+        "name": "⭐ ELECTABUZZ",
+        "slug": "electabuzz",
+        "dex": "125",
+        "sprite_slug": "electabuzz",
+        "is_variant": true
+      },
       {
         "key": "ELEKID",
         "name": "⭐ ELEKID",
         "slug": "elekid",
         "dex": "239",
         "sprite_slug": "elekid",
+        "is_variant": true
+      },
+      {
+        "key": "ELECTIVIRE",
+        "name": "⭐ ELECTIVIRE",
+        "slug": "electivire",
+        "dex": "396",
+        "sprite_slug": "electivire",
         "is_variant": true
       }
     ],
@@ -37168,14 +37700,39 @@
     "evolves_at_level": 30,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "MAGMAR",
+        "to_name": "⭐ MAGMAR",
+        "to_slug": "magmar",
+        "condition": "LV.30",
+        "kind": "stage",
+        "items": []
+      }
+    ],
     "family": [
+      {
+        "key": "MAGMAR",
+        "name": "⭐ MAGMAR",
+        "slug": "magmar",
+        "dex": "126",
+        "sprite_slug": "magmar",
+        "is_variant": true
+      },
       {
         "key": "MAGBY",
         "name": "⭐ MAGBY",
         "slug": "magby",
         "dex": "240",
         "sprite_slug": "magby",
+        "is_variant": true
+      },
+      {
+        "key": "MAGMORTAR",
+        "name": "⭐ MAGMORTAR",
+        "slug": "magmortar",
+        "dex": "397",
+        "sprite_slug": "magmortar",
         "is_variant": true
       }
     ],
@@ -37459,6 +38016,14 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "CHANSEY",
+        "name": "⭐ CHANSEY",
+        "slug": "chansey",
+        "dex": "113",
+        "sprite_slug": "chansey",
+        "is_variant": true
+      },
       {
         "key": "BLISSEY",
         "name": "⭐ BLISSEY",
@@ -40980,7 +41545,24 @@
     "evolves_at_level": 7,
     "evolves_note": null,
     "evolution_items": [],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "SILCOON",
+        "to_name": "SILCOON",
+        "to_slug": "silcoon",
+        "condition": "LV. 7",
+        "kind": "branch",
+        "items": []
+      },
+      {
+        "to_key": "CASCOON",
+        "to_name": "CASCOON",
+        "to_slug": "cascoon",
+        "condition": "LV. 7",
+        "kind": "branch",
+        "items": []
+      }
+    ],
     "family": [
       {
         "key": "WURMPLE",
@@ -40989,6 +41571,38 @@
         "dex": "265",
         "sprite_slug": "wurmple",
         "is_variant": false
+      },
+      {
+        "key": "SILCOON",
+        "name": "SILCOON",
+        "slug": "silcoon",
+        "dex": "266",
+        "sprite_slug": "silcoon",
+        "is_variant": false
+      },
+      {
+        "key": "BEAUTIFLY",
+        "name": "⭐ BEAUTIFLY",
+        "slug": "beautifly",
+        "dex": "267",
+        "sprite_slug": "beautifly",
+        "is_variant": true
+      },
+      {
+        "key": "CASCOON",
+        "name": "CASCOON",
+        "slug": "cascoon",
+        "dex": "268",
+        "sprite_slug": "cascoon",
+        "is_variant": false
+      },
+      {
+        "key": "DUSTOX",
+        "name": "⭐ DUSTOX",
+        "slug": "dustox",
+        "dex": "269",
+        "sprite_slug": "dustox",
+        "is_variant": true
       }
     ],
     "stats": {
@@ -41074,6 +41688,14 @@
     ],
     "family": [
       {
+        "key": "WURMPLE",
+        "name": "WURMPLE",
+        "slug": "wurmple",
+        "dex": "265",
+        "sprite_slug": "wurmple",
+        "is_variant": false
+      },
+      {
         "key": "SILCOON",
         "name": "SILCOON",
         "slug": "silcoon",
@@ -41087,6 +41709,22 @@
         "slug": "beautifly",
         "dex": "267",
         "sprite_slug": "beautifly",
+        "is_variant": true
+      },
+      {
+        "key": "CASCOON",
+        "name": "CASCOON",
+        "slug": "cascoon",
+        "dex": "268",
+        "sprite_slug": "cascoon",
+        "is_variant": false
+      },
+      {
+        "key": "DUSTOX",
+        "name": "⭐ DUSTOX",
+        "slug": "dustox",
+        "dex": "269",
+        "sprite_slug": "dustox",
         "is_variant": true
       }
     ],
@@ -41156,6 +41794,14 @@
     "evolution_targets": [],
     "family": [
       {
+        "key": "WURMPLE",
+        "name": "WURMPLE",
+        "slug": "wurmple",
+        "dex": "265",
+        "sprite_slug": "wurmple",
+        "is_variant": false
+      },
+      {
         "key": "SILCOON",
         "name": "SILCOON",
         "slug": "silcoon",
@@ -41169,6 +41815,22 @@
         "slug": "beautifly",
         "dex": "267",
         "sprite_slug": "beautifly",
+        "is_variant": true
+      },
+      {
+        "key": "CASCOON",
+        "name": "CASCOON",
+        "slug": "cascoon",
+        "dex": "268",
+        "sprite_slug": "cascoon",
+        "is_variant": false
+      },
+      {
+        "key": "DUSTOX",
+        "name": "⭐ DUSTOX",
+        "slug": "dustox",
+        "dex": "269",
+        "sprite_slug": "dustox",
         "is_variant": true
       }
     ],
@@ -41304,6 +41966,30 @@
     ],
     "family": [
       {
+        "key": "WURMPLE",
+        "name": "WURMPLE",
+        "slug": "wurmple",
+        "dex": "265",
+        "sprite_slug": "wurmple",
+        "is_variant": false
+      },
+      {
+        "key": "SILCOON",
+        "name": "SILCOON",
+        "slug": "silcoon",
+        "dex": "266",
+        "sprite_slug": "silcoon",
+        "is_variant": false
+      },
+      {
+        "key": "BEAUTIFLY",
+        "name": "⭐ BEAUTIFLY",
+        "slug": "beautifly",
+        "dex": "267",
+        "sprite_slug": "beautifly",
+        "is_variant": true
+      },
+      {
         "key": "CASCOON",
         "name": "CASCOON",
         "slug": "cascoon",
@@ -41385,6 +42071,30 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "WURMPLE",
+        "name": "WURMPLE",
+        "slug": "wurmple",
+        "dex": "265",
+        "sprite_slug": "wurmple",
+        "is_variant": false
+      },
+      {
+        "key": "SILCOON",
+        "name": "SILCOON",
+        "slug": "silcoon",
+        "dex": "266",
+        "sprite_slug": "silcoon",
+        "is_variant": false
+      },
+      {
+        "key": "BEAUTIFLY",
+        "name": "⭐ BEAUTIFLY",
+        "slug": "beautifly",
+        "dex": "267",
+        "sprite_slug": "beautifly",
+        "is_variant": true
+      },
       {
         "key": "CASCOON",
         "name": "CASCOON",
@@ -46143,7 +46853,18 @@
     "evolution_items": [
       "Thunderstone"
     ],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "PROBOPASS",
+        "to_name": "PROBOPASS",
+        "to_slug": "probopass",
+        "condition": "Thunderstone",
+        "kind": "stage",
+        "items": [
+          "Thunderstone"
+        ]
+      }
+    ],
     "family": [
       {
         "key": "NOSEPASS",
@@ -46151,6 +46872,14 @@
         "slug": "nosepass",
         "dex": "299",
         "sprite_slug": "nosepass",
+        "is_variant": false
+      },
+      {
+        "key": "PROBOPASS",
+        "name": "PROBOPASS",
+        "slug": "probopass",
+        "dex": "404",
+        "sprite_slug": "probopass",
         "is_variant": false
       }
     ],
@@ -48579,7 +49308,18 @@
     "evolution_items": [
       "Shiny Stone"
     ],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "ROSERADE",
+        "to_name": "ROSERADE",
+        "to_slug": "roserade",
+        "condition": "Shiny Stone",
+        "kind": "stage",
+        "items": [
+          "Shiny Stone"
+        ]
+      }
+    ],
     "family": [
       {
         "key": "ROSELIA",
@@ -48587,6 +49327,14 @@
         "slug": "roselia",
         "dex": "315",
         "sprite_slug": "roselia",
+        "is_variant": false
+      },
+      {
+        "key": "ROSERADE",
+        "name": "ROSERADE",
+        "slug": "roserade",
+        "dex": "387",
+        "sprite_slug": "roserade",
         "is_variant": false
       }
     ],
@@ -54837,6 +55585,14 @@
         "dex": "356",
         "sprite_slug": "dusclops",
         "is_variant": true
+      },
+      {
+        "key": "DUSKNOIR",
+        "name": "⭐ DUSKNOIR",
+        "slug": "dusknoir",
+        "dex": "405",
+        "sprite_slug": "dusknoir",
+        "is_variant": true
       }
     ],
     "stats": {
@@ -54964,7 +55720,18 @@
     "evolution_items": [
       "Reaper Cloth"
     ],
-    "evolution_targets": [],
+    "evolution_targets": [
+      {
+        "to_key": "DUSKNOIR",
+        "to_name": "⭐ DUSKNOIR",
+        "to_slug": "dusknoir",
+        "condition": "Reaper Cloth",
+        "kind": "stage",
+        "items": [
+          "Reaper Cloth"
+        ]
+      }
+    ],
     "family": [
       {
         "key": "DUSKULL",
@@ -54980,6 +55747,14 @@
         "slug": "dusclops",
         "dex": "356",
         "sprite_slug": "dusclops",
+        "is_variant": true
+      },
+      {
+        "key": "DUSKNOIR",
+        "name": "⭐ DUSKNOIR",
+        "slug": "dusknoir",
+        "dex": "405",
+        "sprite_slug": "dusknoir",
         "is_variant": true
       }
     ],
@@ -59152,6 +59927,14 @@
     "evolution_targets": [],
     "family": [
       {
+        "key": "ROSELIA",
+        "name": "ROSELIA",
+        "slug": "roselia",
+        "dex": "315",
+        "sprite_slug": "roselia",
+        "is_variant": false
+      },
+      {
         "key": "ROSERADE",
         "name": "ROSERADE",
         "slug": "roserade",
@@ -59305,6 +60088,14 @@
     "evolution_targets": [],
     "family": [
       {
+        "key": "AIPOM",
+        "name": "AIPOM",
+        "slug": "aipom",
+        "dex": "190",
+        "sprite_slug": "aipom",
+        "is_variant": false
+      },
+      {
         "key": "AMBIPOM",
         "name": "AMBIPOM",
         "slug": "ambipom",
@@ -59447,6 +60238,14 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "MISDREAVUS",
+        "name": "MISDREAVUS",
+        "slug": "misdreavus",
+        "dex": "200",
+        "sprite_slug": "misdreavus",
+        "is_variant": false
+      },
       {
         "key": "MISMAGIUS",
         "name": "⭐ MISMAGIUS",
@@ -59594,6 +60393,14 @@
     "evolution_targets": [],
     "family": [
       {
+        "key": "MURKROW",
+        "name": "MURKROW",
+        "slug": "murkrow",
+        "dex": "198",
+        "sprite_slug": "murkrow",
+        "is_variant": false
+      },
+      {
         "key": "HONCHKROW",
         "name": "HONCHKROW",
         "slug": "honchkrow",
@@ -59727,6 +60534,14 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "SNEASEL",
+        "name": "⭐ SNEASEL",
+        "slug": "sneasel",
+        "dex": "215",
+        "sprite_slug": "sneasel",
+        "is_variant": true
+      },
       {
         "key": "WEAVILE",
         "name": "⭐ WEAVILE",
@@ -59884,6 +60699,22 @@
     "evolution_targets": [],
     "family": [
       {
+        "key": "MAGNEMITE",
+        "name": "MAGNEMITE",
+        "slug": "magnemite",
+        "dex": "081",
+        "sprite_slug": "magnemite",
+        "is_variant": false
+      },
+      {
+        "key": "MAGNETON",
+        "name": "MAGNETON",
+        "slug": "magneton",
+        "dex": "082",
+        "sprite_slug": "magneton",
+        "is_variant": false
+      },
+      {
         "key": "MAGNEZONE",
         "name": "MAGNEZONE",
         "slug": "magnezone",
@@ -60021,6 +60852,14 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "LICKITUNG",
+        "name": "LICKITUNG",
+        "slug": "lickitung",
+        "dex": "108",
+        "sprite_slug": "lickitung",
+        "is_variant": false
+      },
       {
         "key": "LICKILICKY",
         "name": "LICKILICKY",
@@ -60160,6 +60999,22 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "RHYHORN",
+        "name": "RHYHORN",
+        "slug": "rhyhorn",
+        "dex": "111",
+        "sprite_slug": "rhyhorn",
+        "is_variant": false
+      },
+      {
+        "key": "RHYDON",
+        "name": "RHYDON",
+        "slug": "rhydon",
+        "dex": "112",
+        "sprite_slug": "rhydon",
+        "is_variant": false
+      },
       {
         "key": "RHYPERIOR",
         "name": "RHYPERIOR",
@@ -60304,6 +61159,14 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "TANGELA",
+        "name": "⭐ TANGELA",
+        "slug": "tangela",
+        "dex": "114",
+        "sprite_slug": "tangela",
+        "is_variant": true
+      },
       {
         "key": "TANGROWTH",
         "name": "⭐ TANGROWTH",
@@ -60495,6 +61358,22 @@
     "evolution_targets": [],
     "family": [
       {
+        "key": "ELECTABUZZ",
+        "name": "⭐ ELECTABUZZ",
+        "slug": "electabuzz",
+        "dex": "125",
+        "sprite_slug": "electabuzz",
+        "is_variant": true
+      },
+      {
+        "key": "ELEKID",
+        "name": "⭐ ELEKID",
+        "slug": "elekid",
+        "dex": "239",
+        "sprite_slug": "elekid",
+        "is_variant": true
+      },
+      {
         "key": "ELECTIVIRE",
         "name": "⭐ ELECTIVIRE",
         "slug": "electivire",
@@ -60648,6 +61527,22 @@
     "evolution_targets": [],
     "family": [
       {
+        "key": "MAGMAR",
+        "name": "⭐ MAGMAR",
+        "slug": "magmar",
+        "dex": "126",
+        "sprite_slug": "magmar",
+        "is_variant": true
+      },
+      {
+        "key": "MAGBY",
+        "name": "⭐ MAGBY",
+        "slug": "magby",
+        "dex": "240",
+        "sprite_slug": "magby",
+        "is_variant": true
+      },
+      {
         "key": "MAGMORTAR",
         "name": "⭐ MAGMORTAR",
         "slug": "magmortar",
@@ -60790,6 +61685,22 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "TOGEPI",
+        "name": "TOGEPI",
+        "slug": "togepi",
+        "dex": "175",
+        "sprite_slug": "togepi",
+        "is_variant": false
+      },
+      {
+        "key": "TOGETIC",
+        "name": "TOGETIC",
+        "slug": "togetic",
+        "dex": "176",
+        "sprite_slug": "togetic",
+        "is_variant": false
+      },
       {
         "key": "TOGEKISS",
         "name": "TOGEKISS",
@@ -60934,6 +61845,14 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "YANMA",
+        "name": "YANMA",
+        "slug": "yanma",
+        "dex": "193",
+        "sprite_slug": "yanma",
+        "is_variant": false
+      },
       {
         "key": "YANMEGA",
         "name": "YANMEGA",
@@ -61245,6 +62164,14 @@
     "evolution_targets": [],
     "family": [
       {
+        "key": "GLIGAR",
+        "name": "GLIGAR",
+        "slug": "gligar",
+        "dex": "207",
+        "sprite_slug": "gligar",
+        "is_variant": false
+      },
+      {
         "key": "GLISCOR",
         "name": "GLISCOR",
         "slug": "gliscor",
@@ -61392,6 +62319,22 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "PORYGON",
+        "name": "PORYGON",
+        "slug": "porygon",
+        "dex": "137",
+        "sprite_slug": "porygon",
+        "is_variant": false
+      },
+      {
+        "key": "PORYGON2",
+        "name": "PORYGON2",
+        "slug": "porygon2",
+        "dex": "233",
+        "sprite_slug": "porygon2",
+        "is_variant": false
+      },
       {
         "key": "PORYGONZ",
         "name": "PORYGON-Z",
@@ -61712,6 +62655,14 @@
     "evolution_targets": [],
     "family": [
       {
+        "key": "NOSEPASS",
+        "name": "NOSEPASS",
+        "slug": "nosepass",
+        "dex": "299",
+        "sprite_slug": "nosepass",
+        "is_variant": false
+      },
+      {
         "key": "PROBOPASS",
         "name": "PROBOPASS",
         "slug": "probopass",
@@ -61849,6 +62800,22 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "DUSKULL",
+        "name": "⭐ DUSKULL",
+        "slug": "duskull",
+        "dex": "355",
+        "sprite_slug": "duskull",
+        "is_variant": true
+      },
+      {
+        "key": "DUSCLOPS",
+        "name": "⭐ DUSCLOPS",
+        "slug": "dusclops",
+        "dex": "356",
+        "sprite_slug": "dusclops",
+        "is_variant": true
+      },
       {
         "key": "DUSKNOIR",
         "name": "⭐ DUSKNOIR",
@@ -62017,6 +62984,22 @@
     "evolution_items": [],
     "evolution_targets": [],
     "family": [
+      {
+        "key": "SWINUB",
+        "name": "SWINUB",
+        "slug": "swinub",
+        "dex": "220",
+        "sprite_slug": "swinub",
+        "is_variant": false
+      },
+      {
+        "key": "PILOSWINE",
+        "name": "PILOSWINE",
+        "slug": "piloswine",
+        "dex": "221",
+        "sprite_slug": "piloswine",
+        "is_variant": false
+      },
       {
         "key": "MAMOSWINE",
         "name": "MAMOSWINE",
