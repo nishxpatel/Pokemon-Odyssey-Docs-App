@@ -4,6 +4,8 @@ An unofficial, fan-made interactive reference site for **Pokémon Odyssey v4.1.1
 
 > **Disclaimer:** Pokémon Odyssey is a fan game. All Pokémon content belongs to Nintendo / Game Freak. This project has no affiliation with either the Pokémon Company or the Etrian Odyssey series (Atlus). This tool exists purely for personal, non-commercial enjoyment.
 
+**Live site:** https://nishxpatel.github.io/Pokemon-Odyssey-Docs-App
+
 ---
 
 ## What is Pokémon Odyssey?
@@ -25,6 +27,7 @@ The docs app is a fully static website that turns three Excel spreadsheets (the 
 | **Abilities** | Index of all abilities (including custom ones) |
 | **Ability detail** | Full effect text and Pokémon with that ability |
 | **Items** | All items with their sources (shops, pickup, gathering/mining, TMs, move tutors) |
+| **Item detail** | Full source list for a single item; links to evolution Pokémon where relevant |
 
 ---
 

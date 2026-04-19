@@ -3,14 +3,24 @@
 ETL: parse Pokémon Odyssey v4.1.1 spreadsheets into JSON for the site.
 
 Outputs (written to ./site/data/):
-  pokedex.json   — list of species: dex, name, slug, types, abilities, stats,
-                   moves, locations, evolution chain, evolution items, etc.
-  items.json     — items with their sources (shops, pickup, gathering, mining)
-  moves.json     — custom moves + abilities from "New Moves & Abilities"
-  meta.json      — version / build info / type list
+  pokedex.json    — array of species objects: dex, name, slug, types, abilities,
+                    stats (odyssey + vanilla), moves, locations, evolution chain,
+                    evolution_items, family, variant_sprite, is_variant, etc.
+  moves.json      — {"moves": [...]} — all moves (custom Odyssey + baseline from
+                    PokeAPI) each with name, slug, type, category, power,
+                    accuracy, pp, effect, kind, is_custom, used_by[]
+  abilities.json  — {"abilities": [...]} — same shape as moves minus combat stats
+  items.json      — {"items": [...], "tutors": [...]} — items keyed by source
+                    kind (location / shop / pickup / gather / tm), plus the move
+                    tutor list
+  meta.json       — game version, full type list (19 types inc. Aether),
+                    19×19 type_chart (non-1× interactions only), summary counts
 
 Also extracts embedded variant sprites from the Etrian Variants sheet into
-./site/assets/variants/<slug>.png (and <slug>-shiny.png).
+./site/assets/variants_original/<slug>.png (raw), then strips backgrounds into
+./site/assets/variants/<slug>.png (served by the site).
+
+Run with: python3 build_data.py
 """
 
 import json
@@ -350,6 +360,8 @@ HABITAT_SET = {
 }
 
 def decode_level(v):
+    # Excel auto-formats ranges like "4-2" (levels 2–4) as dates (2022-04-02).
+    # Recover by extracting day/month and sorting them into lo-hi order.
     if v is None or v == "": return None
     if isinstance(v, datetime):
         lo, hi = sorted([v.day, v.month])

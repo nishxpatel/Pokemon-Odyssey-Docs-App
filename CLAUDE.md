@@ -39,6 +39,8 @@ To re-run only background cleaning without re-parsing the workbooks:
 python3 clean_variant_backgrounds.py
 ```
 
+`clean_variant_backgrounds.py` reads every PNG in `variants_original/`, samples the corner pixel to determine the background color, and flood-fills that color to transparent. It uses strict equality (no tolerance) because the pixel-art sprites have no anti-aliasing, so the background color won't appear in the sprite body.
+
 ### Serving locally
 
 ```bash
@@ -47,28 +49,90 @@ python3 -m http.server 8000 --directory site
 
 The site is fully static — no build step, no bundler. Open `http://localhost:8000`.
 
+### Deployment (GitHub Pages)
+
+The site is hosted at **https://nishxpatel.github.io/Pokemon-Odyssey-Docs-App** via GitHub Pages. Deployment is automated: `.github/workflows/pages.yml` triggers on any push to `main` that touches `site/**` or the workflow file itself, uploads `./site` as the Pages artifact, and deploys it. No manual steps required.
+
 ### Site architecture
 
 `site/` contains plain HTML pages paired 1:1 with vanilla JS files in `site/assets/`:
 
 | Page | JS file | Purpose |
 |---|---|---|
-| `pokedex.html` | `app.js` | Grid/table view, search, filters, sort |
-| `pokemon.html` | `detail.js` | Single species detail (stats, moves, evolution chain) |
-| `moves.html` | `moves-list.js` | Move index |
-| `move.html` | `move.js` | Single move detail |
+| `index.html` | inline `<script>` | Landing page; fetches `meta.json` for summary counts |
+| `pokedex.html` | `app.js` | Grid/table view, search, filters, sort, "final forms only" toggle |
+| `pokemon.html` | `detail.js` | Single species detail (stats, moves, evolution chain, type matchups) |
+| `moves.html` | `moves-list.js` | Move index with filter by type/category/source |
+| `move.html` | `move.js` | Single move detail + Pokémon that learn it |
 | `abilities.html` | `abilities-list.js` | Ability index |
-| `ability.html` | `ability.js` | Single ability detail |
-| `items.html` | `items-list.js` | Item index |
-| `item.html` | `item.js` | Single item detail |
+| `ability.html` | `ability.js` | Single ability detail + Pokémon with that ability |
+| `items.html` | `items-list.js` | Item index with filter by source kind |
+| `item.html` | `item.js` | Single item detail (sources, evolution links) |
 
-Each JS file fetches the relevant JSON from `site/data/` at runtime. `types.js` is a shared utility (type badge rendering, type class names). There is no framework — DOM manipulation is plain JS.
+Each JS file fetches the relevant JSON from `site/data/` at runtime. `types.js` is a shared utility (type badge rendering, type class names, defensive matchup calculator). There is no framework — DOM manipulation is plain JS. View mode (grid vs. table) is persisted to `localStorage`.
 
 Sprites for non-variant Pokémon are loaded from Pokémon Showdown's CDN (`play.pokemonshowdown.com/sprites/gen5/<slug>.png`). Variant and Battle Bond sprites are served from `site/assets/variants/`.
 
+### JSON output schemas
+
+All files live in `site/data/`. Quick field reference for frontend work:
+
+**`pokedex.json`** — top-level array, one object per species:
+```
+key             string   canon-form name (uppercase, no accents) — internal join key
+name            string   display name (title-case, Pokédex sheet)
+slug            string   URL-safe slug used in pokemon.html?id=<slug>
+sprite_slug     string   Pokémon Showdown CDN slug
+dex             string   zero-padded dex number ("001")
+is_variant      bool     true = Etrian Variant (⭐); excludes mainline regional forms
+is_battle_bond  bool     true = Battle Bond form
+types           string[] e.g. ["Grass", "Poison"]
+abilities       [{name, slug}]
+stats           {hp,atk,def,spa,spd,spe,total}  Odyssey BST (null if missing)
+stats_vanilla   {hp,atk,def,spa,spd,spe,total}  Vanilla BST (null if missing)
+moves           [{level, name, slug}]  level-up learnset; slug may be null
+locations       [{display_name, location, habitat, level, percent}]
+evolution_targets [{to_key, to_name, to_slug, condition, kind, items[]}]
+family          [{key, name, slug, dex, sprite_slug, is_variant}]  all connected forms
+evolution_items string[] item names referenced in this species' own evolves_at string
+variant_sprite  {normal, shiny, variant_name} | null  paths relative to site/
+is_event        bool     true if only found via EVENT/GIFT/TRADE (no wild encounter)
+has_wild        bool     true if has at least one non-event wild location
+```
+
+**`moves.json`** — `{"moves": [...]}`:
+```
+name, slug, type, category, power, accuracy, pp, effect
+kind       "new" | "aether" | "reworked" | "baseline"
+is_custom  bool
+used_by    [{key, slug, name, dex, level}]
+```
+
+**`abilities.json`** — `{"abilities": [...]}`:
+```
+name, slug, effect, kind ("new" | "reworked" | "baseline"), is_custom, used_by[]
+```
+
+**`items.json`** — `{"items": [...], "tutors": [...]}`:
+```
+items[]:  {name, slug, sources: [{kind, ...kind-specific fields}]}
+  kind="location" → {location, habitat, note}
+  kind="shop"     → {shop, level}
+  kind="pickup"   → {percent}
+  kind="gather"   → {stratum, method}
+  kind="tm"       → {move, location}
+tutors[]: [{move, location}]
+```
+
+**`meta.json`**:
+```
+game, version, types (19-element array), type_chart ({attacker: {defender: mult}}
+for non-1× entries only), counts (species, with_stats, variants, items, moves, etc.)
+```
+
 ### PokeAPI cache
 
-Baseline move and ability data (effect text, power, accuracy, PP, type, category) is fetched from `https://pokeapi.co/api/v2` and cached in `pokeapi_cache/` on disk. This directory is committed — do not delete it. A full cold fetch takes several minutes; the cache avoids that on subsequent runs.
+Baseline move and ability data (effect text, power, accuracy, PP, type, category) is fetched from `https://pokeapi.co/api/v2` and cached in `pokeapi_cache/` on disk. **This directory is committed** — a full cold fetch takes several minutes, and committing the cache means any clone can rebuild the JSON data instantly. Do not delete it. Cache files are never invalidated automatically; if PokeAPI data needs refreshing for a specific entry, delete `pokeapi_cache/moves/<slug>.json` or `pokeapi_cache/abilitys/<slug>.json` and re-run `build_data.py`.
 
 ## Reading the workbooks
 
@@ -87,6 +151,8 @@ for row in ws.iter_rows(values_only=True):
 
 `data_only=True` returns cached values instead of formulas. `read_only=True` is faster for large sheets but requires the `force=True` dimension call above.
 
+**Exception:** The `New Moves & Abilities` sheet must be opened **without** `read_only=True` to access embedded image objects (type/category icons). See `parse_moves_and_abilities()` in `build_data.py`.
+
 ## Layout conventions (read before writing any extractor)
 
 These files are laid out for human eyes, not as relational tables. Expect:
@@ -103,8 +169,9 @@ These files are laid out for human eyes, not as relational tables. Expect:
 - **Regional/Etrian Variant markers** appear in names as `⭐` (is a variant) or `(⭐)` (evolves into one). Preserve these when matching names across workbooks — the join key between workbooks is the Pokémon name string, so mis-stripping the star will break lookups.
 - **"Aether"** is a custom 19th type (see last column/row of `Type Chart`). Include it in any type-effectiveness logic.
 - The `Sea Map` sheet is effectively empty (`A1:A1`) — the map is presumably an embedded image, not cell data.
-- **Type and category cells in `New Moves & Abilities` are embedded images, not text** — they read as `None` from openpyxl. `build_data.py` decodes them via MD5 hash of the image bytes (see `TYPE_ICON_HASHES` / `CATEGORY_ICON_HASHES` at line 394). Any new extractor touching that sheet needs the same approach and must open the workbook without `read_only=True` to access image objects.
-- **Some ⭐-flagged species are mainline regional forms, not Etrian Variants.** The `NOT_ETRIAN_VARIANT` set in `build_data.py` (line 132) tracks these (Alolan Grimer/Muk, Hisuian Voltorb/Electrode/Typhlosion). They keep the ⭐ display marker but the `is_variant` flag is suppressed so the UI doesn't badge them as Etrian Variants.
+- **Type and category cells in `New Moves & Abilities` are embedded images, not text** — they read as `None` from openpyxl. `build_data.py` decodes them via MD5 hash of the image bytes (see `TYPE_ICON_HASHES` / `CATEGORY_ICON_HASHES` at the top of `parse_moves_and_abilities`). Any new extractor touching that sheet needs the same approach and must open the workbook without `read_only=True` to access image objects.
+- **Some ⭐-flagged species are mainline regional forms, not Etrian Variants.** The `NOT_ETRIAN_VARIANT` set in `build_data.py` tracks these (Alolan Grimer/Muk, Hisuian Voltorb/Electrode/Typhlosion). They keep the ⭐ display marker but the `is_variant` flag is suppressed so the UI doesn't badge them as Etrian Variants.
+- **Aether type effectiveness is unknown.** The type chart stores multipliers as cell fill colors; Aether's interactions with other types are not filled in the workbook. The `type_chart` in `meta.json` therefore has no entries for Aether matchups, and the UI shows a disclaimer for affected species.
 
 ## Sheet inventory (quick reference)
 
@@ -144,3 +211,5 @@ This project is tracked at https://github.com/nishxpatel/Pokemon-Odyssey-Docs-Ap
 - **F.O.E.** — Etrian Odyssey "Formido Oppugnatura Exsequens," used here for overworld super-encounters.
 - **Etrian Variant** — Odyssey's equivalent of a regional form; denoted by ⭐.
 - **Aether** — custom 19th type added by Odyssey.
+- **Battle Bond** — a custom alternate form distinct from Etrian Variants; tagged `is_battle_bond` in the JSON and shown with its own UI badge.
+- **canon()** — the internal normalization function: strips accents, uppercases, removes all non-alphanumeric characters. Used as the join key between workbooks and across parsers.
