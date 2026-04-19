@@ -11,6 +11,65 @@ Files:
 - `Wild encounters, Items and TMs (v4.1.1).xlsx` — wild encounter tables by location, naval explorations, Wonder Trade, item spawns, shops, pickup table, gathering/mining, TM and Move Tutor locations.
 - `Level Cap, Boss, Miniboss, Sea Map, Sidequests (v4.1.1).xlsx` — stratum level caps, boss/miniboss teams (Hard Mode + Postgame), Abyssal God guide, Lords of the Sea, Sea Bosses, Sidequests.
 
+## Build pipeline & site architecture
+
+### Dependencies
+
+```bash
+pip3 install openpyxl Pillow   # openpyxl for xlsx, Pillow for sprite bg removal
+```
+
+### Rebuilding JSON data
+
+```bash
+python3 build_data.py
+```
+
+Parses all three workbooks and writes to `site/data/`:
+- `pokedex.json` — full species list (types, stats, abilities, moves, locations, evolution chains, variant sprites)
+- `moves.json` / `abilities.json` — custom entries from the sheet + baseline data fetched from PokeAPI
+- `items.json` — item sources (shops, pickup, gathering/mining, TMs, move tutors)
+- `meta.json` — type list, type chart, summary counts
+
+Also extracts variant sprites from `Etrian Variants` sheet → `site/assets/variants_original/` (raw), then strips solid backgrounds → `site/assets/variants/` (served by the site).
+
+To re-run only background cleaning without re-parsing the workbooks:
+
+```bash
+python3 clean_variant_backgrounds.py
+```
+
+### Serving locally
+
+```bash
+python3 -m http.server 8000 --directory site
+```
+
+The site is fully static — no build step, no bundler. Open `http://localhost:8000`.
+
+### Site architecture
+
+`site/` contains plain HTML pages paired 1:1 with vanilla JS files in `site/assets/`:
+
+| Page | JS file | Purpose |
+|---|---|---|
+| `pokedex.html` | `app.js` | Grid/table view, search, filters, sort |
+| `pokemon.html` | `detail.js` | Single species detail (stats, moves, evolution chain) |
+| `moves.html` | `moves-list.js` | Move index |
+| `move.html` | `move.js` | Single move detail |
+| `abilities.html` | `abilities-list.js` | Ability index |
+| `ability.html` | `ability.js` | Single ability detail |
+| `items.html` | `items-list.js` | Item index |
+| `item.html` | `item.js` | Single item detail |
+
+Each JS file fetches the relevant JSON from `site/data/` at runtime. `types.js` is a shared utility (type badge rendering, type class names). There is no framework — DOM manipulation is plain JS.
+
+Sprites for non-variant Pokémon are loaded from Pokémon Showdown's CDN (`play.pokemonshowdown.com/sprites/gen5/<slug>.png`). Variant and Battle Bond sprites are served from `site/assets/variants/`.
+
+### PokeAPI cache
+
+Baseline move and ability data (effect text, power, accuracy, PP, type, category) is fetched from `https://pokeapi.co/api/v2` and cached in `pokeapi_cache/` on disk. This directory is committed — do not delete it. A full cold fetch takes several minutes; the cache avoids that on subsequent runs.
+
 ## Reading the workbooks
 
 ```bash
@@ -44,6 +103,8 @@ These files are laid out for human eyes, not as relational tables. Expect:
 - **Regional/Etrian Variant markers** appear in names as `⭐` (is a variant) or `(⭐)` (evolves into one). Preserve these when matching names across workbooks — the join key between workbooks is the Pokémon name string, so mis-stripping the star will break lookups.
 - **"Aether"** is a custom 19th type (see last column/row of `Type Chart`). Include it in any type-effectiveness logic.
 - The `Sea Map` sheet is effectively empty (`A1:A1`) — the map is presumably an embedded image, not cell data.
+- **Type and category cells in `New Moves & Abilities` are embedded images, not text** — they read as `None` from openpyxl. `build_data.py` decodes them via MD5 hash of the image bytes (see `TYPE_ICON_HASHES` / `CATEGORY_ICON_HASHES` at line 394). Any new extractor touching that sheet needs the same approach and must open the workbook without `read_only=True` to access image objects.
+- **Some ⭐-flagged species are mainline regional forms, not Etrian Variants.** The `NOT_ETRIAN_VARIANT` set in `build_data.py` (line 132) tracks these (Alolan Grimer/Muk, Hisuian Voltorb/Electrode/Typhlosion). They keep the ⭐ display marker but the `is_variant` flag is suppressed so the UI doesn't badge them as Etrian Variants.
 
 ## Sheet inventory (quick reference)
 
