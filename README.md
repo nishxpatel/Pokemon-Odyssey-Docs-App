@@ -43,7 +43,7 @@ pip3 install openpyxl Pillow
 **Rebuild the JSON data** (only needed if the spreadsheets change):
 
 ```bash
-python3 build_data.py
+python3 scripts/build_data.py
 ```
 
 This parses all three workbooks and writes JSON to `site/data/`. It also extracts Etrian Variant sprites and strips their backgrounds.
@@ -64,10 +64,17 @@ Then open [http://localhost:8000](http://localhost:8000).
 
 ```
 .
-├── build_data.py                          # Parses workbooks → site/data/*.json + variant sprites
-├── clean_variant_backgrounds.py           # Re-runs only the sprite background-removal step
-├── pokeapi_cache/                         # Cached PokeAPI responses (committed — do not delete)
-├── site/
+├── docs/                                  # Source documentation
+│   ├── Pokémon Stats, Learnset etc (v4.1.1).xlsx
+│   ├── Wild encounters, Items and TMs (v4.1.1).xlsx
+│   ├── Level Cap, Boss, Miniboss, Sea Map, Sidequests (v4.1.1).xlsx
+│   └── Type_Chart.pdf
+├── scripts/                               # Build and utility scripts
+│   ├── build_data.py                      # Parses workbooks → site/data/*.json + variant sprites
+│   └── clean_variant_backgrounds.py       # Re-runs only the sprite background-removal step
+├── cache/
+│   └── pokeapi_cache/                     # Cached PokeAPI responses (committed — do not delete)
+├── site/                                  # Static website
 │   ├── index.html                         # Landing page
 │   ├── pokedex.html / pokemon.html        # Pokédex + species detail
 │   ├── moves.html / move.html             # Move index + detail
@@ -81,16 +88,14 @@ Then open [http://localhost:8000](http://localhost:8000).
 │       ├── app.js, detail.js, ...         # Page-specific JS (one file per page)
 │       ├── variants/                      # Background-stripped Etrian Variant sprites
 │       └── variants_original/            # Raw extracted variant sprites
-└── Pokémon Stats, Learnset etc (v4.1.1).xlsx
-    Wild encounters, Items and TMs (v4.1.1).xlsx
-    Level Cap, Boss, Miniboss, Sea Map, Sidequests (v4.1.1).xlsx
+└── CLAUDE.md / README.md
 ```
 
 ---
 
 ## Data sources
 
-- **Pokémon Odyssey spreadsheets (v4.1.1)** — the three `.xlsx` files in the repo root, authored by the original game creator. These are the source of truth for everything Odyssey-specific.
+- **Pokémon Odyssey spreadsheets (v4.1.1)** — the three `.xlsx` files in `docs/`, authored by the original game creator. These are the source of truth for everything Odyssey-specific.
 - **PokeAPI** (`https://pokeapi.co`) — used to fill in baseline move/ability data (effect text, power, accuracy, PP, type) for non-custom entries. Responses are cached locally in `pokeapi_cache/`.
 - **Pokémon Showdown sprites** — non-variant Pokémon sprites are loaded at runtime from Showdown's CDN (`play.pokemonshowdown.com/sprites/gen5/`).
 

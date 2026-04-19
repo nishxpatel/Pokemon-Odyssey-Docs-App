@@ -35,10 +35,12 @@ from pathlib import Path
 import openpyxl
 
 HERE = Path(__file__).parent
-STATS_XLSX  = HERE / "Pokémon Stats, Learnset etc (v4.1.1).xlsx"
-WILD_XLSX   = HERE / "Wild encounters, Items and TMs (v4.1.1).xlsx"
-BOSSES_XLSX = HERE / "Level Cap, Boss, Miniboss, Sea Map, Sidequests (v4.1.1).xlsx"
-SITE_DIR    = HERE / "site"
+ROOT = HERE.parent
+DOCS_DIR = ROOT / "docs"
+STATS_XLSX  = DOCS_DIR / "Pokémon Stats, Learnset etc (v4.1.1).xlsx"
+WILD_XLSX   = DOCS_DIR / "Wild encounters, Items and TMs (v4.1.1).xlsx"
+BOSSES_XLSX = DOCS_DIR / "Level Cap, Boss, Miniboss, Sea Map, Sidequests (v4.1.1).xlsx"
+SITE_DIR    = ROOT / "site"
 OUT_DIR     = SITE_DIR / "data"
 VARIANTS_DIR = SITE_DIR / "assets" / "variants"
 ORIGINALS_DIR = SITE_DIR / "assets" / "variants_original"
@@ -670,7 +672,7 @@ def parse_type_chart(xlsx_path):
 # -----------------------------------------------------------------------------
 
 POKEAPI_BASE  = "https://pokeapi.co/api/v2"
-POKEAPI_CACHE = HERE / "pokeapi_cache"
+POKEAPI_CACHE = ROOT / "cache" / "pokeapi_cache"
 
 
 def _pokeapi_slug(name):
