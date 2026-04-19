@@ -9,6 +9,7 @@ const abilitySel = document.getElementById("ability");
 const variantsOnly = document.getElementById("variants-only");
 const eventOnly = document.getElementById("event-only");
 const wildOnly = document.getElementById("wild-only");
+const finalOnly = document.getElementById("final-only");
 const chips = document.getElementById("type-chips");
 const empty = document.getElementById("empty");
 const metaLine = document.getElementById("meta-line");
@@ -102,6 +103,7 @@ function render() {
     if (variantsOnly.checked && !p.is_variant) return false;
     if (eventOnly.checked && !p.is_event) return false;
     if (wildOnly.checked && !p.has_wild) return false;
+    if (finalOnly.checked && (p.evolution_targets || []).length > 0) return false;
     if (activeTypes.size && !(p.types || []).some(t => activeTypes.has(t))) return false;
     if (ability && !(p.abilities || []).some(a => a === ability)) return false;
     if (q) {
@@ -147,6 +149,7 @@ function reset() {
   variantsOnly.checked = false;
   eventOnly.checked = false;
   wildOnly.checked = false;
+  finalOnly.checked = false;
   activeTypes.clear();
   for (const c of chips.querySelectorAll(".type-chip.active")) c.classList.remove("active");
   render();
@@ -165,7 +168,7 @@ async function main() {
       `Default sprites via Pokémon Showdown; variant art extracted from the workbook.`;
     buildChips();
     buildAbilityList();
-    [search, sortSel, abilitySel, variantsOnly, eventOnly, wildOnly]
+    [search, sortSel, abilitySel, variantsOnly, eventOnly, wildOnly, finalOnly]
       .forEach(el => el.addEventListener("input", render));
     resetBtn.addEventListener("click", reset);
     render();
