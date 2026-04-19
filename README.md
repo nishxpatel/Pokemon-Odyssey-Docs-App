@@ -1,10 +1,10 @@
 # Pokémon Odyssey Docs App
 
+**Live site:** https://nishxpatel.github.io/Pokemon-Odyssey-Docs-App
+
 An unofficial, fan-made interactive reference site for **Pokémon Odyssey v4.1.1** — a fan game blending Pokémon with Etrian Odyssey mechanics. This was built for personal use and for fun as a supplement to the original creator's existing documentation, to make looking things up faster and easier during a playthrough.
 
 > **Disclaimer:** Pokémon Odyssey is a fan game. All Pokémon content belongs to Nintendo / Game Freak. This project has no affiliation with either the Pokémon Company or the Etrian Odyssey series (Atlus). This tool exists purely for personal, non-commercial enjoyment.
-
-**Live site:** https://nishxpatel.github.io/Pokemon-Odyssey-Docs-App
 
 ---
 
