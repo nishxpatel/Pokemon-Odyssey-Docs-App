@@ -231,6 +231,15 @@ NOT_ETRIAN_VARIANT = {
     "TYPHLOSION",
 }
 
+# Custom forms (Etrian Variants, Battle Bond, etc.) that should be tagged as variants
+# for filtering purposes even if they're not marked with ⭐ in the source sheets.
+CUSTOM_VARIANTS = {
+    "GOROCHU",  # Custom Etrian Variant form
+    "PLUSLEBATTLEBOND", "MINUNBATTLEBOND", "KECLEONBATTLEBOND",
+    "MAWILEBATTLEBOND", "BLAZIKENBATTLEBOND",  # Battle Bond custom forms
+    "GOLEM",  # Custom Odyssey variant sprite
+}
+
 def nidoran_canon(name: str) -> str:
     n = (name or "").upper()
     if "NIDORAN" in n:
@@ -1463,7 +1472,7 @@ def main():
         # Typhlosion). They keep the ⭐ in display_name but lose the variant flag
         # so the UI ribbon doesn't claim they're Etrian Variants.
         base_only = sp["display_name"].replace("⭐", "").strip()
-        is_variant = sp["is_variant"] and canon(base_only) not in NOT_ETRIAN_VARIANT
+        is_variant = (sp["is_variant"] and canon(base_only) not in NOT_ETRIAN_VARIANT) or canon(key) in CUSTOM_VARIANTS
         # Battle Bond is a separate custom-form concept from Etrian Variants —
         # tag it independently so the UI can show its own badge and use the
         # custom sprite the workbook provides.

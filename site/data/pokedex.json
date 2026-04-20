@@ -11844,7 +11844,7 @@
     "slug": "golem",
     "sprite_slug": "golem",
     "dex": "076",
-    "is_variant": false,
+    "is_variant": true,
     "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
@@ -12011,7 +12011,7 @@
     "variant_sprite": {
       "normal": "assets/variants/golem.png",
       "shiny": "assets/variants/golem-shiny.png",
-      "variant_name": null
+      "variant_name": "GOLEM"
     }
   },
   {
@@ -24183,7 +24183,7 @@
     "slug": "kecleon-battle-bond",
     "sprite_slug": "bbkecleon",
     "dex": "150",
-    "is_variant": false,
+    "is_variant": true,
     "is_battle_bond": true,
     "source_sheet": "#252-386",
     "types": [
@@ -24338,7 +24338,7 @@
     "slug": "mawile-battle-bond",
     "sprite_slug": "bbmawile",
     "dex": "151",
-    "is_variant": false,
+    "is_variant": true,
     "is_battle_bond": true,
     "source_sheet": "#252-386",
     "types": [
@@ -32089,7 +32089,7 @@
     "slug": "gorochu",
     "sprite_slug": "gorochu",
     "dex": "201",
-    "is_variant": false,
+    "is_variant": true,
     "is_battle_bond": false,
     "source_sheet": "#1-151",
     "types": [
@@ -39077,7 +39077,7 @@
     "slug": "plusle-battle-bond",
     "sprite_slug": "bbplusle",
     "dex": "249",
-    "is_variant": false,
+    "is_variant": true,
     "is_battle_bond": true,
     "source_sheet": "#252-386",
     "types": [
@@ -39227,7 +39227,7 @@
     "slug": "minun-battle-bond",
     "sprite_slug": "bbminun",
     "dex": "250",
-    "is_variant": false,
+    "is_variant": true,
     "is_battle_bond": true,
     "source_sheet": "#252-386",
     "types": [
@@ -56398,7 +56398,7 @@
     "slug": "blaziken-battle-bond",
     "sprite_slug": "bbblaziken",
     "dex": "360",
-    "is_variant": false,
+    "is_variant": true,
     "is_battle_bond": true,
     "source_sheet": "#252-386",
     "types": [
