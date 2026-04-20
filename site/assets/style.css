@@ -1321,6 +1321,35 @@ tr.odyssey-bg:hover td      { background: rgba(125, 211, 252, .1); }
 .tb-spacer { flex: 1; }
 .tb-toolbar .reset-btn { background: var(--panel); }
 
+/* --- Team table view (mirrors .dex-table from the Pokédex page) --- */
+.tb-table-wrap { margin-bottom: 1.25rem; }
+.tb-dex-table .row-actions {
+  width: 40px;
+  text-align: center;
+  padding: .2rem .3rem !important;
+}
+.tb-row-remove {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  width: 24px;
+  height: 24px;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .12s, color .12s, border-color .12s;
+}
+.tb-row-remove:hover {
+  background: #b94a48;
+  color: #fff;
+  border-color: #b94a48;
+}
+.tb-row-remove:focus-visible { outline: 2px solid var(--accent-blue); outline-offset: 2px; }
+
 /* --- Team slots row --- */
 .tb-team {
   display: grid;

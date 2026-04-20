@@ -6,6 +6,7 @@
 const SPRITE_URL = (slug) => `https://play.pokemonshowdown.com/sprites/gen5/${slug}.png`;
 const TEAM_SIZE = 6;
 const STORAGE_KEY = "podx_team_v1";
+const VIEW_KEY = "podx_tb_view_mode";
 
 // --- DOM refs --------------------------------------------------------------
 
@@ -15,6 +16,11 @@ const countEl       = document.getElementById("tb-count");
 const clearBtn      = document.getElementById("tb-clear");
 const shareBtn      = document.getElementById("tb-share");
 const shareStatusEl = document.getElementById("tb-share-status");
+
+const tableWrap     = document.getElementById("tb-table-wrap");
+const tableBody     = document.getElementById("tb-table-body");
+const tableEmpty    = document.getElementById("tb-table-empty");
+const viewToggle    = document.getElementById("tb-view-toggle");
 
 const defMatrixEl   = document.getElementById("tb-def-matrix");
 const defSummaryEl  = document.getElementById("tb-def-summary");
@@ -42,6 +48,12 @@ let POKEDEX_BY_SLUG = new Map();
 let pickerSlotIdx = -1;
 let pickerTypeFilter = new Set();
 
+// Table-view state — mirrors the Pokédex table's behaviour so both tables
+// feel the same: click a header to sort, click again to reverse direction.
+let sortKey = "slot";
+let sortDir = "asc";
+let viewMode = (localStorage.getItem(VIEW_KEY) === "table") ? "table" : "slots";
+
 // --- Helpers --------------------------------------------------------------
 
 function spriteFor(p) {
@@ -56,6 +68,17 @@ function typeBadge(t, sm = true) {
 
 function abilityName(a) {
   return typeof a === "string" ? a : (a && a.name) || "";
+}
+
+/** Format an ability as a link to ability.html when a slug is available —
+ *  matches the Pokédex table's rendering so the cells look identical. */
+function abilityLink(a) {
+  const name = abilityName(a);
+  if (!name) return "";
+  const slug = (typeof a === "object" && a) ? a.slug : null;
+  return slug
+    ? `<a href="ability.html?slug=${encodeURIComponent(slug)}">${escapeHTML(name)}</a>`
+    : escapeHTML(name);
 }
 
 function multLabel(m) {
@@ -169,6 +192,138 @@ function renderTeam() {
         </button>
       </div>`;
   }).join("");
+}
+
+// --- Rendering: team table ------------------------------------------------
+// Mirrors the Pokédex table (same .dex-table class, same column set + sort
+// behaviour) so users already familiar with the Pokédex feel at home here.
+
+const STAT_KEYS = new Set(["hp", "atk", "def", "spa", "spd", "spe", "total"]);
+
+/** Render a single table row for a filled team slot. Structure parallels
+ *  app.js rowHTML so both tables share the same cell classes and styling. */
+function rowHTML(entry) {
+  const { pokemon: p, slot } = entry;
+  const src = spriteFor(p);
+  const initial = escapeHTML((p.name || "?")[0]);
+  const sprite = src
+    ? `<img class="row-sprite" loading="lazy" src="${src}" alt=""
+        onerror="this.outerHTML='<div class=\\'row-sprite-placeholder\\'>${initial}</div>'">`
+    : `<div class="row-sprite-placeholder">${initial}</div>`;
+
+  const types = (p.types || []).map(t => typeBadge(t)).join(" ");
+  const abilities = (p.abilities || []).map(abilityLink).filter(Boolean).join(" <span class='dim'>/</span> ")
+    || `<span class="empty-msg">—</span>`;
+  const stats = p.stats || {};
+  const cell = (k) => `<td class="num">${stats[k] ?? "—"}</td>`;
+
+  const rowNameHtml = p.is_variant ? `<span class="odyssey">${escapeHTML(p.name)}</span>` : escapeHTML(p.name);
+  let badge = "";
+  if (p.is_battle_bond) badge = `<span class="row-tag tag-bb">B.B.</span>`;
+  else if (p.is_event)  badge = `<span class="row-tag tag-event">Event</span>`;
+
+  return `<tr${p.is_variant ? ' class="odyssey-bg"' : ''}>
+    <td class="row-sprite-cell"><a href="pokemon.html?slug=${encodeURIComponent(p.slug)}" tabindex="-1">${sprite}</a></td>
+    <td class="num dim">${slot + 1}</td>
+    <td class="num dim">${p.dex ? "#" + escapeHTML(p.dex) : "—"}</td>
+    <td class="row-name"><a href="pokemon.html?slug=${encodeURIComponent(p.slug)}">${rowNameHtml}</a>${badge}</td>
+    <td class="row-types">${types}</td>
+    <td class="row-ab">${abilities}</td>
+    ${cell("hp")}${cell("atk")}${cell("def")}${cell("spa")}${cell("spd")}${cell("spe")}
+    <td class="num bst">${stats.total ?? "—"}</td>
+    <td class="row-actions"><button class="tb-row-remove" type="button" data-remove="${slot}" aria-label="Remove ${escapeHTML(p.name)} from slot ${slot + 1}">×</button></td>
+  </tr>`;
+}
+
+/** Sort filled-slot entries by the current sortKey/sortDir. Mirrors the
+ *  Pokédex table's applySort so both feel the same; "slot" preserves the
+ *  user's original team ordering. */
+function applyTableSort(entries) {
+  const sign = sortDir === "asc" ? 1 : -1;
+  if (sortKey === "slot") {
+    return [...entries].sort((a, b) => sign * (a.slot - b.slot));
+  }
+  if (sortKey === "name") {
+    return [...entries].sort((a, b) => sign * a.pokemon.name.localeCompare(b.pokemon.name));
+  }
+  if (sortKey === "dex") {
+    return [...entries].sort((a, b) => {
+      const da = a.pokemon.dex ? parseInt(a.pokemon.dex, 10) : 9999;
+      const db = b.pokemon.dex ? parseInt(b.pokemon.dex, 10) : 9999;
+      return sign * (da - db);
+    });
+  }
+  if (sortKey === "types") {
+    return [...entries].sort((a, b) =>
+      sign * ((a.pokemon.types?.[0] || "zzz").localeCompare(b.pokemon.types?.[0] || "zzz")));
+  }
+  if (sortKey === "abilities") {
+    return [...entries].sort((a, b) =>
+      sign * ((abilityName((a.pokemon.abilities || [])[0]) || "zzz")
+        .localeCompare(abilityName((b.pokemon.abilities || [])[0]) || "zzz")));
+  }
+  if (STAT_KEYS.has(sortKey)) {
+    return [...entries].sort((a, b) => {
+      const av = (a.pokemon.stats && a.pokemon.stats[sortKey]) ?? -1;
+      const bv = (b.pokemon.stats && b.pokemon.stats[sortKey]) ?? -1;
+      return sign * (av - bv);
+    });
+  }
+  return entries;
+}
+
+function updateSortIndicators() {
+  for (const th of document.querySelectorAll("#tb-table th[data-sort-key]")) {
+    const k = th.dataset.sortKey;
+    th.classList.toggle("sort-asc",  k === sortKey && sortDir === "asc");
+    th.classList.toggle("sort-desc", k === sortKey && sortDir === "desc");
+  }
+}
+
+function onTableHeaderClick(e) {
+  const th = e.target.closest("th[data-sort-key]");
+  if (!th) return;
+  const key = th.dataset.sortKey;
+  if (sortKey === key) {
+    sortDir = sortDir === "asc" ? "desc" : "asc";
+  } else {
+    sortKey = key;
+    // Numeric stat columns default to high→low (like the Pokédex table);
+    // slot/dex/text default to low→high / A→Z.
+    sortDir = STAT_KEYS.has(key) ? "desc" : "asc";
+  }
+  renderTable();
+}
+
+function renderTable() {
+  const entries = team
+    .map((p, slot) => p ? { pokemon: p, slot } : null)
+    .filter(Boolean);
+  if (!entries.length) {
+    tableBody.innerHTML = "";
+    if (viewMode === "table") tableEmpty.style.display = "block";
+    updateSortIndicators();
+    return;
+  }
+  tableEmpty.style.display = "none";
+  const sorted = applyTableSort(entries);
+  tableBody.innerHTML = sorted.map(rowHTML).join("");
+  updateSortIndicators();
+}
+
+function setViewMode(mode) {
+  viewMode = mode === "table" ? "table" : "slots";
+  try { localStorage.setItem(VIEW_KEY, viewMode); } catch { /* private mode */ }
+  for (const btn of viewToggle.querySelectorAll("button")) {
+    btn.classList.toggle("active", btn.dataset.view === viewMode);
+  }
+  teamEl.style.display    = viewMode === "slots" ? "" : "none";
+  tableWrap.style.display = viewMode === "table" ? "" : "none";
+  if (viewMode === "table") {
+    renderTable();
+  } else {
+    tableEmpty.style.display = "none";
+  }
 }
 
 // --- Calculations ---------------------------------------------------------
@@ -561,6 +716,7 @@ function onPickerClick(e) {
 
 function renderAll() {
   renderTeam();
+  renderTable();
   const matrix = computeDefensiveMatrix();
   const coverage = computeOffensiveCoverage();
   renderDefensiveMatrix(matrix);
@@ -585,6 +741,26 @@ teamEl.addEventListener("click", e => {
   if (slotBtn) {
     openPicker(+slotBtn.dataset.slot);
   }
+});
+
+// Table view: clicking a remove button drops the Pokémon from its slot.
+tableWrap.addEventListener("click", e => {
+  const removeBtn = e.target.closest("[data-remove]");
+  if (!removeBtn) return;
+  const i = +removeBtn.dataset.remove;
+  team[i] = null;
+  saveTeam();
+  renderAll();
+});
+
+// Table view: clicking a sortable header sorts the visible rows.
+document.querySelector("#tb-table thead").addEventListener("click", onTableHeaderClick);
+
+// View toggle between Slots grid and Table — persists via localStorage.
+viewToggle.addEventListener("click", e => {
+  const btn = e.target.closest("button[data-view]");
+  if (!btn) return;
+  setViewMode(btn.dataset.view);
 });
 
 clearBtn.addEventListener("click", () => {
@@ -643,6 +819,9 @@ async function main() {
     team = loadTeam();
     renderPickerChips();
     renderAll();
+    // Initialise view mode AFTER renderAll so the table body is already populated
+    // before we potentially make the table visible.
+    setViewMode(viewMode);
   } catch (e) {
     teamEl.innerHTML =
       `<p class="empty-msg">Failed to load Pokédex data: ${escapeHTML(e.message)}. ` +

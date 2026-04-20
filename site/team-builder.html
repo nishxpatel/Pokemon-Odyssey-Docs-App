@@ -35,9 +35,37 @@
     <span id="tb-share-status" class="hint" aria-live="polite"></span>
     <span class="tb-spacer"></span>
     <span id="tb-count" class="hint"></span>
+    <div class="view-toggle" id="tb-view-toggle" role="tablist" aria-label="View mode">
+      <button type="button" data-view="slots" class="active" title="Slot view">Slots</button>
+      <button type="button" data-view="table" title="Table view">Table</button>
+    </div>
   </div>
 
   <section class="tb-team" id="tb-team" aria-label="Team slots"></section>
+  <div id="tb-table-wrap" class="dex-table-wrap tb-table-wrap" style="display:none">
+    <table id="tb-table" class="dex-table tb-dex-table">
+      <thead>
+        <tr>
+          <th class="th-sprite" aria-label="Sprite"></th>
+          <th class="num" data-sort-key="slot" title="Original team slot">Slot</th>
+          <th class="num" data-sort-key="dex">№</th>
+          <th data-sort-key="name">Name</th>
+          <th data-sort-key="types">Types</th>
+          <th data-sort-key="abilities">Abilities</th>
+          <th class="num" data-sort-key="hp" title="HP">HP</th>
+          <th class="num" data-sort-key="atk" title="Attack">Atk</th>
+          <th class="num" data-sort-key="def" title="Defense">Def</th>
+          <th class="num" data-sort-key="spa" title="Special Attack">SpA</th>
+          <th class="num" data-sort-key="spd" title="Special Defense">SpD</th>
+          <th class="num" data-sort-key="spe" title="Speed">Spe</th>
+          <th class="num" data-sort-key="total" title="Base Stat Total">BST</th>
+          <th class="th-actions" aria-label="Actions"></th>
+        </tr>
+      </thead>
+      <tbody id="tb-table-body"></tbody>
+    </table>
+  </div>
+  <p class="empty-msg" id="tb-table-empty" style="display:none">Your team is empty — switch to Slots view to add Pokémon.</p>
 
   <section class="panels tb-panels">
     <div class="panel tb-panel">
