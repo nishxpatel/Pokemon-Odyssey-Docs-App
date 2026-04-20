@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Team Builder — Pokémon Odyssey</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">Pokémon Odyssey</a>
+  <span class="sub">Team Builder · v4.1.1</span>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pokedex.html">Pokédex</a>
+    <a href="moves.html">Moves</a>
+    <a href="abilities.html">Abilities</a>
+    <a href="items.html">Items</a>
+    <a href="type-chart.html">Type Chart</a>
+    <a href="team-builder.html" class="active">Team Builder</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <h1 style="margin-top:.5rem;margin-bottom:.25rem">Team Builder</h1>
+  <p class="disclaimer" id="tb-meta">
+    Build a team of up to 6 Pokémon and see live type coverage using the Odyssey type chart
+    (18 types, <span class="t-aether-text">Aether</span> replaces Fairy).
+  </p>
+
+  <div class="tb-toolbar">
+    <button id="tb-clear" class="reset-btn" type="button">Clear team</button>
+    <button id="tb-share" class="reset-btn" type="button">Copy share link</button>
+    <span id="tb-share-status" class="hint" aria-live="polite"></span>
+    <span class="tb-spacer"></span>
+    <span id="tb-count" class="hint"></span>
+  </div>
+
+  <section class="tb-team" id="tb-team" aria-label="Team slots"></section>
+
+  <section class="panels tb-panels">
+    <div class="panel tb-panel">
+      <h2>Defensive Matrix</h2>
+      <p class="tb-caption">Rows = attacking type · Columns = each team member's effectiveness received.</p>
+      <div id="tb-def-matrix"></div>
+    </div>
+    <div class="panel tb-panel">
+      <h2>Defensive Summary</h2>
+      <p class="tb-caption">Count of team members in each bucket for every attacking type.</p>
+      <div id="tb-def-summary"></div>
+    </div>
+  </section>
+
+  <section class="panels tb-panels">
+    <div class="panel tb-panel">
+      <h2>Offensive Coverage</h2>
+      <p class="tb-caption">Best STAB effectiveness any team member can deal against each defending type.</p>
+      <div id="tb-off-coverage"></div>
+    </div>
+    <div class="panel tb-panel">
+      <h2>Strengths &amp; Gaps</h2>
+      <p class="tb-caption">Shared weaknesses to watch out for and defending types no one hits super effectively.</p>
+      <div id="tb-strengths-gaps"></div>
+    </div>
+  </section>
+
+  <section class="panel tb-panel tb-types-panel">
+    <h2>Type Distribution</h2>
+    <p class="tb-caption">Which types your team brings to the table — offensively and defensively.</p>
+    <div id="tb-type-dist"></div>
+  </section>
+</main>
+
+<!-- Picker modal: reuses the sprite-modal overlay pattern. -->
+<div id="tb-picker" class="tb-picker" role="dialog" aria-modal="true" aria-labelledby="tb-picker-title" hidden>
+  <div class="tb-picker-card">
+    <div class="tb-picker-head">
+      <h2 id="tb-picker-title">Choose a Pokémon</h2>
+      <button id="tb-picker-close" class="tb-picker-close" type="button" aria-label="Close">×</button>
+    </div>
+    <div class="tb-picker-filters">
+      <input id="tb-picker-search" class="search" type="search" placeholder="Search by name or dex №…" autocomplete="off">
+      <div class="type-chips" id="tb-picker-chips" aria-label="Filter by type"></div>
+    </div>
+    <div id="tb-picker-list" class="tb-picker-list" tabindex="0"></div>
+    <p id="tb-picker-empty" class="empty-msg" style="display:none">No Pokémon match your filters.</p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>Pokémon Odyssey is a fan project. This site documents v4.1.1 of the game.</p>
+  <p><a href="https://github.com/nishxpatel/Pokemon-Odyssey-Docs-App" target="_blank" rel="noopener">View source on GitHub</a></p>
+</footer>
+
+<script src="assets/types.js"></script>
+<script src="assets/team-builder.js"></script>
+</body>
+</html>
