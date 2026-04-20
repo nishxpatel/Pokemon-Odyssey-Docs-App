@@ -219,7 +219,7 @@ function render() {
   const q = search.value.trim().toLowerCase();
   const ability = abilitySel.value;
   const filtered = DATA.filter(p => {
-    if (variantsOnly.checked && !p.is_variant) return false;
+    if (variantsOnly.checked && !p.is_variant && !p.is_battle_bond && !p.is_custom_form) return false;
     if (eventOnly.checked && !p.is_event) return false;
     if (wildOnly.checked && !p.has_wild) return false;
     if (finalOnly.checked && (p.evolution_targets || []).length > 0) return false;

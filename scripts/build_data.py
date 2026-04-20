@@ -1491,8 +1491,10 @@ def main():
                     "shiny":  rec.get("shiny"),
                     "variant_name": rec.get("variant_display"),
                 }
-        # Manual sprite fallback (e.g. Gorochu): if a PNG with the slug exists
-        # in the variants dir, use it even when the species isn't a variant.
+        # Manual sprite fallback: if a PNG keyed to this species' slug exists
+        # in the variants dir, use it. This catches hand-dropped custom-form
+        # art (e.g. Gorochu, Golem) that isn't in the Etrian Variants sheet.
+        is_custom_form = False
         if not variant_sprite:
             display_for_slug = DEX_NAME_FIXES.get(canon(dex["name"]), dex["name"]) if dex else sp["display_name"]
             slug_for_file = slugify(display_for_slug)
@@ -1504,6 +1506,11 @@ def main():
                     "shiny":  f"assets/variants/{slug_for_file}-shiny.png" if shiny_file.exists() else None,
                     "variant_name": None,
                 }
+                # Species whose art was manually dropped into the variants
+                # directory are custom additions to the game. Tag them so the
+                # UI groups them alongside Etrian Variants and Battle Bond forms
+                # when filtering.
+                is_custom_form = True
 
         # Apply Pokédex sheet name fixes (typos in the source) and Showdown
         # sprite-slug overrides where our derived slug doesn't match.
@@ -1561,6 +1568,7 @@ def main():
             "dex": dex["dex"] if dex else None,
             "is_variant": is_variant,
             "is_battle_bond": is_battle_bond,
+            "is_custom_form": is_custom_form,
             "source_sheet": sp["source_sheet"],
             "types": sp.get("types", []),
             "abilities": abilities_linked,

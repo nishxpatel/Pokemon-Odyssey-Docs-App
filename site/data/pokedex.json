@@ -8,6 +8,7 @@
     "dex": "001",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -152,6 +153,7 @@
     "dex": "002",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -301,6 +303,7 @@
     "dex": "003",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -451,6 +454,7 @@
     "dex": "004",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire"
@@ -589,6 +593,7 @@
     "dex": "005",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire"
@@ -732,6 +737,7 @@
     "dex": "006",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire",
@@ -887,6 +893,7 @@
     "dex": "007",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -1025,6 +1032,7 @@
     "dex": "008",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -1178,6 +1186,7 @@
     "dex": "009",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -1332,6 +1341,7 @@
     "dex": "010",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug"
@@ -1438,6 +1448,7 @@
     "dex": "011",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug"
@@ -1536,6 +1547,7 @@
     "dex": "012",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -1699,6 +1711,7 @@
     "dex": "013",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -1806,6 +1819,7 @@
     "dex": "014",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -1905,6 +1919,7 @@
     "dex": "015",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -2063,6 +2078,7 @@
     "dex": "016",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -2210,6 +2226,7 @@
     "dex": "017",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -2354,6 +2371,7 @@
     "dex": "018",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -2512,6 +2530,7 @@
     "dex": "019",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -2670,6 +2689,7 @@
     "dex": "020",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -2843,6 +2863,7 @@
     "dex": "021",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -2988,6 +3009,7 @@
     "dex": "022",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -3157,6 +3179,7 @@
     "dex": "023",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -3325,6 +3348,7 @@
     "dex": "024",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -3525,6 +3549,7 @@
     "dex": "025",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric"
@@ -3687,6 +3712,7 @@
     "dex": "026",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric"
@@ -3830,6 +3856,7 @@
     "dex": "027",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground",
@@ -3995,6 +4022,7 @@
     "dex": "028",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground",
@@ -4159,6 +4187,7 @@
     "dex": "029",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison"
@@ -4320,6 +4349,7 @@
     "dex": "030",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison"
@@ -4492,6 +4522,7 @@
     "dex": "031",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -4652,6 +4683,7 @@
     "dex": "032",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison"
@@ -4813,6 +4845,7 @@
     "dex": "033",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison"
@@ -4985,6 +5018,7 @@
     "dex": "034",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -5150,6 +5184,7 @@
     "dex": "035",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Aether"
@@ -5307,6 +5342,7 @@
     "dex": "036",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Aether"
@@ -5461,6 +5497,7 @@
     "dex": "037",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire",
@@ -5620,6 +5657,7 @@
     "dex": "038",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire",
@@ -5783,6 +5821,7 @@
     "dex": "039",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -5945,6 +5984,7 @@
     "dex": "040",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -6104,6 +6144,7 @@
     "dex": "041",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -6261,6 +6302,7 @@
     "dex": "042",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -6446,6 +6488,7 @@
     "dex": "043",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -6618,6 +6661,7 @@
     "dex": "044",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -6798,6 +6842,7 @@
     "dex": "045",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -6969,6 +7014,7 @@
     "dex": "046",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -7125,6 +7171,7 @@
     "dex": "047",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -7287,6 +7334,7 @@
     "dex": "048",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -7436,6 +7484,7 @@
     "dex": "049",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -7593,6 +7642,7 @@
     "dex": "050",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground"
@@ -7731,6 +7781,7 @@
     "dex": "051",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground"
@@ -7872,6 +7923,7 @@
     "dex": "052",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal"
@@ -8015,6 +8067,7 @@
     "dex": "053",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal"
@@ -8151,6 +8204,7 @@
     "dex": "054",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -8327,6 +8381,7 @@
     "dex": "055",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -8498,6 +8553,7 @@
     "dex": "056",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -8661,6 +8717,7 @@
     "dex": "057",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -8824,6 +8881,7 @@
     "dex": "058",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire"
@@ -8978,6 +9036,7 @@
     "dex": "059",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire"
@@ -9137,6 +9196,7 @@
     "dex": "060",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -9385,6 +9445,7 @@
     "dex": "061",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -9592,6 +9653,7 @@
     "dex": "062",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -9755,6 +9817,7 @@
     "dex": "063",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Psychic"
@@ -9856,6 +9919,7 @@
     "dex": "064",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Psychic"
@@ -10016,6 +10080,7 @@
     "dex": "065",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Psychic"
@@ -10177,6 +10242,7 @@
     "dex": "066",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -10349,6 +10415,7 @@
     "dex": "067",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -10537,6 +10604,7 @@
     "dex": "068",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -10705,6 +10773,7 @@
     "dex": "069",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -10857,6 +10926,7 @@
     "dex": "070",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -11018,6 +11088,7 @@
     "dex": "071",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -11173,6 +11244,7 @@
     "dex": "072",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -11350,6 +11422,7 @@
     "dex": "073",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -11500,6 +11573,7 @@
     "dex": "074",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Rock",
@@ -11680,6 +11754,7 @@
     "dex": "075",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Rock",
@@ -11846,6 +11921,7 @@
     "dex": "076",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Rock",
@@ -12023,6 +12099,7 @@
     "dex": "077",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire",
@@ -12183,6 +12260,7 @@
     "dex": "078",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire",
@@ -12337,6 +12415,7 @@
     "dex": "079",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -12527,6 +12606,7 @@
     "dex": "080",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -12687,6 +12767,7 @@
     "dex": "081",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -12844,6 +12925,7 @@
     "dex": "082",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -13010,6 +13092,7 @@
     "dex": "084",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -13164,6 +13247,7 @@
     "dex": "085",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground",
@@ -13319,6 +13403,7 @@
     "dex": "086",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -13467,6 +13552,7 @@
     "dex": "087",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -13609,6 +13695,7 @@
     "dex": "088",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -13755,6 +13842,7 @@
     "dex": "089",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison",
@@ -13907,6 +13995,7 @@
     "dex": "090",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -14059,6 +14148,7 @@
     "dex": "091",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -14216,6 +14306,7 @@
     "dex": "092",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Ghost",
@@ -14369,6 +14460,7 @@
     "dex": "093",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Ghost",
@@ -14540,6 +14632,7 @@
     "dex": "094",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Ghost",
@@ -14701,6 +14794,7 @@
     "dex": "095",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Rock",
@@ -14871,6 +14965,7 @@
     "dex": "096",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Psychic"
@@ -15019,6 +15114,7 @@
     "dex": "097",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Psychic"
@@ -15168,6 +15264,7 @@
     "dex": "098",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -15328,6 +15425,7 @@
     "dex": "099",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -15479,6 +15577,7 @@
     "dex": "100",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -15615,6 +15714,7 @@
     "dex": "101",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -15757,6 +15857,7 @@
     "dex": "102",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -15933,6 +16034,7 @@
     "dex": "103",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -16094,6 +16196,7 @@
     "dex": "104",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground",
@@ -16266,6 +16369,7 @@
     "dex": "105",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground",
@@ -16442,6 +16546,7 @@
     "dex": "106",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -16609,6 +16714,7 @@
     "dex": "107",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -16786,6 +16892,7 @@
     "dex": "108",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal"
@@ -16934,6 +17041,7 @@
     "dex": "109",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison"
@@ -17089,6 +17197,7 @@
     "dex": "110",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Poison"
@@ -17230,6 +17339,7 @@
     "dex": "111",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground",
@@ -17392,6 +17502,7 @@
     "dex": "112",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Ground",
@@ -17555,6 +17666,7 @@
     "dex": "113",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal",
@@ -17713,6 +17825,7 @@
     "dex": "114",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -17883,6 +17996,7 @@
     "dex": "115",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal"
@@ -18024,6 +18138,7 @@
     "dex": "116",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -18264,6 +18379,7 @@
     "dex": "117",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -18452,6 +18568,7 @@
     "dex": "118",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -18607,6 +18724,7 @@
     "dex": "119",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -18748,6 +18866,7 @@
     "dex": "120",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -18900,6 +19019,7 @@
     "dex": "121",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -19047,6 +19167,7 @@
     "dex": "122",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Psychic"
@@ -19198,6 +19319,7 @@
     "dex": "123",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -19377,6 +19499,7 @@
     "dex": "124",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Grass",
@@ -19566,6 +19689,7 @@
     "dex": "125",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -19734,6 +19858,7 @@
     "dex": "126",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire",
@@ -19911,6 +20036,7 @@
     "dex": "127",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug"
@@ -20074,6 +20200,7 @@
     "dex": "128",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal"
@@ -20237,6 +20364,7 @@
     "dex": "129",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -20476,6 +20604,7 @@
     "dex": "130",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -20727,6 +20856,7 @@
     "dex": "131",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water",
@@ -20879,6 +21009,7 @@
     "dex": "132",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -21039,6 +21170,7 @@
     "dex": "133",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal"
@@ -21311,6 +21443,7 @@
     "dex": "134",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Water"
@@ -21513,6 +21646,7 @@
     "dex": "135",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Electric"
@@ -21715,6 +21849,7 @@
     "dex": "136",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fire"
@@ -21917,6 +22052,7 @@
     "dex": "137",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal"
@@ -22077,6 +22213,7 @@
     "dex": "138",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Ghost",
@@ -22275,6 +22412,7 @@
     "dex": "139",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Ghost",
@@ -22431,6 +22569,7 @@
     "dex": "140",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -22584,6 +22723,7 @@
     "dex": "141",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Bug",
@@ -22743,6 +22883,7 @@
     "dex": "142",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Rock",
@@ -22895,6 +23036,7 @@
     "dex": "143",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Normal"
@@ -23056,6 +23198,7 @@
     "dex": "144",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting",
@@ -23207,6 +23350,7 @@
     "dex": "144",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -23360,6 +23504,7 @@
     "dex": "145",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting"
@@ -23511,6 +23656,7 @@
     "dex": "146",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -23674,6 +23820,7 @@
     "dex": "147",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Dragon"
@@ -23847,6 +23994,7 @@
     "dex": "148",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Dragon"
@@ -24005,6 +24153,7 @@
     "dex": "149",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Dragon",
@@ -24185,6 +24334,7 @@
     "dex": "150",
     "is_variant": true,
     "is_battle_bond": true,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal",
@@ -24340,6 +24490,7 @@
     "dex": "151",
     "is_variant": true,
     "is_battle_bond": true,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -24490,6 +24641,7 @@
     "dex": "152",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass"
@@ -24633,6 +24785,7 @@
     "dex": "153",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass"
@@ -24781,6 +24934,7 @@
     "dex": "154",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -24960,6 +25114,7 @@
     "dex": "155",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Fire"
@@ -25103,6 +25258,7 @@
     "dex": "156",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Fire"
@@ -25251,6 +25407,7 @@
     "dex": "157",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Fire",
@@ -25411,6 +25568,7 @@
     "dex": "158",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Water"
@@ -25554,6 +25712,7 @@
     "dex": "159",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Water"
@@ -25702,6 +25861,7 @@
     "dex": "160",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Water",
@@ -25871,6 +26031,7 @@
     "dex": "161",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal"
@@ -26024,6 +26185,7 @@
     "dex": "162",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal"
@@ -26190,6 +26352,7 @@
     "dex": "163",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Psychic",
@@ -26343,6 +26506,7 @@
     "dex": "164",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Psychic",
@@ -26502,6 +26666,7 @@
     "dex": "165",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -26642,6 +26807,7 @@
     "dex": "166",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -26775,6 +26941,7 @@
     "dex": "167",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -26922,6 +27089,7 @@
     "dex": "168",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -27085,6 +27253,7 @@
     "dex": "169",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Poison",
@@ -27240,6 +27409,7 @@
     "dex": "170",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Water",
@@ -27389,6 +27559,7 @@
     "dex": "171",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Water",
@@ -27546,6 +27717,7 @@
     "dex": "172",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "Paradox",
     "types": [
       "Psychic"
@@ -27693,6 +27865,7 @@
     "dex": "173",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "Paradox",
     "types": [
       "Electric",
@@ -27841,6 +28014,7 @@
     "dex": "175",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal"
@@ -27989,6 +28163,7 @@
     "dex": "176",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -28142,6 +28317,7 @@
     "dex": "177",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Aether",
@@ -28307,6 +28483,7 @@
     "dex": "178",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Aether",
@@ -28476,6 +28653,7 @@
     "dex": "179",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Electric",
@@ -28649,6 +28827,7 @@
     "dex": "180",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Electric",
@@ -28812,6 +28991,7 @@
     "dex": "181",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Electric",
@@ -29024,6 +29204,7 @@
     "dex": "182",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Psychic",
@@ -29204,6 +29385,7 @@
     "dex": "183",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Water"
@@ -29366,6 +29548,7 @@
     "dex": "184",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Water"
@@ -29520,6 +29703,7 @@
     "dex": "185",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Rock"
@@ -29673,6 +29857,7 @@
     "dex": "186",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Water"
@@ -29844,6 +30029,7 @@
     "dex": "187",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -30020,6 +30206,7 @@
     "dex": "188",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -30174,6 +30361,7 @@
     "dex": "189",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -30329,6 +30517,7 @@
     "dex": "190",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal"
@@ -30472,6 +30661,7 @@
     "dex": "191",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -30629,6 +30819,7 @@
     "dex": "192",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -30780,6 +30971,7 @@
     "dex": "193",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -30934,6 +31126,7 @@
     "dex": "194",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Water",
@@ -31080,6 +31273,7 @@
     "dex": "195",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Water",
@@ -31232,6 +31426,7 @@
     "dex": "196",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Psychic"
@@ -31434,6 +31629,7 @@
     "dex": "197",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Dark"
@@ -31636,6 +31832,7 @@
     "dex": "198",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Dark",
@@ -31796,6 +31993,7 @@
     "dex": "199",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Water",
@@ -31941,6 +32139,7 @@
     "dex": "200",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Ghost"
@@ -32091,6 +32290,7 @@
     "dex": "201",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": true,
     "source_sheet": "#1-151",
     "types": [
       "Electric",
@@ -32247,6 +32447,7 @@
     "dex": "202",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Psychic"
@@ -32384,6 +32585,7 @@
     "dex": "203",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -32550,6 +32752,7 @@
     "dex": "204",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug"
@@ -32693,6 +32896,7 @@
     "dex": "205",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -32835,6 +33039,7 @@
     "dex": "206",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -32985,6 +33190,7 @@
     "dex": "207",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Ground",
@@ -33134,6 +33340,7 @@
     "dex": "208",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Steel",
@@ -33299,6 +33506,7 @@
     "dex": "209",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -33458,6 +33666,7 @@
     "dex": "210",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -33625,6 +33834,7 @@
     "dex": "211",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "Paradox",
     "types": [
       "Ground",
@@ -33773,6 +33983,7 @@
     "dex": "212",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -33948,6 +34159,7 @@
     "dex": "213",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -34090,6 +34302,7 @@
     "dex": "214",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Bug",
@@ -34247,6 +34460,7 @@
     "dex": "215",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Poison",
@@ -34424,6 +34638,7 @@
     "dex": "216",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal"
@@ -34576,6 +34791,7 @@
     "dex": "217",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal"
@@ -34735,6 +34951,7 @@
     "dex": "218",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Fire"
@@ -34916,6 +35133,7 @@
     "dex": "219",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Fire",
@@ -35068,6 +35286,7 @@
     "dex": "220",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Ice",
@@ -35220,6 +35439,7 @@
     "dex": "221",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Ice",
@@ -35391,6 +35611,7 @@
     "dex": "222",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "Paradox",
     "types": [
       "Electric",
@@ -35541,6 +35762,7 @@
     "dex": "223",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Water"
@@ -35689,6 +35911,7 @@
     "dex": "224",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Water"
@@ -35835,6 +36058,7 @@
     "dex": "226",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Water",
@@ -35996,6 +36220,7 @@
     "dex": "227",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Steel",
@@ -36148,6 +36373,7 @@
     "dex": "228",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Dark",
@@ -36297,6 +36523,7 @@
     "dex": "229",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Dark",
@@ -36454,6 +36681,7 @@
     "dex": "230",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Water",
@@ -36604,6 +36832,7 @@
     "dex": "231",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Ground"
@@ -36742,6 +36971,7 @@
     "dex": "232",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Ground"
@@ -36888,6 +37118,7 @@
     "dex": "233",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal"
@@ -37045,6 +37276,7 @@
     "dex": "236",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Fighting"
@@ -37181,6 +37413,7 @@
     "dex": "237",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Fighting"
@@ -37353,6 +37586,7 @@
     "dex": "238",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -37506,6 +37740,7 @@
     "dex": "239",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Electric"
@@ -37681,6 +37916,7 @@
     "dex": "240",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Fire",
@@ -37854,6 +38090,7 @@
     "dex": "241",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal"
@@ -37995,6 +38232,7 @@
     "dex": "242",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -38151,6 +38389,7 @@
     "dex": "243",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Electric"
@@ -38303,6 +38542,7 @@
     "dex": "244",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Fire"
@@ -38455,6 +38695,7 @@
     "dex": "245",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Water"
@@ -38607,6 +38848,7 @@
     "dex": "246",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Rock",
@@ -38755,6 +38997,7 @@
     "dex": "247",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Rock",
@@ -38915,6 +39158,7 @@
     "dex": "248",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Rock",
@@ -39079,6 +39323,7 @@
     "dex": "249",
     "is_variant": true,
     "is_battle_bond": true,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Electric",
@@ -39229,6 +39474,7 @@
     "dex": "250",
     "is_variant": true,
     "is_battle_bond": true,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Electric",
@@ -39374,6 +39620,7 @@
     "dex": "251",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Psychic",
@@ -39526,6 +39773,7 @@
     "dex": "252",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass"
@@ -39669,6 +39917,7 @@
     "dex": "253",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass"
@@ -39827,6 +40076,7 @@
     "dex": "254",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass"
@@ -39976,6 +40226,7 @@
     "dex": "255",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Fire"
@@ -40119,6 +40370,7 @@
     "dex": "256",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Fire",
@@ -40278,6 +40530,7 @@
     "dex": "257",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Fire",
@@ -40438,6 +40691,7 @@
     "dex": "258",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Water"
@@ -40586,6 +40840,7 @@
     "dex": "259",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -40745,6 +41000,7 @@
     "dex": "260",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -40900,6 +41156,7 @@
     "dex": "261",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Ice",
@@ -41053,6 +41310,7 @@
     "dex": "262",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Ice",
@@ -41217,6 +41475,7 @@
     "dex": "263",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -41365,6 +41624,7 @@
     "dex": "264",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -41531,6 +41791,7 @@
     "dex": "265",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug"
@@ -41662,6 +41923,7 @@
     "dex": "266",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug"
@@ -41772,6 +42034,7 @@
     "dex": "267",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -41940,6 +42203,7 @@
     "dex": "268",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug"
@@ -42050,6 +42314,7 @@
     "dex": "269",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -42218,6 +42483,7 @@
     "dex": "270",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -42375,6 +42641,7 @@
     "dex": "271",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -42541,6 +42808,7 @@
     "dex": "272",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -42704,6 +42972,7 @@
     "dex": "273",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass"
@@ -42860,6 +43129,7 @@
     "dex": "274",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass",
@@ -43031,6 +43301,7 @@
     "dex": "275",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass",
@@ -43201,6 +43472,7 @@
     "dex": "276",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal",
@@ -43340,6 +43612,7 @@
     "dex": "277",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal",
@@ -43485,6 +43758,7 @@
     "dex": "278",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -43626,6 +43900,7 @@
     "dex": "279",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -43768,6 +44043,7 @@
     "dex": "280",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Aether",
@@ -43937,6 +44213,7 @@
     "dex": "281",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Aether",
@@ -44125,6 +44402,7 @@
     "dex": "282",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Aether",
@@ -44322,6 +44600,7 @@
     "dex": "283",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -44463,6 +44742,7 @@
     "dex": "284",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -44615,6 +44895,7 @@
     "dex": "285",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Poison"
@@ -44757,6 +45038,7 @@
     "dex": "286",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Poison",
@@ -44926,6 +45208,7 @@
     "dex": "287",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -45088,6 +45371,7 @@
     "dex": "288",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -45250,6 +45534,7 @@
     "dex": "289",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -45415,6 +45700,7 @@
     "dex": "290",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -45566,6 +45852,7 @@
     "dex": "291",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -45722,6 +46009,7 @@
     "dex": "292",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -45878,6 +46166,7 @@
     "dex": "293",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -46029,6 +46318,7 @@
     "dex": "294",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -46199,6 +46489,7 @@
     "dex": "295",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -46366,6 +46657,7 @@
     "dex": "296",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Fighting"
@@ -46519,6 +46811,7 @@
     "dex": "297",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Fighting"
@@ -46673,6 +46966,7 @@
     "dex": "298",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Aether"
@@ -46873,6 +47167,7 @@
     "dex": "299",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Rock"
@@ -47027,6 +47322,7 @@
     "dex": "300",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal",
@@ -47185,6 +47481,7 @@
     "dex": "301",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal",
@@ -47337,6 +47634,7 @@
     "dex": "302",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Dark",
@@ -47508,6 +47806,7 @@
     "dex": "303",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel"
@@ -47669,6 +47968,7 @@
     "dex": "304",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -47842,6 +48142,7 @@
     "dex": "305",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -48015,6 +48316,7 @@
     "dex": "306",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -48182,6 +48484,7 @@
     "dex": "307",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Fighting",
@@ -48338,6 +48641,7 @@
     "dex": "308",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Fighting",
@@ -48510,6 +48814,7 @@
     "dex": "309",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Electric"
@@ -48653,6 +48958,7 @@
     "dex": "310",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Electric"
@@ -48802,6 +49108,7 @@
     "dex": "311",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Electric"
@@ -48926,6 +49233,7 @@
     "dex": "312",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Electric"
@@ -49055,6 +49363,7 @@
     "dex": "313",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -49191,6 +49500,7 @@
     "dex": "314",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Bug",
@@ -49327,6 +49637,7 @@
     "dex": "315",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass",
@@ -49495,6 +49806,7 @@
     "dex": "316",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Poison",
@@ -49653,6 +49965,7 @@
     "dex": "317",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Poison",
@@ -49831,6 +50144,7 @@
     "dex": "318",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -49985,6 +50299,7 @@
     "dex": "319",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -50131,6 +50446,7 @@
     "dex": "320",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Water"
@@ -50286,6 +50602,7 @@
     "dex": "321",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -50442,6 +50759,7 @@
     "dex": "322",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Fire",
@@ -50588,6 +50906,7 @@
     "dex": "323",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Fire",
@@ -50740,6 +51059,7 @@
     "dex": "324",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Fire"
@@ -50907,6 +51227,7 @@
     "dex": "325",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Psychic"
@@ -51050,6 +51371,7 @@
     "dex": "326",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Psychic"
@@ -51199,6 +51521,7 @@
     "dex": "327",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Dark",
@@ -51367,6 +51690,7 @@
     "dex": "328",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Ground",
@@ -51541,6 +51865,7 @@
     "dex": "329",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Ground",
@@ -51696,6 +52021,7 @@
     "dex": "330",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Ground",
@@ -51865,6 +52191,7 @@
     "dex": "331",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass"
@@ -52030,6 +52357,7 @@
     "dex": "332",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass",
@@ -52187,6 +52515,7 @@
     "dex": "333",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal",
@@ -52338,6 +52667,7 @@
     "dex": "334",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Dragon",
@@ -52498,6 +52828,7 @@
     "dex": "335",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -52634,6 +52965,7 @@
     "dex": "336",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Poison"
@@ -52780,6 +53112,7 @@
     "dex": "337",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Rock",
@@ -52935,6 +53268,7 @@
     "dex": "338",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Rock",
@@ -53090,6 +53424,7 @@
     "dex": "339",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Dark",
@@ -53259,6 +53594,7 @@
     "dex": "340",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Dark",
@@ -53418,6 +53754,7 @@
     "dex": "341",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Water"
@@ -53566,6 +53903,7 @@
     "dex": "342",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Water",
@@ -53713,6 +54051,7 @@
     "dex": "343",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel"
@@ -53894,6 +54233,7 @@
     "dex": "344",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel"
@@ -54091,6 +54431,7 @@
     "dex": "345",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Rock",
@@ -54240,6 +54581,7 @@
     "dex": "346",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Rock",
@@ -54392,6 +54734,7 @@
     "dex": "347",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Rock",
@@ -54536,6 +54879,7 @@
     "dex": "348",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Rock",
@@ -54683,6 +55027,7 @@
     "dex": "349",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Water"
@@ -54825,6 +55170,7 @@
     "dex": "350",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Water"
@@ -54971,6 +55317,7 @@
     "dex": "351",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal",
@@ -55124,6 +55471,7 @@
     "dex": "352",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Normal"
@@ -55280,6 +55628,7 @@
     "dex": "353",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Ghost"
@@ -55438,6 +55787,7 @@
     "dex": "354",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Ghost",
@@ -55584,6 +55934,7 @@
     "dex": "355",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Ghost",
@@ -55743,6 +56094,7 @@
     "dex": "356",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Ghost",
@@ -55935,6 +56287,7 @@
     "dex": "357",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Grass",
@@ -56092,6 +56445,7 @@
     "dex": "358",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Psychic",
@@ -56234,6 +56588,7 @@
     "dex": "359",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Dark",
@@ -56400,6 +56755,7 @@
     "dex": "360",
     "is_variant": true,
     "is_battle_bond": true,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Fire",
@@ -56547,6 +56903,7 @@
     "dex": "361",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Ice"
@@ -56729,6 +57086,7 @@
     "dex": "362",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Ice"
@@ -56893,6 +57251,7 @@
     "dex": "363",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Ice",
@@ -57051,6 +57410,7 @@
     "dex": "364",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Ice",
@@ -57216,6 +57576,7 @@
     "dex": "365",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Ice",
@@ -57367,6 +57728,7 @@
     "dex": "366",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Fighting",
@@ -57532,6 +57894,7 @@
     "dex": "367",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -57683,6 +58046,7 @@
     "dex": "368",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -57852,6 +58216,7 @@
     "dex": "369",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Ghost",
@@ -58044,6 +58409,7 @@
     "dex": "370",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -58235,6 +58601,7 @@
     "dex": "371",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Dragon"
@@ -58392,6 +58759,7 @@
     "dex": "372",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Dragon"
@@ -58546,6 +58914,7 @@
     "dex": "373",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Dragon",
@@ -58710,6 +59079,7 @@
     "dex": "374",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -58808,6 +59178,7 @@
     "dex": "375",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -58968,6 +59339,7 @@
     "dex": "376",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -59134,6 +59506,7 @@
     "dex": "377",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Rock",
@@ -59310,6 +59683,7 @@
     "dex": "378",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Ice",
@@ -59486,6 +59860,7 @@
     "dex": "379",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -59662,6 +60037,7 @@
     "dex": "385",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#252-386",
     "types": [
       "Steel",
@@ -59790,6 +60166,7 @@
     "dex": "386",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Grass",
@@ -59945,6 +60322,7 @@
     "dex": "387",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Grass",
@@ -60107,6 +60485,7 @@
     "dex": "388",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Normal"
@@ -60261,6 +60640,7 @@
     "dex": "389",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Ghost",
@@ -60411,6 +60791,7 @@
     "dex": "390",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Dark",
@@ -60553,6 +60934,7 @@
     "dex": "391",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Poison",
@@ -60717,6 +61099,7 @@
     "dex": "392",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Electric",
@@ -60872,6 +61255,7 @@
     "dex": "393",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Normal"
@@ -61018,6 +61402,7 @@
     "dex": "394",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Ground",
@@ -61178,6 +61563,7 @@
     "dex": "395",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Grass",
@@ -61380,6 +61766,7 @@
     "dex": "396",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Electric",
@@ -61545,6 +61932,7 @@
     "dex": "397",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Fire",
@@ -61704,6 +62092,7 @@
     "dex": "398",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Normal",
@@ -61864,6 +62253,7 @@
     "dex": "399",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Bug",
@@ -62019,6 +62409,7 @@
     "dex": "400",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Ice",
@@ -62182,6 +62573,7 @@
     "dex": "401",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Ground",
@@ -62339,6 +62731,7 @@
     "dex": "402",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Normal"
@@ -62493,6 +62886,7 @@
     "dex": "403",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Aether",
@@ -62673,6 +63067,7 @@
     "dex": "404",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Rock",
@@ -62823,6 +63218,7 @@
     "dex": "405",
     "is_variant": true,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Ghost",
@@ -63003,6 +63399,7 @@
     "dex": "406",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Ice",
@@ -63166,6 +63563,7 @@
     "dex": "407",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "#152-251",
     "types": [
       "Normal",
@@ -63326,6 +63724,7 @@
     "dex": "408",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Grass"
@@ -63528,6 +63927,7 @@
     "dex": "409",
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "4th Gen",
     "types": [
       "Ice"
@@ -63725,6 +64125,7 @@
     "dex": null,
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "Paradox",
     "types": [
       "Dragon",
@@ -63878,6 +64279,7 @@
     "dex": null,
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "Paradox",
     "types": [
       "Fire",
@@ -64028,6 +64430,7 @@
     "dex": null,
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "Paradox",
     "types": [
       "Ghost"
@@ -64175,6 +64578,7 @@
     "dex": null,
     "is_variant": false,
     "is_battle_bond": false,
+    "is_custom_form": false,
     "source_sheet": "Paradox",
     "types": [
       "Water",
