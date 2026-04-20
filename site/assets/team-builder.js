@@ -63,7 +63,9 @@ function multLabel(m) {
   if (m === 0.25) return "¼×";
   if (m === 0.5)  return "½×";
   if (m === 1)    return "1×";
+  if (m === 1.5)  return "1½×";
   if (m === 2)    return "2×";
+  if (m === 3)    return "3×";
   if (m === 4)    return "4×";
   return `${m}×`;
 }
@@ -72,7 +74,9 @@ function multClass(m) {
   if (m === 0)    return "x0";
   if (m === 0.25) return "x025";
   if (m === 0.5)  return "x05";
+  if (m === 1.5)  return "x15";
   if (m === 2)    return "x2";
+  if (m === 3)    return "x3";
   if (m === 4)    return "x4";
   return "x1";
 }
@@ -170,13 +174,15 @@ function renderTeam() {
 // --- Calculations ---------------------------------------------------------
 
 /** Aggregate defensive multipliers per attacker type across the team.
+ *  Passes each member's abilities to defensiveMatchups() so that ability-based
+ *  modifiers (Levitate, Flash Fire, Thick Fat, etc.) are reflected.
  *  Returns Map<attackerType, Array<{member, mult}>> */
 function computeDefensiveMatrix() {
   const matrix = {};
   for (const t of TYPE_LIST) matrix[t] = [];
   for (const p of team) {
     if (!p) continue;
-    const mults = defensiveMatchups(p.types || []);
+    const mults = defensiveMatchups(p.types || [], p.abilities || []);
     for (const t of TYPE_LIST) {
       matrix[t].push({ member: p, mult: mults[t] });
     }
@@ -245,7 +251,7 @@ function renderDefensiveMatrix(matrix) {
       if (mult > worst) worst = mult;
       return `<td class="tb-matrix-cell ${multClass(mult)}" title="${escapeHTML(member.name)}: ${multLabel(mult)}">${multLabel(mult)}</td>`;
     }).join("");
-    const worstClass = worst > 1 ? (worst >= 4 ? "tb-worst-4" : "tb-worst-2") : "";
+    const worstClass = worst >= 4 ? "tb-worst-4" : worst >= 3 ? "tb-worst-3" : worst >= 2 ? "tb-worst-2" : worst > 1 ? "tb-worst-15" : "";
     return `<tr>
       <th class="tb-matrix-row-head">${typeBadge(atk, true)}</th>
       ${cells}

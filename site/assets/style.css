@@ -381,8 +381,27 @@ h3 { font-size: 1rem; margin: .8rem 0 .4rem; color: var(--text-dim); }
 .weakness-cell.x025 { background: rgba(200,160,0,.30); border-color: #c8a000; }
 .weakness-cell.x05  { background: rgba(200,160,0,.20); border-color: #c8a000; }
 .weakness-cell.x1   { }
+/* 1½× and 3× appear when Filter / Solid Rock reduce super-effective damage by ¼. */
+.weakness-cell.x15  { background: rgba(34,160,80,.16); border-color: #22a050; }
 .weakness-cell.x2   { background: rgba(34,160,80,.24); border-color: #22a050; }
+.weakness-cell.x3   { background: rgba(34,160,80,.34); border-color: #22a050; }
 .weakness-cell.x4   { background: rgba(34,160,80,.42); border-color: #22a050; }
+/* Small ability-name annotation inside a weakness cell. */
+.weakness-cell .ability-note {
+  display: block;
+  font-size: .6rem;
+  color: var(--text-dim);
+  font-style: italic;
+  margin-top: .12rem;
+  line-height: 1.2;
+}
+/* Section-level note shown above type-defense groups when abilities adjust matchups. */
+.ability-defense-note {
+  font-size: .75rem;
+  color: var(--text-dim);
+  margin: 0 0 .6rem;
+  font-style: italic;
+}
 
 /* --- Per-type offense sections (Pokémon detail page) --- */
 .offense-type-label {
@@ -1545,7 +1564,10 @@ tr.odyssey-bg:hover td      { background: rgba(125, 211, 252, .1); }
 .tb-matrix-cell.x025 { background: rgba(34, 160, 80, .22); color: #cfeedc; }
 .tb-matrix-cell.x05  { background: rgba(34, 160, 80, .16); color: #d0e9d8; }
 .tb-matrix-cell.x1   { color: var(--text-dim); font-weight: 500; }
+/* 1½× and 3× from Filter / Solid Rock — still damaging but less than normal SE. */
+.tb-matrix-cell.x15  { background: rgba(220, 120, 40, .18); color: #ffd4b8; }
 .tb-matrix-cell.x2   { background: rgba(220, 120, 40, .28); color: #ffc899; }
+.tb-matrix-cell.x3   { background: rgba(220, 40, 40, .28); color: #ffcbcb; }
 .tb-matrix-cell.x4   { background: rgba(220, 40, 40, .38); color: #ffc5c5; }
 
 .tb-matrix-worst {
@@ -1553,8 +1575,10 @@ tr.odyssey-bg:hover td      { background: rgba(125, 211, 252, .1); }
   font-weight: 700;
   background: var(--panel-2);
 }
-.tb-matrix-worst.tb-worst-2 { background: rgba(220, 120, 40, .24); color: #ffc899; }
-.tb-matrix-worst.tb-worst-4 { background: rgba(220, 40, 40, .34); color: #ffc5c5; }
+.tb-matrix-worst.tb-worst-15 { background: rgba(220, 120, 40, .16); color: #ffd4b8; }
+.tb-matrix-worst.tb-worst-2  { background: rgba(220, 120, 40, .24); color: #ffc899; }
+.tb-matrix-worst.tb-worst-3  { background: rgba(220, 40, 40, .26); color: #ffcbcb; }
+.tb-matrix-worst.tb-worst-4  { background: rgba(220, 40, 40, .34); color: #ffc5c5; }
 .tb-matrix-worst-head { min-width: 70px; }
 
 /* --- Summary table --- */
@@ -1579,7 +1603,9 @@ tr.odyssey-bg:hover td      { background: rgba(125, 211, 252, .1); }
 .tb-summary-table .tb-sum-cell.x025 { background: rgba(34, 160, 80, .20); color: #cfeedc; }
 .tb-summary-table .tb-sum-cell.x05  { background: rgba(34, 160, 80, .14); color: #d0e9d8; }
 .tb-summary-table .tb-sum-cell.x1   { color: var(--text-dim); }
+.tb-summary-table .tb-sum-cell.x15  { background: rgba(220, 120, 40, .18); color: #ffd4b8; }
 .tb-summary-table .tb-sum-cell.x2   { background: rgba(220, 120, 40, .26); color: #ffc899; }
+.tb-summary-table .tb-sum-cell.x3   { background: rgba(220, 40, 40, .28); color: #ffcbcb; }
 .tb-summary-table .tb-sum-cell.x4   { background: rgba(220, 40, 40, .36); color: #ffc5c5; }
 
 /* Offensive-coverage Best cell — green = good (deal damage). Override the

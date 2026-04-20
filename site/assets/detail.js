@@ -68,30 +68,47 @@ function renderStats(stats, vanilla) {
     </table>${vanillaNote}`;
 }
 
-function renderMatchups(types) {
+function renderMatchups(types, abilities = []) {
   if (!types.length) return `<p class="empty-msg">No type data.</p>`;
-  const matchups = defensiveMatchups(types);
-  const groups = { 0: [], 0.25: [], 0.5: [], 1: [], 2: [], 4: [] };
+  const matchups = defensiveMatchups(types, abilities);
+  const abNotes  = getAbilityDefenseNotes(types, abilities);
+
+  // Groups cover standard values plus Filter/Solid Rock reduced-SE values (1.5×, 3×).
+  const groups = { 0: [], 0.25: [], 0.5: [], 1: [], 1.5: [], 2: [], 3: [], 4: [] };
   for (const t of TYPE_LIST) {
     const m = matchups[t];
     if (groups[m] === undefined) groups[m] = [];
     groups[m].push(t);
   }
-  const labelFor = m => ({0:"0×", 0.25:"¼×", 0.5:"½×", 1:"1×", 2:"2×", 4:"4×"}[m] || `${m}×`);
-  const classFor = m => ({0:"x0", 0.25:"x025", 0.5:"x05", 1:"x1", 2:"x2", 4:"x4"}[m] || "x1");
-  const keys = [4, 2, 0.5, 0.25, 0].filter(k => groups[k] && groups[k].length);
+  const labelFor = m => ({0:"0×", 0.25:"¼×", 0.5:"½×", 1:"1×", 1.5:"1½×", 2:"2×", 3:"3×", 4:"4×"}[m] || `${m}×`);
+  const classFor = m => ({0:"x0", 0.25:"x025", 0.5:"x05", 1.5:"x15", 2:"x2", 3:"x3", 4:"x4"}[m] || "x1");
+  // Ordered from most to least damaging (1× neutral group intentionally omitted).
+  const keys = [4, 3, 2, 1.5, 0.5, 0.25, 0].filter(k => groups[k] && groups[k].length);
   if (!keys.length) return `<p class="empty-msg">Neutral to all types.</p>`;
+
+  // Collect which abilities contributed to any modification (for section note).
+  const activeAbilityNames = [...new Set(Object.values(abNotes))];
+  const abilityNote = activeAbilityNames.length
+    ? `<p class="ability-defense-note">Includes <em>${activeAbilityNames.map(escapeHTML).join("</em>, <em>")}</em> effects.</p>`
+    : "";
+
   const sections = keys.map(k => `
     <h3>${labelFor(k)} damage from</h3>
     <div class="weakness-grid">
-      ${groups[k].map(t => `
-        <div class="weakness-cell ${classFor(k)}">
+      ${groups[k].map(t => {
+        const note = abNotes[t]
+          ? `<span class="ability-note">${escapeHTML(abNotes[t])}</span>`
+          : "";
+        return `
+        <div class="weakness-cell ${classFor(k)}"${abNotes[t] ? ` title="${escapeHTML(abNotes[t])} ability"` : ""}>
           ${typeBadge(t, true)}
           <span class="mult">${labelFor(k)}</span>
-        </div>
-      `).join("")}
+          ${note}
+        </div>`;
+      }).join("")}
     </div>`).join("");
-  return sections;
+
+  return abilityNote + sections;
 }
 
 function renderOffenseForType(type) {
@@ -389,7 +406,7 @@ async function main() {
       <div class="panels">
         <div class="panel">
           <h2>Type Defenses</h2>
-          ${renderMatchups(p.types || [])}
+          ${renderMatchups(p.types || [], p.abilities || [])}
         </div>
         <div class="panel">
           <h2>Type Offenses</h2>
