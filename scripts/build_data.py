@@ -237,7 +237,6 @@ CUSTOM_VARIANTS = {
     "GOROCHU",  # Custom Etrian Variant form
     "PLUSLEBATTLEBOND", "MINUNBATTLEBOND", "KECLEONBATTLEBOND",
     "MAWILEBATTLEBOND", "BLAZIKENBATTLEBOND",  # Battle Bond custom forms
-    "GOLEM",  # Custom Odyssey variant sprite
 }
 
 def nidoran_canon(name: str) -> str:

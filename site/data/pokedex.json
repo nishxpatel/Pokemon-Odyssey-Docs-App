@@ -11919,9 +11919,9 @@
     "slug": "golem",
     "sprite_slug": "golem",
     "dex": "076",
-    "is_variant": true,
+    "is_variant": false,
     "is_battle_bond": false,
-    "is_custom_form": false,
+    "is_custom_form": true,
     "source_sheet": "#1-151",
     "types": [
       "Rock",
@@ -12087,7 +12087,7 @@
     "variant_sprite": {
       "normal": "assets/variants/golem.png",
       "shiny": "assets/variants/golem-shiny.png",
-      "variant_name": "GOLEM"
+      "variant_name": null
     }
   },
   {
