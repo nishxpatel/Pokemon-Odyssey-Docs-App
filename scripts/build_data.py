@@ -239,6 +239,13 @@ CUSTOM_VARIANTS = {
     "MAWILEBATTLEBOND", "BLAZIKENBATTLEBOND",  # Battle Bond custom forms
 }
 
+# Species whose slug collides with a variant PNG that belongs to a *different*
+# Pokémon (e.g. Registeel's Etrian sprite is named golem.png). Exclude these
+# from the file-based custom-form fallback so they don't get mis-tagged.
+SKIP_CUSTOM_FORM = {
+    "GOLEM",  # golem.png is Registeel's Etrian Variant sprite, not a custom form
+}
+
 def nidoran_canon(name: str) -> str:
     n = (name or "").upper()
     if "NIDORAN" in n:
@@ -1492,9 +1499,11 @@ def main():
                 }
         # Manual sprite fallback: if a PNG keyed to this species' slug exists
         # in the variants dir, use it. This catches hand-dropped custom-form
-        # art (e.g. Gorochu, Golem) that isn't in the Etrian Variants sheet.
+        # art (e.g. Gorochu) that isn't in the Etrian Variants sheet.
+        # SKIP_CUSTOM_FORM lists species whose slug collides with a PNG that
+        # belongs to a different Pokémon (e.g. golem.png → Registeel).
         is_custom_form = False
-        if not variant_sprite:
+        if not variant_sprite and key not in SKIP_CUSTOM_FORM:
             display_for_slug = DEX_NAME_FIXES.get(canon(dex["name"]), dex["name"]) if dex else sp["display_name"]
             slug_for_file = slugify(display_for_slug)
             normal_file = VARIANTS_DIR / f"{slug_for_file}.png"

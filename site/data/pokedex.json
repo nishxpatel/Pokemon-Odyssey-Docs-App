@@ -11921,7 +11921,7 @@
     "dex": "076",
     "is_variant": false,
     "is_battle_bond": false,
-    "is_custom_form": true,
+    "is_custom_form": false,
     "source_sheet": "#1-151",
     "types": [
       "Rock",
@@ -12084,11 +12084,7 @@
     ],
     "is_event": false,
     "has_wild": true,
-    "variant_sprite": {
-      "normal": "assets/variants/golem.png",
-      "shiny": "assets/variants/golem-shiny.png",
-      "variant_name": null
-    }
+    "variant_sprite": null
   },
   {
     "key": "PONYTA",
